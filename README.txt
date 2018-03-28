@@ -1,2 +1,2 @@
 
-This repository contains code, data, and documents for a variety of data story clinics.
+This repository contains sub-directories of data story clinics.
