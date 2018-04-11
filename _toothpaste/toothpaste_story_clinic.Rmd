@@ -1,0 +1,59 @@
+---
+title: "Data Story Clinic"
+output:
+  tufte::tufte_handout:
+    toc: no
+    toc_depth: 1
+    latex_engine: xelatex
+  tufte::tufte_html:
+    toc: yes
+    toc_depth: 1
+---
+
+#\textcolor{blue}{Statistics and the Logic of Discovery}  
+
+`r tufte::margin_note("Question 1 -- What is the difference between an anecdote and scientific knowledge?  Or is there a difference?")`
+
+Crest has recently begun advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
+
+Recently, a senior vice-president from Crest approached your lab to validate this claim.  Administrators at the company believe that independent verification will greatly enhance the advertising campaign as customers will be more likely to try this new product when they "know" it works. 
+
+In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to answer a scientific question like this, using nothing more than basic statistical concepts.  Keep in mind that the purpose of this clinic is to introduce you to fundamental concepts.
+
+`r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
+
+
+```{r fig.width = 5, fig.height = 5}
+
+
+```
+
+
+```{r}
+
+for(i in 1:nrow(fl_flu)) {
+  tmp <- rep(fl_flu$age[i], fl_flu$totalDeaths[i])
+  
+  if(i == 1) {
+    fl_freq <- tmp    
+  } 
+  else {
+    fl_freq <- c(fl_freq, tmp) 
+  }
+}
+
+for(i in 1:nrow(sw_flu)) {
+  tmp <- rep(sw_flu$age[i], sw_flu$totalDeaths[i])
+  
+  if(i == 1) {
+    sw_freq <- tmp    
+  } 
+  else {
+    sw_freq <- c(sw_freq, tmp) 
+  }
+}
+
+```
+
+https://crest.com/en-us/products/crest-gum-detoxify-deep-clean-toothpaste
+
