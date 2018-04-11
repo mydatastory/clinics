@@ -22,36 +22,14 @@ In this clinic, we will walk you through the basics of the scientific method and
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
 
+In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis, on the other hand, is $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
+
+`r tufte::margin_note("Question X -- What are the null and alternative hypotheses for the stannous fluoride research project?")`
+
 
 ```{r fig.width = 5, fig.height = 5}
 
-
-```
-
-
-```{r}
-
-for(i in 1:nrow(fl_flu)) {
-  tmp <- rep(fl_flu$age[i], fl_flu$totalDeaths[i])
-  
-  if(i == 1) {
-    fl_freq <- tmp    
-  } 
-  else {
-    fl_freq <- c(fl_freq, tmp) 
-  }
-}
-
-for(i in 1:nrow(sw_flu)) {
-  tmp <- rep(sw_flu$age[i], sw_flu$totalDeaths[i])
-  
-  if(i == 1) {
-    sw_freq <- tmp    
-  } 
-  else {
-    sw_freq <- c(sw_freq, tmp) 
-  }
-}
+# Place code here!
 
 ```
 
