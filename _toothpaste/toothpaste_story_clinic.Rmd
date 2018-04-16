@@ -14,17 +14,19 @@ output:
 
 `r tufte::margin_note("Question 1 -- What is the difference between an anecdote and scientific knowledge?  Or is there a difference?")`
 
-Crest has recently begun advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
+Crest recently began advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
 
-Recently, a senior vice-president from Crest approached your lab to validate this claim.  Administrators at the company believe that independent verification will greatly enhance the advertising campaign as customers will be more likely to try this new product when they "know" it works. 
+Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab to independently verify this claim.  The problem, as Ginger puts it, is that a lot of dental product research is funded by big corporations with a vested interest in achieving positive outcomes.
 
-In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to answer a scientific question like this, using nothing more than basic statistical concepts.  Keep in mind that the purpose of this clinic is to introduce you to fundamental concepts.
+In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to either confirm or refute a claim like the one being made by Crest, using nothing more than basic statistics.  As this is but a basic introduction, advanced methods will not be presented here.
+
+You already know - from your knowledge of oral microbiology - that a subset of bacterial species are responsible for gingivitis, cavities, and oral bleeding.  So the fundamental logic of our approach ought to be clear.  If *Gum Detoxify* works, as Crest claims, we should see less gingivitis and bleeding in populations that use it on a regular basis. 
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
 
 In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis, on the other hand, is $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
 
-`r tufte::margin_note("Question X -- What are the null and alternative hypotheses for the stannous fluoride research project?")`
+`r tufte::margin_note("Question X -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
 
 
 ```{r fig.width = 5, fig.height = 5}
