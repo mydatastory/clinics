@@ -16,13 +16,17 @@ output:
 
 Crest recently began advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
 
-Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab to independently verify this claim.  The problem, as Ginger puts it, is that a lot of dental product research is funded by big corporations with a vested interest in achieving positive outcomes.
+Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab to independently verify this claim.  The problem, as Ginger puts it, is that a lot of dental product research is funded by big corporations with vested interests in achieving positive outcomes.
 
-In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to either confirm or refute a claim like the one being made by Crest, using nothing more than basic statistics.  As this is but a basic introduction, advanced methods will not be presented here.
+In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to either confirm or refute a claim like the one being made by Crest, using nothing more than basic statistics.
 
-You already know - from your knowledge of oral microbiology - that a subset of bacterial species are responsible for gingivitis, cavities, and oral bleeding.  So the fundamental logic of our approach ought to be clear.  If *Gum Detoxify* works, as Crest claims, we should see less gingivitis and bleeding in populations that use it on a regular basis. 
+After doing a little research and your existing knowledge of oral microbiology, you know that a subset of bacterial species are responsible for gingivitis, cavities, and oral bleeding.  Thus we know that a reduction in bad bugs is a good thing, resulting in a healthier mouth.  
+
+So if *Gum Detoxify* works, as Crest claims, we should observe less gingivitis and bleeding in populations that use it on a regular basis.  In other words, the product will prove effective at eliminating bad bacteria and that, in turn, will promote healthier teeth and gums.
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
+
+The most basic research design is when an investigator compares two groups.  In the statistical literature, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use a product like *Gum Detoxify* over period of time.  As an aside, the special ingredient in Crest's new product is stannous fluoride.  Our control group, on the other hand, consists of individuals who brush with brands that lack this special ingredient.
 
 In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis, on the other hand, is $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
 
