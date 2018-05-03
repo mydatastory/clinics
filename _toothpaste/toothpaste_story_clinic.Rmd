@@ -20,17 +20,25 @@ Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab t
 
 In this clinic, we will walk you through the basics of the scientific method and the process a scientist would undertake to either confirm or refute a claim like the one being made by Crest, using nothing more than basic statistics.
 
-After doing a little research and your existing knowledge of oral microbiology, you know that a subset of bacterial species are responsible for gingivitis, cavities, and oral bleeding.  Thus we know that a reduction in bad bugs is a good thing, resulting in a healthier mouth.  
+With your existing knowledge of microbiology, you know that a subset of bacterial species have been linked to gingivitis, cavities, and oral bleeeding.  Thus you know that a reduction in "bad bugs"" is a good thing, resulting in a healthier mouth.  
 
-So if *Gum Detoxify* works, as Crest claims, we should observe less gingivitis and bleeding in populations that use it on a regular basis.  In other words, the product will prove effective at eliminating bad bacteria and that, in turn, will promote healthier teeth and gums.
+So if *Gum Detoxify* works, as Crest claims, we should observe less gingivitis and bleeding in populations that use it on a regular basis.  In other words, the product will prove effective at eliminating bad bacteria and that, in turn, should promote healthier gums and teeth.
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
 
-The most basic research design is when an investigator compares two groups.  In the statistical literature, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use a product like *Gum Detoxify* over period of time.  As an aside, the special ingredient in Crest's new product is stannous fluoride.  Our control group, on the other hand, consists of individuals who brush with brands that lack this special ingredient.
+The most basic research design is when an investigator compares two groups.  In the statistical literature, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use *Gum Detoxify* while our control group consists of individuals who use a competing product that does not have stannous fluoride in it.  Or do not brush at all.
+
+The outline of a possible research design is now coming into view.  The first step is to state our *null* and *research* hypotheses.  The research hypothesis - also known as the alternative hypothesis - states what happens when the treatment works.  While the null hypothesis states what happens when the treatment does not work, when there is no observable treatment effect.  It is considered good form to write both out, at the start of a research project.
+
+`r tufte::margin_note("Question X -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
 
 In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis, on the other hand, is $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
 
-`r tufte::margin_note("Question X -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
+With our two hypotheses defined, we can now recruit study participants, drawing a *sample* from the *population* of potential candidates.  If done properly, our group of study participants will be *representative* of the population from which it was drawn, including age, race, income, gender, and so on.
+
+With potential study participants identified, our next step is to randomly assign each individual to either the control or treatment group and select an appropriate study duration.  Do we want to compare the two groups after one quarter, 6 months, or a full year?
+
+In this example, we also need to score the oral health of each participant, using appropriate bleeding and gingival indexes.  A baseline is 
 
 
 ```{r fig.width = 5, fig.height = 5}
