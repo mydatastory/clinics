@@ -14,6 +14,7 @@ output:
 
 `r tufte::margin_note("Question 1 -- What is the difference between an anecdote and scientific knowledge?  Or is there a difference?")`
 
+## Introduction
 Crest recently began advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
 
 Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab to independently verify this claim.  The problem, as Ginger puts it, is that a lot of dental product research is funded by big corporations with vested interests in achieving positive outcomes.
@@ -26,20 +27,42 @@ So if *Gum Detoxify* works, as Crest claims, we should observe less gingivitis a
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
 
-The most basic research design is when an investigator compares two groups.  In the statistical literature, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use *Gum Detoxify* while our control group consists of individuals who use a competing product that does not have stannous fluoride in it.  Or do not brush at all.
+## Research Design
+The most basic research design is when an investigator compares two groups.  In statistics, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use *Gum Detoxify* while our control group consists of individuals who use a competing product that does not have stannous fluoride in it.  Or do not brush at all.
 
-The outline of a possible research design is now coming into view.  The first step is to state our *null* and *research* hypotheses.  The research hypothesis - also known as the alternative hypothesis - states what happens when the treatment works.  While the null hypothesis states what happens when the treatment does not work, when there is no observable treatment effect.  It is considered good form to write both out, at the start of a research project.
+The outline of a possible research design is now coming into view.  The first step is to state our *null* and *research* hypotheses.  The research hypothesis - also known as the alternative hypothesis - states what happens when the treatment works.  The null hypothesis, on the other hand, states what happens when there is no observable treatment effect, when the treatment does not work.  It is considered good form to write both out, at the start of a research project.
 
-`r tufte::margin_note("Question X -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
+`r tufte::margin_note("Question 3 -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
 
-In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis, on the other hand, is $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
+In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis is usually written as $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
 
-With our two hypotheses defined, we can now recruit study participants, drawing a *sample* from the *population* of potential candidates.  If done properly, our group of study participants will be *representative* of the population from which it was drawn, including age, race, income, gender, and so on.
+With our two hypotheses defined, we can now recruit study participants, drawing a *sample* from the *population* of potential candidates.  If done well, our study participants will *represent* the population from which they were drawn -- by age, race, income, gender, and so forth.
 
-With potential study participants identified, our next step is to randomly assign each individual to either the control or treatment group and select an appropriate study duration.  Do we want to compare the two groups after one quarter, 6 months, or a full year?
+Our next step is to randomly assign each study participant to either the control or treatment group, a process that can be done easily in R.  We also need to select an appropriate study duration.  Do we want to compare the two groups for 6 months, a year, or some other length of time?  
 
-In this example, we also need to score the oral health of each participant, using appropriate bleeding and gingival indexes.  A baseline is 
+And finally, we need to select an appropriate instrument to measure the oral health of our participants.  In this case, two indices are probably needed, one to measure overall gingival health and a second to score any observed bleeding. 
 
+Most research studies take a *baseline* measurement of the variables of interest, at project start.  The following table summarizes the results for our control and treatment groups.
+
+Gingival index
+
+Control (*N* = 67) | Sn$F_{2}$/SHMP (*N* = 65)
+-------------------| --------------------------
+mean +/- SD        | mean +/- SD
+2.00 +/- 0.13      | 2.00 +/- 0.13
+
+Gingival bleeding index
+
+Control (*N* = 67) | Sn$F_{2}$/SHMP (*N* = 65)
+-------------------| --------------------------
+mean +/- SD        | mean +/- SD
+10.90 +/- 3.92     | 10.86 +/- 4.93
+
+Let's take a 
+
+`r tufte::margin_note("Question 4 -- What does *N*, mean, and SD stand for in these two tables?")`
+
+A *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
 
 ```{r fig.width = 5, fig.height = 5}
 
