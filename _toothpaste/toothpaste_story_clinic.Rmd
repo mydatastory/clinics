@@ -12,10 +12,10 @@ output:
 
 #\textcolor{blue}{Statistics and the Logic of Discovery}  
 
-`r tufte::margin_note("Question 1 -- What is the difference between an anecdote and scientific knowledge?  Or is there a difference?")`
-
 ## Introduction
 Crest recently began advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
+
+`r tufte::margin_note("Question 1 -- What is the difference between an advertising claim and scientific knowledge?  Or is there a difference?")`
 
 Recently, Ginger Vitas, a vice-president at *Consumer Reports*, asked your lab to independently verify this claim.  The problem, as Ginger puts it, is that a lot of dental product research is funded by big corporations with vested interests in achieving positive outcomes.
 
@@ -27,7 +27,7 @@ So if *Gum Detoxify* works, as Crest claims, we should observe less gingivitis a
 
 `r tufte::margin_note("Question 2 -- How would you design an experiment to justify or invalidate Crest's claims?")`
 
-## Research Design
+## Study Design
 The most basic research design is when an investigator compares two groups.  In statistics, these are called the the *control* and *treatment* groups.  As its name suggests, our treatment group consists of individuals who use *Gum Detoxify* while our control group consists of individuals who use a competing product that does not have stannous fluoride in it.  Or do not brush at all.
 
 The outline of a possible research design is now coming into view.  The first step is to state our *null* and *research* hypotheses.  The research hypothesis - also known as the alternative hypothesis - states what happens when the treatment works.  The null hypothesis, on the other hand, states what happens when there is no observable treatment effect, when the treatment does not work.  It is considered good form to write both out, at the start of a research project.
@@ -42,6 +42,7 @@ Our next step is to randomly assign each study participant to either the control
 
 And finally, we need to select an appropriate instrument to measure the oral health of our participants.  In this case, two indices are probably needed, one to measure overall gingival health and a second to score any observed bleeding. 
 
+## Conducting the Research
 Most research studies take a *baseline* measurement of the variables of interest, at project start.  The following table summarizes the results for our control and treatment groups.
 
 Gingival index
@@ -58,9 +59,15 @@ Control (*N* = 67) | Sn$F_{2}$/SHMP (*N* = 65)
 mean +/- SD        | mean +/- SD
 10.90 +/- 3.92     | 10.86 +/- 4.93
 
-Let's take a 
+`r tufte::margin_note("Question 4 -- What does N , mean +/-, and SD stand for in these two tables?")`
 
-`r tufte::margin_note("Question 4 -- What does *N*, mean, and SD stand for in these two tables?")`
+Let's briefly review some basic statistics vocabulary.  *N* is the number of observations.  From the two tables, we see that the sample size for the two groups differs by 2.  SD stands for Standard Deviation, a measure of the spread of the data about the mean.  (We don't have time in this session to delve into the details.)  And finally, mean is a synonym for the average of the scores and is calculated by summing the scores and then dividing by *N*.  The mathematical notation looks like this: $M = \frac{\sum X}{N}$
+
+`r tufte::margin_note("Question 5 -- If the mean or standard deviation had differed significantly between these two samples, what would that have told us?")`
+
+With baseline scores obtained, we can now begin the study, being diligent to monitor participant adherence to the protocol.  That is, we want to ensure that participants in the treatment group only use Sn$F_{2}$ infused toothpaste while those in the control group brush with a product that does not contain this chemical.  Then we remeasure after x months.
+
+## The Two Sample T-Test
 
 A *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
 
