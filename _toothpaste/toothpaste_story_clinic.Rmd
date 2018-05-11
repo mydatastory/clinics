@@ -65,9 +65,34 @@ Let's briefly review some basic statistics vocabulary.  *N* is the number of obs
 
 `r tufte::margin_note("Question 5 -- If the mean or standard deviation had differed significantly between these two samples, what would that have told us?")`
 
-With baseline scores obtained, we can now begin the study, being diligent to monitor participant adherence to the protocol.  That is, we want to ensure that participants in the treatment group only use Sn$F_{2}$ infused toothpaste while those in the control group brush with a product that does not contain this chemical.  Then we remeasure after x months.
+With baseline scores obtained, we can now begin the study, being diligent to monitor participant adherence to the protocol.  That is, we want to ensure that participants in the treatment group only use Sn$F_{2}$ infused toothpaste while those in the control group brush with a product that does not contain this chemical.  
 
 ## The Two Sample T-Test
+After 3 months and then again after 6, we'll score participants in the two groups, using our gingival and bleeding indices.  Earlier, $H_{a}$ was stated mathematically as: $\mu_t < \mu$.  In English, our alternate hypothesis states that the population of people who use a stannous fluoride toothpaste will obtain lower gingival/bleeding scores than the population of people using products that lack this ingredient.
+
+The gingival/bleeding scores obtained at 3 months and then at 6 months are listed in the tables below.
+
+Gingival index
+
+Control (*N* = 67)  | Sn$F_{2}$/SHMP (*N* = 65)
+------------------- | --------------------------
+mean +/- SD         | mean +/- SD
+3 mo 1.97 +/- 0.15  | 1.84 +/- 0.17
+6 mo 1.90 +/- 0.21  | 1.58 +/- 0.31
+
+Gingival bleeding index
+
+Control (*N* = 67)  | Sn$F_{2}$/SHMP (*N* = 65)
+------------------- | --------------------------
+mean +/- SD         | mean +/- SD
+3 mo 8.51 +/- 4.77  | 5.62 +/- 4.23
+6 mo 8.53 +/- 4.48  | 5.08 +/- 4.89
+
+`r tufte::margin_note("Question 6 -- Do these numbers confirm or disconfirm our alternate hypothesis?")`
+
+A cursory glance at these numbers indicates that participants in our treatment group have lower mean values.  It appears that our research hypothesis is true -- regular usage of *Gum Detoxify* reduces gum inflammation and bleeding.  But can we be sure?  It is at this point that the null monster raises his ugly head and says that these results are the result of pure chance.  It's nothing more than sampling error, he argues.  Run the experiment again and there will be no difference.
+
+In order to respond to the null monster, we need a statistical test that allows us to ascertain if the observed distance between these two means is large enough to be considered *significant*.  The t-test is probably our best option in this case.  So let's visualize these numbers, using our t-test simulator.
 
 A *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
 
