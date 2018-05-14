@@ -90,17 +90,18 @@ mean +/- SD         | mean +/- SD
 
 `r tufte::margin_note("Question 6 -- Do these numbers confirm or disconfirm our alternate hypothesis?")`
 
-A cursory glance at these numbers indicates that participants in our treatment group have lower mean values.  It appears that our research hypothesis is true -- regular usage of *Gum Detoxify* reduces gum inflammation and bleeding.  But can we be sure?  It is at this point that the null monster raises his ugly head and says that these results are the result of pure chance.  It's nothing more than sampling error, he argues.  Run the experiment again and there will be no difference.
+A cursory glance at these numbers indicates that participants in our treatment group have lower mean values.  Our research hypothesis appears to be true -- regular usage of *Gum Detoxify* reduces gum inflammation and bleeding.  But can we be sure?  How do we definitively rule out the null hypothesis, the idea that our treatment numbers are the product of pure chance (sampling error)?  If we ran the experiment again and observed little, if any, difference between our control and treatment groups, that would tend to support the null hypothesis.  However, experiments are expensive and we'd like to come to a conclusion with the data collected up to this point.
 
-In order to respond to the null monster, we need a statistical test that allows us to ascertain if the observed distance between these two means is large enough to be considered *significant*.  The t-test is probably our best option in this case.  So let's visualize these numbers, using our t-test simulator.
+What we need is a statistical test that allows us to determine if the observed distance between the control and treatment means is large enough to be considered *significant*.  Or put another way, is it highly unlikely (improbable) that the observed difference is due to chance?  Remember: our goal here is to rule out chance as a possible explanation for this difference.
+
+In this case, the two sample t-test is an excellent choice.  William Gossett created the "student's t-test" in the early 1900's.  As an employee of the Guiness Brewing Company, Gossett was not permitted to publish anything under his own name so he chose "student" as a pseudonym.
+
+## The Two Sample T-Test Simulation
+The best way to understand the two sample t-test is to see it in action.  So let's run the numbers through our t-test simulator.
 
 A *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
 
-```{r fig.width = 5, fig.height = 5}
 
-# Place code here!
-
-```
 
 https://crest.com/en-us/products/crest-gum-detoxify-deep-clean-toothpaste
 
