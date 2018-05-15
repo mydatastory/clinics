@@ -34,13 +34,13 @@ The outline of a possible research design is now coming into view.  The first st
 
 `r tufte::margin_note("Question 3 -- What is the null and alternative hypotheses for the stannous fluoride research project?  Write one sentence for each one.")`
 
-In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis is usually written as $H_{a}$.  Remember: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
+In the research literature, the symbol for the null hypothesis is $H_{0}$, spoken as H naught or H zero.  The alternative hypothesis is usually written as $H_{a}$.  
 
 With our two hypotheses defined, we can now recruit study participants, drawing a *sample* from the *population* of potential candidates.  If done well, our study participants will *represent* the population from which they were drawn -- by age, race, income, gender, and so forth.
 
 Our next step is to randomly assign each study participant to either the control or treatment group, a process that can be done easily in R.  We also need to select an appropriate study duration.  Do we want to compare the two groups for 6 months, a year, or some other length of time?  
 
-And finally, we need to select an appropriate instrument to measure the oral health of our participants.  In this case, two indices are probably needed, one to measure overall gingival health and a second to score any observed bleeding. 
+And finally, we need to select an appropriate instrument to measure the oral health of our participants.  In this case, two indices are probably needed, one to measure gum health and a second to score bleeding. 
 
 ## Conducting the Research
 Most research studies take a *baseline* measurement of the variables of interest, at project start.  The following table summarizes the results for our control and treatment groups.
@@ -96,12 +96,23 @@ What we need is a statistical test that allows us to determine if the observed d
 
 In this case, the two sample t-test is an excellent choice.  William Gossett created the "student's t-test" in the early 1900's.  As an employee of the Guiness Brewing Company, Gossett was not permitted to publish anything under his own name so he chose "student" as a pseudonym.
 
-## The Two Sample T-Test Simulation
+## The T-Test Simulation
 The best way to understand the two sample t-test is to see it in action.  So let's run the numbers through our t-test simulator.
 
-A *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
+After entering numbers for both our control and treatment groups, the simulator first graphs the distributions of the two groups, runs the two sample t-test, and then graphs the t-distribution with both the p and t values provided.
 
+As its name suggests, a t-test calculates a *t* value.  This number is "a measure of the size of the difference between two groups relative to the variation in the sample data.  Put another way, T is simply the calculated difference represented in units of standard error.  The greater the magnitude of *t*, either positive or negative, the greater the evidence against the null hypothesis that there is no significant difference.  Conversely, the closer T is to 0, the more likely there isn't a significant difference." 
 
+For every *t* value, the probability (p-value) of it occuring can be calculated.  For example, the probability of obtaining a t-value of 2.8 is 0.006.  Thus a *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
+
+`r tufte::margin_note("Question 7 -- Given the results from our simulator, what can we conclude about the claims for Gum Detoxify?  Does the evidence support or disconfirm the claim that stannous-fluoride infused products like Gum Detoxify reduces gum inflammation and bleeding?)`
+
+## Conclusion
+With all of the evidence in-hand, it's time to make a decision.  Do we reject or fail to reject the null hypothesis?  Take note: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
+
+`r tufte::margin_note("Question 8 -- Why do we never accept the null hypothesis?)`
+
+http://blog.minitab.com/blog/statistics-and-quality-data-analysis/what-are-t-values-and-p-values-in-statistics
 
 https://crest.com/en-us/products/crest-gum-detoxify-deep-clean-toothpaste
 
