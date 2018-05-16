@@ -105,14 +105,20 @@ As its name suggests, a t-test calculates a *t* value.  This number is "a measur
 
 For every *t* value, the probability (p-value) of it occuring can be calculated.  For example, the probability of obtaining a t-value of 2.8 is 0.006.  Thus a *p* value is the probability of getting an obtained value or a more extreme value assuming the null hypothesis is true.  It is used by researchers to determine whether or not they should reject a null hypothesis (Carlson, p. 162).
 
-`r tufte::margin_note("Question 7 -- Given the results from our simulator, what can we conclude about the claims for Gum Detoxify?  Does the evidence support or disconfirm the claim that stannous-fluoride infused products like Gum Detoxify reduces gum inflammation and bleeding?)`
+## Decision Time
+With all of the evidence in-hand, it's time to make a decision.  Do we reject or fail to reject the null hypothesis?  The null hypothesis, in this case, is the claim that stannous-fluoride toothpaste is no better than regular toothpaste at reducing gum inflammation and bleeding.  In other words, the results obtained from our study are due to chance and sampling error.
 
-## Conclusion
-With all of the evidence in-hand, it's time to make a decision.  Do we reject or fail to reject the null hypothesis?  Take note: one never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.
+`r tufte::margin_note("Question 7 -- Why do we never accept the null hypothesis?)`
 
-`r tufte::margin_note("Question 8 -- Why do we never accept the null hypothesis?)`
+At this point, an important point needs to be kept in mind.  One never accepts the null hypothesis.  Rather, one *rejects* or *fails to reject* it.  Furthermore, rejecting a null hypothesis does not conclusively prove that the alternate hypothesis is true.  There is always the possibility of mistakenly rejecting a null hypothesis and claiming a treatment effect when none actually occurred.  
+
+The *alpha* level quantifies the level of risk we're willing to accept, of rejecting the null hypothesis when it is true.  This is known as a *Type I* error.  It does so by setting the cutoff values of the rejection region(s).  Thus an *alpha* level of 0.05 indicates that we're willing to accept the risk of committing a *Type I* error in 5% of cases.  To reduce that risk, we would simply reduce the alpha level to possibly 1% or lower.  But doing so comes at a cost - we must increase the number of study participants which, in turn, increases the cost of the research project. 
+
+`r tufte::margin_note("Question 8 -- Given these results, what can we conclude about the claims Crest has made for Gum Detoxify?  Does the evidence support or disconfirm the claim that stannous-fluoride infused products like Gum Detoxify reduce gum inflammation and bleeding?)`
+
+
+                                    Reference Links
+https://crest.com/en-us/products/crest-gum-detoxify-deep-clean-toothpaste
 
 http://blog.minitab.com/blog/statistics-and-quality-data-analysis/what-are-t-values-and-p-values-in-statistics
-
-https://crest.com/en-us/products/crest-gum-detoxify-deep-clean-toothpaste
 
