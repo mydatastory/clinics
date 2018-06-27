@@ -1,5 +1,5 @@
 
-This folder contains documents for the flu story clinic.
+This folder contains code and educational resources for the flu story clinic.
 
 Links
 https://www.cdc.gov/flu/pandemic-resources/basics/past-pandemics.html
