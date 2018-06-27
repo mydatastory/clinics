@@ -1,2 +1,2 @@
 
-This folder contains items related to the Crest Detoxify data story clinic.
+This folder contains code and educational resources for the Crest Detoxify data story clinic.
