@@ -1,6 +1,2 @@
-Toothpaste Story Clinic
 
-signal        noise
-cause         chance
-treatment     control 
-Ha            H0
+This folder contains items related to the Crest Detoxify data story clinic.
