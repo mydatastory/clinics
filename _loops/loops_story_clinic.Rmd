@@ -1,112 +1,385 @@
----
-title: "R Loop Constructs"
+--- 
+title: |
+       | Activity Worksheet
+       | *Loops*
 author: "Dan Maxwell"
-date: "May 16, 2017"
-output: pdf_document 
+date: "June 19, 2017"
+output:
+  pdf_document: default
+  html_document: default
 header-includes: \usepackage{color}
 ---
-  
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
 
-## Loops in R 
-There are three kinds of loop in R.  The `for` loop is probably the most popular.  Slide 1 provides a quick overview of this loop, its syntax and operation. \newline \newline ![](for_loop.png) 
-
-Later in this clinic, we'll examine some code that demonstrates how a for loop works.  But before we do that, let's take a quick look at R's other two loops.  Slide 2 illustrates the syntax and logical operation of the `while` loop. \newline \newline ![](while_loop.png) \newline
-
-And finally, Slide 3 presents the logical operation and basic syntax of the `repeat` loop. \newline \newline ![](repeat_loop.png)
-
-All slides adapted from *More Loops, Control Structures, and Bootstrapping*, by K. Rice & T. Thornton.  Retrieved from http://faculty.washington.edu/kenrice/rintro/.
-
-\newpage
-## Sample Code
-Now that a concise outline of R's three loop statements has been presented, we need to look at some actual code, to see how R loops work in the real world.  To do that, we are going to load the arsenic data file and then step through it.  Let's take a look at what we've got. \newline
-
-```{r}
-# Read the data file and then view its contents.
-
-arsenic <- read.csv (file = "c:/informatics/arsenic.txt", header = TRUE, sep = "\t", as.is = TRUE)
-head(arsenic)   
+# Silently load in the data so the rest of the lesson works
+gapminder <- read.csv("gapminder.csv", header=TRUE, stringsAsFactors = FALSE)
 
 ```
 
+## Groundhog Day
+In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
+weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the
+town's famous groundhog who can predict either an early spring or extended winter
+depending on whether he sees his shadow or not.  While there, Phil Connors gets caught
+in a time warp, reliving the same day over and over again until he learns to value 
+each moment and the people he works with.
 
-The documentation that came with this dataset indicates that it contains informations from an arsenic study conducted in the state of New Hampshire. Each row provides measurements on one study participant.  The age and sex of each individual is given as well as the arsenic concentration found in their water *(arswater)* and nails *(arsnails)*.  The dataset also contains two categorical variables: *usedrink* and *usecook*.  As such, these variables represent the percentage of well water each study participant used for drinking and cooking.  Each category and its corresponding percentage is listed in the table below. \newline
+https://www.youtube.com/watch?v=2vmmTnDJnH0
 
- 
-Category | Well Water Pct 
----------|----------------
-A        | < 1/4           
-B        | ~ 1/4           
-C        | ~ 1/2           
-D        | ~ 3/4           
-E        | > 3/4           
+https://en.wikipedia.org/wiki/Punxsutawney_Phil
+
+In a programming language, the loop construct allows you to repeat a specific action over and over again.  If, for example, we wrote a loop to 
+
+```{r fig.width = 5, fig.height = 10}
+
+df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
+
+opar <- par(no.readonly = TRUE)
+par(mfrow = c(3, 1))
+
+df_gap <- df_tmp[df_tmp$country == 'United States',]
+
+plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (United States)", 
+     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950,2010))
 
 
-Unfortunately, the dataset only provides the categories and not the well water percentages associated with each category.  The practical consequence of this is that any reports we create with this dataset will only show the categories (A, B, C, D, E) and the viewer has to mentally translate those values into the corresponding percentages. Thus what we need to do is add these percentages directly to the dataframe, thereby making them available in our reports.
+df_gap <- df_tmp[df_tmp$country == 'France',]
 
-To do this, we'll need to loop through the rows in the dataframe, assigning a value to a new variable, based on the category (A, B, C, D, and E) in either usedrink or usecook.  The code below shows how to do this for the *usedrink* variable and the same logic would apply for *usecook*.  An example for each looping mechanism is provided. \newline
+plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (France)", 
+     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
+
+
+df_gap <- df_tmp[df_tmp$country == 'Brazil',]
+
+plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (Brazil)", 
+     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
+
+par(opar)
+
+```
+
+> ## Question
+>
+> Question text goes here...
+
+> ## Challenge 
+>
+> Challenge text goes here...
+>
+> > ## Solution 
+> > Solution text goes here...
+> >
+> > ```{r sample_code, eval=FALSE}
+> > rows2002_number <- nrow(gapminder[(gapminder$year == 2002),])
+> > ```
+> >
+
+## Repeating operations
+
+If you want to iterate over a set of values, when the order of iteration is important, and perform the same operation on each, a `for()` loop will do the job.  This is the most flexible of looping operations, but therefore also the hardest to use correctly. Avoid using `for()` loops unless the order of iteration is important: i.e. the calculation at each iteration depends on the results of previous iterations.
+
+The basic structure of a `for()` loop is:
+
+```{r, eval=FALSE}
+for(iterator in set of values){
+  do a thing
+}
+```
+
+For example:
 
 ```{r}
-
-# R supports for, while, and repeat loops.  The for loop simply executes 
-# a block of code a set number of times, initializing an idx and then incrementing 
-# it each iteration of the loop.  This is probably the most popular loop in R.
-
-for(idx in 1:nrow(arsenic)){
-  arsenic$usedrinkpct[idx] <- "NA"       # Assign a default to the variable.
-  
-  if (arsenic$usedrink[idx] == "A") {arsenic$usedrinkpct[idx] <- "< 1/4"} 
-  if (arsenic$usedrink[idx] == "B") {arsenic$usedrinkpct[idx] <- "~ 1/4"}
-  if (arsenic$usedrink[idx] == "C") {arsenic$usedrinkpct[idx] <- "~ 1/2"}
-  if (arsenic$usedrink[idx] == "D") {arsenic$usedrinkpct[idx] <- "~ 3/4"}
-  if (arsenic$usedrink[idx] == "E") {arsenic$usedrinkpct[idx] <- "> 3/4"}
+for(i in 1:10){
+  print(i)
 }
+```
 
-# The while loop checks that a logical condition is true before entering the
-# loop.  In the example below, we would not even enter the while loop if the 
-# idx variable was greater than the number of rows (nrow) in the arsenic data 
-# frame. The while condition is checked at each iteration of the loop.
+The `1:10` bit creates a vector on the fly; you can iterate
+over any other vector as well.
 
-idx <- 1
+We can use a `for()` loop nested within another `for()` loop to iterate over two things at
+once.
 
-while (idx <= nrow(arsenic)) {
-  arsenic$usedrinkpct[idx] <- "NA"       # Assign a default to the variable.
-  
-  if (arsenic$usedrink[idx] == "A") {arsenic$usedrinkpct[idx] <- "< 1/4"} 
-  if (arsenic$usedrink[idx] == "B") {arsenic$usedrinkpct[idx] <- "~ 1/4"}
-  # ... the other if statements.
-  
-  idx <- idx + 1
-}
-
-# The repeat loop, unlike the previous two examples, does not have a logical
-# check at the beginning of its execution.  That is, it immediate begins to
-# loop through and execute a block of code until a break statement is 
-# encountered.  Absent such a statement, the repeat loop continues forever, 
-# or until someone manually forces it to stop.  Thus one MUST provide a way
-# to break out of the loop at some point.
-
-idx <- 1
-
-repeat {
-  arsenic$usedrinkpct[idx] <- "NA"       # Assign a default to the variable.
-  
-  if (arsenic$usedrink[idx] == "A") {arsenic$usedrinkpct[idx] <- "< 1/4"} 
-  if (arsenic$usedrink[idx] == "B") {arsenic$usedrinkpct[idx] <- "~ 1/4"}
-  # ... the other if statements.
-                                          
-  if (idx >= nrow(arsenic)) {              # Break out of loop at last row.        
-    break
+```{r}
+for(i in 1:5){
+  for(j in c('a', 'b', 'c', 'd', 'e')){
+    print(paste(i,j))
   }
-
-  idx <- idx + 1
 }
+```
+
+Rather than printing the results, we could write the loop output to a new object.
+
+```{r}
+output_vector <- c()
+for(i in 1:5){
+  for(j in c('a', 'b', 'c', 'd', 'e')){
+    temp_output <- paste(i, j)
+    output_vector <- c(output_vector, temp_output)
+  }
+}
+output_vector
+```
+
+This approach can be useful, but 'growing your results' (building
+the result object incrementally) is computationally inefficient, so avoid
+it when you are iterating through a lot of values.
 
 
+> ## Tip: don't grow your results
+>
+> One of the biggest things that trips up novices and
+> experienced R users alike, is building a results object
+> (vector, list, matrix, data frame) as your for loop progresses.
+> Computers are very bad at handling this, so your calculations
+> can very quickly slow to a crawl. It's much better to define
+> an empty results object before hand of the appropriate dimensions.
+> So if you know the end result will be stored in a matrix like above,
+> create an empty matrix with 5 rows and 5 columns, then at each iteration
+> store the results in the appropriate location.
+
+A better way is to define your (empty) output object before filling in the values.
+For this example, it looks more involved, but is still more efficient.
+
+```{r}
+output_matrix <- matrix(nrow=5, ncol=5)
+j_vector <- c('a', 'b', 'c', 'd', 'e')
+for(i in 1:5){
+  for(j in 1:5){
+    temp_j_value <- j_vector[j]
+    temp_output <- paste(i, temp_j_value)
+    output_matrix[i, j] <- temp_output
+  }
+}
+output_vector2 <- as.vector(output_matrix)
+output_vector2
+```
+
+> ## Tip: While loops
+>
+>
+> Sometimes you will find yourself needing to repeat an operation until a certain
+> condition is met. You can do this with a `while()` loop.
+>
+> ```{r, eval=FALSE}
+> while(this condition is true){
+>   do a thing
+> }
+> ```
+>
+> As an example, here's a while loop
+> that generates random numbers from a uniform distribution (the `runif()` function)
+> between 0 and 1 until it gets one that's less than 0.1.
+>
+> ~~~
+> z <- 1
+> while(z > 0.1){
+>   z <- runif(1)
+>   print(z)
+> }
+> ~~~
+> {: .r}
+>
+> `while()` loops will not always be appropriate. You have to be particularly careful
+> that you don't end up in an infinite loop because your condition is never met.
+
+> ## Challenge 3
+>
+> Write a script that loops through the `gapminder` data by continent and prints out
+> whether the mean life expectancy is smaller or larger than 50
+> years.
+>
+> > ## Solution to Challenge 3
+> >
+> > **Step 1**:  We want to make sure we can extract all the unique values of the continent vector
+> > ```{r 07-chall-03-sol-a, eval=FALSE}
+> > gapminder <- read.csv("data/gapminder-FiveYearData.csv")
+> > unique(gapminder$continent)
+> > ```
+> >
+> > **Step 2**: We also need to loop over each of these continents and calculate the average life expectancy for each `subset` of data.
+> > We can do that as follows:
+> >
+> > 1. Loop over each of the unique values of 'continent'
+> > 2. For each value of continent, create a temporary variable storing the life exepectancy for that subset,
+> > 3. Return the calculated life expectancy to the user by printing the output:
+> >
+> > ```{r 07-chall-03-sol-b, eval=FALSE}
+> > for( iContinent in unique(gapminder$continent) ){
+> >    tmp <- mean(subset(gapminder, continent==iContinent)$lifeExp)
+> >    cat("Average Life Expectancy in", iContinent, "is", tmp, "\n")
+> >    rm(tmp)
+}
+> > ```
+> >
+> > **Step 3**: The exercise only wants the output printed if the average life expectancy is less than 50 or greater than 50. So we need to add an `if` condition before printing.
+> > So we need to add an `if` condition before printing, which evaluates whether the calculated average life expectancy is above or below a threshold, and print an output conditional on the result.
+> > We need to amend (3) from above:
+> >
+> > 3a. If the calculated life expectancy is less than some threshold (50 years), return the continent and a statement that life expectancy is less than threshold, otherwise return the continent and   a statement that life expectancy is greater than threshold,:
+> >
+> > ```{r 07-chall-03-sol-c, eval=FALSE}
+> > thresholdValue <- 50
+> >
+> > for( iContinent in unique(gapminder$continent) ){
+> >    tmp <- mean(subset(gapminder, continent==iContinent)$lifeExp)
+> >    
+> >    if(tmp < thresholdValue){
+> >        cat("Average Life Expectancy in", iContinent, "is less than", thresholdValue, "\n")
+> >    }
+> >    else{
+> >        cat("Average Life Expectancy in", iContinent, "is greater than", thresholdValue, "\n")
+> >         } # end if else condition
+> >    rm(tmp)
+> >    } # end for loop
+> >
+> > ```
+
+> ## Challenge 4
+>
+> Modify the script from Challenge 4 to loop over each
+> country. This time print out whether the life expectancy is
+> smaller than 50, between 50 and 70, or greater than 70.
+>
+> > ## Solution to Challenge 4
+> >  We modify our solution to Challenge 3 by now adding two thresholds, `lowerThreshold` and `upperThreshold` and extending our if-else statements:
+> >
+> > ```{r 07-chall-04-sol, eval=FALSE}
+> >  lowerThreshold <- 50
+> >  upperThreshold <- 70
+> >  
+> > for( iCountry in unique(gapminder$country) ){
+> >     tmp <- mean(subset(gapminder, country==iCountry)$lifeExp)
+> >     
+> >     if(tmp < lowerThreshold){
+> >         cat("Average Life Expectancy in", iCountry, "is less than", lowerThreshold, "\n")
+> >     }
+> >     else if(tmp > lowerThreshold && tmp < upperThreshold){
+> >         cat("Average Life Expectancy in", iCountry, "is between", lowerThreshold, "and", upperThreshold, "\n")
+> >     }
+> >     else{
+> >         cat("Average Life Expectancy in", iCountry, "is greater than", upperThreshold, "\n")
+> >     }
+> >     rm(tmp)
+> > }
+> >  ```
+
+> ## Challenge 5 - Advanced (Optional)
+>
+> Write a script that loops over each country in the `gapminder` dataset,
+> tests whether the country starts with a 'B', and graphs life expectancy
+> against time as a line graph if the mean life expectancy is under 50 years.
+>
+> > Solution for Challenge 5
+> >
+> > We will use the `grep` command that was introduced in the Unix Shell lesson to find countries that start with "B."
+> > Lets understand how to do this first.
+> > Following from the Unix shell section we may be tempted to try the following
+> > ```{r 07-chall-05-sol-a, eval=FALSE}
+> > grep("^B", unique(gapminder$country))
+> > ```
+> >
+> > But when we evaluate this command it returns the indices of the factor variable `country` that start with "B."
+> > To get the values, we must add the `value=TRUE` option to the `grep` command:
+> >
+> > ```{r 07-chall-05-sol-b, eval=FALSE}
+> > grep("^B", unique(gapminder$country), value=TRUE)
+> > ```
+> >
+> > We will now store these countries in a variable called candidateCountries, and then loop over each entry in the variable.
+> > Inside the loop, we evaluate the average life expectancy for each country, and if the average life expectancy is less than 50 we
+> > use base-plot to plot the evolution of average life expectancy:
+> >
+> > ```{r 07-chall-05-sol-c, eval=FALSE}
+> > candidateCountries <- grep("^B", unique(gapminder$country), value=TRUE)
+> >
+> > for( iCountry in candidateCountries){
+> >     tmp <- mean(subset(gapminder, country==iCountry)$lifeExp)
+> >     
+> >     if(tmp < thresholdValue){
+> >         cat("Average Life Expectancy in", iCountry, "is less than", thresholdValue, "plotting life expectancy graph... \n")
+> >         
+> >         with(subset(gapminder, country==iCountry),
+> >                 plot(year,lifeExp,
+> >                      type="o",
+> >                      main = paste("Life Expectancy in", iCountry, "over time"),
+> >                      ylab = "Life Expectancy",
+> >                      xlab = "Year"
+> >                    ) # end plot
+> >               ) # end with
+> >     } # end for loop
+> >     rm(tmp)
+> >  }
+> >  ```
+
+## Long & Wide Data Formats
+
+Often, you'll need to convert a dataframe from wide to long format.  And sometimes, you may need to go the other way.  To illustrate, the file home_ownership.txt contains "homeownership rates, in percentages, by state for the years 1985, 1996, and 2002. These values represent the proportion of homes owned by the occupant to the total number of occupied homes" (Ott & Longnecker, 2016, p. 129).  The file used in the code below contains just 11 rows of the complete dataset.  
+
+```{r wide_long_1}
+library(reshape2)  # Load the reshape2 library.
+
+# Read in the file -- values are separated by tabs -- do not convert to factors.
+
+home_own_wide <- read.delim("home_ownership.txt", sep = "\t", stringsAsFactors = FALSE)
+
+home_own_wide      # Take a look at the data in wide format.
+
+home_own_long <- melt(home_own_wide, id = "state")
+
+home_own_long      # Now take a look at the data in long format.
+
+```
+Data Source: *Statistical Methods and Data Analysis* (p. 129)
+
+As you can see, the year columns in the wide format are stacked when converted to the long format.  Many of R's statistical functions will return errors if the data is presented to them in wide format. \newline
+
+## Challenge 6  
+
+Now that you've had a chance to see how to convert a dataframe from wide to long format, let's practice doing this with the data in wide.csv.  Because the data in this file is in a wide format, you'll need to write code to convert it to a long format.  And then, as a test of your knowledge, convert the file back to wide.  
+
+```{r wide_long_2}
+
+# A small dataset to convert to long format and then back again.
+
+wide <- read.csv("wide.csv", stringsAsFactors = FALSE)
+wide
+
+long <- melt(wide, id.vars = c("person", "age", "gender"))
+long
+
+wide <- dcast(long, person ~ variable)
+wide
 
 ```
 
+## Challenge 7
 
+In this challenge, you'll convert a dataset from long to wide format.  The bdstat dataset is part of the MESS package.  It contains Danish births and deaths per month and year, from 1901 to 2013.  The data is in long format and in this challenge you'll need to convert it to wide.  First, load the MESS package and the dataset and then write code to convert it.  
+
+```{r}
+
+library(MESS)
+
+# This dataset contains Danish births and deaths by year and month.  It is
+# in long format, and we want to convert it to a wide format.
+
+data("bdstat")
+
+head(bdstat)
+
+wide <- dcast(bdstat, year ~ month, value.var = "births")
+
+head(wide)
+
+```
+Data Source: *The R Primer* (p. 89 - 91)
+
+
+### References
+Ekstrom, C. T. (2017). *The R primer (2nd ed.)*. Boca Raton: CRC Press.
+
+Ott, L., & Longnecker, M. (2016). *An introduction to statistical methods & data analysis* (7th ed.). Boston, MA: Cengage Learning.
 
