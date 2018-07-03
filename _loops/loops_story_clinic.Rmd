@@ -17,7 +17,6 @@ knitr::opts_chunk$set(echo = TRUE)
 gapminder <- read.csv("gapminder.csv", header=TRUE, stringsAsFactors = FALSE)
 
 ```
-
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
 weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the
@@ -30,7 +29,27 @@ https://www.youtube.com/watch?v=2vmmTnDJnH0
 
 https://en.wikipedia.org/wiki/Punxsutawney_Phil
 
-In a programming language, the loop construct allows you to repeat a specific action over and over again.  If, for example, we wrote a loop to 
+In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.
+
+```{r eval=FALSE}
+
+# Request user input -- the number of days to loop through.
+ghog_days <- readline(prompt = "Please enter the number of groundhog days: ")
+
+# Loop for the number of days specified in the ghog_days variable.
+for(idx in 1:ghog_days) {
+  msg <- paste("When will this day end? I've already lived it", idx, "times!")
+  print (msg)
+}
+
+```
+
+Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as is the case below. Here the code that creates the life expectancy plot is repeated three times, once for each country; the key difference between each being the subset of data that is graphed.
+
+Although this code works and correctly produces three graphs, it is not optimal.  In fact, it breaks one of the cardinal rules of good programming: 
+### Thou Shalt Not Repeat Thyself
+
+Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the repetition becomes unbearable.  And, in the case of code, it becomes unsustainable.
 
 ```{r fig.width = 5, fig.height = 10}
 
