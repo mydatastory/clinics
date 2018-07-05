@@ -25,11 +25,12 @@ depending on whether he sees his shadow or not.  While there, Phil Connors gets 
 in a time warp, reliving the same day over and over again until he learns to value 
 each moment and the people he works with.
 
-https://www.youtube.com/watch?v=2vmmTnDJnH0
+Here are a couple of *Groundhog Day* resources:
 
-https://en.wikipedia.org/wiki/Punxsutawney_Phil
+* [Movie Trailer](https://www.youtube.com/watch?v=2vmmTnDJnH0)
+* [Groundhog Day Wikipedia](https://en.wikipedia.org/wiki/Punxsutawney_Phil)
 
-In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.
+In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.  Try running this code in the console.
 
 ```{r eval=FALSE}
 
@@ -44,14 +45,17 @@ for(idx in 1:ghog_days) {
 
 ```
 
-Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as is the case below. Here the code that creates the life expectancy plot is repeated three times, once for each country; the key difference between each being the subset of data that is graphed.
+Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the life expectancy plot is repeated three times, once for each country; the key difference between each being the subset of data that is graphed.
 
 Although this code works and correctly produces three graphs, it is not optimal.  In fact, it breaks one of the cardinal rules of good programming: 
-### Thou Shalt Not Repeat Thyself
 
-Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the repetition becomes unbearable.  And, in the case of code, it becomes unsustainable.
+>> **Thou Shalt Not Repeat Thyself**
 
-```{r fig.width = 5, fig.height = 10}
+Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `plot()` code with minor modifications 25 times.  In that situation, you'd need to change each block of code for a total of 25 updates.
+
+\newpage
+
+```{r fig.width = 5, fig.height = 10, eval=FALSE}
 
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
@@ -75,9 +79,14 @@ df_gap <- df_tmp[df_tmp$country == 'Brazil',]
 plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (Brazil)", 
      xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
 
-par(opar)
+# Reset original graphing parameters
+par(opar) 
 
 ```
+
+So how do we put a stop to this madness?  Well, maybe we can use the idea behind our original groundhog loop to solve this problem.  Although the experience wasn't fun for Phil Connors, it might prove useful here.
+
+The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that the each subsets the data from the df_tmp dataframe differently.  The country name changes.  The title of each plot also changes (passed as an argument to main), depending on the country being graphed. It looks like country_name is the variable of interest here.
 
 > ## Question
 >
@@ -332,70 +341,6 @@ output_vector2
 > >     rm(tmp)
 > >  }
 > >  ```
-
-## Long & Wide Data Formats
-
-Often, you'll need to convert a dataframe from wide to long format.  And sometimes, you may need to go the other way.  To illustrate, the file home_ownership.txt contains "homeownership rates, in percentages, by state for the years 1985, 1996, and 2002. These values represent the proportion of homes owned by the occupant to the total number of occupied homes" (Ott & Longnecker, 2016, p. 129).  The file used in the code below contains just 11 rows of the complete dataset.  
-
-```{r wide_long_1}
-library(reshape2)  # Load the reshape2 library.
-
-# Read in the file -- values are separated by tabs -- do not convert to factors.
-
-home_own_wide <- read.delim("home_ownership.txt", sep = "\t", stringsAsFactors = FALSE)
-
-home_own_wide      # Take a look at the data in wide format.
-
-home_own_long <- melt(home_own_wide, id = "state")
-
-home_own_long      # Now take a look at the data in long format.
-
-```
-Data Source: *Statistical Methods and Data Analysis* (p. 129)
-
-As you can see, the year columns in the wide format are stacked when converted to the long format.  Many of R's statistical functions will return errors if the data is presented to them in wide format. \newline
-
-## Challenge 6  
-
-Now that you've had a chance to see how to convert a dataframe from wide to long format, let's practice doing this with the data in wide.csv.  Because the data in this file is in a wide format, you'll need to write code to convert it to a long format.  And then, as a test of your knowledge, convert the file back to wide.  
-
-```{r wide_long_2}
-
-# A small dataset to convert to long format and then back again.
-
-wide <- read.csv("wide.csv", stringsAsFactors = FALSE)
-wide
-
-long <- melt(wide, id.vars = c("person", "age", "gender"))
-long
-
-wide <- dcast(long, person ~ variable)
-wide
-
-```
-
-## Challenge 7
-
-In this challenge, you'll convert a dataset from long to wide format.  The bdstat dataset is part of the MESS package.  It contains Danish births and deaths per month and year, from 1901 to 2013.  The data is in long format and in this challenge you'll need to convert it to wide.  First, load the MESS package and the dataset and then write code to convert it.  
-
-```{r}
-
-library(MESS)
-
-# This dataset contains Danish births and deaths by year and month.  It is
-# in long format, and we want to convert it to a wide format.
-
-data("bdstat")
-
-head(bdstat)
-
-wide <- dcast(bdstat, year ~ month, value.var = "births")
-
-head(wide)
-
-```
-Data Source: *The R Primer* (p. 89 - 91)
-
 
 ### References
 Ekstrom, C. T. (2017). *The R primer (2nd ed.)*. Boca Raton: CRC Press.
