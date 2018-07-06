@@ -34,10 +34,10 @@ In a programming language, loops allow you to repeat a specific action over and 
 
 ```{r eval=FALSE}
 
-# Request user input -- the number of days to loop through.
+# Request user input;  i.e., the number of days to loop through.
 ghog_days <- readline(prompt = "Please enter the number of groundhog days: ")
 
-# Loop for the number of days specified in the ghog_days variable.
+# Loop for the number of days in the ghog_days variable.
 for(idx in 1:ghog_days) {
   msg <- paste("When will this day end? I've already lived it", idx, "times!")
   print (msg)
@@ -51,7 +51,7 @@ Although this code works and correctly produces three graphs, it is not optimal.
 
 >> **Thou Shalt Not Repeat Thyself**
 
-Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `plot()` code with minor modifications 25 times.  In that situation, you'd need to change each block of code for a total of 25 updates.
+Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `plot()` code with minor modifications 25 times and then wanted to change the color of the plot line (The `col = blue` argument).  We'd have to change each block of code for a total of 25 updates. 
 
 \newpage
 
@@ -59,34 +59,72 @@ Rewriting the same code with minor modifications is similar to Phil Connor's exp
 
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
-opar <- par(no.readonly = TRUE)
-par(mfrow = c(3, 1))
+opar <- par(no.readonly = TRUE)  # (1)
+par(mfrow = c(3, 1))             # (2)
 
+# Create a data subset for each country and then plot...
 df_gap <- df_tmp[df_tmp$country == 'United States',]
 
 plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (United States)", 
      xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950,2010))
-
 
 df_gap <- df_tmp[df_tmp$country == 'France',]
 
 plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (France)", 
      xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
 
-
 df_gap <- df_tmp[df_tmp$country == 'Brazil',]
 
 plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (Brazil)", 
      xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
 
-# Reset original graphing parameters
 par(opar) 
 
 ```
 
 So how do we put a stop to this madness?  Well, maybe we can use the idea behind our original groundhog loop to solve this problem.  Although the experience wasn't fun for Phil Connors, it might prove useful here.
 
-The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that the each subsets the data from the df_tmp dataframe differently.  The country name changes.  The title of each plot also changes (passed as an argument to main), depending on the country being graphed. It looks like country_name is the variable of interest here.
+The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that the each subsets the data from the `df_tmp` dataframe differently.  The country name changes.  The title of each plot also changes (passed as an argument to `main`), depending on the country being graphed. It looks like country_name is the key variable here, the one that assumes a different value in each subsection of code.
+
+Like the Pac-Man video game, loops "eat" data.  Thus we need to create a vector which contains the names of the countries we wish to graph.  Note: this vector can hold any number of countries, and each entry can be referenced via index, as demonstrated in the code below. 
+
+```{r}
+
+countries <- c('United States','France','Brazil')
+
+countries[2]   # Reference 'France' which is the 2nd element in the vector.
+
+```
+
+The ability to reference each country by index means that we can use this vector (data structure) to drive and "feed" our loop.  In fact, the basic idea behind *data-driven* development is that our software programs react to changes in a dataset.
+
+In the code below, we loop through the countries vector, create a subset of data for each country, generate a custom title for each graph and assign it to the *title* variable, and then plot the graph.
+
+\newpage
+
+```{r fig.width = 5, fig.height = 10}
+
+df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
+
+opar <- par(no.readonly = TRUE)
+
+max_rows <- NROW(countries)      # (1)
+par(mfrow = c(max_rows, 1))      # (2)
+
+# Loop through the vector and create a plot for each country.
+for(idx in 1:max_rows) {
+  df_gap <- df_tmp[df_tmp$country == countries[idx],]
+  title  <- paste("Life Expectancy - ", countries[idx]) 
+  
+  plot(df_gap$year, df_gap$lifeExp, main = title, xlab = "Year", ylab = "Years", 
+       col = "blue", type = "l", xlim = c(1950,2010))
+}
+
+par(opar)                        # Reset to original graph parameters. 
+
+```
+
+
 
 > ## Question
 >
