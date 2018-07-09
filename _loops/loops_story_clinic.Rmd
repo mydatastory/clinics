@@ -86,7 +86,9 @@ So how do we put a stop to this madness?  Well, maybe we can use the idea behind
 
 The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that the each subsets the data from the `df_tmp` dataframe differently.  The country name changes.  The title of each plot also changes (passed as an argument to `main`), depending on the country being graphed. It looks like country_name is the key variable here, the one that assumes a different value in each subsection of code.
 
-Like the Pac-Man video game, loops "eat" data.  Thus we need to create a vector which contains the names of the countries we wish to graph.  Note: this vector can hold any number of countries, and each entry can be referenced via index, as demonstrated in the code below. 
+The second step is to create a vector which contains the names of the countries we wish to graph.  A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
+
+What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the size of your codebase.  That was not the case with the "cut and paste" method above.
 
 ```{r}
 
@@ -96,11 +98,11 @@ countries[2]   # Reference 'France' which is the 2nd element in the vector.
 
 ```
 
-The ability to reference each country by index means that we can use this vector (data structure) to drive and "feed" our loop.  In fact, the basic idea behind *data-driven* development is that our software programs react to changes in a dataset.
+The ability to reference each country by index means that we can use this vector (data structure) to drive and "feed" our loop.  In fact, the basic idea behind *data-driven design patterns* is that our software programs react to changes in a dataset.
 
-In the code below, we loop through the countries vector, create a subset of data for each country, generate a custom title for each graph and assign it to the *title* variable, and then plot the graph.
+In the code below, we loop through the countries vector, create a subset of data for each country, generate a custom title for each graph and assign it to the *title* variable, and finally plot the graph.
 
-\newpage
+\newpage 
 
 ```{r fig.width = 5, fig.height = 10}
 
@@ -110,9 +112,8 @@ opar <- par(no.readonly = TRUE)
 
 max_rows <- NROW(countries)      # (1)
 par(mfrow = c(max_rows, 1))      # (2)
-
-# Loop through the vector and create a plot for each country.
-for(idx in 1:max_rows) {
+                                 # (3)
+for(idx in 1:max_rows) {         
   df_gap <- df_tmp[df_tmp$country == countries[idx],]
   title  <- paste("Life Expectancy - ", countries[idx]) 
   
@@ -120,7 +121,17 @@ for(idx in 1:max_rows) {
        col = "blue", type = "l", xlim = c(1950,2010))
 }
 
-par(opar)                        # Reset to original graph parameters. 
+par(opar)                        
+
+# ------------------------------------------------------------------------------
+# 1) Assign the total number of items in the countries vector to the max_rows 
+#    variable.  Remember to use NROW() for vectors and nrow() for dataframes.
+# 2) Set the graphic display to max_rows - one row for each graph - and 1 column.
+# 3) The for loop steps through the vector, one item at a time until the idx
+#    variable equals max_rows, set earlier as the total # of items in the vector.
+#    For each iteration, create a data subset and plot title.  Note how we
+#    reference each country name via index:  countries[idx].
+# ------------------------------------------------------------------------------
 
 ```
 
