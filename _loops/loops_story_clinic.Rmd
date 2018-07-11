@@ -13,9 +13,6 @@ header-includes: \usepackage{color}
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-# Silently load in the data so the rest of the lesson works
-gapminder <- read.csv("gapminder.csv", header=TRUE, stringsAsFactors = FALSE)
-
 ```
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
@@ -45,40 +42,34 @@ for(idx in 1:ghog_days) {
 
 ```
 
-Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the life expectancy plot is repeated three times, once for each country; the key difference between each being the subset of data that is graphed.
+Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the base life expectancy plot is created and then lines are added for each of the three countries - the key difference between each being the data being graphed and the line color.
 
 Although this code works and correctly produces three graphs, it is not optimal.  In fact, it breaks one of the cardinal rules of good programming: 
 
 >> **Thou Shalt Not Repeat Thyself**
 
-Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `plot()` code with minor modifications 25 times and then wanted to change the color of the plot line (The `col = blue` argument).  We'd have to change each block of code for a total of 25 updates. 
+Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `lines()` code with minor modifications 25 times and then wanted to change the color of the line (The `col =` argument).  We'd have to change 25 lines of code.
 
 \newpage
 
-```{r fig.width = 5, fig.height = 10, eval=FALSE}
+```{r fig.width = 5, fig.height = 10}
 
+# Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
-opar <- par(no.readonly = TRUE)  # (1)
-par(mfrow = c(3, 1))             # (2)
+# Create the base plot.
+plot(1, main = "Life Expectancy", xlab = "Year", ylab = "Years", col  = "darkblue", 
+     type = "l", xlim = c(1950, 2010), ylim = c(50, 85))
 
-# Create a data subset for each country and then plot...
-df_gap <- df_tmp[df_tmp$country == 'United States',]
-
-plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (United States)", 
-     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950,2010))
+# Subset the data for each country and then lay down its line on the base plot.
+df_gap <- df_tmp[df_tmp$country == 'United States',]        
+lines(df_gap$year, df_gap$lifeExp, col = 'darkblue')          # U.S. is blue line
 
 df_gap <- df_tmp[df_tmp$country == 'France',]
+lines(df_gap$year, df_gap$lifeExp, col = 'darkred')           # France is red line
 
-plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (France)", 
-     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
-
-df_gap <- df_tmp[df_tmp$country == 'Brazil',]
-
-plot(df_gap$year, df_gap$lifeExp, main = "Life Expectancy (Brazil)", 
-     xlab = "Year", ylab = "Years", col = "blue", type = "l", xlim = c(1950, 2010))
-
-par(opar) 
+df_gap <- df_tmp[df_tmp$country == 'Brazil',]              
+lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green line
 
 ```
 
@@ -90,11 +81,24 @@ The second step is to create a vector which contains the names of the countries 
 
 What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the size of your codebase.  That was not the case with the "cut and paste" method above.
 
-```{r}
+```{r fig.width = 5, fig.height = 10}
 
+# Create a vector of the three countries to be graphed.
 countries <- c('United States','France','Brazil')
 
-countries[2]   # Reference 'France' which is the 2nd element in the vector.
+# Create the base plot.
+plot(1, main = "Life Expectancy", xlab = "Year", ylab = "Years", col  = "darkblue", 
+     type = "l", xlim = c(1950, 2010), ylim = c(50, 85))
+
+# Subset the data for each country in the vector via index notation and then plot.
+df_gap <- df_tmp[df_tmp$country == countries[1],]           
+lines(df_gap$year, df_gap$lifeExp, col = 'darkblue')          # U.S. is blue line
+
+df_gap <- df_tmp[df_tmp$country == countries[2],]
+lines(df_gap$year, df_gap$lifeExp, col = 'darkred')           # France is red line
+
+df_gap <- df_tmp[df_tmp$country == countries[3],]
+lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green line
 
 ```
 
@@ -108,34 +112,39 @@ In the code below, we loop through the countries vector, create a subset of data
 
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
-opar <- par(no.readonly = TRUE)
+# Create a vector of the countries to be graphed.
+countries <- c('United States','France','Brazil')
 
-max_rows <- NROW(countries)      # (1)
-par(mfrow = c(max_rows, 1))      # (2)
-                                 # (3)
-for(idx in 1:max_rows) {         
+# Create a vector of the line colors for each country.
+line_colors <- c('darkblue','darkred','darkgreen')
+
+# Create the base plot.
+plot(1, main = "Life Expectancy", xlab = "Year", ylab = "Years", col  = "darkblue", 
+     type = "l", xlim = c(1950, 2010), ylim = c(50, 85))
+
+max_rows <- NROW(countries)      
+
+for(idx in 1:max_rows) {               
   df_gap <- df_tmp[df_tmp$country == countries[idx],]
-  title  <- paste("Life Expectancy - ", countries[idx]) 
   
-  plot(df_gap$year, df_gap$lifeExp, main = title, xlab = "Year", ylab = "Years", 
-       col = "blue", type = "l", xlim = c(1950,2010))
+  lines(df_gap$year, df_gap$lifeExp, col = line_colors[idx])
 }
-
-par(opar)                        
-
-# ------------------------------------------------------------------------------
-# 1) Assign the total number of items in the countries vector to the max_rows 
-#    variable.  Remember to use NROW() for vectors and nrow() for dataframes.
-# 2) Set the graphic display to max_rows - one row for each graph - and 1 column.
-# 3) The for loop steps through the vector, one item at a time until the idx
-#    variable equals max_rows, set earlier as the total # of items in the vector.
-#    For each iteration, create a data subset and plot title.  Note how we
-#    reference each country name via index:  countries[idx].
-# ------------------------------------------------------------------------------
 
 ```
 
+At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - for programmers anyway - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, it appeared that he was caught in an *infinite* loop, unable to move forward with his life.
 
+\newpage
+
+
+ (1) Assign the total number of items in the countries vector to the max_rows 
+     variable.  Remember to use NROW() for vectors and nrow() for dataframes.
+ (2) Set the graphic display to max_rows - one row for each graph - and 1 column.
+ (3) The for loop steps through the vector, one item at a time until the idx
+     variable equals max_rows, set earlier as the total # of items in the vector.
+     For each iteration, we subset the data for the country at the current index
+     position and create a title to be used in the plot command.  Note how we
+     reference each country name via index: countries[idx].
 
 > ## Question
 >
