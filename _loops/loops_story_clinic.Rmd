@@ -15,12 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 ## Groundhog Day
-In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
-weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the
-town's famous groundhog who can predict either an early spring or extended winter
-depending on whether he sees his shadow or not.  While there, Phil Connors gets caught
-in a time warp, reliving the same day over and over again until he learns to value 
-each moment and the people he works with.
+In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.
 
 Here are a couple of *Groundhog Day* resources:
 
@@ -48,7 +43,7 @@ Although this code works and correctly produces three graphs, it is not optimal.
 
 >> **Thou Shalt Not Repeat Thyself**
 
-Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `lines()` code with minor modifications 25 times and then wanted to change the color of the line (The `col =` argument).  We'd have to change 25 lines of code.
+Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `lines()` code with minor modifications 25 times and then wanted to change the color of the line (The `col =` argument).  We'd have to change 25 lines of code!
 
 \newpage
 
@@ -75,11 +70,11 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 So how do we put a stop to this madness?  Well, maybe we can use the idea behind our original groundhog loop to solve this problem.  Although the experience wasn't fun for Phil Connors, it might prove useful here.
 
-The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that the each subsets the data from the `df_tmp` dataframe differently.  The country name changes.  The title of each plot also changes (passed as an argument to `main`), depending on the country being graphed. It looks like country_name is the key variable here, the one that assumes a different value in each subsection of code.
+The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that each subsets the data from the `df_tmp` dataframe differently, with country changing each time. The color of each line also changes, differing for each country being graphed. Color and country are therefore the two variables of interest.
 
-The second step is to create a vector which contains the names of the countries we wish to graph.  A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
+The second step is to create a pair of vectors, one to hold countries and a second for line colors.  A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
 
-What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the size of your codebase.  That was not the case with the "cut and paste" method above.
+What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the amount of code written.  That was not the case with the "cut and paste" method above.  Let's take a first stab at using a vector to refactor our original code.
 
 ```{r fig.width = 5, fig.height = 10}
 
@@ -102,9 +97,9 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 ```
 
-The ability to reference each country by index means that we can use this vector (data structure) to drive and "feed" our loop.  In fact, the basic idea behind *data-driven design patterns* is that our software programs react to changes in a dataset.
+At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by their position in the vector, by their index number.  The ability to reference each country by index represents a small yet crucial advance.  It means that we can use this vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our software programs respond to changes in a dataset.
 
-In the code below, we loop through the countries vector, create a subset of data for each country, generate a custom title for each graph and assign it to the *title* variable, and finally plot the graph.
+In the code below, we create two vectors, one to hold the countries, a second for line colors.  We then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
 
 \newpage 
 
