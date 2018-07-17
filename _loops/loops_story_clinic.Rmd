@@ -3,7 +3,7 @@ title: |
        | Activity Worksheet
        | *Loops*
 author: "Dan Maxwell"
-date: "June 19, 2017"
+date:
 output:
   pdf_document: default
   html_document: default
@@ -47,7 +47,7 @@ Rewriting the same code with minor modifications is similar to Phil Connor's exp
 
 \newpage
 
-```{r fig.width = 5, fig.height = 10}
+```{r fig.width = 4, fig.height = 4}
 
 # Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -76,7 +76,7 @@ The second step is to create a pair of vectors, one to hold countries and a seco
 
 What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the amount of code written.  That was not the case with the "cut and paste" method above.  Let's take a first stab at using a vector to refactor our original code.
 
-```{r fig.width = 5, fig.height = 10}
+```{r fig.width = 4, fig.height = 4}
 
 # Create a vector of the three countries to be graphed.
 countries <- c('United States','France','Brazil')
@@ -97,13 +97,13 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 ```
 
-At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by their position in the vector, by their index number.  The ability to reference each country by index represents a small yet crucial advance.  It means that we can use this vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our software programs respond to changes in a dataset.
+At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.
 
 In the code below, we create two vectors, one to hold the countries, a second for line colors.  We then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
 
 \newpage 
 
-```{r fig.width = 5, fig.height = 10}
+```{r fig.width = 4, fig.height = 4}
 
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
@@ -127,276 +127,31 @@ for(idx in 1:max_rows) {
 
 ```
 
-At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - for programmers anyway - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, it appeared that he was caught in an *infinite* loop, unable to move forward with his life.
+At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - at least for programmers - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, the problem was that he appeared to be caught in an *infinite* loop, unable to advance through time.  The same can happen in our code, if we're not careful.
 
-\newpage
+Consider the code snippet below which is a minor rework of the for-loop code presented at the beginning of this clinic.  In this example, we use a while loop instead to step through the number of days in the ghog_days variable.  However, this code creates an *infinite* loop.  Can you explain why this is so?
 
+```{r eval=FALSE}
+# Request user input;  i.e., the number of days to loop through.
+ghog_days <- readline(prompt = "Please enter the number of groundhog days: ")
 
- (1) Assign the total number of items in the countries vector to the max_rows 
-     variable.  Remember to use NROW() for vectors and nrow() for dataframes.
- (2) Set the graphic display to max_rows - one row for each graph - and 1 column.
- (3) The for loop steps through the vector, one item at a time until the idx
-     variable equals max_rows, set earlier as the total # of items in the vector.
-     For each iteration, we subset the data for the country at the current index
-     position and create a title to be used in the plot command.  Note how we
-     reference each country name via index: countries[idx].
+# Initialize the index.
+idx <- 1
 
-> ## Question
->
-> Question text goes here...
-
-> ## Challenge 
->
-> Challenge text goes here...
->
-> > ## Solution 
-> > Solution text goes here...
-> >
-> > ```{r sample_code, eval=FALSE}
-> > rows2002_number <- nrow(gapminder[(gapminder$year == 2002),])
-> > ```
-> >
-
-## Repeating operations
-
-If you want to iterate over a set of values, when the order of iteration is important, and perform the same operation on each, a `for()` loop will do the job.  This is the most flexible of looping operations, but therefore also the hardest to use correctly. Avoid using `for()` loops unless the order of iteration is important: i.e. the calculation at each iteration depends on the results of previous iterations.
-
-The basic structure of a `for()` loop is:
-
-```{r, eval=FALSE}
-for(iterator in set of values){
-  do a thing
+# Loop for the number of days in the ghog_days variable.
+while(idx <= ghog_days) {
+  msg <- paste("When will this day end? I've already lived it", idx, "times!")
+  print (msg)
+  
+  # Where is idx incremented? -- without it, this becomes an infinite loop...
 }
+
 ```
 
-For example:
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without it, the initial `while` condition always evaluates to TRUE because idx never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living groundhog day for a very long time.
 
-```{r}
-for(i in 1:10){
-  print(i)
-}
-```
+As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  Lacking that, the result is a loop to infinity and beyond.  
 
-The `1:10` bit creates a vector on the fly; you can iterate
-over any other vector as well.
-
-We can use a `for()` loop nested within another `for()` loop to iterate over two things at
-once.
-
-```{r}
-for(i in 1:5){
-  for(j in c('a', 'b', 'c', 'd', 'e')){
-    print(paste(i,j))
-  }
-}
-```
-
-Rather than printing the results, we could write the loop output to a new object.
-
-```{r}
-output_vector <- c()
-for(i in 1:5){
-  for(j in c('a', 'b', 'c', 'd', 'e')){
-    temp_output <- paste(i, j)
-    output_vector <- c(output_vector, temp_output)
-  }
-}
-output_vector
-```
-
-This approach can be useful, but 'growing your results' (building
-the result object incrementally) is computationally inefficient, so avoid
-it when you are iterating through a lot of values.
-
-
-> ## Tip: don't grow your results
->
-> One of the biggest things that trips up novices and
-> experienced R users alike, is building a results object
-> (vector, list, matrix, data frame) as your for loop progresses.
-> Computers are very bad at handling this, so your calculations
-> can very quickly slow to a crawl. It's much better to define
-> an empty results object before hand of the appropriate dimensions.
-> So if you know the end result will be stored in a matrix like above,
-> create an empty matrix with 5 rows and 5 columns, then at each iteration
-> store the results in the appropriate location.
-
-A better way is to define your (empty) output object before filling in the values.
-For this example, it looks more involved, but is still more efficient.
-
-```{r}
-output_matrix <- matrix(nrow=5, ncol=5)
-j_vector <- c('a', 'b', 'c', 'd', 'e')
-for(i in 1:5){
-  for(j in 1:5){
-    temp_j_value <- j_vector[j]
-    temp_output <- paste(i, temp_j_value)
-    output_matrix[i, j] <- temp_output
-  }
-}
-output_vector2 <- as.vector(output_matrix)
-output_vector2
-```
-
-> ## Tip: While loops
->
->
-> Sometimes you will find yourself needing to repeat an operation until a certain
-> condition is met. You can do this with a `while()` loop.
->
-> ```{r, eval=FALSE}
-> while(this condition is true){
->   do a thing
-> }
-> ```
->
-> As an example, here's a while loop
-> that generates random numbers from a uniform distribution (the `runif()` function)
-> between 0 and 1 until it gets one that's less than 0.1.
->
-> ~~~
-> z <- 1
-> while(z > 0.1){
->   z <- runif(1)
->   print(z)
-> }
-> ~~~
-> {: .r}
->
-> `while()` loops will not always be appropriate. You have to be particularly careful
-> that you don't end up in an infinite loop because your condition is never met.
-
-> ## Challenge 3
->
-> Write a script that loops through the `gapminder` data by continent and prints out
-> whether the mean life expectancy is smaller or larger than 50
-> years.
->
-> > ## Solution to Challenge 3
-> >
-> > **Step 1**:  We want to make sure we can extract all the unique values of the continent vector
-> > ```{r 07-chall-03-sol-a, eval=FALSE}
-> > gapminder <- read.csv("data/gapminder-FiveYearData.csv")
-> > unique(gapminder$continent)
-> > ```
-> >
-> > **Step 2**: We also need to loop over each of these continents and calculate the average life expectancy for each `subset` of data.
-> > We can do that as follows:
-> >
-> > 1. Loop over each of the unique values of 'continent'
-> > 2. For each value of continent, create a temporary variable storing the life exepectancy for that subset,
-> > 3. Return the calculated life expectancy to the user by printing the output:
-> >
-> > ```{r 07-chall-03-sol-b, eval=FALSE}
-> > for( iContinent in unique(gapminder$continent) ){
-> >    tmp <- mean(subset(gapminder, continent==iContinent)$lifeExp)
-> >    cat("Average Life Expectancy in", iContinent, "is", tmp, "\n")
-> >    rm(tmp)
-}
-> > ```
-> >
-> > **Step 3**: The exercise only wants the output printed if the average life expectancy is less than 50 or greater than 50. So we need to add an `if` condition before printing.
-> > So we need to add an `if` condition before printing, which evaluates whether the calculated average life expectancy is above or below a threshold, and print an output conditional on the result.
-> > We need to amend (3) from above:
-> >
-> > 3a. If the calculated life expectancy is less than some threshold (50 years), return the continent and a statement that life expectancy is less than threshold, otherwise return the continent and   a statement that life expectancy is greater than threshold,:
-> >
-> > ```{r 07-chall-03-sol-c, eval=FALSE}
-> > thresholdValue <- 50
-> >
-> > for( iContinent in unique(gapminder$continent) ){
-> >    tmp <- mean(subset(gapminder, continent==iContinent)$lifeExp)
-> >    
-> >    if(tmp < thresholdValue){
-> >        cat("Average Life Expectancy in", iContinent, "is less than", thresholdValue, "\n")
-> >    }
-> >    else{
-> >        cat("Average Life Expectancy in", iContinent, "is greater than", thresholdValue, "\n")
-> >         } # end if else condition
-> >    rm(tmp)
-> >    } # end for loop
-> >
-> > ```
-
-> ## Challenge 4
->
-> Modify the script from Challenge 4 to loop over each
-> country. This time print out whether the life expectancy is
-> smaller than 50, between 50 and 70, or greater than 70.
->
-> > ## Solution to Challenge 4
-> >  We modify our solution to Challenge 3 by now adding two thresholds, `lowerThreshold` and `upperThreshold` and extending our if-else statements:
-> >
-> > ```{r 07-chall-04-sol, eval=FALSE}
-> >  lowerThreshold <- 50
-> >  upperThreshold <- 70
-> >  
-> > for( iCountry in unique(gapminder$country) ){
-> >     tmp <- mean(subset(gapminder, country==iCountry)$lifeExp)
-> >     
-> >     if(tmp < lowerThreshold){
-> >         cat("Average Life Expectancy in", iCountry, "is less than", lowerThreshold, "\n")
-> >     }
-> >     else if(tmp > lowerThreshold && tmp < upperThreshold){
-> >         cat("Average Life Expectancy in", iCountry, "is between", lowerThreshold, "and", upperThreshold, "\n")
-> >     }
-> >     else{
-> >         cat("Average Life Expectancy in", iCountry, "is greater than", upperThreshold, "\n")
-> >     }
-> >     rm(tmp)
-> > }
-> >  ```
-
-> ## Challenge 5 - Advanced (Optional)
->
-> Write a script that loops over each country in the `gapminder` dataset,
-> tests whether the country starts with a 'B', and graphs life expectancy
-> against time as a line graph if the mean life expectancy is under 50 years.
->
-> > Solution for Challenge 5
-> >
-> > We will use the `grep` command that was introduced in the Unix Shell lesson to find countries that start with "B."
-> > Lets understand how to do this first.
-> > Following from the Unix shell section we may be tempted to try the following
-> > ```{r 07-chall-05-sol-a, eval=FALSE}
-> > grep("^B", unique(gapminder$country))
-> > ```
-> >
-> > But when we evaluate this command it returns the indices of the factor variable `country` that start with "B."
-> > To get the values, we must add the `value=TRUE` option to the `grep` command:
-> >
-> > ```{r 07-chall-05-sol-b, eval=FALSE}
-> > grep("^B", unique(gapminder$country), value=TRUE)
-> > ```
-> >
-> > We will now store these countries in a variable called candidateCountries, and then loop over each entry in the variable.
-> > Inside the loop, we evaluate the average life expectancy for each country, and if the average life expectancy is less than 50 we
-> > use base-plot to plot the evolution of average life expectancy:
-> >
-> > ```{r 07-chall-05-sol-c, eval=FALSE}
-> > candidateCountries <- grep("^B", unique(gapminder$country), value=TRUE)
-> >
-> > for( iCountry in candidateCountries){
-> >     tmp <- mean(subset(gapminder, country==iCountry)$lifeExp)
-> >     
-> >     if(tmp < thresholdValue){
-> >         cat("Average Life Expectancy in", iCountry, "is less than", thresholdValue, "plotting life expectancy graph... \n")
-> >         
-> >         with(subset(gapminder, country==iCountry),
-> >                 plot(year,lifeExp,
-> >                      type="o",
-> >                      main = paste("Life Expectancy in", iCountry, "over time"),
-> >                      ylab = "Life Expectancy",
-> >                      xlab = "Year"
-> >                    ) # end plot
-> >               ) # end with
-> >     } # end for loop
-> >     rm(tmp)
-> >  }
-> >  ```
 
 ### References
-Ekstrom, C. T. (2017). *The R primer (2nd ed.)*. Boca Raton: CRC Press.
-
-Ott, L., & Longnecker, M. (2016). *An introduction to statistical methods & data analysis* (7th ed.). Boston, MA: Cengage Learning.
 
