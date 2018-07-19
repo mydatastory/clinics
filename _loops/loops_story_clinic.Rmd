@@ -1,7 +1,7 @@
 --- 
 title: |
-       | Activity Worksheet
-       | *Loops*
+       | *Bill Murray, Groundhog Day, and Loops*
+       | A myDataStory Clinic
 author: "Dan Maxwell"
 date:
 output:
@@ -15,13 +15,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 ## Groundhog Day
-In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.
+In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
 
-Here are a couple of *Groundhog Day* resources:
+![Bill Murray & Friend](ghog_day.jpg)
 
-* [Movie Trailer](https://www.youtube.com/watch?v=2vmmTnDJnH0)
-* [Groundhog Day Wikipedia](https://en.wikipedia.org/wiki/Punxsutawney_Phil)
-
+## R Loops
 In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.  Try running this code in the console.
 
 ```{r eval=FALSE}
@@ -44,8 +42,6 @@ Although this code works and correctly produces three graphs, it is not optimal.
 >> **Thou Shalt Not Repeat Thyself**
 
 Rewriting the same code with minor modifications is similar to Phil Connor's experience of living groundhog day over and over.  At some point, the underlying repetition becomes unbearable.  And, in the case of code, it is unsustainable.  Imagine the maintenance nightmare if we repeated this same `lines()` code with minor modifications 25 times and then wanted to change the color of the line (The `col =` argument).  We'd have to change 25 lines of code!
-
-\newpage
 
 ```{r fig.width = 4, fig.height = 4}
 
@@ -99,9 +95,10 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.
 
-In the code below, we create two vectors, one to hold the countries, a second for line colors.  We then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
+> #### Question: How would you modify this code for Canada, Germany, and Mexico?
+>> The solution is to create a countries vector with a different set of country names.
 
-\newpage 
+In the code below, we create two vectors, one to hold the countries, a second for line colors.  We then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
 
 ```{r fig.width = 4, fig.height = 4}
 
@@ -127,6 +124,7 @@ for(idx in 1:max_rows) {
 
 ```
 
+## The Dreaded Infinite Loop
 At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - at least for programmers - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, the problem was that he appeared to be caught in an *infinite* loop, unable to advance through time.  The same can happen in our code, if we're not careful.
 
 Consider the code snippet below which is a minor rework of the for-loop code presented at the beginning of this clinic.  In this example, we use a while loop instead to step through the number of days in the ghog_days variable.  However, this code creates an *infinite* loop.  Can you explain why this is so?
@@ -143,15 +141,21 @@ while(idx <= ghog_days) {
   msg <- paste("When will this day end? I've already lived it", idx, "times!")
   print (msg)
   
-  # Where is idx incremented? -- without it, this becomes an infinite loop...
+  # Where is idx incremented?  Can anyone say, "Infinite loop?"
 }
 
 ```
 
-Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without it, the initial `while` condition always evaluates to TRUE because idx never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living groundhog day for a very long time.
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time.
 
-As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  Lacking that, the result is a loop to infinity and beyond.  
+As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, in this case, is a loop to infinity and beyond.  
+
+## References
+
+A couple of fun *Groundhog Day* links:
+
+* [Movie Trailer](https://www.youtube.com/watch?v=2vmmTnDJnH0)
+* [Groundhog Day Wikipedia](https://en.wikipedia.org/wiki/Punxsutawney_Phil)
 
 
-### References
 
