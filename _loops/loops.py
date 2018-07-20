@@ -75,10 +75,9 @@ for idx in range(len(countries)):
     plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = line_colors[idx])
 # end for loop
 
+# Section 5 code ---------------------------------------
 idx = 1
 
-
-# Section 5 code ---------------------------------------
 ghog_day = eval(input('Please enter the number of groundhog days: '))
 
 while idx < (ghog_day + 1):
