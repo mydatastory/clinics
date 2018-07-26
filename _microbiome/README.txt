@@ -1,5 +1,5 @@
 
-Microbiome Story Clinic
+This folder contains code and educational resources for the microbiome data story clinic.
 
 Links 
 Article: http://www.cell.com/cell-host-microbe/fulltext/S1931-3128(15)00162-6

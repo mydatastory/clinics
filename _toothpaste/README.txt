@@ -1,5 +1,2 @@
 
-signal        noise
-cause         chance
-treatment     control 
-Ha            H0
+This folder contains code and educational resources for the Crest Detoxify data story clinic.

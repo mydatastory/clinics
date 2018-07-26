@@ -113,31 +113,10 @@ In order to calculate a central tendency (mean or median), we must create freque
 
 ```{r}
 
-for(i in 1:nrow(fl_flu)) {
-  tmp <- rep(fl_flu$age[i], fl_flu$totalDeaths[i])
-  
-  if(i == 1) {
-    fl_freq <- tmp    
-  } 
-  else {
-    fl_freq <- c(fl_freq, tmp) 
-  }
-}
-
-for(i in 1:nrow(sw_flu)) {
-  tmp <- rep(sw_flu$age[i], sw_flu$totalDeaths[i])
-  
-  if(i == 1) {
-    sw_freq <- tmp    
-  } 
-  else {
-    sw_freq <- c(sw_freq, tmp) 
-  }
-}
+fl_freq <- rep(fl_flu$age, fl_flu$totalDeaths)
+sw_freq <- rep(sw_flu$age, sw_flu$totalDeaths)
 
 ```
-
-`r tufte::margin_note("Question 5 -- Can you describe what this code is doing?  Create a Help document that explains this code to a data scientist who needs to understand its function.")`
 
 Many times as a data scientist you will need to understand and/or modify code written by other R programmers.  In fact, a good way to master R is by analyzing code line-by-line.
 
