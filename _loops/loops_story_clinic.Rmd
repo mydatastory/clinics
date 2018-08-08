@@ -35,10 +35,13 @@ for(idx in 1:ghog_days) {
 
 ```
 
-Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the base life expectancy plot is created and then lines are added for each of the three countries - the key difference between each being the data being graphed and the line color.
+Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the base life expectancy plot is created and then lines are added for each of the three countries - the key difference between each being the data set that is graphed and the line color.
 \newline
 
 ```{r fig.width = 4, fig.height = 4}
+# Set the working directory to the folder with the data file.
+setwd("c:/informatics")
+
 # Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
@@ -66,9 +69,8 @@ So how do we put a stop to this madness?  Well, maybe we can use the idea behind
 
 The first step is to carefully compare the lines of code above to determine what changes in each sub-section.  Immediately, we see that each subsets the data from the `df_tmp` dataframe differently, with country changing each time. The color of each line also changes, differing for each country being graphed. Color and country are therefore the two variables of interest.
 
-The second step is to create a pair of vectors, one to hold countries and a second for line colors.  A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
+The second step is to create a pair of vectors, one to hold countries and a second for line colors.  Let's start by creating a vector to hold countries and modifying our code to handle that modification.  Afterwards, we'll add a second vector to the mix to hold line colors.  Here's the code with a countries vector: 
 
-What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the amount of code written.  That was not the case with the "cut and paste" method above.  Let's take a first stab at using a vector to refactor our original code.
 \newline
 
 ```{r fig.width = 4, fig.height = 4}
@@ -91,15 +93,16 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 ```
 
-At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.
+At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.  Now, the only thing that changes is the index.
 
-> #### Question: How would you modify this code for Canada, Germany, and Mexico?
->> The solution is to create a countries vector with a different set of country names.
-
-In the code below, we create two vectors, one to hold the countries, a second for line colors.  We then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
+Okay, let's extend this idea by adding a 2nd vector for line colors.  We'll then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
 
 ```{r fig.width = 3.75, fig.height = 3.75}
 
+# Set the working directory to the folder with the data file.
+setwd("c:/informatics")
+
+# Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # Create a vector of the countries to be graphed.
@@ -121,6 +124,10 @@ for(idx in 1:max_rows) {
 }
 
 ```
+
+A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
+
+What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the amount of code written.  That was not the case with the earlier "cut and paste" method.
 
 ## The Dreaded Infinite Loop
 At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - at least for programmers - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, the problem was that he appeared to be caught in an *infinite* loop, unable to advance through time.  The same can happen in our code, if we're not careful.
@@ -144,9 +151,34 @@ while(idx <= ghog_days) {
 
 ```
 
-Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time.
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time.  Here's how the loop above should be written to avoid infinity.
 
-As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, in this case, is a loop to infinity and beyond.  
+```{r eval = FALSE}
+
+# Loop for the number of days in the ghog_days variable.
+while(idx <= ghog_days) {
+  msg <- paste("When will this day end? I've already lived it", idx, "times!")
+  print (msg)
+  
+  # The idx is now being incremented.  Now we have an appropriate exit condition.
+  idx <- idx + 1  
+}
+
+```
+
+As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, as Buzz Lightyear might say, is a loop to infinity and beyond. 
+
+![Buzz Lightyear](toy_story.jpg)
+
+## Review
+
+## Problem Sets
+1. How would you modify the code to compare a different set of countries?
+
+2. How would you modify the code to plot GDP instead of life expectancy?
+
+3. How would you modify the code to use different line colors?
+
 
 ## References
 
