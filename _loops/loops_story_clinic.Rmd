@@ -36,11 +36,10 @@ for(idx in 1:ghog_days) {
 ```
 
 Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the base life expectancy plot is created and then lines are added for each of the three countries - the key difference between each being the data set that is graphed and the line color.
-\newline
 
 ```{r fig.width = 4, fig.height = 4}
 # Set the working directory to the folder with the data file.
-setwd("c:/informatics")
+setwd("C:/informatics")
 
 # Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -71,8 +70,6 @@ The first step is to carefully compare the lines of code above to determine what
 
 The second step is to create a pair of vectors, one to hold countries and a second for line colors.  Let's start by creating a vector to hold countries and modifying our code to handle that modification.  Afterwards, we'll add a second vector to the mix to hold line colors.  Here's the code with a countries vector: 
 
-\newline
-
 ```{r fig.width = 4, fig.height = 4}
 # Create a vector of the three countries to be graphed.
 countries <- c('United States','France','Brazil')
@@ -100,7 +97,7 @@ Okay, let's extend this idea by adding a 2nd vector for line colors.  We'll then
 ```{r fig.width = 3.75, fig.height = 3.75}
 
 # Set the working directory to the folder with the data file.
-setwd("c:/informatics")
+setwd("C:/informatics")
 
 # Read the .csv file into the df_tmp dataframe.
 df_tmp <- read.csv("gapminder.csv", header = TRUE, stringsAsFactors = FALSE)
@@ -168,9 +165,12 @@ while(idx <= ghog_days) {
 
 As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, as Buzz Lightyear might say, is a loop to infinity and beyond. 
 
-![Buzz Lightyear](toy_story.jpg)
+![Buzz Lightyear](toy_story.jpg) \newline
+
 
 ## Review
+
+The review section goes here...
 
 ## Problem Sets
 1. How would you modify the code to compare a different set of countries?
