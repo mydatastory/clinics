@@ -157,7 +157,7 @@ while(idx <= ghog_days) {
   msg <- paste("When will this day end? I've already lived it", idx, "times!")
   print (msg)
   
-  # The idx is now being incremented.  Now we have an appropriate exit condition.
+  # The idx is now being incremented and we have an appropriate exit condition.
   idx <- idx + 1  
 }
 
