@@ -1,7 +1,7 @@
 --- 
 title: |
        | *Bill Murray, Groundhog Day, and Loops*
-       | A myDataStory Clinic
+       | A myDataStory Learning Experience
 author: "Dan Maxwell"
 date:
 output:
