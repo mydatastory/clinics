@@ -3,10 +3,11 @@ title: |
        | *Bill Murray, Groundhog Day, and Loops*
        | A myDataStory Learning Experience
 author: "Dan Maxwell"
-date:
+date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
 output:
+  html_document:
+    code_folding: hide
   pdf_document: default
-  html_document: default
 header-includes: \usepackage{color}
 ---
 
@@ -92,7 +93,9 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.  Now, the only thing that changes is the index.
 
-Okay, let's extend this idea by adding a 2nd vector for line colors.  We'll then loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
+Okay, let's extend this idea by adding a 2nd vector called "line_colors" for line colors.  Can you modify the code above to make this change? If you are having difficulties, click the Code button to see the solution. 
+
+Now, we will loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
 
 ```{r fig.width = 3.75, fig.height = 3.75}
 
@@ -124,7 +127,7 @@ for(idx in 1:max_rows) {
 
 A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
 
-What makes the data-driven loop pattern so powerful is that the dataset to be processed can be as large as you like without having any effect on the amount of code written.  That was not the case with the earlier "cut and paste" method.
+What makes the data-driven loop pattern so powerful is that the number of countries for which we want to draw the lines can be as large as you like without having any effect on the amount of code written. That was not the case with the earlier "cut and paste" method.
 
 ## The Dreaded Infinite Loop
 At this point, you probably recognize that loops are incredibly useful when you need to repeatedly execute a specified action or set of commands.  It appears that *Groundhog Day* - at least for programmers - is a great idea.  Or is there a dark side to all this goodness?  Unfortunately, there is.  In the case of Phil Connors, the problem was that he appeared to be caught in an *infinite* loop, unable to advance through time.  The same can happen in our code, if we're not careful.
@@ -148,7 +151,7 @@ while(idx <= ghog_days) {
 
 ```
 
-Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time.  Here's how the loop above should be written to avoid infinity.
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time. To break the execution of any infinite loop, press the key "Esc". Here's how the loop above should be written to avoid this problem.
 
 ```{r eval = FALSE}
 
@@ -173,7 +176,7 @@ As you can see, a `while()` loop can be a dangerous thing, specifically when no 
 The review section goes here...
 
 ## Problem Sets
-1. How would you modify the code to compare a different set of countries?
+1. How would you modify the code to compare a different set of 3 countries? What about 10 countries?
 
 2. How would you modify the code to plot GDP instead of life expectancy?
 
