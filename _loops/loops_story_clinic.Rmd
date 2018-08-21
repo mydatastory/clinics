@@ -1,13 +1,13 @@
 --- 
 title: |
-       | *Bill Murray, Groundhog Day, and Loops*
-       | A myDataStory Learning Experience
+  | *Bill Murray, Groundhog Day, and Loops*
+  | A myDataStory Learning Experience
 author: "Dan Maxwell"
-date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
+date: "August 21, 2018"
 output:
+  pdf_document: default
   html_document:
     code_folding: hide
-  pdf_document: default
 header-includes: \usepackage{color}
 ---
 
@@ -179,7 +179,7 @@ In this myDataStory learning experience, we introduced you to R loops, using the
 
 * If you begin to repeat yourself, first determine what is changing in each block of code and then use a *data-driven* solution to eliminate the repetition.  We demonstrated how this might be accomplished using vectors, indexes, and the loop construct.  
 
-* Avoid the dreaded infinite loop by always ensuring that its exit condition is met.  In some cases, this will require you to increment an index variable, as is the case with `while` loops.
+* Avoid the dreaded infinite loop by always ensuring that an exit condition is met.  In some cases, this will require you to increment an index variable, as is the case with `while` loops.
 
 ## Problem Sets
 1. How would you modify the code to compare a different set of 3 countries? What about 10 countries?
