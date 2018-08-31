@@ -1,9 +1,8 @@
 --- 
 title: |
        | *Bill Murray, Groundhog Day, and Loops*
-       | A myDataStory Learning Experience
 author: "Dan Maxwell"
-date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
+date: "`r Sys.Date()`"
 output:
   html_document:
     code_folding: hide
@@ -15,10 +14,12 @@ header-includes: \usepackage{color}
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
+![](../fig/mydatastory_footer.png)
+
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
 
-![Bill Murray & Friend](ghog_day.jpg)
+![Bill Murray & Friend](../fig/ghog_day.jpg)
 
 ## R Loops
 In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.  Try running this code in the console.
@@ -95,7 +96,7 @@ At first glance, this code does not appear to be much of an advance over the ori
 
 Okay, let's extend this idea by adding a 2nd vector called "line_colors" for line colors.  Can you modify the code above to make this change? If you are having difficulties, click the Code button to see the solution. 
 
-Now, we will loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.
+Now, we will loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.  For example, the line color at `line_colors[1]` is darkblue and the corresponding country at `countries[1]` is the United States.  Thus the U.S. line will be darkblue.
 
 ```{r fig.width = 3.75, fig.height = 3.75}
 
@@ -168,12 +169,18 @@ while(idx <= ghog_days) {
 
 As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, as Buzz Lightyear might say, is a loop to infinity and beyond. 
 
-![Buzz Lightyear](toy_story.jpg) \newline
+![Buzz Lightyear](../fig/toy_story.jpg) \newline
 
 
 ## Review
 
-The review section goes here...
+In this myDataStory learning experience, we introduced you to R loops, using the movie *Groundhog Day* as a fun way to explore the idea of repetition in programming.  Here are the key points:
+
+* Frequently, you will find yourself copying and pasting a block of code repeatedly, with but minor modifications.  When this happens, consider the power of loops to cut down on the amount of code you write.  Always keep this dictum in mind, "Thou shalt not repeat thyself!" 
+
+* If you begin to repeat yourself, first determine what is changing in each block of code and then use a *data-driven* solution to eliminate the repetition.  We demonstrated how this might be accomplished using vectors, indexes, and the loop construct.  
+
+* Avoid the dreaded infinite loop by always ensuring that an exit condition is met.  In some cases, this will require you to increment an index variable, as is the case with `while` loops.
 
 ## Problem Sets
 1. How would you modify the code to compare a different set of 3 countries? What about 10 countries?
