@@ -4,9 +4,9 @@ title: |
 author: "Dan Maxwell"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    code_folding: hide
-  pdf_document: default
+  html_document: default
+  pdf_document:
+    fig_caption: no
 header-includes: \usepackage{color}
 ---
 
@@ -15,6 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 ![](../fig/mydatastory_footer.png)
+
+<script src="hideOutput.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
 
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
@@ -94,9 +98,9 @@ lines(df_gap$year, df_gap$lifeExp, col = 'darkgreen')         # Brazil is green 
 
 At first glance, this code does not appear to be much of an advance over the original.  Rather than reference the country names directly, we're now referencing them by index, by their position in the vector.  However, the ability to reference each country by index represents a small yet crucial advance.  It means that we can use a vector (data structure) to drive and 'feed' our loop.  In fact, the basic idea behind *data-driven design patterns* is that our programs respond to changes in a dataset.  Now, the only thing that changes is the index.
 
-Okay, let's extend this idea by adding a 2nd vector called "line_colors" for line colors.  Can you modify the code above to make this change? If you are having difficulties, click the Code button to see the solution. 
+Okay, let's extend this idea by adding a 2nd vector called "line_colors" for line colors.  Can you modify the code above to make this change? If you have difficulties, click the Code button to see the solution. 
 
-Now, we will loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.  For example, the line color at `line_colors[1]` is darkblue and the corresponding country at `countries[1]` is the United States.  Thus the U.S. line will be darkblue.
+<div class="fold s">
 
 ```{r fig.width = 3.75, fig.height = 3.75}
 
@@ -126,6 +130,10 @@ for(idx in 1:max_rows) {
 
 ```
 
+</div>
+
+In the code above, we loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.  For example, the line color at `line_colors[1]` is darkblue and the corresponding country at `countries[1]` is the United States.  Thus the U.S. line will be darkblue.
+
 A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
 
 What makes the data-driven loop pattern so powerful is that the number of countries for which we want to draw the lines can be as large as you like without having any effect on the amount of code written. That was not the case with the earlier "cut and paste" method.
@@ -152,7 +160,9 @@ while(idx <= ghog_days) {
 
 ```
 
-Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  It looks like Phil Connors is going to be re-living Groundhog Day for a very long time. To break the execution of any infinite loop, press the key "Esc". Here's how the loop above should be written to avoid this problem.
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  Click the Code button to see how the loop should have been written to avoid this problem.  
+
+<div class="fold s">
 
 ```{r eval = FALSE}
 
@@ -166,6 +176,12 @@ while(idx <= ghog_days) {
 }
 
 ```
+
+</div>
+
+> ### Tip: Exiting an Infinite Loop
+>
+> To break the execution of any infinite loop, press the "Esc" key.
 
 As you can see, a `while()` loop can be a dangerous thing, specifically when no exit condition has been met.  The result, as Buzz Lightyear might say, is a loop to infinity and beyond. 
 
