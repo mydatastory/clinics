@@ -11,23 +11,25 @@ header-includes: \usepackage{color}
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 library(reticulate)
+knitr::opts_chunk$set(echo = TRUE)
+knitr::knit_engines$set(python = reticulate::eng_python)
 
 ```
 ![](../fig/mydatastory_footer.png)
 
-<script src="hideOutput.js"></script>
+<script src="https://github.com/Gharv/work_projects/raw/master/hideOutput.js"></script>
 
-<link rel="stylesheet" type="text/css" href="fold.css">
+<link rel="stylesheet" type="text/css" href="https://github.com/Gharv/work_projects/raw/master/fold.css">
 
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
 
 ![Bill Murray & Friend](../fig/ghog_day.jpg)
 
-## R Loops
-In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The R code to accomplish this feat is listed below.  Try running this code in the console.
+## Python Loops
+In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The Python code to accomplish this feat is listed below.  Try running this code in the console.
 
 ```{python eval=FALSE}
 
@@ -48,6 +50,9 @@ Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piec
 # import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'D:/ProgramData/Anaconda3/Library/plugins/platforms'
 
 plt.style.use('seaborn-whitegrid')
 
@@ -73,6 +78,7 @@ plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')
 df_gap = df.loc['Brazil']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
 # Brazil is green line
+plt.show()
 
 ```
 
@@ -109,6 +115,7 @@ plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')
 df_gap = df.loc[countries[2]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
 # Brazil is green line
+plt.show()
 
 ```
 
@@ -136,6 +143,8 @@ ax.set(xlabel = 'Year',
 for idx in range(len(countries)):
     df_gap = df.loc[countries[idx]]
     plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = line_colors[idx])
+  
+plt.show()
 
 ```
 
