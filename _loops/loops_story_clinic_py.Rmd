@@ -19,9 +19,9 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 ![](../fig/mydatastory_footer.png)
 
-<script src="https://github.com/Gharv/work_projects/raw/master/hideOutput.js"></script>
+<script src="hideOutput.js"></script>
 
-<link rel="stylesheet" type="text/css" href="https://github.com/Gharv/work_projects/raw/master/fold.css">
+<link rel="stylesheet" type="text/css" href="fold.css">
 
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
@@ -39,20 +39,18 @@ ghog_day = eval(input('Please enter the number of groundhog days: '))
 # Loop for the number of days in the ghog_days variable.
 for idx in range(1, ghog_day + 1):
     print("When will this day end? I've already lived it", idx, "times!")
- 
-    
 
 ```
 
 Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piece of code works well so we copy it with minor modifications and then do it again and again, as in the case below. In this example, the code that creates the base life expectancy plot is created and then lines are added for each of the three countries - the key difference between each being the data set that is graphed and the line color.
 
-```{python fig.width = 4, fig.height = 4}
-# import libraries
+```{python}
+# Import libraries.
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'D:/ProgramData/Anaconda3/Library/plugins/platforms'
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'c:/Users/danielmaxwell.UFLIBL2BRVXF2/Anaconda3/Library/plugins/platforms'
 
 plt.style.use('seaborn-whitegrid')
 
@@ -67,17 +65,18 @@ ax.set(xlabel = 'Year',
         title = 'Life Expectancy')
 
 # Subset the data for each country and then lay down its line on the base plot.
+
+# U.S. is blue line
 df_gap = df.loc['United States']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'blue')          
-# U.S. is blue line
 
+# France is red line
 df_gap = df.loc['France']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')           
-# France is red line
 
+# Brazil is green line
 df_gap = df.loc['Brazil']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
-# Brazil is green line
 plt.show()
 
 ```
@@ -92,29 +91,23 @@ The first step is to carefully compare the lines of code above to determine what
 
 The second step is to create a pair of vectors, one to hold countries and a second for line colors.  Let's start by creating a vector to hold countries and modifying our code to handle that modification.  Afterwards, we'll add a second vector to the mix to hold line colors.  Here's the code with a countries vector: 
 
-```{python fig.width = 4, fig.height = 4}
+```{python}
 # Create a vector of the three countries to be graphed.
 countries = ['United States','France','Brazil']
 
-# Set parameters for the base plot and its axes.
-ax = plt.axes()
-ax.set(xlabel = 'Year', 
-       ylabel = 'Years', 
-         xlim = (1950, 2010), 
-        title = 'Life Expectancy')
-
+# Note: Axes parameters were set in the first code chunk and are reused here.
 # Subset the data for each country in the vector via index notation and then plot.
+# U.S. is blue line
 df_gap = df.loc[countries[0]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'blue')          
-# U.S. is blue line
 
+# France is red line
 df_gap = df.loc[countries[1]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')           
-# France is red line
 
+# Brazil is green line
 df_gap = df.loc[countries[2]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
-# Brazil is green line
 plt.show()
 
 ```
@@ -125,20 +118,15 @@ Okay, let's extend this idea by adding a 2nd vector called "line_colors" for lin
 
 <div class="fold s">
 
-```{python fig.width = 3.75, fig.height = 3.75}
+```{python}
+# Note: Axes parameters were set in the first code chunk and are reused here.
+
 # Create a vector of the countries to be graphed.
 countries   = ['United States','France','Brazil']
 line_colors = ['blue','green','red']
 
 # Create a vector of the line colors for each country.
 line_colors = ['blue','green','red']
-
-# Set parameters for the base plot and its axes.
-ax = plt.axes()
-ax.set(xlabel = 'Year', 
-       ylabel = 'Years', 
-         xlim = (1950, 2010), 
-        title = 'Life Expectancy')     
 
 for idx in range(len(countries)):
     df_gap = df.loc[countries[idx]]
