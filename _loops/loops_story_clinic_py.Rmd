@@ -24,6 +24,14 @@ knitr::knit_engines$set(python = reticulate::eng_python)
 
 <link rel="stylesheet" type="text/css" href="fold.css">
 
+```{python echo = FALSE}
+# This path variable must be set in order to knit a Python document.
+import os
+  
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'c:/Users/danielmaxwell.UFLIBL2BRVXF2/Anaconda3/Library/plugins/platforms'
+
+```
+
 ## Groundhog Day
 In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV weatherman who's sent to Punxsutawney, PA to cover the story of Punxsutawney Phil, the town's famous groundhog who can predict either an early spring or extended winter depending on whether he sees his shadow or not.  While there, Phil Connors gets caught in a time warp, reliving the same day over and over again until he learns to value each moment and the people he works with.  See the **Reference** section for links to the movie trailer as well as the film's Wikipedia entry.
 
@@ -32,7 +40,7 @@ In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
 ## Python Loops
 In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The Python code to accomplish this feat is listed below.  Try running this code in the console.
 
-```{python eval=FALSE}
+```{python eval = FALSE}
 # Request user input;  i.e., the number of days to loop through.
 ghog_day = eval(input('Please enter the number of groundhog days: '))
   
@@ -48,10 +56,6 @@ Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piec
 # Import libraries.
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
-  
-# Set plugin path -- only used to knit in the RStudio environment.  
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'c:/Users/danielmaxwell.UFLIBL2BRVXF2/Anaconda3/Library/plugins/platforms'
   
 plt.style.use('seaborn-whitegrid')
   
