@@ -13,6 +13,7 @@ header-includes: \usepackage{color}
 ```{r setup, include=FALSE}
 library(knitr)
 library(reticulate)
+
 knitr::opts_chunk$set(echo = TRUE)
 knitr::knit_engines$set(python = reticulate::eng_python)
 
@@ -32,10 +33,9 @@ In the comedy *Groundhog Day*, Bill Murray plays Phil Connors, a disgruntled TV 
 In a programming language, loops allow you to repeat a specific action over and over again.  This grants you special powers as a programmer.  For example, you could define a groundhog loop that repeats a specified number of times, forcing Phil Connors to relive the same day until the loop reaches a defined limit.  The Python code to accomplish this feat is listed below.  Try running this code in the console.
 
 ```{python eval=FALSE}
-
 # Request user input;  i.e., the number of days to loop through.
 ghog_day = eval(input('Please enter the number of groundhog days: '))
-
+  
 # Loop for the number of days in the ghog_days variable.
 for idx in range(1, ghog_day + 1):
     print("When will this day end? I've already lived it", idx, "times!")
@@ -49,34 +49,36 @@ Many times our code begins to look like a bad sequel to *Groundhog Day*.  A piec
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-
+  
+# Set plugin path -- only used to knit in the RStudio environment.  
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] =  'c:/Users/danielmaxwell.UFLIBL2BRVXF2/Anaconda3/Library/plugins/platforms'
-
+  
 plt.style.use('seaborn-whitegrid')
-
+  
 # Read the .csv file into the df_tmp dataframe.
 df  = pd.read_csv('../data/gapminder.csv', index_col = 0)
-
+  
 # Set parameters for the base plot and its axes.
 ax = plt.axes()
 ax.set(xlabel = 'Year', 
        ylabel = 'Years', 
          xlim = (1950, 2010), 
         title = 'Life Expectancy')
-
+  
 # Subset the data for each country and then lay down its line on the base plot.
-
+  
 # U.S. is blue line
 df_gap = df.loc['United States']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'blue')          
-
+  
 # France is red line
 df_gap = df.loc['France']
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')           
-
+  
 # Brazil is green line
 df_gap = df.loc['Brazil']
-plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
+plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')
+  
 plt.show()
 
 ```
@@ -94,20 +96,21 @@ The second step is to create a pair of vectors, one to hold countries and a seco
 ```{python}
 # Create a vector of the three countries to be graphed.
 countries = ['United States','France','Brazil']
-
+  
 # Note: Axes parameters were set in the first code chunk and are reused here.
 # Subset the data for each country in the vector via index notation and then plot.
 # U.S. is blue line
 df_gap = df.loc[countries[0]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'blue')          
-
+  
 # France is red line
 df_gap = df.loc[countries[1]]
 plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'red')           
-
+  
 # Brazil is green line
 df_gap = df.loc[countries[2]]
-plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green')         
+plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = 'green') 
+  
 plt.show()
 
 ```
@@ -120,14 +123,14 @@ Okay, let's extend this idea by adding a 2nd vector called "line_colors" for lin
 
 ```{python}
 # Note: Axes parameters were set in the first code chunk and are reused here.
-
+  
 # Create a vector of the countries to be graphed.
 countries   = ['United States','France','Brazil']
 line_colors = ['blue','green','red']
-
+  
 # Create a vector of the line colors for each country.
 line_colors = ['blue','green','red']
-
+  
 for idx in range(len(countries)):
     df_gap = df.loc[countries[idx]]
     plt.plot(df_gap[['year']], df_gap[['lifeExp']], color = line_colors[idx])
@@ -152,10 +155,10 @@ Consider the code snippet below which is a minor rework of the for-loop code pre
 ```{python eval=FALSE}
 # Request user input;  i.e., the number of days to loop through.
 ghog_day = eval(input('Please enter the number of groundhog days: '))
-
+  
 # Initialize the index.
 idx = 1
-
+  
 # Loop for the number of days in the ghog_days variable.
 while idx < (ghog_day + 1):
      print("When will this day end? I've already lived it", idx, "times!")
@@ -163,21 +166,16 @@ while idx < (ghog_day + 1):
 
 ```
 
-Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx <- idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  Click the Code button to see how the loop should have been written to avoid this problem.  
+Unlike our earlier for-loop which advances idx by one each time the loop executes, you must explicitly do that within a while-loop.  In the code above, we initialize idx to 1 but then fail to increment it within the loop.  Here's the line of code that's missing: `idx = idx + 1`.  Without this line, the initial `while` condition always evaluates to TRUE because `idx` never increases to become greater than ghog_days.  Click the Code button to see how the loop should have been written to avoid this problem.  
 
 <div class="fold s">
 
-```{r eval = FALSE}
-
+```{python eval = FALSE}
 # Loop for the number of days in the ghog_days variable.
-while(idx <= ghog_days) {
-  msg <- paste("When will this day end? I've already lived it", idx, "times!")
-  print (msg)
   
-  # The idx is now being incremented and we have an appropriate exit condition.
-  idx <- idx + 1  
-}
-
+while idx < (ghog_day + 1):
+     print("When will this day end? I've already lived it", idx, "times!")
+     idx = idx + 1
 ```
 
 </div>
