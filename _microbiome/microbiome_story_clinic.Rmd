@@ -104,7 +104,7 @@ log10(tst)
 
 The log functions perform non-linear transformations.  With a non-linear transformation, the relative spacing between numbers is not preserved.  In the example below, a set of five numbers are transformed into their log equivalents, each now being equidistant from its neighbor.
 
-![Data Transformations (Log)](log_operation.gif)
+![Data Transformations (Log)](../fig/log_transform.gif)
 
 Because of this unique propert, a log transformation is a useful operation, especially when we have one or more outliers that we'd like to *pull in*.  Indeed, it was those large numbers that distorted our original graph, making most of the bars practically invisible.  So let's see what happens when we create a barplot - like we did before - but pass a log transformation of the data to it.
 
