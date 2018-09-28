@@ -194,7 +194,7 @@ In this myDataStory learning experience, we introduced you to R loops, using the
 
 * Frequently, you will find yourself copying and pasting a block of code repeatedly, with but minor modifications.  When this happens, consider the power of loops to cut down on the amount of code you write.  Always keep this dictum in mind, "Thou shalt not repeat thyself!" 
 
-* If you begin to repeat yourself, first determine what is changing in each block of code and then use a *data-driven* solution to eliminate the repetition.  We demonstrated how this might be accomplished using vectors, indexes, and the loop construct.  
+* If you begin to repeat yourself, first determine what is changing in each block of code.  Then, try to replace the changing pieces with code that relies on indexes.  For example, we replaced 'United States','France', and 'Brazil' with `countries[1]`,`countries[2]`, and `countries[3]` respectively.  Finally, if we're able to do this, we can probably use loops to avoid repetition.
 
 * Avoid the dreaded infinite loop by always ensuring that an exit condition is met.  In some cases, this will require you to increment an index variable, as is the case with `while` loops.
 
