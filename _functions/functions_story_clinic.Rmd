@@ -26,9 +26,9 @@ In the *Big Bang Theory* TV series, the show's resident genius - Sheldon Cooper 
 ![Relationship Agreement](../fig/cooper_agreement.jpg)
 
 ## R Functions
-The fundamental concept behind functions is the notion of a contract.  Just as Sheldon's relationship and roommate agreements ensure that the parties involved will act in regular and predictable ways, so too the interface to a function is like a contract.  If the code calling a function does this - pass the correct arguments in the correct order - a well written function responds in a predictable way, providing the promised output.
+The fundamental concept behind functions is the notion of a contract.  Just as Sheldon's relationship and roommate agreements ensure that the parties involved will act in regular and predictable ways, so too the interface to a function is like a contract.  If a call to a function passes the correct arguments in the correct order, a well written function responds in a predictable way, providing the promised output.  
 
-<div class="fold s">
+Let's revisit the code we wrote in the loops clinic to illustrate the process of writing a custom function.
 
 ```{r fig.width = 3.75, fig.height = 3.75}
 
@@ -55,6 +55,18 @@ for(idx in 1:max_rows) {
   
   lines(df_gap$year, df_gap$lifeExp, col = line_colors[idx])
 }
+
+```
+
+Before writing any code, we need to first specify the name, arguments, and output of the new function.  The code in the block above plots life expectancies for three countries over time, from 1950 to 2010.  So let's call our new function: *plot_life_expect()* and obviously we want this function to create a line graph.  A graph is therefore the desired **output**.  In this example, the function won't *return* anything to the code that calls it.  Rather, it will simply create a graph.  (Keep in mind that most functions do indeed return values to their callers).
+
+With a name selected and output defined, our next step is to define the function's arguments.  Given this code, what arguments do we need to pass to this new function?  Did you consider the two vectors - *countries* and *line_colors* - as possible candidates?
+
+
+
+
+
+```{r eval = FALSE}
 
 ```
 
