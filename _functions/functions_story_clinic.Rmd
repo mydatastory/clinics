@@ -58,13 +58,36 @@ for(idx in 1:max_rows) {
 
 ```
 
-Before writing any code, we need to first specify the name, arguments, and output of the new function.  The code in the block above plots life expectancies for three countries over time, from 1950 to 2010.  So let's call our new function: *plot_life_expect()* and obviously we want this function to create a line graph.  A graph is therefore the desired **output**.  In this example, the function won't *return* anything to the code that calls it.  Rather, it will simply create a graph.  (Keep in mind that most functions do indeed return values to their callers).
+Before writing the function, we need to first specify its name, arguments, and output.  The code in the block above plots life expectancies for three countries over time, from 1950 to 2010.  So let's call our new function: *plot_life_expect()* and obviously we want this function to create a line graph.  A graph is therefore the desired **output**.  In this example, the function won't *return* anything to the code that calls it.  Rather, it will simply create a graph.  (Keep in mind that most functions do indeed return values to their callers).
 
-With a name selected and output defined, our next step is to define the function's arguments.  Given this code, what arguments do we need to pass to this new function?  Did you consider the two vectors - *countries* and *line_colors* - as possible candidates?
-
-
+With a name selected and output defined, our next step is to define the function's arguments.  Given this code, what arguments do we need to pass to this new function?  Did you consider the two vectors - *countries* and *line_colors* - as possible candidates?  If so, give yourself an A.  An initial definition of the interface is listed in the code chunk below.
 
 
+```{r eval = FALSE}
+
+# -------------------------------------------------------
+#' @title plot_life_expect
+#' @details This function creates a life expectancy line plot for a vector of countries. 
+#' @export
+#' @param vector input countries and line colors
+#' @return
+#' @keywords life expectancy
+#' @author Dan Maxwell
+#' @examples
+#' plot_life_expect(countries, line_colors)
+# -------------------------------------------------------
+
+plot_life_expect <- function(countries, line_colors)
+{
+  
+}
+
+```
+
+This might seem like a lot of documentation to create a simple function.  But the effort is well rewarded once you decide to create a package.  (In a future clinic, we cover package development and construction.)
+
+
+<div class="fold s">
 
 ```{r eval = FALSE}
 
@@ -72,11 +95,6 @@ With a name selected and output defined, our next step is to define the function
 
 </div>
 
-In the code above, we loop through both vectors, subsetting the data and then creating a line, using the color specified at the index of the line_colors vector.  Of course, the countries and line_colors vectors need to be the same length and align with each other.  That is, the line color at a specified index must be the one you wish to use for the country at that same index in the other vector.  For example, the line color at `line_colors[1]` is darkblue and the corresponding country at `countries[1]` is the United States.  Thus the U.S. line will be darkblue.
-
-A generic design pattern is now coming into view.  Like the Pac-Man video game, loops "eat" data.  In other words, we often loop through a dataset to perform some action.  It does not matter how the data is stored - in a vector, a list, or a dataframe - just as long as the elements (rows) in it are accessible via index.
-
-What makes the data-driven loop pattern so powerful is that the number of countries for which we want to draw the lines can be as large as you like without having any effect on the amount of code written. That was not the case with the earlier "cut and paste" method.
 
 ## Review
 
