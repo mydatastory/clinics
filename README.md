@@ -2,3 +2,5 @@ This repository contains sub-directories of data story clinics.  The data_story_
 
 -------------------------------------------------------------------------------
 [Education Datasets](https://nces.ed.gov/ccd/)
+
+[Tyler Richards](https://docs.google.com/presentation/d/1mXqSwBn69yEjBMiG89uITt7rZh__ZKwdXOlEyyUpARA/present?slide=id.gcb9a0b074_1_0#slide=id.gcb9a0b074_1_0)
