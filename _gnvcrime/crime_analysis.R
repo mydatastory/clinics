@@ -42,5 +42,5 @@ for (i in 1:length(tmp)){
 }
 sum(is.na(crime$latit))
 
-nomes=c('ï..ID','City','State','longit','latit','year','month','hour','type')
-write.csv(crime[,nomes],'crime_edited1.csv',row.names=F)
+nomes=c('Ã¯..ID','City','State','longit','latit','year','month','hour','type')
+write.csv(crime[,nomes],'gnv_crime.csv',row.names=F)
