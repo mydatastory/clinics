@@ -1,5 +1,5 @@
 rm(list=ls(all=TRUE))
-setwd('U:\\maxwell\\crimes')
+setwd('U:\\danielmaxwell\\crimes')
 crime=read.table('Crime_Incident_Heatmap_2011_-_Present.tsv',sep='\t',header=T,as.is=T)
 crime$hour=crime$month=crime$year=crime$latit=crime$longit=NA
 
