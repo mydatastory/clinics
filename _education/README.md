@@ -4,8 +4,8 @@
 
 -----------------------------------------------------------------------------------------
 ### Consumer Price Index Links
-- https://fred.stlouisfed.org/series/CPIAUCSL/
+- [St. Louis FedReserve](https://fred.stlouisfed.org/series/CPIAUCSL/)
 - https://www.minneapolisfed.org/community/financial-and-economic-education/cpi-calculator-information/consumer-price-index-and-inflation-rates-1913
-- https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm
-- https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/
+- [Bureau of Labor Statistics](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm)
+- [Inflation Calculator](https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/)
 
