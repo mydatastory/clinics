@@ -1,4 +1,4 @@
-See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies which have examined the relationship between spending and student success / learning outcomes.
+See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies which have examined the relationship between spending and educational outcomes.
 
 - [NAEP Scale Scores](https://nces.ed.gov/nationsreportcard/guides/scores_achv.aspx)
 - [NAEP Science Averages](https://nces.ed.gov/programs/digest/d16/tables/dt16_223.10.asp)
