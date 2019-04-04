@@ -2,4 +2,4 @@ This folder contains code and educational resources for the functions data story
 
 [Python Exceptions](https://realpython.com/python-exceptions/)
 
-[Python Functions](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
+[Python Functions](https://nbviewer.jupyter.org/github/mydatastory/clinics/blob/master/_functions/functions_story_clinic_py.ipynb)
