@@ -31,7 +31,7 @@ hist(as.numeric(df_hour$hour),
      xlab = 'Hour (Military)', 
      main = 'Gainesville Crime',
      ylim = c(0, 20000), 
-     xlim = c(0, 25))
+     xlim = c(0, 25)) 
 
 # ------------------------------------------------------------------------------------
 # For some reason, the hist() function combines the first two values of df_hour (0 & 1) 
@@ -40,7 +40,10 @@ hist(as.numeric(df_hour$hour),
 # See the following stackoverflow question w/response to use barplot() instead:
 # https://stackoverflow.com/questions/22428992/histogram-in-r-combining-first-two-values
 
-barplot(table(df_hour), col = 'lightblue')
+barplot(table(df_hour), col = 'lightblue', 
+                       main = 'Gainesville Crime', 
+                       xlab = 'Hour',
+                       ylab = 'Frequency')
 
 # Test code to figure out what's happening with the hist() function.
 test <- hist(as.numeric(df_hour$hour),
