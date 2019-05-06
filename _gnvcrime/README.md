@@ -1,4 +1,4 @@
-#### Due to the size of the gainesville crime datasets, they are stored in Dropbox /gnv_crime folder rather than here in GitHub.
+#### Due to the size of the gainesville crime datasets, they are stored in the Dropbox /gnv_crime folder rather than GitHub.
 
 Useful Links:
 - [GNV Crime Heatmap](https://data.cityofgainesville.org/Community-Model/Crime-Incident-Heatmap-2011-Present/man8-mr28)
