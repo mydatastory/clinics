@@ -12,7 +12,6 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 - [NAEP Science Averages](https://nces.ed.gov/programs/digest/d16/tables/dt16_223.10.asp)
 - [NCES Datasets](https://nces.ed.gov/ccd/)
 
------------------------------------------------------------------------------------------
 ### Consumer Price Index Links
 - [St. Louis FedReserve](https://fred.stlouisfed.org/series/CPIAUCSL/)
 - [Minneapolis FedReserve](https://www.minneapolisfed.org/community/financial-and-economic-education/cpi-calculator-information/consumer-price-index-and-inflation-rates-1913)
