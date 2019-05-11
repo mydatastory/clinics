@@ -7,4 +7,6 @@ The data_story_rubric.doc file is a template for grading data story presentation
 
 [iNaturalist](https://www.inaturalist.org)
 
+[iNaturalist Export](https://www.inaturalist.org/observations/export)
+
 [GBIF Database](https://www.gbif.org)
