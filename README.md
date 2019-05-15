@@ -18,3 +18,5 @@ This repository contains sub-directories of data story clinics.
 [IPBES](https://www.ipbes.net/)
 
 [USDA Honey Bee Data](https://usda.library.cornell.edu/concern/publications/hd76s004z?locale=en)
+
+[USDA Honey Bee Colony](https://usda.library.cornell.edu/concern/publications/rn301137d?locale=en)
