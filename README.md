@@ -18,5 +18,3 @@ This repository contains sub-directories of data story clinics.
 [IPBES](https://www.ipbes.net/)
 
 [USDA Honey Bee Data](https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Bee_and_Honey/#colony_loss)
-
-[NOAA Fisheries](https://foss.nmfs.noaa.gov)
