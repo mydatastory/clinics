@@ -39,6 +39,7 @@ hist(as.numeric(df_hour$hour),
 #
 # See the following stackoverflow question w/response to use barplot() instead:
 # https://stackoverflow.com/questions/22428992/histogram-in-r-combining-first-two-values
+# ------------------------------------------------------------------------------------
 
 barplot(table(df_hour), col = 'lightblue', 
                        main = 'Gainesville Crime', 
