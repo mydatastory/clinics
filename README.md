@@ -18,6 +18,10 @@ This repository contains sub-directories of data story clinics.
 [IPBES](https://www.ipbes.net/)
 
 -----------------------------------------------------------------------------
+#### Folium Python Map Library
+(Documentation)[https://python-visualization.github.io/folium/]
+
+-----------------------------------------------------------------------------
 #### Honey Bee Story
 [USDA Honey Bee Data](https://usda.library.cornell.edu/concern/publications/hd76s004z?locale=en)
 
