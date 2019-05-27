@@ -21,6 +21,8 @@ This repository contains sub-directories of data story clinics.
 #### Folium Python Map Library
 [Documentation](https://python-visualization.github.io/folium/)
 
+[QuickStart](https://python-visualization.github.io/folium/quickstart.html)
+
 -----------------------------------------------------------------------------
 #### Honey Bee Story
 [USDA Honey Bee Data](https://usda.library.cornell.edu/concern/publications/hd76s004z?locale=en)
