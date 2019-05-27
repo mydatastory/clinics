@@ -19,7 +19,7 @@ This repository contains sub-directories of data story clinics.
 
 -----------------------------------------------------------------------------
 #### Folium Python Map Library
-(Documentation)[https://python-visualization.github.io/folium/]
+[Documentation](https://python-visualization.github.io/folium/)
 
 -----------------------------------------------------------------------------
 #### Honey Bee Story
