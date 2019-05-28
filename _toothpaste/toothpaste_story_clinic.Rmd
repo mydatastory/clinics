@@ -1,16 +1,14 @@
 ---
 title: "Data Story Clinic"
 output:
+  tufte::tufte_html:
+    toc: yes
+    toc_depth: 1
   tufte::tufte_handout:
     toc: no
     toc_depth: 1
     latex_engine: xelatex
-  tufte::tufte_html:
-    toc: yes
-    toc_depth: 1
 ---
-
-#\textcolor{blue}{Statistics and the Logic of Discovery}  
 
 ## Introduction
 Crest recently began advertising their newest product -- *Gum Detoxify Deep Clean Toothpaste*.  The company claims that Gum Detoxify "has an activated foam formula ... to neutralize harmful plaque bacteria even around the gum line, for clinically proven healthier gums."
