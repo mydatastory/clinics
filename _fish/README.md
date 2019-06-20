@@ -7,11 +7,14 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 #### Articles
 Norton, J. G., and J. E. Mason. 2005. Relationship of California sardine (Sardinops sagax) abundance to ecological changes in the California Current System. CalCOFI Reports 46:83-92. 
 
-Hill, Kevin T. 2004. Environmentally-explicit population models for coastal pelagic species (Pacific mackerel and Pacific sardine) [abstract]. In: George M. Watters (ed.), Proceedings of the NMFS workshop on building environmentally explicit stock assessments, p. 11. NMFS SWFSC Administrative Report PFEL-04-01.
-
 Lynn, Ronald J. 2003. Variability in the spawning habitat of Pacific sardine (Sardinops sagax) off southern and central California. Fisheries Oceanography 12(6):541-553.
 
 Smith, P. E., and H. G. Moser. 2003. Long-term trends and variability in the larvae of Pacific sardine and associated fish species of the California Current region. Deep-Sea Research II 50:2519-2536. 
 
 McFarlane, G. A., P. E. Smith, T. R. Baumgartner, and J. R. Hunter. 2002. Climate variability and Pacific sardine populations and fisheries. American Fisheries Society Symposium 32:195-214. 
 
+Ueber, E., and A.D. MacCall. 1992. The rise and fall of the California sardine empire. M. Glantz (ed.), Climate variability, climate change and fisheries, p. 31-48. Cambridge University Press. 
+
+Ueber, E., and A.D. MacCall. 1990. The collapse of California's sardine fishery. M. H. Glantz and L. E. Feingold (eds.), Climate variability, climate change, and fisheries, pp.17-23. National Center for Atmospheric Research, Boulder, Colorado. 
+
+MacCall, Alec D. 1979. Population estimates for the waning years of the Pacific sardine fishery. CalCOFI Reports 20: 72-82.
