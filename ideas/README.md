@@ -1,3 +1,17 @@
+-----------------------------------------------------------------------------
+## Honey Bee Story
+[USDA Honey Bee Data](https://usda.library.cornell.edu/concern/publications/hd76s004z?locale=en)
+
+[USDA Honey Bee Colony](https://usda.library.cornell.edu/concern/publications/rn301137d?locale=en)
+
+-----------------------------------------------------------------------------
+## Aswan Dam & Schistosomiasis Story
+[Aswan Dam](https://blogs.biomedcentral.com/bugbitten/2017/07/28/increases-in-schistosomiasis-linked-with-ecological-impacts-of-dams/)
+
+-----------------------------------------------------------------------------
+## Citrus Greening Story
+Graciela Lorca (UF Microbiologist)
+
 ------------------------------------------------------------------------------------------
 ## Flint Michigan Water Story
 - [Flint Paper](https://ajph.aphapublications.org/doi/10.2105/AJPH.2015.303003)
