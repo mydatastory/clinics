@@ -4,6 +4,8 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 
 [NOAA Fisheries](https://foss.nmfs.noaa.gov)
 
+[Scripps Surface/Bottom Temperatures](https://scripps.ucsd.edu/programs/shorestations/shore-stations-data/data-sio/)
+
 #### Articles
 [Sardine Bibliography](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
 
