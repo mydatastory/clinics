@@ -7,7 +7,7 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 [Scripps Surface/Bottom Temperatures](https://scripps.ucsd.edu/programs/shorestations/shore-stations-data/data-sio/)
 
 #### Articles
-[Sardine Bibliography](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
+Sardine Bibliography. [Article](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
 
 Norton, J. G., and J. E. Mason. 2005. Relationship of California sardine (Sardinops sagax) abundance to ecological changes in the California Current System. CalCOFI Reports 46:83-92. [Article]( https://github.com/mydatastory/stories/blob/master/doc/environment_sardine_abundance.pdf)
 
