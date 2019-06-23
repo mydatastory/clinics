@@ -11,7 +11,7 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 
 Norton, J. G., and J. E. Mason. 2005. Relationship of California sardine (Sardinops sagax) abundance to ecological changes in the California Current System. CalCOFI Reports 46:83-92. [Article]( https://github.com/mydatastory/stories/blob/master/doc/environment_sardine_abundance.pdf)
 
-Parrish, R. P. Monterey Sardine Story. [Article]
+Parrish, R. P. Monterey Sardine Story. [Article](https://github.com/mydatastory/stories/blob/master/doc/monterey_sardine_story.pdf)
 
 Lynn, Ronald J. 2003. Variability in the spawning habitat of Pacific sardine (Sardinops sagax) off southern and central California. Fisheries Oceanography 12(6):541-553.
 
