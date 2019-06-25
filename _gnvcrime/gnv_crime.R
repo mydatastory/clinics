@@ -1,5 +1,6 @@
 
 library ("RSQLite")
+library ("ggmap")
 
 #
 # The dbConnect function is peculiar in that it creates an empty database for
@@ -46,16 +47,23 @@ barplot(table(df_hour), col = 'lightblue',
                        xlab = 'Hour',
                        ylab = 'Frequency')
 
-# Test code to figure out what's happening with the hist() function.
-test <- hist(as.numeric(df_hour$hour),
-            breaks = 0:24,
-            col  = 'lightblue', 
-            xlab = 'Hour (Military)', 
-            main = 'Gainesville Crime',
-            ylim = c(0, 20000), 
-            xlim = c(0, 25))
+# ------------------------------------------------------------------------------------
+# Get the bbox lat/long coordinates from http://bboxfinder.com. See http://maps.stamen.com 
+# to view other options for get_stamenmap's maptype argument.
+# ------------------------------------------------------------------------------------
 
-# View the counts for each bin
-test
+# Set bbox coordinates for Gainesville and surrounding area.
+bbox <- c(left = -82.495995, bottom = 29.591670, right = -82.252922, top = 29.717874)
+
+map <- get_stamenmap(bbox, zoom = 14)
+
+ggmap(map)
+
+# Geocode Haile Plantation
+gc <- data.frame('place' = 'Haile Plantation' , 'lon' = -82.439, 'lat' = 29.624)
+
+# Render the map with a red dot on Haile Plantation.
+ggmap(map) +
+  geom_point(aes(x = lon, y = lat), data = gc, color = 'red', size = 1)
 
 dbDisconnect(con)
