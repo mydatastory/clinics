@@ -1,7 +1,9 @@
 Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 
-#### Data Links
+#### Links
+[For Ed Ricketts](https://www.twenty2films.com/for-ed-ricketts)
 
+#### Data Links
 [NOAA Fisheries](https://foss.nmfs.noaa.gov)
 
 [Scripps Surface/Bottom Temperatures](https://scripps.ucsd.edu/programs/shorestations/shore-stations-data/data-sio/)
