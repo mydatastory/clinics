@@ -1,10 +1,14 @@
-# Prep Code
+## Sardines
+
+#### Prep Code
 
 library(dplyr)
 
 setwd("C:/Users/drewc/Documents")
 
 noaa = read.csv("stories/data/fish_data_noaa.csv")
+
+temp = read.csv("stories/data/fish_data_oceantemps.csv")
 
 #### Group NOAA data By Year, State, and Species
 
@@ -20,34 +24,28 @@ colnames(ready)[4] <- "Pounds"
 
 #### Filter Dataset for Sardines in California
 
-sard <- filter(ready, Species == "Sardines")
+sard <- filter(ready, Species == "SARDINE, PACIFIC")
 ca <- filter(sard, State == "California")
 
 #### Define Varriables and Create Plot with Labels, Title and Legend
 
-x = ca$Year 
-y = ca$Pounds
-title = "Sardines Harvested in California"
-plot(x, y,                  
+plot(ca$Year, ca$Pounds,                  
      type = "l",
      col  = "blue",
-     main = title,
-     xlab = colnames(y),
-     ylab = colnames(x),
+     main = "Sardines Harvested in California",
+     xlab = "Pounds",
+     ylab = 'Fishing Year',
      xlim = c(1950, 2017),
      ylim = c(0, 250000000))
 
 #### Create filtered plot for after 1985 
 
-x = ca$Year 
-y = ca$Pounds
-title = "Sardines Harvested in California"
-plot(x, y,                  
+plot(ca$Year, ca$Pounds,                  
      type = "l",
      col  = "blue",
-     main = title,
-     xlab = colnames(y),
-     ylab = colnames(x),
+     main = "Sardines Harvested in California",
+     xlab = "Pounds",
+     ylab = 'Fishing Year',
      xlim = c(1985, 2017),
      ylim = c(0, 250000000))
 
@@ -81,8 +79,19 @@ plot(tm$Year, tm$Surf,
      ylim = c(15, 20))
 lines(tm$Year, tm$Bottom,
      col  = "red")
+par(new = TRUE)
+plot(ca$Year, ca$Pounds,                  
+     type = "l",
+     col  = "blue",
+     xlim = c(1950, 2017),
+     ylim = c(0, 250000000),
+     xaxt = "n",
+     yaxt = "n",
+     xlab = "",
+     ylab = "")
 
+#### Plot all Data Together
 
+#### Plot all Data Together after 1985
 
-
-
+#### Perform Linear Regression on after 1985 data
