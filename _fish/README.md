@@ -11,18 +11,21 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 #### Articles
 Sardine Bibliography. [Article](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
 
+Hemp, M. K. 2014.  Cannery row: The history of John Steinbeck's old ocean view avenue. [Book](https://www.amazon.com/CANNERY-History-Steinbecks-Ocean-Avenue/dp/0941425053/ref=sr_1_1?keywords=cannery+row%3A+the+history&qid=1562765418&s=books&sr=1-1)
+
+Lynn, Ronald J. 2003. Variability in the spawning habitat of Pacific sardine (Sardinops sagax) off southern and central California. Fisheries Oceanography 12(6):541-553.
+
+MacCall, Alec D. 1979. Population estimates for the waning years of the Pacific sardine fishery. CalCOFI Reports 20: 72-82.
+
+McFarlane, G. A., P. E. Smith, T. R. Baumgartner, and J. R. Hunter. 2002. Climate variability and Pacific sardine populations and fisheries. American Fisheries Society Symposium 32:195-214. 
+
 Norton, J. G., and J. E. Mason. 2005. Relationship of California sardine (Sardinops sagax) abundance to ecological changes in the California Current System. CalCOFI Reports 46:83-92. [Article]( https://github.com/mydatastory/stories/blob/master/doc/environment_sardine_abundance.pdf)
 
 Parrish, R. P. Monterey Sardine Story. [Article](https://github.com/mydatastory/stories/blob/master/doc/monterey_sardine_story.pdf)
 
-Lynn, Ronald J. 2003. Variability in the spawning habitat of Pacific sardine (Sardinops sagax) off southern and central California. Fisheries Oceanography 12(6):541-553.
-
 Smith, P. E., and H. G. Moser. 2003. Long-term trends and variability in the larvae of Pacific sardine and associated fish species of the California Current region. Deep-Sea Research II 50:2519-2536. 
-
-McFarlane, G. A., P. E. Smith, T. R. Baumgartner, and J. R. Hunter. 2002. Climate variability and Pacific sardine populations and fisheries. American Fisheries Society Symposium 32:195-214. 
 
 Ueber, E., and A.D. MacCall. 1992. The rise and fall of the California sardine empire. M. Glantz (ed.), Climate variability, climate change and fisheries, p. 31-48. Cambridge University Press. 
 
 Ueber, E., and A.D. MacCall. 1990. The collapse of California's sardine fishery. M. H. Glantz and L. E. Feingold (eds.), Climate variability, climate change, and fisheries, pp.17-23. National Center for Atmospheric Research, Boulder, Colorado. 
 
-MacCall, Alec D. 1979. Population estimates for the waning years of the Pacific sardine fishery. CalCOFI Reports 20: 72-82.
