@@ -134,7 +134,6 @@ plt.plot(xt85, yb85, "red")
 plt.legend()
 fig.suptitle("Sardines Harvested and Water Temperature in California", y = 0.95, fontsize = 12)
 
-
 #### Perform Linear Regression on after 1985 data
 
 model = LinearRegression(fit_intercept = False)
@@ -144,3 +143,20 @@ ysr = np.array(ca85["Pounds"]).reshape((-1, 1))
 
 model.fit(xsr, ysr)
 model.score(xsr, ysr)
+
+#### Perform Linear Regression on 1952-1958 data
+
+model = LinearRegression()
+
+ca6 = ca[ca.Year < 1958]
+tm6 = tm[tm.Year < 1958]
+
+ca5 = ca6[ca6.Year > 1952]
+tm5 = tm6[tm6.Year > 1952]
+
+x5 = np.array(tm5["Surf"]).reshape((-1, 1))
+y5 = np.array(ca5["Pounds"]).reshape((-1, 1))
+
+model.fit(x5, y5)
+model.score(x5, y5)
+
