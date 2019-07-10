@@ -86,58 +86,61 @@ plt.xlabel("Fishing Year")
 plt.legend()
 plt.title("Bottom Temperature in Southern California")
 
-#### Plot for After 1985
+##### Plot All Data Together
+
+fig, ax1 = plt.subplots()
+
+x = ca["Year"]
+y = ca["Pounds"]
+ax1.plot(x, y, color = "blue")
+ax1.set_ylabel("Pounds")
+ax1.set_xlabel("Fishing Year")
+
+ax2 = ax1.twinx()
+
+xt = tm["Year"]
+ys = tm["Surf"]
+ax2.plot(xt, ys, "orange")
+ax2.set_ylabel("Temperature C")
+
+yb = tm["Bottom"]
+plt.plot(xt, yb, "red")
+
+plt.legend()
+fig.suptitle("Sardines Harvested and Water Temperature in California", y = 0.95, fontsize = 12)
+
+#### Plot All Data Together after 1985
+
+fig, ax1 = plt.subplots()
+
+ca85 = ca[ca.Year > 1985]
+x85 = ca85["Year"]
+y85 = ca85["Pounds"]
+ax1.plot(x85, y85, color = "blue")
+ax1.set_ylabel("Pounds")
+ax1.set_xlabel("Fishing Year")
+
+ax2 = ax1.twinx()
 
 tm85 = tm[tm.Year > 1985]
 xt85 = tm85["Year"]
 ys85 = tm85["Surf"]
-plt.plot(xt85, ys85, 'y--')
-plt.ylabel("Temperature")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Surf Temperature in Southern California")
+ax2.plot(xt85, ys85, "orange")
+ax2.set_ylabel("Temperature C")
 
 yb85 = tm85["Bottom"]
-plt.plot(xt85, yb85, 'r--')
-plt.ylabel("Temperature")
-plt.xlabel("Fishing Year")
+plt.plot(xt85, yb85, "red")
+
 plt.legend()
-plt.title("Bottom Temperature in Southern California")
-
-#### Plot All Data Together (incomplete)
-
-x = ca["Year"]
-y = ca["Pounds"]
-plt.plot(x, y, 'b--')
-plt.ylabel("Pounds")
-plt.xlabel("Fishing Year")
-plt.title("Sardines Harvested in California")
-
-xt = tm["Year"]
-ys = tm["Surf"]
-plt.plot(xt, ys, 'y--')
-plt.ylabel("Temperature")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Surf Temperature in Southern California")
-yb = tm["Bottom"]
-plt.plot(xt, yb, 'r--')
-plt.ylabel("Temperature")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Bottom Temperature in Southern California")
-
-#### Data Check
-
-indexs.head()
-dfs.dtypes
-dfs.info()
-print(dfs)
-
-#### Scratch pad
+fig.suptitle("Sardines Harvested and Water Temperature in California", y = 0.95, fontsize = 12)
 
 
+#### Perform Linear Regression on after 1985 data
 
+model = LinearRegression(fit_intercept = False)
 
+xsr = np.array(tm85["Bottom"]).reshape((-1, 1))
+ysr = np.array(ca85["Pounds"]).reshape((-1, 1))
 
-
+model.fit(xsr, ysr)
+model.score(xsr, ysr)
