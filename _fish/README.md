@@ -11,6 +11,8 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 #### Articles
 Sardine Bibliography. [Article](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
 
+Clark, F. N. and Marr, J. C. Population dynamics of the Pacific Sardine [article]
+
 Hemp, M. K. 2014.  Cannery row: The history of John Steinbeck's old ocean view avenue. [Book](https://www.amazon.com/CANNERY-History-Steinbecks-Ocean-Avenue/dp/0941425053/ref=sr_1_1?keywords=cannery+row%3A+the+history&qid=1562765418&s=books&sr=1-1)
 
 Lynn, Ronald J. 2003. Variability in the spawning habitat of Pacific sardine (Sardinops sagax) off southern and central California. Fisheries Oceanography 12(6):541-553.
