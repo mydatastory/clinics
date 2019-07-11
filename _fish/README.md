@@ -25,7 +25,7 @@ Parrish, R. P. Monterey Sardine Story. [Article](https://github.com/mydatastory/
 
 Smith, P. E., and H. G. Moser. 2003. Long-term trends and variability in the larvae of Pacific sardine and associated fish species of the California Current region. Deep-Sea Research II 50:2519-2536. 
 
-Ueber, E., and A.D. MacCall. 1992. The rise and fall of the California sardine empire. M. Glantz (ed.), Climate variability, climate change and fisheries, p. 31-48. Cambridge University Press. 
+* Ueber, E., and A.D. MacCall. 1992. The rise and fall of the California sardine empire. M. Glantz (ed.), Climate variability, climate change and fisheries, p. 31-48. Cambridge University Press. [Chapter](https://github.com/mydatastory/stories/blob/master/doc/rise_fall_sardine.pdf)
 
 Ueber, E., and A.D. MacCall. 1990. The collapse of California's sardine fishery. M. H. Glantz and L. E. Feingold (eds.), Climate variability, climate change, and fisheries, pp.17-23. National Center for Atmospheric Research, Boulder, Colorado. 
 
