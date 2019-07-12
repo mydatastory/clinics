@@ -1,17 +1,26 @@
+## Sardines in California
+
 #### Prep Code
 
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.linear_model import LinearRegression
 
 os.chdir("C:/Users/drewc/Documents/stories")
 
 noaa = pd.read_csv("data/fish_data_noaa.csv")
 noaa.info()
 
-temp = pd.read_csv("data/fish_data_oceantemps.csv")
+temp = pd.read_csv("data/fish_data_newtemps.csv")
 temp.info()
+
+short = pd.read_csv("data/fish_data_shorttons.csv")
+short.info()
+
+old = pd.read_csv("data/fish_data_oldtemp.csv")
+old.info()
 
 #### Group NOAA data By Year, State, and Species
 
@@ -30,9 +39,9 @@ ca = sard[sard.State == 'California']
 
 #### Define Varriables and Create Plot with Labels, Title and Legend
 
-x = ca["Year"]
-y = ca["Pounds"]
-plt.plot(x, y, 'b--')
+xc = ca["Year"]
+yp = ca["Pounds"]
+plt.plot(xc, yp, 'b--')
 plt.ylabel("Pounds")
 plt.xlabel("Fishing Year")
 plt.legend()
@@ -43,11 +52,13 @@ plt.title("Sardines Harvested in California")
 ca85 = ca[ca.Year > 1985]
 x85 = ca85["Year"]
 y85 = ca85["Pounds"]
-plt.plot(xa, ya, 'b--')
+plt.plot(x85, y85, 'b--')
 plt.ylabel("Pounds")
 plt.xlabel("Fishing Year")
 plt.legend()
 plt.title("Sardines Harvested in California")
+
+## Temperature Data from La Jolla Pier
 
 #### Group Temperature Data by day, month, and year average
 
@@ -69,7 +80,7 @@ indexb["Surf"] = indexs["Surf"]
 tm = indexb
 tm.info()
 
-#### Define Varriables and Create Plot with Labels, Title and Legend
+#### Create Plot with Labels, Title and Legend
 
 xt = tm["Year"]
 ys = tm["Surf"]
@@ -77,37 +88,39 @@ plt.plot(xt, ys, 'y--')
 plt.ylabel("Temperature")
 plt.xlabel("Fishing Year")
 plt.legend()
-plt.title("Surf Temperature in Southern California")
+plt.title("Surf Temperature at La Jolla Pier")
 
 yb = tm["Bottom"]
 plt.plot(xt, yb, 'r--')
 plt.ylabel("Temperature")
 plt.xlabel("Fishing Year")
 plt.legend()
-plt.title("Bottom Temperature in Southern California")
+plt.title("Bottom Temperature at La Jolla Pier")
 
 ##### Plot All Data Together
 
 fig, ax1 = plt.subplots()
 
-x = ca["Year"]
-y = ca["Pounds"]
-ax1.plot(x, y, color = "blue")
-ax1.set_ylabel("Pounds")
+xc = ca["Year"]
+yp = ca["Pounds"]
+ax1.plot(xc, yp, color = "blue")
+ax1.set_ylabel("Pounds (Hundred Millions)")
 ax1.set_xlabel("Fishing Year")
+ax1.legend()
 
 ax2 = ax1.twinx()
 
-xt = tm["Year"]
-ys = tm["Surf"]
-ax2.plot(xt, ys, "orange")
+xta = tm["Year"]
+ysa = tm["Surf"]
+ax2.plot(xta, ysa, "orange")
 ax2.set_ylabel("Temperature C")
 
-yb = tm["Bottom"]
-plt.plot(xt, yb, "red")
+yba = tm["Bottom"]
+ax2.plot(xta, yba, "red")
+ax2.legend()
 
-plt.legend()
-fig.suptitle("Sardines Harvested and Water Temperature in California", y = 0.95, fontsize = 12)
+fig.suptitle("Sardines Harvested in California and Water Temperature at La Jolla Pier", y = 0.95, fontsize = 12)
+fig.savefig("fig/fish_plot_combine.jpeg")
 
 #### Plot All Data Together after 1985
 
@@ -117,8 +130,9 @@ ca85 = ca[ca.Year > 1985]
 x85 = ca85["Year"]
 y85 = ca85["Pounds"]
 ax1.plot(x85, y85, color = "blue")
-ax1.set_ylabel("Pounds")
+ax1.set_ylabel("Pounds (Hundred Millions)")
 ax1.set_xlabel("Fishing Year")
+ax1.legend()
 
 ax2 = ax1.twinx()
 
@@ -129,10 +143,11 @@ ax2.plot(xt85, ys85, "orange")
 ax2.set_ylabel("Temperature C")
 
 yb85 = tm85["Bottom"]
-plt.plot(xt85, yb85, "red")
+ax2.plot(xt85, yb85, "red")
+ax2.legend()
 
-plt.legend()
-fig.suptitle("Sardines Harvested and Water Temperature in California", y = 0.95, fontsize = 12)
+fig.suptitle("Sardines Harvested in California and Water Temperature at La Jolla Pier", y = 0.95, fontsize = 12)
+fig.savefig("fig/fish_plot_combine85.jpeg")
 
 #### Perform Linear Regression on after 1985 data
 
@@ -144,7 +159,7 @@ ysr = np.array(ca85["Pounds"]).reshape((-1, 1))
 model.fit(xsr, ysr)
 model.score(xsr, ysr)
 
-#### Perform Linear Regression on 1952-1958 data
+#### Perform Linear Regression on 1952 to 1958 data
 
 model = LinearRegression()
 
@@ -160,3 +175,72 @@ y5 = np.array(ca5["Pounds"]).reshape((-1, 1))
 model.fit(x5, y5)
 model.score(x5, y5)
 
+## Monterrey Finshing Data Before 1970
+
+#### Plot Monterrey Data
+
+xsh = short["Year"]
+ysh = short["Short"]
+plt.plot(xsh, ysh, 'g--')
+plt.ylabel("Short Tons")
+plt.xlabel("Fishing Year")
+plt.legend()
+plt.title("Sardines Harvested in Monterrey")
+
+#### Group Temperature Data by day, month, and year average
+
+group = old.groupby(["Year", "Month", "Day"]).mean()
+group.info()
+
+groupo = group.groupby("Year")["Temperature"].mean() 
+
+#### Convert Series to Frame, Reset Index
+
+dfo = groupo.to_frame()
+old = dfo.reset_index(level=["Year"])
+old.info()
+
+#### Plot Data
+
+xo = old["Year"]
+yo = old["Temperature"]
+plt.plot(xo, yo, "r--")
+plt.ylabel("Temperature C")
+plt.xlabel("Fishing Year")
+plt.legend()
+plt.title("Temperature at La Jolla Pier")
+
+#### Combine with Older Temperature Data between 1925 and 1945
+
+sh5 = short[short.Year < 1946]
+ol5 = old[old.Year < 1946]
+
+fig, ax1  = plt.subplots()
+
+xsh = sh5["Year"]
+ysh = sh5["Short"]
+ax1.plot(xsh, ysh, color = "green")
+ax1.set_ylabel("Short Tons")
+ax1.set_xlabel("Fishing Year")
+
+ax1.legend()
+
+ax2 = ax1.twinx()
+
+xol = ol5["Year"]
+yol = ol5["Temperature"]
+ax2.plot(xol, yol, color = "red")
+ax2.set_ylabel("Temperature C")
+
+ax2.legend()
+
+fig.suptitle("Sardines Harvested in California and Water Temperature at La Jolla Pier", y = 0.95, fontsize = 12)
+fig.savefig("fig/fish_plot_combineold.jpeg")
+
+#### Perform Linear Regression on Old Data
+
+xold = np.array(ol5["Temperature"]).reshape((-1, 1))
+yold = np.array(sh5["Short"]).reshape((-1, 1))
+
+model.fit(x5, y5)
+model.score(x5, y5)
