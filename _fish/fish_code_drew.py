@@ -37,7 +37,7 @@ ready.info()
 sard = ready[ready.Species == "SARDINE, PACIFIC"]
 ca = sard[sard.State == 'California']
 
-#### Define Varriables and Create Plot with Labels, Title and Legend
+#### Create Plot with Labels, Title and Legend
 
 xc = ca["Year"]
 yp = ca["Pounds"]
@@ -149,7 +149,7 @@ ax2.legend()
 fig.suptitle("Sardines Harvested in California and Water Temperature at La Jolla Pier", y = 0.95, fontsize = 12)
 fig.savefig("fig/fish_plot_combine85.jpeg")
 
-#### Perform Linear Regression on after 1985 data
+#### Perform Linear Regression on Full Data
 
 model = LinearRegression(fit_intercept = False)
 
@@ -157,7 +157,8 @@ xsr = np.array(tm85["Bottom"]).reshape((-1, 1))
 ysr = np.array(ca85["Pounds"]).reshape((-1, 1))
 
 model.fit(xsr, ysr)
-model.score(xsr, ysr)
+r = model.score(xsr, ysr)
+print("Rsq = ", r_sq)
 
 #### Perform Linear Regression on 1952 to 1958 data
 
@@ -173,7 +174,8 @@ x5 = np.array(tm5["Surf"]).reshape((-1, 1))
 y5 = np.array(ca5["Pounds"]).reshape((-1, 1))
 
 model.fit(x5, y5)
-model.score(x5, y5)
+r = model.score(x5, y5)
+print("Rsq = ", r)
 
 ## Monterrey Finshing Data Before 1970
 
@@ -187,14 +189,12 @@ plt.xlabel("Fishing Year")
 plt.legend()
 plt.title("Sardines Harvested in Monterrey")
 
-#### Group Temperature Data by day, month, and year average
+#### Group Temperature Data by day, month, and year average. Convert to Data Frame and Reset Index
 
 group = old.groupby(["Year", "Month", "Day"]).mean()
 group.info()
 
 groupo = group.groupby("Year")["Temperature"].mean() 
-
-#### Convert Series to Frame, Reset Index
 
 dfo = groupo.to_frame()
 old = dfo.reset_index(level=["Year"])
@@ -243,4 +243,43 @@ xold = np.array(ol5["Temperature"]).reshape((-1, 1))
 yold = np.array(sh5["Short"]).reshape((-1, 1))
 
 model.fit(x5, y5)
-model.score(x5, y5)
+r = model.score(x5, y5)
+print("Rsq = ", r)
+
+## Phase Year Data to Account for Delay of Impact
+
+##### Phase Pre-Collapse Data by 1 Year
+
+phs75 = ol75["Year"] + 1
+ol75["Phase"] = phs75
+
+#### Reframe Contemporary Data for 1995 to 2010
+
+phs85 = tm["Year"] + 10
+
+tm["Phase"] = phs85
+
+tm0 = tm[tm.Phase < 2010]
+tm80 = tm0[tm0.Phase > 1985]
+
+ca0 = ca85[ca85.Year < 2010]
+ca80 = ca0[ca85.Year > 1985]
+
+#### Perform Linear Regression on Phase Data
+
+xp75 = np.array(ol75["Phase"]).reshape((-1, 1))
+
+model.fit(xp75, y75)
+r75 = model.score(xp75, y75)
+print("Rsq 1927 to 1945 with 1 year lag = ", r75)
+
+model.fit(x28, y28)
+r28 = model.score(x28, y28)
+print("Rsq 1952 to 1958 with 0 year lag = ", r28)
+
+x80 = np.array(tm80["Phase"]).reshape((-1, 1))
+y80 = np.array(ca80["Pounds"]).reshape((-1, 1))
+
+model.fit(x80, y80)
+r80 = model.score(x80, y80)
+print("Rsq 1985 to 2010 with 10 year lag = ", r80)
