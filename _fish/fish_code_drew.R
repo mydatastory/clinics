@@ -79,19 +79,24 @@ plot(tm$Year, tm$Surf,
      ylim = c(15, 20))
 lines(tm$Year, tm$Bottom,
      col  = "red")
-par(new = TRUE)
+par(new = True)
 plot(ca$Year, ca$Pounds,                  
      type = "l",
      col  = "blue",
+     xlab = "Pounds",
+     ylab = 'Fishing Year',
      xlim = c(1950, 2017),
-     ylim = c(0, 250000000),
-     xaxt = "n",
-     yaxt = "n",
-     xlab = "",
-     ylab = "")
+     ylim = c(0, 250000000))
 
 #### Plot all Data Together
+
+
 
 #### Plot all Data Together after 1985
 
 #### Perform Linear Regression on after 1985 data
+
+head(temp)
+
+head(groupb)
+
