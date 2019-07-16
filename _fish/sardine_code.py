@@ -6,7 +6,7 @@ Created on Thu May 16 12:38:42 2019
 """
 
 # ----------------------------------------------------------------------------
-# Atlantic Cod Analysis
+# Sardine Analysis
 # ----------------------------------------------------------------------------
 
 # Setup environment with appropriate libraries.
@@ -26,6 +26,3 @@ import matplotlib.pyplot as plt
 base_df = pd.read_csv('c:/informatics/scripps_ocean_temps.csv')
 
 avg_df = base_df.groupby(["year"])["surf_temp_c","bot_temp_c"].mean()
-
-avg_df.to_csv('c:/informatics/scripps_ocean_avg_temps.csv')
-
