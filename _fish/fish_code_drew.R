@@ -88,15 +88,4 @@ plot(ca$Year, ca$Pounds,
      xlim = c(1950, 2017),
      ylim = c(0, 250000000))
 
-#### Plot all Data Together
-
-
-
-#### Plot all Data Together after 1985
-
-#### Perform Linear Regression on after 1985 data
-
-head(temp)
-
-head(groupb)
 

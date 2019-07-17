@@ -8,19 +8,30 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-os.chdir("C:/Users/drewc/Documents/stories")
+os.chdir("C:/Users/drewc/Documents/GitHub/stories")
 
-noaa = pd.read_csv("data/fish_data_noaa.csv")
-noaa.info()
-
-temp = pd.read_csv("data/fish_data_newtemps.csv")
+temp = pd.read_csv("data/scripps_temps_stage.csv")
 temp.info()
 
-short = pd.read_csv("data/fish_data_shorttons.csv")
-short.info()
+ueber = pd.read_csv("data/ueber_landings_stage.csv")
+ueber.info()
 
-old = pd.read_csv("data/fish_data_oldtemp.csv")
-old.info()
+noaa = pd.read_csv("data/noaa_master_stage.csv")
+noaa.info()
+
+## Monterrey Finshing Data Before 1970
+
+#### Plot Monterrey Data
+
+xu = ueber["Year"]
+yu = ueber["Tons"]
+plt.plot(xu, yu, 'g--')
+plt.ylabel("Short Tons")
+plt.xlabel("Fishing Year")
+plt.legend()
+plt.title("Sardines Harvested in Monterrey")
+
+## NOAA State Fishing Data
 
 #### Group NOAA data By Year, State, and Species
 
@@ -29,7 +40,7 @@ group.info()
 
 #### Drop Unwanted Columns
 
-ready = group.drop(["Dollars"], axis=1)
+ready = group.drop(["Dollars", "Pounds"], axis=1)
 ready.info()
 
 #### Filter Dataset for Sardines in California
@@ -40,29 +51,21 @@ ca = sard[sard.State == 'California']
 #### Define Varriables and Create Plot with Labels, Title and Legend
 
 xc = ca["Year"]
-yp = ca["Pounds"]
+yp = ca["Tons"]
 plt.plot(xc, yp, 'b--')
-plt.ylabel("Pounds")
+plt.ylabel("Tons")
 plt.xlabel("Fishing Year")
 plt.legend()
 plt.title("Sardines Harvested in California")
-
-#### Create filtered plot for after 1985 
-
-ca85 = ca[ca.Year > 1985]
-x85 = ca85["Year"]
-y85 = ca85["Pounds"]
-plt.plot(x85, y85, 'b--')
-plt.ylabel("Pounds")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Sardines Harvested in California")
+plt.show
 
 ## Temperature Data from La Jolla Pier
 
 #### Group Temperature Data by day, month, and year average
 
-group = temp.groupby(["Year", "Month", "Day"]).mean()
+na = temp.dropna()
+
+group = na.groupby(["Year", "Month", "Day"]).mean()
 group.info()
 
 groups = group.groupby("Year")["Surf"].mean() 
@@ -101,12 +104,17 @@ plt.title("Bottom Temperature at La Jolla Pier")
 
 fig, ax1 = plt.subplots()
 
+xu = ueber["Year"]
+yu = ueber["Tons"]
+plt.plot(xu, yu, 'g--')
+plt.ylabel("Short Tons")
+plt.xlabel("Fishing Year")
+plt.legend()
+
 xc = ca["Year"]
-yp = ca["Pounds"]
-ax1.plot(xc, yp, color = "blue")
-ax1.set_ylabel("Pounds (Hundred Millions)")
-ax1.set_xlabel("Fishing Year")
-ax1.legend()
+yp = ca["Tons"]
+plt.plot(xc, yp, 'b--')
+plt.legend()
 
 ax2 = ax1.twinx()
 
@@ -120,7 +128,7 @@ ax2.plot(xta, yba, "red")
 ax2.legend()
 
 fig.suptitle("Sardines Harvested in California and Water Temperature at La Jolla Pier", y = 0.95, fontsize = 12)
-fig.savefig("fig/fish_plot_combine.jpeg")
+fig.savefig("fig/fish_plot_full.jpeg")
 
 #### Plot All Data Together after 1985
 
@@ -160,6 +168,8 @@ model.fit(xsr, ysr)
 r = model.score(xsr, ysr)
 print("Rsq = ", r)
 
+
+
 #### Perform Linear Regression on 1952 to 1958 data
 
 model = LinearRegression()
@@ -176,42 +186,7 @@ y5 = np.array(ca5["Pounds"]).reshape((-1, 1))
 model.fit(x5, y5)
 model.score(x5, y5)
 
-## Monterrey Finshing Data Before 1970
-
-#### Plot Monterrey Data
-
-xsh = short["Year"]
-ysh = short["Short"]
-plt.plot(xsh, ysh, 'g--')
-plt.ylabel("Short Tons")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Sardines Harvested in Monterrey")
-
-#### Group Temperature Data by day, month, and year average
-
-group = old.groupby(["Year", "Month", "Day"]).mean()
-group.info()
-
-groupo = group.groupby("Year")["Temperature"].mean() 
-
-#### Convert Series to Frame, Reset Index
-
-dfo = groupo.to_frame()
-old = dfo.reset_index(level=["Year"])
-old.info()
-
-#### Plot Data
-
-xo = old["Year"]
-yo = old["Temperature"]
-plt.plot(xo, yo, "r--")
-plt.ylabel("Temperature C")
-plt.xlabel("Fishing Year")
-plt.legend()
-plt.title("Temperature at La Jolla Pier")
-
-#### Combine with Older Temperature Data between 1925 and 1945
+#### Plot Data between 1925 and 1945
 
 sh5 = short[short.Year < 1946]
 ol5 = old[old.Year < 1946]
@@ -245,4 +220,3 @@ yold = np.array(sh5["Short"]).reshape((-1, 1))
 
 model.fit(x5, y5)
 model.score(x5, y5)
-
