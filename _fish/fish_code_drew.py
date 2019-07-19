@@ -168,8 +168,6 @@ model.fit(xsr, ysr)
 r = model.score(xsr, ysr)
 print("Rsq = ", r)
 
-
-
 #### Perform Linear Regression on 1952 to 1958 data
 
 model = LinearRegression()
