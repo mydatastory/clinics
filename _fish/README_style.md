@@ -30,9 +30,9 @@ set the working directory as the repository folder
 
 each file should follow the format of:
 
-content_subcontent_type_modifier.ext
+content_subcontent_type.ext
 
-Example: sardines_noaa_data_raw.csv OR fisheries_story_draft.ipynb
+Example: sardines_noaa_raw.csv OR fisheries_story_draft.ipynb
 
 Some files do not have subcontent.
 
