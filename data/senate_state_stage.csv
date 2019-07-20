@@ -1,2149 +1,1498 @@
-Year,State,Party,Vote
-2010,Vermont,independent,0.01
-2012,Florida,none,0.01
-2010,Oregon,progressive,0.01
-2006,North Dakota,independent,0.01
-1986,Oregon,,0.01
-1988,Vermont,independent,0.01
-1980,Alabama,libertarian,0.01
-2016,Vermont,liberty union,0.01
-2018,Vermont,independent,0.01
-2018,Pennsylvania,libertarian,0.01
-2006,Washington,green,0.01
-1998,Louisiana,democrat,0.01
-1996,Montana,natural law,0.01
-1990,Tennessee,independent,0.01
-1994,Indiana,new alliance,0.01
-2002,Alaska,libertarian,0.01
-1978,Delaware,american,0.01
-2004,Iowa,libertarian,0.01
-1990,New Jersey,populist,0.01
-1996,Idaho,natural law,0.01
-1996,Oregon,green,0.01
-2010,New Hampshire,libertarian,0.01
-2016,Connecticut,green,0.01
-1986,Colorado,independent,0.01
-2000,Rhode Island,reform,0.01
-2016,Louisiana,republican,0.01
-1980,Ohio,NA,0.01
-2002,Nebraska,independent,0.01
-1988,Vermont,liberty union,0.01
-1976,Massachusetts,socialist workers,0.01
-1998,Colorado,libertarian,0.01
-1976,Connecticut,american independent,0.01
-2012,Mississippi,reform,0.01
-1982,Ohio,libertarian,0.01
-2004,Maryland,green,0.01
-1988,New York,right to life,0.01
-1982,California,american independent,0.01
-2012,Minnesota,grassroots party,0.01
-2000,Georgia,not identified,0.01
-2004,Vermont,independent,0.01
-2004,Washington,green,0.01
-2018,Delaware,libertarian,0.01
-2010,Wisconsin,constitution party of wisconsin,0.01
-2000,New Jersey,independent,0.01
-1998,Kentucky,reform,0.01
-2010,Colorado,independent reform,0.01
-2016,Missouri,green,0.01
-1996,New Mexico,libertarian,0.01
-2006,Delaware,libertarian,0.01
-2006,Virginia,independent green,0.01
-2010,Louisiana,libertarian,0.01
-1976,California,american independent,0.01
-2002,Iowa,green,0.01
-2010,Oregon,libertarian,0.01
-1998,New York,liberal,0.01
-2018,Missouri,libertarian,0.01
-1996,South Carolina,libertarian,0.01
-2002,Massachusetts,NA,0.01
-1994,Indiana,libertarian,0.01
-2004,Indiana,libertarian,0.01
-2010,Maryland,green,0.01
-1998,California,libertarian,0.01
-1986,North Dakota,independent,0.01
-2016,Connecticut,libertarian,0.01
-1976,Nevada,libertarian,0.01
-1982,Ohio,independent,0.01
-2016,Iowa,new independent party iowa,0.01
-1998,Vermont,vermont grassroots,0.01
-2018,Delaware,green,0.01
-2002,New Jersey,green,0.01
-1990,Colorado,prohibition,0.01
-2014,Nebraska,by petition,0.01
-2000,Texas,libertarian,0.01
-2010,Vermont,united states marijuana,0.01
-2006,Wisconsin,independent,0.01
-2014,Texas,green,0.01
-2004,Nevada,libertarian,0.01
-2006,New York,green,0.01
-2014,Colorado,unaffiliated,0.01
-2000,New York,liberal,0.01
-2018,Utah,independent american,0.01
-2014,Michigan,u.s. taxpayers,0.01
-2014,Oklahoma,independent,0.01
-2004,Washington,libertarian,0.01
-2016,South Carolina,libertarian,0.01
-1996,Delaware,libertarian,0.01
-2010,West Virginia,constitution,0.01
-2014,West Virginia,mountain,0.01
-1980,Louisiana,republican,0.01
-1996,Wyoming,natural law,0.01
-2000,Hawaii,natural law,0.01
-2012,Maryland,libertarian,0.01
-2016,Oregon,libertarian,0.01
-2004,Alaska,alaskan independence,0.01
-2012,Mississippi,constitution,0.01
-1980,Alabama,conservative,0.01
-1996,Oklahoma,libertarian,0.01
-1982,California,peace and freedom,0.01
-1996,Kansas,libertarian,0.01
-1984,Illinois,libertarian,0.01
-2010,California,american independent,0.01
-1998,Louisiana,other,0.01
-2000,California,american independent,0.01
-1992,Iowa,natural law,0.01
-2004,Hawaii,libertarian,0.01
-1998,Connecticut,concerned citizens,0.01
-2010,Colorado,libertarian,0.01
-1996,Oklahoma,independent,0.01
-2018,Minnesota,legal marijuana now,0.01
-2016,Louisiana,republican,0.01
-1990,Michigan,workers world,0.01
-2016,Nevada,none,0.01
-2010,California,green,0.01
-2014,Oklahoma,independent,0.01
-1992,South Dakota,independent,0.01
-1986,Wisconsin,independent,0.01
-1976,Washington,libertarian,0.01
-1992,South Dakota,libertarian,0.01
-2004,Vermont,vermont green,0.01
-2008,Tennessee,independent,0.01
-1992,Kentucky,libertarian,0.01
-1992,Colorado,independent,0.01
-2010,Oregon,working families,0.01
-2010,Ohio,independent,0.01
-2000,Vermont,libertarian,0.01
-2006,Nevada,independent,0.01
-2000,Tennessee,green,0.01
-1986,New York,liberal,0.01
-2016,Colorado,green,0.01
-2008,Idaho,independent,0.01
-2004,Illinois,libertarian,0.01
-2000,Utah,libertarian,0.01
-2010,California,peace and freedom,0.01
-1976,North Dakota,american,0.01
-1998,Vermont,independent,0.01
-2008,Kansas,reform,0.01
-2016,North Dakota,independent,0.01
-1976,Ohio,independent,0.01
-1990,Hawaii,libertarian,0.01
-2002,Georgia,libertarian,0.01
-1980,Arizona,libertarian,0.01
-1990,South Carolina,american,0.01
-2004,North Carolina,libertarian,0.01
-2006,California,peace and freedom,0.01
-1982,California,libertarian,0.01
-2000,Florida,independent,0.01
-1984,South Carolina,libertarian,0.01
-2010,Kansas,reform,0.01
-2018,Vermont,independent,0.01
-1976,California,peace and freedom,0.01
-2006,Washington,libertarian,0.01
-2018,Missouri,independent,0.01
-1982,Wisconsin,labor and farm,0.01
-2006,Nevada,,0.01
-2004,Kansas,reform,0.01
-2012,Maine,,0.01
-2004,Pennsylvania,libertarian,0.01
-1990,Tennessee,independent,0.01
-1994,Nevada,independent american,0.01
-1996,Illinois,reform,0.01
-1996,Alabama,libertarian,0.01
-2016,Ohio,none,0.01
-2010,Arizona,green,0.01
-2008,Nebraska,nebraska party,0.01
-2014,Colorado,unaffiliated,0.01
-1998,South Dakota,libertarian,0.01
-2002,North Carolina,libertarian,0.01
-1976,Arizona,independent,0.01
-2016,New York,green,0.01
-1992,Nevada,libertarian,0.01
-2000,Texas,green,0.01
-2000,New York,working families,0.01
-2002,Colorado,libertarian,0.01
-1992,Nevada,natural law,0.01
-1978,Minnesota,american,0.01
-1992,Colorado,chsritian pro-life,0.01
-1982,Washington,independent,0.01
-1980,Idaho,libertarian,0.01
-1978,Maine,independent,0.01
-1994,Vermont,independent,0.01
-1986,California,independent,0.01
-1990,Delaware,libertarian,0.01
-1998,Indiana,libertarian,0.01
-2002,Alabama,libertarian,0.01
-2014,Minnesota,libertarian,0.01
-1996,Oregon,reform,0.01
-1988,North Dakota,libertarian,0.01
-1998,New Hampshire,independent,0.02
-2010,Vermont,independent,0.02
-1986,Vermont,conservative,0.02
-2012,Hawaii,,0.02
-1990,Colorado,concerns of people,0.02
-2002,Colorado,american constitution,0.02
-1992,New York,libertarian,0.02
-2014,Wyoming,,0.02
-2006,Wyoming,,0.02
-2012,Florida,none,0.02
-2000,Massachusetts,constitution,0.02
-2008,Idaho,libertarian,0.02
-2016,Nevada,independent american,0.02
-2002,Nebraska,libertarian,0.02
-2006,Maryland,green,0.02
-2000,Utah,independent american,0.02
-1988,Nebraska,new alliance,0.02
-2016,Hawaii,libertarian,0.02
-1980,California,american independent,0.02
-1998,Kansas,reform,0.02
-2006,Mississippi,libertarian,0.02
-1998,Pennsylvania,libertarian,0.02
-2006,California,libertarian,0.02
-1994,Nevada,libertarian,0.02
-2018,Nevada,NA,0.02
-2008,Michigan,libertarian,0.02
-1996,Mississippi,independence,0.02
-2004,Illinois,independent,0.02
-1990,Alaska,NA,0.02
-2000,Indiana,libertarian,0.02
-1998,Kansas,libertarian,0.02
-1998,South Carolina,libertarian,0.02
-2000,Ohio,natural law,0.02
-2006,Utah,personal choice,0.02
-2004,Nevada,,0.02
-1988,Nevada,libertarian,0.02
-1992,Indiana,libertarian,0.02
-1992,Oklahoma,independent,0.02
-2016,Vermont,independent,0.02
-1998,Oregon,libertarian,0.02
-2010,North Dakota,libertarian,0.02
-2014,West Virginia,libertarian,0.02
-1980,Louisiana,republican,0.02
-1992,Arizona,libertarian,0.02
-1992,Oklahoma,independent,0.02
-2018,New York,independence,0.02
-2016,Ohio,green,0.02
-2002,Illinois,libertarian,0.02
-1990,Minnesota,grassroots,0.02
-1994,California,green,0.02
-2014,Oregon,constitution,0.02
-2012,Connecticut,libertarian,0.02
-2012,Tennessee,green,0.02
-2004,Oregon,libertarian,0.02
-2010,South Carolina,NA,0.02
-1994,California,american independent,0.02
-1994,Pennsylvania,libertarian,0.02
-1998,North Dakota,reform,0.02
-2000,Vermont,vermont grassroots,0.02
-1994,Delaware,libertarian,0.02
-2016,New Hampshire,libertarian,0.02
-1988,California,peace and freedom,0.02
-2000,Nevada,green,0.02
-2002,Oregon,constitution,0.02
-2006,California,green,0.02
-2012,Pennsylvania,libertarian,0.02
-2010,Ohio,constitution,0.02
-2016,Ohio,none,0.02
-1996,Rhode Island,independent,0.02
-2014,South Carolina,american,0.02
-1986,Alaska,libertarian,0.02
-1994,Nevada,independent,0.02
-2010,California,libertarian,0.02
-2000,California,libertarian,0.02
-1996,New Jersey,independent,0.02
-1988,Arizona,libertarian,0.02
-1992,Vermont,liberty union,0.02
-1976,Nevada,independent american,0.02
-2004,California,libertarian,0.02
-1994,New York,right to life,0.02
-1992,New Hampshire,independent,0.02
-1998,Oklahoma,independent,0.02
-1998,Arizona,reform,0.02
-2012,Michigan,libertarian,0.02
-1984,Idaho,libertarian,0.02
-1994,Wyoming,libertarian,0.02
-2016,South Carolina,working families,0.02
-1998,North Carolina,libertarian,0.02
-2018,Virginia,libertarian,0.02
-1990,South Carolina,libertarian,0.02
-1994,Utah,independent,0.02
-2018,Minnesota,legal marijuana now,0.02
-2010,Arkansas,green,0.02
-2000,Vermont,independent,0.02
-1998,Nevada,,0.02
-1998,Nevada,libertarian,0.02
-1986,Nevada,libertarian,0.02
-2006,Hawaii,libertarian,0.02
-1976,Washington,independent,0.02
-1992,Utah,libertarian,0.02
-2016,Oklahoma,independent,0.02
-2004,Utah,constitution,0.02
-1980,Ohio,independent,0.02
-2014,Georgia,libertarian,0.02
-2000,Nevada,,0.02
-2010,West Virginia,mountain party,0.02
-1980,Oklahoma,independent,0.02
-2016,New York,independence,0.02
-2016,Vermont,,0.02
-2004,Kansas,libertarian,0.02
-2012,New York,independence,0.02
-1994,Connecticut,concerned citizens,0.02
-1992,South Carolina,libertarian,0.02
-2000,Connecticut,concerned citizens,0.02
-2014,Delaware,green,0.02
-2014,South Carolina,working families,0.02
-1998,Vermont,libertarian,0.02
-1998,Oregon,pacific,0.02
-2014,Arkansas,green,0.02
-2006,Wisconsin,wisconsin green,0.02
-1994,Pennsylvania,patriot,0.02
-2014,Alaska,nonaffiliated,0.02
-2002,Minnesota,independence,0.02
-2014,Michigan,libertarian,0.02
-1992,Alabama,libertarian,0.02
-1998,Missouri,libertarian,0.02
-2010,New Hampshire,independent,0.02
-1992,New York,liberal,0.02
-2004,California,peace and freedom,0.02
-2012,Vermont,united states marijuana,0.02
-2014,Arkansas,libertarian,0.02
-1992,Illinois,conservative,0.02
-1996,Idaho,independent,0.02
-2012,Texas,libertarian,0.02
-2012,Wisconsin,libertarian,0.02
-1998,Idaho,natural law,0.02
-1992,Hawaii,libertarian,0.02
-2016,Hawaii,constitution,0.02
-2000,West Virginia,libertarian,0.02
-2010,North Carolina,libertarian,0.02
-2010,Hawaii,green,0.02
-1998,New York,right to life,0.02
-2014,Maine,,0.02
-1994,California,libertarian,0.02
-2004,Vermont,marijuana,0.02
-2016,Florida,libertarian,0.02
-1982,New York,right to life,0.02
-1992,North Dakota,independent,0.02
-1988,Minnesota,progressive issues,0.02
-2008,Kansas,libertarian,0.02
-2010,Missouri,constitution,0.02
-2010,Kansas,libertarian,0.02
-2016,Illinois,green,0.02
-2004,Georgia,libertarian,0.02
-2008,Colorado,green,0.02
-2014,Montana,libertarian,0.02
-2014,Wyoming,libertarian,0.02
-1978,Kentucky,american,0.02
-1992,California,libertarian,0.02
-1998,New York,independence,0.02
-2010,Colorado,green,0.02
-2002,New Hampshire,libertarian,0.02
-1998,Illinois,reform,0.02
-2014,Mississippi,reform,0.02
-2000,Montana,reform,0.02
-1994,New York,liberal,0.02
-2014,Oregon,green,0.02
-2004,Hawaii,nonpartisan,0.02
-2008,Illinois,green,0.02
-1992,Kansas,libertarian,0.02
-2004,Florida,veterans party of america,0.02
-2010,Nevada,,0.02
-2006,Missouri,libertarian,0.02
-2006,Texas,libertarian,0.02
-2004,New York,working families,0.02
-2010,Iowa,libertarian,0.02
-1992,Nevada,independent american,0.02
-1998,Arizona,libertarian,0.02
-1998,Alaska,libertarian,0.02
-2016,Louisiana,democrat,0.02
-2002,Idaho,libertarian,0.02
-2012,Wyoming,,0.02
-1996,Kansas,reform,0.02
-1992,California,libertarian,0.02
-1998,Pennsylvania,constitutional,0.02
-1992,Utah,populist,0.02
-1990,Texas,libertarian,0.02
-2008,Texas,libertarian,0.02
-1988,New York,liberal,0.02
-2002,Montana,green,0.02
-2016,Utah,none,0.02
-1992,Connecticut,concerned citizens,0.02
-2010,Illinois,libertarian,0.02
-1980,California,peace and freedom,0.02
-2002,Oregon,libertarian,0.02
-2012,Connecticut,working families,0.02
-2014,Iowa,independent,0.02
-2014,Minnesota,independence,0.02
-2016,New Hampshire,independent,0.02
-1980,South Dakota,independent,0.02
-2018,Arizona,green,0.02
-1984,Montana,libertarian,0.02
-1998,New Hampshire,libertarian,0.02
-2016,Missouri,libertarian,0.02
-2004,Oregon,pacific green,0.02
-2014,Hawaii,libertarian,0.02
-2014,Virginia,libertarian,0.02
-1980,California,libertarian,0.02
-2016,Utah,independent american,0.02
-2010,Oklahoma,independent,0.02
-2012,Wyoming,country party,0.02
-1998,Georgia,libertarian,0.02
-1990,Montana,libertarian,0.02
-2016,Oregon,pacific green,0.03
-1996,Wyoming,libertarian,0.03
-1980,New York,right to life,0.03
-1990,South Dakota,independent,0.03
-2006,Montana,libertarian,0.03
-2004,Louisiana,democrat,0.03
-2008,Colorado,american constitution party,0.03
-2000,New York,,0.03
-2012,Minnesota,independence,0.03
-2014,Colorado,libertarian,0.03
-2016,Louisiana,democrat,0.03
-2018,Utah,libertarian,0.03
-1992,California,american independent,0.03
-1976,Nevada,,0.03
-2000,Ohio,libertarian,0.03
-2014,Tennessee,constitution,0.03
-2000,Washington,libertarian,0.03
-2004,Arizona,libertarian,0.03
-2018,New York,working families,0.03
-1992,Nevada,,0.03
-2010,Delaware,independent party of delaware,0.03
-2010,Connecticut,working families,0.03
-2010,Georgia,libertarian,0.03
-1998,Arkansas,reform,0.03
-2018,Utah,constitution,0.03
-2016,Iowa,libertarian,0.03
-2014,South Carolina,libertarian,0.03
-2018,Connecticut,working families,0.03
-1992,Colorado,perot's independents,0.03
-1996,Massachusetts,conservative,0.03
-2000,New York,conservative,0.03
-2014,Alabama,NA,0.03
-1996,Kansas,reform,0.03
-1976,New York,liberal,0.03
-1988,Hawaii,libertarian,0.03
-1982,Arizona,libertarian,0.03
-2018,Wyoming,libertarian,0.03
-1982,Connecticut,conservative,0.03
-2016,Oklahoma,independent,0.03
-1992,California,peace and freedom,0.03
-1980,Nevada,libertarian,0.03
-1996,Colorado,natural law,0.03
-2016,Vermont,united states marijuana,0.03
-1982,New York,liberal,0.03
-2014,Texas,libertarian,0.03
-2004,Alaska,nonpartisan,0.03
-2018,Montana,libertarian,0.03
-2004,New York,independence,0.03
-1978,Minnesota,american,0.03
-1982,Hawaii,independent,0.03
-2002,Alaska,alaskan independence,0.03
-2016,Louisiana,republican,0.03
-2014,Nebraska,by petition,0.03
-2012,West Virginia,mountain party,0.03
-2004,New York,conservative,0.03
-2016,Wisconsin,libertarian,0.03
-1998,Hawaii,libertarian,0.03
-1994,California,peace and freedom,0.03
-2016,Oklahoma,libertarian,0.03
-1978,Kansas,conservative,0.03
-2010,Missouri,libertarian,0.03
-2008,Massachusetts,libertarian,0.03
-1986,New York,right to life,0.03
-2014,South Dakota,independent,0.03
-1998,Utah,independent american,0.03
-2016,Oregon,independent,0.03
-1996,Maine,u.s. taxpayers,0.03
-2014,Oregon,libertarian,0.03
-2000,California,green,0.03
-2012,Connecticut,independent,0.03
-2014,Kentucky,libertarian,0.03
-2016,North Dakota,libertarian,0.03
-2008,New Hampshire,libertarian,0.03
-2016,New York,working families,0.03
-1992,Georgia,libertarian,0.03
-2008,North Carolina,libertarian,0.03
-1988,New York,conservative,0.03
-1982,North Dakota,"god, family, and country",0.03
-2006,Arizona,libertarian,0.03
-2014,Oklahoma,independent,0.03
-2006,New York,working families,0.03
-2012,Utah,constitution,0.03
-2016,Oregon,working families,0.03
-1992,New York,right to life,0.03
-2010,Illinois,green,0.03
-1992,Missouri,libertarian,0.03
-2002,Montana,libertarian,0.03
-2016,Illinois,libertarian,0.03
-1998,Alaska,green,0.03
-2006,Minnesota,independence,0.03
-2010,Arkansas,independent,0.03
-2016,Maryland,green,0.03
-1994,Nevada,,0.03
-2012,Maine,,0.03
-1992,North Carolina,libertarian,0.03
-1990,New Hampshire,libertarian,0.03
-1994,Maine,unenrolled,0.03
-2012,New York,conservative,0.03
-2018,Massachusetts,unenrolled,0.03
-2008,Georgia,libertarian,0.03
-2006,New York,independence,0.03
-2016,New York,conservative,0.03
-1992,California,peace and freedom,0.03
-1992,California,american independent,0.03
-2006,Massachusetts,,0.03
-2000,Vermont,constitution,0.03
-2008,Massachusetts,,0.04
-1992,New Hampshire,libertarian,0.04
-2012,New York,working families,0.04
-2010,New York,,0.04
-1982,New York,conservative,0.04
-2016,North Carolina,libertarian,0.04
-1996,Georgia,libertarian,0.04
-1986,Nevada,,0.04
-2016,Colorado,libertarian,0.04
-2018,Nebraska,libertarian,0.04
-1980,Hawaii,libertarian,0.04
-2012,New Mexico,independent american,0.04
-2014,Alaska,libertarian,0.04
-2018,Maryland,unaffiliated,0.04
-2014,North Carolina,libertarian,0.04
-2014,Illinois,libertarian,0.04
-2006,Utah,constitution,0.04
-2016,Nevada,,0.04
-2006,New York,conservative,0.04
-2012,Delaware,independent,0.04
-1980,Oregon,libertarian,0.04
-2014,South Carolina,petition,0.04
-1996,Maine,independent,0.04
-1982,Montana,libertarian,0.04
-2010,Idaho,constitution,0.04
-2016,Pennsylvania,libertarian,0.04
-2004,Pennsylvania,constitution,0.04
-2016,Arkansas,libertarian,0.04
-1978,Tennessee,independent,0.04
-1992,Kansas,independent,0.04
-1994,Hawaii,libertarian,0.04
-2018,New York,conservative,0.04
-1992,New York,conservative,0.04
-2008,Oklahoma,independent,0.04
-2008,Alaska,alaskan independence,0.04
-2018,West Virginia,libertarian,0.04
-2016,Georgia,libertarian,0.04
-2000,Wyoming,libertarian,0.04
-1994,Michigan,libertarian,0.04
-2014,Hawaii,,0.04
-2014,Kansas,libertarian,0.04
-1996,New Mexico,green,0.04
-2018,Indiana,libertarian,0.04
-2006,New York,,0.04
-1996,New Hampshire,libertarian,0.05
-1976,Virginia,independent,0.05
-1990,Massachusetts,,0.05
-2012,Nevada,,0.05
-2016,Louisiana,republican,0.05
-2012,Arizona,libertarian,0.05
-1992,Pennsylvania,libertarian,0.05
-1980,New York,conservative,0.05
-1994,Missouri,libertarian,0.05
-1976,Maryland,independent,0.05
-2012,Ohio,independent,0.05
-1976,Vermont,liberty union,0.05
-2014,Massachusetts,,0.05
-1986,New Hampshire,independent,0.05
-1976,New York,conservative,0.05
-2010,Arizona,libertarian,0.05
-1976,Hawaii,prohibition,0.05
-1986,New York,conservative,0.05
-1996,Montana,reform,0.05
-2016,Hawaii,,0.05
-2006,Maine,independent,0.05
-2002,Louisiana,republican,0.05
-1994,Oklahoma,independent,0.05
-1982,Nebraska,nominated by petition,0.05
-2012,Nevada,independent american,0.05
-2000,Massachusetts,,0.05
-2010,New York,conservative,0.05
-2000,Arizona,libertarian,0.05
-2010,New York,conservative,0.05
-2016,New York,,0.05
-1994,New York,conservative,0.05
-1976,New York,,0.05
-2008,Oregon,constitution,0.05
-2010,New York,,0.05
-1982,Washington,independent,0.05
-1984,Tennessee,independent,0.05
-2008,Idaho,independent,0.05
-1994,Minnesota,independence,0.05
-2010,Indiana,libertarian,0.05
-2016,Indiana,libertarian,0.05
-2016,Arizona,green,0.05
-1998,New York,conservative,0.05
-2016,Connecticut,working families,0.06
-2016,Kansas,libertarian,0.06
-2010,Utah,constitution,0.06
-2012,Indiana,libertarian,0.06
-2014,Louisiana,republican,0.06
-2000,Minnesota,independence,0.06
-1994,Vermont,independent,0.06
-2004,Oklahoma,independent,0.06
-1978,Alabama,prohibition,0.06
-2012,Missouri,libertarian,0.06
-2016,Idaho,constitution,0.06
-2002,Oklahoma,independent,0.06
-1998,New York,,0.06
-2012,New York,,0.06
-2012,Montana,libertarian,0.07
-1976,Minnesota,american,0.07
-1992,Ohio,independent,0.07
-1994,Arizona,libertarian,0.07
-1986,New York,,0.07
-2002,Louisiana,republican,0.07
-1996,Minnesota,reform,0.07
-2002,Virginia,independent,0.07
-1978,Arkansas,independent,0.07
-2002,Alaska,green,0.07
-1994,Ohio,independent,0.07
-1978,Maine,independent,0.07
-2014,Wyoming,independent,0.08
-2000,Arizona,green,0.08
-2000,Arizona,independent,0.08
-1992,Alaska,green,0.08
-2002,Kansas,reform,0.08
-1992,New York,,0.09
-2002,Kansas,libertarian,0.09
-2010,South Carolina,green,0.09
-2002,Massachusetts,,0.10
-2006,Connecticut,republican,0.10
-2002,Virginia,independent,0.10
-2004,New York,,0.10
-1994,New York,,0.10
-2016,Louisiana,republican,0.10
-1996,Alaska,democrat,0.10
-2018,Maine,democrat,0.10
-2002,Alaska,democrat,0.11
-1992,Arizona,independent,0.11
-1980,New York,liberal,0.11
-2000,Massachusetts,libertarian,0.11
-1994,Virginia,independent,0.11
-2016,Alaska,democrat,0.12
-2016,Louisiana,democrat,0.12
-2000,Massachusetts,republican,0.12
-1996,Alaska,green,0.13
-2006,Indiana,libertarian,0.13
-2012,Maine,democrat,0.13
-2016,Alaska,independent,0.13
-2002,Louisiana,republican,0.14
-1992,Hawaii,green,0.14
-2002,Nebraska,democrat,0.15
-2016,Louisiana,republican,0.15
-2004,Louisiana,democrat,0.15
-2008,Minnesota,independence,0.15
-2018,New Mexico,libertarian,0.15
-2002,Mississippi,reform,0.15
-1978,Arkansas,republican,0.16
-2012,Maryland,none,0.16
-2002,Massachusetts,libertarian,0.17
-1990,Oklahoma,republican,0.17
-1978,Georgia,republican,0.17
-2016,North Dakota,democrat,0.17
-1982,Hawaii,republican,0.17
-2014,South Dakota,independent,0.17
-2014,Wyoming,democrat,0.17
-2016,Louisiana,democrat,0.17
-1998,Hawaii,republican,0.18
-2018,Minnesota,republican,0.18
-1990,Virginia,independent,0.18
-1980,Hawaii,republican,0.18
-1988,Maine,republican,0.19
-1998,Alaska,democrat,0.20
-2018,Mississippi,democrat,0.20
-1984,Georgia,republican,0.20
-2000,West Virginia,republican,0.20
-2010,Florida,democrat,0.20
-1992,Connecticut,a connecticut party,0.20
-2008,Arkansas,green,0.20
-2004,Arizona,democrat,0.21
-1988,Hawaii,republican,0.21
-2006,Maine,democrat,0.21
-2004,Hawaii,republican,0.21
-2018,Minnesota,republican,0.21
-2012,Wyoming,democrat,0.21
-2016,Hawaii,republican,0.21
-1984,Kansas,democrat,0.21
-2012,New York,republican,0.21
-2010,Hawaii,republican,0.22
-2002,Rhode Island,republican,0.22
-1984,Wyoming,democrat,0.22
-2004,New York,republican,0.22
-2000,Wyoming,democrat,0.22
-2016,New York,republican,0.22
-2010,North Dakota,democratic-nonpartisan league,0.22
-1998,Vermont,republican,0.22
-1978,Mississippi,independent,0.23
-2018,Mississippi,democrat,0.23
-2006,West Virginia,republican,0.23
-2002,Louisiana,democrat,0.23
-1996,West Virginia,republican,0.23
-1984,Oklahoma,republican,0.23
-2010,Alaska,democrat,0.24
-2002,Louisiana,republican,0.24
-1978,Alaska,democrat,0.24
-1994,Hawaii,republican,0.24
-1976,Washington,republican,0.24
-2008,Wyoming,democrat,0.24
-1982,Washington,republican,0.24
-2000,Hawaii,republican,0.25
-2004,Vermont,republican,0.25
-2016,Oklahoma,democrat,0.25
-1978,Rhode Island,republican,0.25
-2012,Vermont,republican,0.25
-2010,Idaho,democrat,0.25
-1976,Minnesota,republican,0.25
-2000,Vermont,democrat,0.25
-1980,Utah,democrat,0.25
-1984,South Dakota,democrat,0.26
-1986,Kentucky,republican,0.26
-2002,Louisiana,democrat,0.26
-2006,New York,republican,0.26
-1984,Maine,democrat,0.26
-1994,Connecticut,a connecticut party,0.26
-1984,Idaho,democrat,0.26
-2010,New York,republican,0.26
-2010,Oklahoma,democrat,0.26
-2012,Maryland,republican,0.26
-2010,Kansas,democrat,0.26
-1990,Kansas,democrat,0.26
-2018,Mississippi,republican,0.26
-1986,Hawaii,republican,0.26
-2018,Minnesota,democratic-farmer-labor,0.26
-2008,Rhode Island,republican,0.26
-2014,Hawaii,republican,0.27
-2008,Wyoming,democrat,0.27
-1986,Utah,democrat,0.27
-2016,Louisiana,republican,0.27
-1992,Hawaii,republican,0.27
-1976,Wisconsin,republican,0.27
-1990,New Mexico,democrat,0.27
-2002,Wyoming,democrat,0.27
-2004,Illinois,republican,0.27
-2016,Utah,democrat,0.27
-2008,Montana,republican,0.27
-1998,Arizona,democrat,0.27
-1992,Iowa,democrat,0.27
-1984,Rhode Island,republican,0.27
-2018,Vermont,republican,0.27
-1996,Mississippi,democrat,0.27
-2004,Kansas,democrat,0.27
-2010,South Carolina,democrat,0.28
-2016,Idaho,democrat,0.28
-2004,Iowa,democrat,0.28
-1988,New York,republican,0.28
-1984,New Mexico,democrat,0.28
-2010,New York,republican,0.28
-2016,South Dakota,democrat,0.28
-1998,New Hampshire,democrat,0.28
-1980,Ohio,republican,0.28
-1994,Utah,democrat,0.28
-1998,Idaho,democrat,0.28
-2004,Utah,democrat,0.28
-1984,Alaska,democrat,0.28
-1982,New York,republican,0.28
-2008,Illinois,republican,0.29
-1982,Nebraska,republican,0.29
-2014,Oklahoma,democrat,0.29
-2018,New York,republican,0.29
-1988,Virginia,republican,0.29
-2006,Delaware,republican,0.29
-2018,Hawaii,republican,0.29
-2012,Delaware,republican,0.29
-2014,Oklahoma,democrat,0.29
-1992,Maryland,republican,0.29
-1976,Massachusetts,republican,0.29
-2016,Alaska,libertarian,0.29
-2014,Rhode Island,republican,0.29
-2006,New Mexico,republican,0.29
-2004,Louisiana,democrat,0.29
-1990,Montana,republican,0.29
-2006,Wyoming,democrat,0.29
-2006,Wisconsin,republican,0.29
-1994,Florida,democrat,0.29
-2006,Massachusetts,republican,0.29
-1998,Maryland,republican,0.29
-2014,South Dakota,democrat,0.30
-2006,North Dakota,republican,0.30
-1980,South Carolina,republican,0.30
-2018,Mississippi,republican,0.30
-2010,Florida,no party affiliation,0.30
-2012,Maine,republican,0.30
-1988,Vermont,democrat,0.30
-1996,New Mexico,democrat,0.30
-1990,Tennessee,republican,0.30
-2008,Massachusetts,republican,0.30
-1984,Virginia,democrat,0.30
-1986,Kansas,democrat,0.30
-2012,Utah,democrat,0.30
-2018,Wyoming,democrat,0.30
-2018,Minnesota,democratic-farmer-labor,0.30
-2018,Maryland,republican,0.30
-2012,Tennessee,democrat,0.30
-1998,Iowa,democrat,0.30
-1994,Indiana,democrat,0.31
-2012,Minnesota,republican,0.31
-2018,New Mexico,republican,0.31
-1982,West Virginia,republican,0.31
-2014,Maine,democrat,0.31
-2018,Utah,democrat,0.31
-2010,Vermont,republican,0.31
-1994,West Virginia,republican,0.31
-1994,Connecticut,republican,0.31
-1992,Kansas,democrat,0.31
-2000,Maine,democrat,0.31
-2006,Utah,democrat,0.31
-1994,Mississippi,democrat,0.31
-1998,Oklahoma,democrat,0.31
-1990,New Hampshire,democrat,0.31
-1976,Nevada,republican,0.31
-2014,Nebraska,democrat,0.31
-2000,Utah,democrat,0.32
-1978,Idaho,democrat,0.32
-1992,Arizona,democrat,0.32
-1998,Kansas,democrat,0.32
-2000,Mississippi,democrat,0.32
-1998,Louisiana,republican,0.32
-2008,Tennessee,democrat,0.32
-1990,West Virginia,republican,0.32
-2004,North Dakota,republican,0.32
-2002,Montana,republican,0.32
-1988,Utah,democrat,0.32
-2004,Oregon,republican,0.32
-1988,Missouri,democrat,0.32
-1978,Mississippi,democrat,0.32
-1984,South Carolina,democrat,0.32
-2000,Indiana,democrat,0.32
-1988,Indiana,democrat,0.32
-2014,Tennessee,democrat,0.32
-1994,New York,republican,0.32
-2004,Connecticut,republican,0.32
-1990,Alaska,democrat,0.32
-2000,Tennessee,democrat,0.32
-2016,Kansas,democrat,0.32
-2000,Texas,democrat,0.32
-2016,Vermont,republican,0.32
-1978,Nebraska,republican,0.32
-2004,Alabama,democrat,0.32
-2006,Vermont,republican,0.32
-1998,Connecticut,republican,0.32
-1986,New Hampshire,democrat,0.32
-1988,Pennsylvania,democrat,0.32
-1992,South Dakota,republican,0.33
-1990,South Carolina,democrat,0.33
-2002,Idaho,democrat,0.33
-2010,Utah,democrat,0.33
-1978,Oklahoma,republican,0.33
-1998,Utah,democrat,0.33
-1992,Alabama,republican,0.33
-1978,South Dakota,democrat,0.33
-2010,Iowa,democrat,0.33
-2016,Oregon,republican,0.33
-1984,Oregon,democrat,0.33
-1986,Iowa,democrat,0.34
-1998,New York,republican,0.34
-2004,New Hampshire,democrat,0.34
-2004,Maryland,republican,0.34
-2008,Virginia,republican,0.34
-1986,Illinois,republican,0.34
-1998,Oregon,republican,0.34
-1984,Tennessee,republican,0.34
-1980,Maryland,democrat,0.34
-2008,Michigan,republican,0.34
-1988,Massachusetts,republican,0.34
-1978,Maine,democrat,0.34
-1982,North Dakota,republican,0.34
-2008,Idaho,democrat,0.34
-1982,Wisconsin,republican,0.34
-2000,Connecticut,republican,0.34
-2014,Texas,democrat,0.34
-2016,South Carolina,democrat,0.34
-1996,Kansas,democrat,0.34
-2014,West Virginia,democrat,0.34
-1986,Vermont,republican,0.34
-1988,Tennessee,republican,0.35
-1978,Minnesota,democrat,0.35
-1992,Florida,republican,0.35
-2016,Connecticut,republican,0.35
-1984,Colorado,democrat,0.35
-2010,Arizona,democrat,0.35
-2014,Idaho,democrat,0.35
-2010,Alabama,democrat,0.35
-1998,Pennsylvania,democrat,0.35
-1998,Indiana,republican,0.35
-1986,Connecticut,republican,0.35
-2006,Mississippi,democrat,0.35
-1980,Kentucky,republican,0.35
-1984,New Jersey,republican,0.35
-1990,Illinois,republican,0.35
-1996,Rhode Island,republican,0.35
-2002,New Mexico,democrat,0.35
-2012,Rhode Island,republican,0.35
-2006,California,republican,0.35
-1998,Colorado,democrat,0.35
-2004,Nevada,republican,0.35
-1998,North Dakota,republican,0.35
-2018,Maine,republican,0.35
-1988,West Virginia,republican,0.35
-2008,Delaware,republican,0.35
-2002,Kentucky,democrat,0.35
-1994,Rhode Island,democrat,0.35
-2010,Alaska,republican,0.36
-1986,South Carolina,republican,0.36
-2016,Iowa,democrat,0.36
-2016,Maryland,republican,0.36
-1994,Missouri,democrat,0.36
-2010,Maryland,republican,0.36
-1982,Mississippi,republican,0.36
-1992,Kentucky,republican,0.36
-1990,Delaware,republican,0.36
-1976,Montana,republican,0.36
-2000,Ohio,democrat,0.36
-2016,Alabama,democrat,0.36
-1986,Oregon,democrat,0.36
-2006,Texas,democrat,0.36
-1990,Wyoming,democrat,0.36
-2006,Nebraska,republican,0.36
-2004,Ohio,democrat,0.36
-2016,Arkansas,democrat,0.36
-2018,Massachusetts,republican,0.36
-2014,Massachusetts,republican,0.36
-1980,Kansas,democrat,0.36
-2008,West Virginia,republican,0.36
-2002,Oklahoma,democrat,0.36
-1984,Alabama,republican,0.36
-1994,Maine,democrat,0.36
-1998,South Dakota,republican,0.36
-2008,Kansas,democrat,0.36
-2012,West Virginia,republican,0.36
-2008,Alabama,democrat,0.37
-1982,Maryland,republican,0.37
-1976,North Dakota,republican,0.37
-2000,California,republican,0.37
-1988,New Mexico,republican,0.37
-1998,Alabama,democrat,0.37
-2000,Maryland,republican,0.37
-2006,Hawaii,republican,0.37
-1996,Tennessee,democrat,0.37
-2012,Hawaii,republican,0.37
-2014,South Carolina,democrat,0.37
-2010,New Hampshire,democrat,0.37
-1978,Kentucky,republican,0.37
-2014,Oregon,republican,0.37
-2002,West Virginia,republican,0.37
-2010,Arkansas,democrat,0.37
-1976,Florida,republican,0.37
-2000,Wisconsin,republican,0.37
-2014,South Carolina,democrat,0.37
-1980,California,republican,0.37
-2016,Ohio,democrat,0.37
-2004,Indiana,republican,0.37
-2008,Iowa,republican,0.37
-1990,Texas,democrat,0.37
-1992,New York,republican,0.37
-2012,California,republican,0.37
-2008,South Dakota,republican,0.38
-1998,Florida,republican,0.38
-1986,Ohio,republican,0.38
-1994,Montana,democrat,0.38
-2010,Louisiana,democrat,0.38
-1986,Arkansas,republican,0.38
-1980,New York,republican,0.38
-2004,California,republican,0.38
-2018,Delaware,republican,0.38
-1978,Wyoming,republican,0.38
-1980,Nevada,democrat,0.38
-1976,New York,republican,0.38
-2002,Michigan,republican,0.38
-2014,Mississippi,democrat,0.38
-2006,Minnesota,republican,0.38
-1988,Delaware,democrat,0.38
-1992,California,republican,0.38
-2012,Michigan,republican,0.38
-2002,Illinois,republican,0.38
-1976,New Jersey,republican,0.38
-1982,Tennessee,republican,0.38
-2006,Florida,republican,0.38
-2000,Georgia,republican (not identified on ballot),0.38
-1992,Connecticut,republican,0.38
-1996,Delaware,republican,0.38
-1990,Rhode Island,republican,0.38
-1988,Maryland,republican,0.38
-1992,Oklahoma,democrat,0.38
-2000,New Mexico,republican,0.38
-1982,Massachusetts,republican,0.38
-1982,Florida,republican,0.38
-1976,Virginia,democrat,0.38
-1978,Oregon,democrat,0.38
-1994,Texas,democrat,0.38
-2018,Rhode Island,republican,0.38
-2016,California,democrat,0.38
-1992,Alaska,democrat,0.38
-1986,New York,democrat,0.38
-1988,Michigan,republican,0.38
-1992,Connecticut,democrat,0.38
-1986,Indiana,democrat,0.39
-2008,Mississippi,democrat,0.39
-2008,Maine,democrat,0.39
-1994,Tennessee,democrat,0.39
-2018,Nebraska,democrat,0.39
-2000,North Dakota,republican,0.39
-1990,Maine,democrat,0.39
-2008,New Mexico,republican,0.39
-1990,Idaho,democrat,0.39
-1980,Louisiana,democrat,0.39
-1976,Maryland,republican,0.39
-1992,North Dakota,republican,0.39
-2010,Georgia,democrat,0.39
-1988,North Dakota,republican,0.39
-1984,Mississippi,democrat,0.39
-2012,Missouri,republican,0.39
-1982,Maine,republican,0.39
-2000,New York,republican,0.39
-2008,Oklahoma,democrat,0.39
-1982,Pennsylvania,democrat,0.39
-1994,Ohio,democrat,0.39
-2010,Oregon,republican,0.39
-1994,Wyoming,democrat,0.39
-1986,Maryland,republican,0.39
-2018,Connecticut,republican,0.39
-2012,New Jersey,republican,0.39
-1980,South Dakota,democrat,0.39
-2010,Ohio,democrat,0.39
-1990,Alabama,republican,0.39
-2014,Arkansas,democrat,0.39
-1986,Arizona,democrat,0.40
-1994,Arizona,democrat,0.40
-2012,Washington,republican,0.40
-2010,Alaska,,0.40
-2002,Oregon,democrat,0.40
-2000,Nevada,democrat,0.40
-1992,Utah,democrat,0.40
-2006,Connecticut,democrat,0.40
-2016,Illinois,republican,0.40
-1976,Maine,republican,0.40
-1992,Arkansas,republican,0.40
-2002,Alabama,democrat,0.40
-1996,Michigan,republican,0.40
-1984,Delaware,republican,0.40
-1996,Idaho,democrat,0.40
-2006,Washington,republican,0.40
-1994,Oklahoma,democrat,0.40
-2004,Georgia,democrat,0.40
-2012,Connecticut,republican,0.40
-1988,Texas,republican,0.40
-2010,Indiana,democrat,0.40
-2010,Delaware,republican,0.40
-2008,Nebraska,democrat,0.40
-2014,Montana,democrat,0.40
-1996,Oklahoma,democrat,0.40
-1976,Indiana,democrat,0.40
-1992,Nevada,republican,0.40
-1978,Tennessee,democrat,0.40
-1978,Colorado,democrat,0.40
-1982,Arizona,republican,0.40
-1978,Minnesota,democrat,0.40
-1982,Texas,republican,0.40
-2012,Mississippi,democrat,0.41
-1994,Vermont,democrat,0.41
-2012,Texas,democrat,0.41
-1976,Hawaii,republican,0.41
-2010,Missouri,democrat,0.41
-1996,Illinois,republican,0.41
-1994,Wisconsin,republican,0.41
-1984,Montana,republican,0.41
-1992,Indiana,democrat,0.41
-2014,Kentucky,democrat,0.41
-2016,Arizona,democrat,0.41
-2002,Delaware,republican,0.41
-1982,Michigan,republican,0.41
-1980,Arkansas,republican,0.41
-1994,Maryland,republican,0.41
-1988,Minnesota,democratic-farmer-labor,0.41
-1990,Nebraska,republican,0.41
-1990,Massachusetts,republican,0.41
-1984,New Hampshire,democrat,0.41
-2016,Washington,republican,0.41
-2006,Nevada,democrat,0.41
-1994,Nevada,republican,0.41
-2018,Virginia,republican,0.41
-1994,Massachusetts,republican,0.41
-1978,Delaware,republican,0.41
-2016,Georgia,democrat,0.41
-1988,Arizona,republican,0.41
-1994,Connecticut,democrat,0.41
-1982,Ohio,republican,0.41
-2000,Rhode Island,democrat,0.41
-2006,New Jersey,republican,0.41
-1976,Connecticut,democrat,0.41
-1990,Michigan,republican,0.41
-2004,Oklahoma,democrat,0.41
-2006,Michigan,republican,0.41
-1984,Minnesota,democrat,0.41
-2006,Pennsylvania,republican,0.41
-1996,Minnesota,republican,0.41
-2014,Michigan,republican,0.41
-1982,Utah,democrat,0.41
-1984,Texas,democrat,0.41
-2002,Maine,democrat,0.42
-2018,Washington,republican,0.42
-1992,New York,democrat,0.42
-1998,Washington,republican,0.42
-1990,Colorado,democrat,0.42
-1988,Nebraska,republican,0.42
-1982,Montana,republican,0.42
-2008,New Jersey,republican,0.42
-2008,Minnesota,republican,0.42
-2004,Pennsylvania,democrat,0.42
-2008,Minnesota,democrat,0.42
-1994,North Dakota,republican,0.42
-1976,Rhode Island,democrat,0.42
-1994,Tennessee,democrat,0.42
-2010,California,republican,0.42
-1996,Wyoming,democrat,0.42
-1998,Arkansas,republican,0.42
-2014,Delaware,republican,0.42
-2012,Nebraska,democrat,0.42
-2012,Florida,republican,0.42
-1976,Texas,republican,0.42
-2008,South Carolina,democrat,0.42
-1992,Ohio,republican,0.42
-2014,New Jersey,republican,0.42
-1978,Kansas,democrat,0.42
-2016,Indiana,democrat,0.42
-1994,Delaware,democrat,0.42
-2008,Colorado,republican,0.42
-1980,Illinois,republican,0.42
-1976,Missouri,democrat,0.42
-2014,Kansas,independent,0.43
-2008,Georgia,democrat,0.43
-1996,New Jersey,republican,0.43
-1996,Nebraska,democrat,0.43
-1984,Arkansas,republican,0.43
-2014,Illinois,republican,0.43
-1976,New Mexico,democrat,0.43
-1992,Colorado,republican,0.43
-2016,Kentucky,democrat,0.43
-2004,Washington,republican,0.43
-2018,Pennsylvania,republican,0.43
-1994,Michigan,democrat,0.43
-2004,Missouri,democrat,0.43
-2018,New Jersey,republican,0.43
-2008,Texas,democrat,0.43
-1996,Kentucky,democrat,0.43
-1986,Pennsylvania,democrat,0.43
-1994,Virginia,republican,0.43
-1976,Utah,democrat,0.43
-2014,Minnesota,republican,0.43
-1980,Connecticut,republican,0.43
-1992,California,republican,0.43
-1998,California,republican,0.43
-1988,Ohio,republican,0.43
-2010,North Carolina,democrat,0.43
-1992,Illinois,republican,0.43
-1978,New Jersey,republican,0.43
-2010,Connecticut,republican,0.43
-2000,Minnesota,republican,0.43
-1978,Alabama,republican,0.43
-2002,Texas,democrat,0.43
-1996,Kansas,democrat,0.43
-1976,Arizona,republican,0.43
-1982,Wyoming,democrat,0.43
-1992,Vermont,republican,0.43
-2010,West Virginia,republican,0.43
-1992,Idaho,democrat,0.43
-2006,Arizona,democrat,0.43
-1998,Ohio,democrat,0.44
-1980,New York,democrat,0.44
-1980,Oklahoma,democrat,0.44
-1976,Delaware,democrat,0.44
-1984,Iowa,republican,0.44
-2000,Delaware,republican,0.44
-2014,Iowa,democrat,0.44
-1998,Missouri,democrat,0.44
-2002,Iowa,republican,0.44
-2006,Ohio,republican,0.44
-1996,Maine,democrat,0.44
-2018,Tennessee,democrat,0.44
-1996,Texas,democrat,0.44
-2002,New Jersey,republican,0.44
-1988,California,democrat,0.44
-1996,South Carolina,democrat,0.44
-1980,Oregon,democrat,0.44
-2004,Arkansas,republican,0.44
-1986,Alaska,democrat,0.44
-1994,Minnesota,democratic-farmer-labor,0.44
-2004,South Carolina,democrat,0.44
-2004,Wisconsin,republican,0.44
-2008,North Carolina,republican,0.44
-2002,South Carolina,democrat,0.44
-2006,Maryland,republican,0.44
-1982,Delaware,democrat,0.44
-2010,Kentucky,democrat,0.44
-1994,Washington,democrat,0.44
-2018,North Dakota,democratic-npl,0.44
-2012,Indiana,republican,0.44
-2016,Colorado,republican,0.44
-1978,Montana,republican,0.44
-2014,Louisiana,democrat,0.44
-2016,Florida,democrat,0.44
-1978,South Carolina,democrat,0.44
-2002,Tennessee,democrat,0.44
-2016,Alaska,republican,0.44
-2014,New Mexico,republican,0.44
-1986,Nevada,republican,0.45
-2010,Nevada,republican,0.45
-2018,Wisconsin,republican,0.45
-2012,Pennsylvania,republican,0.45
-1990,Hawaii,republican,0.45
-2016,Nevada,republican,0.45
-1996,Montana,republican,0.45
-2012,Ohio,republican,0.45
-2012,Nevada,democrat,0.45
-1996,Massachusetts,republican,0.45
-1982,California,democrat,0.45
-1986,Oklahoma,democrat,0.45
-1994,California,republican,0.45
-2018,Indiana,democrat,0.45
-1978,Massachusetts,republican,0.45
-2012,Montana,republican,0.45
-1992,Missouri,democrat,0.45
-1984,Massachusetts,republican,0.45
-2002,North Carolina,democrat,0.45
-1994,Nebraska,republican,0.45
-2008,Mississippi,no party affiliation,0.45
-1990,South Dakota,democrat,0.45
-1998,Georgia,democrat,0.45
-1988,New Jersey,republican,0.45
-2014,Georgia,democrat,0.45
-2008,New Hampshire,republican,0.45
-1986,Florida,republican,0.45
-1986,New York,republican,0.45
-2012,New Mexico,republican,0.45
-1978,Mississippi,republican,0.45
-1976,Vermont,democrat,0.45
-1992,New Hampshire,democrat,0.45
-2016,North Carolina,democrat,0.45
-2018,Nevada,republican,0.45
-1988,Rhode Island,democrat,0.45
-1976,Wyoming,democrat,0.45
-1990,Iowa,republican,0.45
-1996,Alabama,democrat,0.45
-1978,Illinois,democrat,0.45
-1978,North Carolina,democrat,0.45
-2000,Pennsylvania,democrat,0.46
-1980,Iowa,democrat,0.46
-2004,Alaska,democrat,0.46
-2008,Oregon,republican,0.46
-2018,Missouri,democrat,0.46
-1982,Indiana,democrat,0.46
-1994,Virginia,democrat,0.46
-1998,South Carolina,republican,0.46
-2008,Louisiana,republican,0.46
-1996,Colorado,democrat,0.46
-2018,Michigan,republican,0.46
-2002,Colorado,democrat,0.46
-2012,Massachusetts,republican,0.46
-1980,Washington,democrat,0.46
-2014,Alaska,democrat,0.46
-2018,California,democrat,0.46
-2012,Wisconsin,republican,0.46
-2012,Nevada,republican,0.46
-2002,Georgia,democrat,0.46
-1996,Oregon,democrat,0.46
-1996,North Carolina,democrat,0.46
-1980,Alaska,democrat,0.46
-1994,New Mexico,republican,0.46
-1992,Washington,republican,0.46
-1992,Wisconsin,republican,0.46
-1982,Connecticut,democrat,0.46
-1988,Mississippi,democrat,0.46
-2002,Arkansas,republican,0.46
-1990,Oregon,democrat,0.46
-2000,Florida,republican,0.46
-2012,Arizona,democrat,0.46
-1980,Indiana,democrat,0.46
-1996,New Hampshire,democrat,0.46
-1982,New Mexico,republican,0.46
-2014,Colorado,democrat,0.46
-2018,West Virginia,republican,0.46
-1992,North Carolina,democrat,0.46
-1992,Pennsylvania,democrat,0.46
-1990,Indiana,democrat,0.46
-2016,Missouri,democrat,0.46
-2002,New Hampshire,democrat,0.46
-2010,Illinois,democrat,0.46
-2010,Colorado,republican,0.46
-2006,Rhode Island,republican,0.46
-1992,Oregon,democrat,0.46
-1976,Ohio,republican,0.47
-2008,Alaska,republican,0.47
-2004,Colorado,republican,0.47
-2018,Ohio,republican,0.47
-1982,Minnesota,democrat,0.47
-1978,New Mexico,democrat,0.47
-1996,Iowa,republican,0.47
-1994,California,democrat,0.47
-2018,Montana,republican,0.47
-1976,Pennsylvania,democrat,0.47
-2016,Wisconsin,democrat,0.47
-2008,Georgia,democrat,0.47
-1976,Michigan,republican,0.47
-1976,California,democrat,0.47
-1994,Pennsylvania,democrat,0.47
-1992,South Carolina,republican,0.47
-2012,Virginia,republican,0.47
-1998,North Carolina,republican,0.47
-1976,Tennessee,republican,0.47
-2004,North Carolina,democrat,0.47
-2010,Wisconsin,democrat,0.47
-1994,New Jersey,republican,0.47
-2008,Kentucky,democrat,0.47
-1980,Alabama,democrat,0.47
-1976,Nebraska,republican,0.47
-2000,New Jersey,republican,0.47
-2016,Nevada,democrat,0.47
-1988,Nevada,republican,0.47
-1984,Michigan,republican,0.47
-1986,Louisiana,republican,0.47
-1982,Vermont,democrat,0.47
-2000,Montana,democrat,0.47
-2014,North Carolina,democrat,0.47
-1996,Arkansas,democrat,0.47
-2006,Missouri,republican,0.47
-2002,Minnesota,democrat,0.47
-2016,Pennsylvania,democrat,0.47
-1986,Missouri,democrat,0.47
-1996,Virginia,democrat,0.47
-1986,Wisconsin,democrat,0.47
-1990,New Jersey,republican,0.47
-1990,North Carolina,democrat,0.47
-1998,Illinois,democrat,0.47
-1994,New York,democrat,0.47
-1988,Wisconsin,republican,0.48
-1996,Georgia,republican,0.48
-2018,Arizona,republican,0.48
-2010,Washington,republican,0.48
-1992,Georgia,republican,0.48
-1980,Missouri,republican,0.48
-2000,Virginia,democrat,0.48
-1984,West Virginia,republican,0.48
-1982,New Jersey,republican,0.48
-2008,Alaska,democrat,0.48
-1998,Nevada,republican,0.48
-1990,Minnesota,republican,0.48
-1984,North Carolina,democrat,0.48
-1990,Kentucky,democrat,0.48
-1998,New York,democrat,0.48
-2016,New Hampshire,republican,0.48
-1980,New Hampshire,democrat,0.48
-1978,Michigan,republican,0.48
-2000,Michigan,republican,0.48
-1998,Nevada,democrat,0.48
-1986,California,republican,0.48
-1992,California,democrat,0.48
-1978,Iowa,democrat,0.48
-2014,Alaska,republican,0.48
-2016,New Hampshire,democrat,0.48
-2006,Tennessee,democrat,0.48
-2010,Illinois,republican,0.48
-1984,Nebraska,republican,0.48
-1980,Pennsylvania,democrat,0.48
-2010,Colorado,democrat,0.48
-1988,Montana,democrat,0.48
-1992,New Hampshire,republican,0.48
-2014,Colorado,republican,0.48
-2014,New Hampshire,republican,0.48
-1984,Illinois,republican,0.48
-2006,Montana,republican,0.48
-2004,Florida,democrat,0.48
-2018,Texas,democrat,0.48
-2014,Virginia,republican,0.48
-1980,Florida,democrat,0.48
-1980,Wisconsin,democrat,0.48
-1986,Colorado,republican,0.48
-1980,Arizona,democrat,0.48
-2000,Missouri,republican,0.48
-1986,South Dakota,republican,0.48
-1998,Wisconsin,republican,0.48
-1986,Idaho,democrat,0.48
-1980,Vermont,republican,0.48
-1978,New Hampshire,democrat,0.49
-1976,New York,democrat,0.49
-2004,Alaska,republican,0.49
-2012,Montana,democrat,0.49
-2014,Louisiana,republican,0.49
-2000,Washington,republican,0.49
-2002,Missouri,democrat,0.49
-1986,Washington,republican,0.49
-1996,South Dakota,republican,0.49
-1980,Colorado,republican,0.49
-2000,Washington,democrat,0.49
-2016,Pennsylvania,republican,0.49
-1980,Idaho,democrat,0.49
-1982,Nevada,democrat,0.49
-1982,Virginia,democrat,0.49
-1982,Rhode Island,democrat,0.49
-2000,Nebraska,republican,0.49
-2014,North Carolina,republican,0.49
-2000,Minnesota,democratic-farmer-labor,0.49
-1996,Georgia,democrat,0.49
-2010,Florida,republican,0.49
-2008,Oregon,democrat,0.49
-1988,Washington,democrat,0.49
-2010,Pennsylvania,democrat,0.49
-1988,Connecticut,republican,0.49
-1994,Minnesota,republican,0.49
-1986,North Dakota,republican,0.49
-1986,Georgia,republican,0.49
-1992,Pennsylvania,republican,0.49
-1986,North Carolina,republican,0.49
-1980,Georgia,democrat,0.49
-1982,Missouri,democrat,0.49
-2014,Virginia,democrat,0.49
-1998,Kentucky,democrat,0.49
-2006,Montana,democrat,0.49
-1996,Maine,republican,0.49
-2016,Missouri,republican,0.49
-2006,Virginia,republican,0.49
-1992,Georgia,democrat,0.49
-2012,Arizona,republican,0.49
-1996,New Hampshire,republican,0.49
-1978,Texas,democrat,0.49
-1986,California,democrat,0.49
-2012,North Dakota,republican,0.49
-2004,Kentucky,democrat,0.49
-1992,Georgia,democrat,0.49
-1980,North Carolina,democrat,0.49
-1994,Pennsylvania,republican,0.49
-2004,South Dakota,democrat,0.49
-2004,Florida,republican,0.49
-1980,Arizona,republican,0.49
-2002,South Dakota,republican,0.49
-2000,Michigan,democrat,0.49
-1984,Kentucky,democrat,0.49
-1976,Ohio,democrat,0.50
-1978,West Virginia,republican,0.50
-2002,Minnesota,republican,0.50
-2018,West Virginia,democrat,0.50
-1996,Montana,democrat,0.50
-1988,Florida,democrat,0.50
-2006,Missouri,democrat,0.50
-2006,Virginia,democrat,0.50
-2002,South Dakota,democrat,0.50
-1988,Wyoming,democrat,0.50
-2006,Connecticut,connecticut for lieberman,0.50
-1986,Alabama,republican,0.50
-1980,Idaho,republican,0.50
-1998,Kentucky,republican,0.50
-2008,Georgia,republican,0.50
-1988,Connecticut,democrat,0.50
-1978,Virginia,democrat,0.50
-1978,Texas,republican,0.50
-1996,Oregon,republican,0.50
-2002,Missouri,republican,0.50
-1986,North Dakota,democrat,0.50
-1980,Vermont,democrat,0.50
-1996,Louisiana,republican,0.50
-1984,Kentucky,democrat,0.50
-1986,Colorado,democrat,0.50
-2018,Florida,democrat,0.50
-2018,Arizona,democrat,0.50
-1980,North Carolina,republican,0.50
-2016,Colorado,democrat,0.50
-1976,Vermont,republican,0.50
-1986,Nevada,democrat,0.50
-2012,Indiana,democrat,0.50
-2018,Florida,republican,0.50
-1992,South Carolina,democrat,0.50
-1984,Illinois,democrat,0.50
-2000,New Jersey,democrat,0.50
-1980,Alabama,republican,0.50
-1996,Louisiana,democrat,0.50
-1978,Virginia,republican,0.50
-2016,Wisconsin,republican,0.50
-1976,California,republican,0.50
-1980,Wisconsin,republican,0.50
-2012,North Dakota,democrat,0.50
-1982,Vermont,republican,0.50
-1986,Alabama,democrat,0.50
-2010,Nevada,democrat,0.50
-1994,New Jersey,democrat,0.50
-1994,Vermont,republican,0.50
-1996,Minnesota,democratic-farmer-labor,0.50
-2018,Montana,democrat,0.50
-1980,Colorado,democrat,0.50
-1998,Illinois,republican,0.50
-1992,North Carolina,republican,0.50
-1988,Wyoming,republican,0.50
-2014,South Dakota,republican,0.50
-1982,Connecticut,republican,0.50
-2018,Nevada,democrat,0.50
-1988,Florida,republican,0.50
-1990,Minnesota,democrat,0.50
-1990,New Jersey,democrat,0.50
-2000,Missouri,democrat,0.50
-1978,West Virginia,democrat,0.50
-1980,Pennsylvania,republican,0.50
-1998,Wisconsin,democrat,0.51
-2000,Montana,republican,0.51
-2004,South Dakota,republican,0.51
-1992,Georgia,republican,0.51
-2004,Kentucky,republican,0.51
-1986,Washington,democrat,0.51
-2002,Colorado,republican,0.51
-2012,Ohio,democrat,0.51
-1978,New Hampshire,republican,0.51
-2006,Tennessee,republican,0.51
-2018,Indiana,republican,0.51
-2002,New Hampshire,republican,0.51
-1982,Missouri,republican,0.51
-1980,Georgia,republican,0.51
-1986,Wisconsin,republican,0.51
-1986,North Carolina,democrat,0.51
-2018,Texas,republican,0.51
-1986,Georgia,democrat,0.51
-1994,Nevada,democrat,0.51
-1982,New Jersey,democrat,0.51
-1992,Ohio,democrat,0.51
-2000,Nebraska,democrat,0.51
-2012,New Mexico,democrat,0.51
-2010,Pennsylvania,republican,0.51
-2004,Louisiana,republican,0.51
-2000,Florida,democrat,0.51
-1992,Nevada,democrat,0.51
-2016,North Carolina,republican,0.51
-1988,Washington,republican,0.51
-1978,Iowa,republican,0.51
-2012,Maine,independent for Maine,0.51
-1998,North Carolina,democrat,0.51
-1982,Virginia,republican,0.51
-2000,New York,democrat,0.51
-1982,Rhode Island,republican,0.51
-1982,Nevada,republican,0.51
-1988,Nevada,democrat,0.51
-2004,Colorado,democrat,0.51
-1996,South Dakota,democrat,0.51
-2018,Missouri,republican,0.51
-1996,Colorado,republican,0.51
-2012,Wisconsin,democrat,0.51
-2014,New Hampshire,democrat,0.51
-1982,California,republican,0.52
-1986,Idaho,republican,0.52
-2008,New Hampshire,democrat,0.52
-2004,North Carolina,republican,0.52
-1986,South Dakota,democrat,0.52
-1980,Florida,republican,0.52
-1984,North Carolina,republican,0.52
-1984,Michigan,democrat,0.52
-1992,Colorado,democrat,0.52
-1996,Iowa,democrat,0.52
-1984,West Virginia,democrat,0.52
-2010,Wisconsin,republican,0.52
-1988,Montana,republican,0.52
-1994,Michigan,republican,0.52
-1992,Missouri,republican,0.52
-1984,Nebraska,democrat,0.52
-2016,Florida,republican,0.52
-1980,Missouri,democrat,0.52
-1988,Wisconsin,democrat,0.52
-2014,Iowa,republican,0.52
-1980,Oregon,republican,0.52
-2008,Louisiana,democrat,0.52
-2016,Indiana,republican,0.52
-1978,Michigan,democrat,0.52
-1992,Oregon,republican,0.52
-1980,New Hampshire,republican,0.52
-2010,California,democrat,0.52
-1990,Kentucky,republican,0.52
-1996,Massachusetts,democrat,0.52
-2000,Virginia,republican,0.52
-2018,Michigan,democrat,0.52
-2010,Washington,democrat,0.52
-1998,Georgia,republican,0.52
-1976,Pennsylvania,republican,0.52
-1990,South Dakota,republican,0.52
-2000,Pennsylvania,republican,0.52
-1996,Alabama,republican,0.52
-2012,Connecticut,democrat,0.52
-1976,Tennessee,democrat,0.52
-1976,Michigan,democrat,0.52
-1996,Virginia,republican,0.52
-2010,Connecticut,democrat,0.52
-1990,North Carolina,republican,0.53
-1992,Wisconsin,democrat,0.53
-1982,Minnesota,republican,0.53
-2004,Pennsylvania,republican,0.53
-1986,Missouri,republican,0.53
-1996,North Carolina,republican,0.53
-2008,North Carolina,democrat,0.53
-1998,Missouri,republican,0.53
-1996,New Jersey,democrat,0.53
-1998,South Carolina,democrat,0.53
-1996,Arkansas,republican,0.53
-2002,Georgia,republican,0.53
-2004,Oklahoma,republican,0.53
-1988,California,republican,0.53
-2008,Colorado,democrat,0.53
-1986,Louisiana,democrat,0.53
-2012,Virginia,democrat,0.53
-2014,Georgia,republican,0.53
-1976,Nebraska,democrat,0.53
-2008,Kentucky,republican,0.53
-1992,Alaska,republican,0.53
-1998,California,democrat,0.53
-2014,Kansas,republican,0.53
-2014,Minnesota,democrat,0.53
-1992,Illinois,democrat,0.53
-2012,Massachusetts,democrat,0.53
-1978,Illinois,republican,0.53
-2006,Arizona,republican,0.53
-1996,South Carolina,republican,0.53
-1978,New Mexico,republican,0.53
-2018,Ohio,democrat,0.53
-1994,Ohio,republican,0.53
-2010,West Virginia,democrat,0.53
-1980,Oklahoma,republican,0.53
-1980,Iowa,republican,0.53
-2006,Rhode Island,democrat,0.54
-2014,Illinois,democrat,0.54
-1988,New Jersey,democrat,0.54
-2002,North Carolina,republican,0.54
-1990,Indiana,republican,0.54
-2004,South Carolina,republican,0.54
-1990,Oregon,republican,0.54
-1980,Alaska,republican,0.54
-2012,Pennsylvania,democrat,0.54
-1994,Arizona,republican,0.54
-2016,Arizona,republican,0.54
-1976,Hawaii,democrat,0.54
-1982,New Mexico,democrat,0.54
-1980,Indiana,republican,0.54
-1982,Indiana,republican,0.54
-1978,Kansas,republican,0.54
-2002,New Jersey,democrat,0.54
-2002,Arkansas,democrat,0.54
-1988,Mississippi,republican,0.54
-1996,Kansas,republican,0.54
-1994,New Mexico,democrat,0.54
-1992,Washington,democrat,0.54
-2018,New Jersey,democrat,0.54
-1976,Arizona,democrat,0.54
-1986,Alaska,republican,0.54
-1990,Hawaii,democrat,0.54
-1996,Wyoming,republican,0.54
-2018,New Mexico,democrat,0.54
-1992,Vermont,democrat,0.54
-2018,California,democrat,0.54
-1980,Washington,republican,0.54
-2002,Iowa,democrat,0.54
-2006,Maryland,democrat,0.54
-2010,Missouri,republican,0.54
-2014,South Carolina,republican,0.54
-2002,Tennessee,republican,0.54
-1992,California,democrat,0.54
-2018,Maine,independent,0.54
-2002,South Carolina,republican,0.54
-1982,Montana,democrat,0.54
-1990,Iowa,democrat,0.54
-1978,North Carolina,republican,0.55
-1990,Massachusetts,democrat,0.55
-2010,Indiana,republican,0.55
-1976,Wyoming,republican,0.55
-1988,Rhode Island,republican,0.55
-2014,Michigan,democrat,0.55
-2018,Tennessee,republican,0.55
-1986,Florida,democrat,0.55
-1996,Texas,republican,0.55
-1994,Nebraska,democrat,0.55
-2016,Georgia,republican,0.55
-2010,North Carolina,republican,0.55
-2012,Missouri,democrat,0.55
-2008,Texas,republican,0.55
-2016,Illinois,democrat,0.55
-2008,Mississippi,republican,0.55
-2004,Washington,democrat,0.55
-2000,Nevada,republican,0.55
-1984,Massachusetts,democrat,0.55
-1978,Massachusetts,democrat,0.55
-1998,Arkansas,democrat,0.55
-1978,Alabama,democrat,0.55
-2018,North Dakota,republican,0.55
-1982,Delaware,republican,0.55
-1994,Oklahoma,republican,0.55
-1986,Oklahoma,republican,0.55
-2012,Florida,democrat,0.55
-2002,Texas,republican,0.55
-1978,New Jersey,democrat,0.55
-2004,Wisconsin,democrat,0.55
-2006,Nevada,republican,0.55
-1992,Utah,republican,0.55
-2018,Wisconsin,democrat,0.55
-1996,Kentucky,republican,0.55
-1984,Iowa,democrat,0.55
-2000,Delaware,democrat,0.56
-1978,Tennessee,republican,0.56
-2014,New Mexico,democrat,0.56
-1976,Utah,republican,0.56
-2018,Pennsylvania,democrat,0.56
-1978,South Carolina,republican,0.56
-1990,Colorado,republican,0.56
-1978,Montana,democrat,0.56
-2010,Kentucky,republican,0.56
-2014,Oregon,democrat,0.56
-1994,Washington,republican,0.56
-1976,Delaware,republican,0.56
-1992,Arizona,republican,0.56
-1994,Delaware,republican,0.56
-2014,Delaware,democrat,0.56
-2014,New Jersey,democrat,0.56
-2000,California,democrat,0.56
-2004,Arkansas,democrat,0.56
-2012,Maryland,democrat,0.56
-1980,Illinois,democrat,0.56
-2008,New Jersey,democrat,0.56
-1996,Illinois,democrat,0.56
-2004,Missouri,republican,0.56
-2006,Ohio,democrat,0.56
-1988,Minnesota,republican,0.56
-2014,Kentucky,republican,0.56
-2002,Oregon,republican,0.56
-1980,Connecticut,democrat,0.56
-1994,Tennessee,republican,0.56
-1986,Pennsylvania,republican,0.56
-2012,Texas,republican,0.56
-1998,Ohio,republican,0.56
-2014,Arkansas,republican,0.56
-1980,California,democrat,0.57
-1992,Idaho,republican,0.57
-1976,Maryland,democrat,0.57
-2010,Louisiana,republican,0.57
-1978,Minnesota,republican,0.57
-1978,Maine,republican,0.57
-2016,Oregon,democrat,0.57
-2010,Delaware,democrat,0.57
-1982,Wyoming,republican,0.57
-1982,Ohio,democrat,0.57
-2008,Oklahoma,republican,0.57
-1996,Oklahoma,republican,0.57
-1988,Nebraska,democrat,0.57
-1988,Arizona,democrat,0.57
-1976,Texas,democrat,0.57
-2018,Connecticut,democrat,0.57
-1976,New Mexico,republican,0.57
-2010,Ohio,republican,0.57
-2006,Washington,democrat,0.57
-2000,Rhode Island,republican,0.57
-1984,Montana,democrat,0.57
-2006,Michigan,democrat,0.57
-1982,Arizona,democrat,0.57
-1976,Missouri,republican,0.57
-1988,Ohio,democrat,0.57
-2018,Virginia,democrat,0.57
-1996,Idaho,republican,0.57
-2012,Mississippi,republican,0.57
-1976,Virginia,independent,0.57
-2006,New Jersey,democrat,0.57
-2010,Oregon,democrat,0.57
-1992,Hawaii,democrat,0.57
-2016,Kentucky,republican,0.57
-2002,Oklahoma,republican,0.57
-1992,Indiana,republican,0.57
-1984,Arkansas,democrat,0.57
-1996,Nebraska,republican,0.57
-2006,New York,democrat,0.57
-2008,Georgia,republican,0.57
-1990,Michigan,democrat,0.57
-2008,Nebraska,republican,0.58
-2008,South Carolina,republican,0.58
-1980,Louisiana,democrat,0.58
-2008,Idaho,republican,0.58
-2016,Connecticut,democrat,0.58
-2018,Nebraska,republican,0.58
-1976,Connecticut,republican,0.58
-2004,California,democrat,0.58
-1982,Michigan,democrat,0.58
-1976,Rhode Island,republican,0.58
-2012,Nebraska,republican,0.58
-2014,Montana,republican,0.58
-2004,Georgia,republican,0.58
-2010,Arkansas,republican,0.58
-1978,Delaware,democrat,0.58
-1994,North Dakota,democrat,0.58
-2016,Ohio,republican,0.58
-2006,Minnesota,democratic-farmer-labor,0.58
-1994,Massachusetts,democrat,0.58
-1984,Minnesota,republican,0.58
-1980,South Dakota,republican,0.58
-2002,Delaware,democrat,0.58
-1982,Utah,republican,0.58
-1994,Wisconsin,democrat,0.58
-2010,Georgia,republican,0.58
-1996,Michigan,democrat,0.58
-1998,Washington,democrat,0.58
-2018,Washington,democrat,0.58
-2002,Maine,republican,0.58
-2000,Georgia,democrat (not identified on ballot),0.59
-1984,Texas,republican,0.59
-1992,Oklahoma,republican,0.59
-2002,Alabama,republican,0.59
-1982,Texas,democrat,0.59
-2006,Pennsylvania,democrat,0.59
-1978,Colorado,republican,0.59
-1984,New Hampshire,republican,0.59
-2012,Michigan,democrat,0.59
-2010,Arizona,republican,0.59
-2012,New Jersey,democrat,0.59
-1994,Wyoming,republican,0.59
-2004,New York,democrat,0.59
-1990,Nebraska,democrat,0.59
-2014,Massachusetts,democrat,0.59
-1992,North Dakota,democrat,0.59
-2016,Washington,democrat,0.59
-1976,Indiana,republican,0.59
-1980,Arkansas,democrat,0.59
-1994,Maryland,democrat,0.59
-1988,Texas,democrat,0.59
-1982,Pennsylvania,republican,0.59
-1980,Nevada,republican,0.59
-2006,California,democrat,0.59
-1988,North Dakota,democrat,0.59
-2010,New York,democrat,0.60
-1994,Missouri,republican,0.60
-2016,Arkansas,republican,0.60
-2014,Mississippi,republican,0.60
-2000,Ohio,republican,0.60
-2018,Delaware,democrat,0.60
-2016,Vermont,democrat,0.60
-1996,Delaware,democrat,0.60
-2008,Kansas,republican,0.60
-2010,New Hampshire,republican,0.60
-2016,Iowa,republican,0.60
-1984,Delaware,democrat,0.60
-1992,Arkansas,democrat,0.60
-1976,Maine,democrat,0.60
-1994,Maine,republican,0.60
-1990,Texas,republican,0.60
-2006,Florida,democrat,0.60
-2002,Illinois,democrat,0.60
-2018,Massachusetts,democrat,0.60
-1988,Michigan,democrat,0.60
-1994,Tennessee,republican,0.60
-2012,Washington,democrat,0.60
-1986,Arizona,republican,0.60
-1990,Alabama,democrat,0.61
-2016,South Carolina,republican,0.61
-1986,Indiana,republican,0.61
-2012,West Virginia,democrat,0.61
-2002,Michigan,democrat,0.61
-1976,New Jersey,democrat,0.61
-1986,Maryland,democrat,0.61
-1984,Tennessee,democrat,0.61
-1982,Massachusetts,democrat,0.61
-1994,Texas,republican,0.61
-1982,Maine,democrat,0.61
-2016,Maryland,democrat,0.61
-1984,Mississippi,republican,0.61
-1978,Kentucky,democrat,0.61
-1998,Oregon,democrat,0.61
-2004,Nevada,democrat,0.61
-2014,South Carolina,republican,0.61
-1990,Idaho,republican,0.61
-2008,New Mexico,democrat,0.61
-2016,New York,democrat,0.61
-2008,Maine,republican,0.61
-1990,Maine,republican,0.61
-1998,Pennsylvania,republican,0.61
-2006,Hawaii,democrat,0.61
-1996,Tennessee,republican,0.61
-2000,North Dakota,democratic-nonpartisan league,0.61
-2008,Mississippi,republican,0.61
-2018,Rhode Island,democrat,0.61
-1978,Minnesota,republican,0.61
-2010,South Carolina,republican,0.61
-2000,Wisconsin,democrat,0.62
-2014,Texas,republican,0.62
-2010,Utah,republican,0.62
-2016,California,democrat,0.62
-1978,Oregon,republican,0.62
-2012,Hawaii,democrat,0.62
-2004,Indiana,democrat,0.62
-2006,Texas,republican,0.62
-2000,New Mexico,democrat,0.62
-1982,Florida,democrat,0.62
-1988,Maryland,democrat,0.62
-1990,Rhode Island,democrat,0.62
-2014,Tennessee,republican,0.62
-1982,Tennessee,democrat,0.62
-2018,New York,democrat,0.62
-1996,Kansas,republican,0.62
-1988,Delaware,republican,0.62
-1976,North Dakota,democrat,0.62
-2012,New York,democrat,0.62
-2014,West Virginia,republican,0.62
-1998,South Dakota,democrat,0.62
-1978,Wyoming,democrat,0.62
-2016,Kansas,republican,0.62
-2010,Maryland,democrat,0.62
-1982,New York,democrat,0.62
-1986,Arkansas,democrat,0.62
-2006,Utah,republican,0.62
-1994,Montana,republican,0.62
-1986,Ohio,democrat,0.62
-1998,Florida,democrat,0.62
-1998,Colorado,republican,0.62
-2008,South Dakota,democrat,0.62
-2012,California,democrat,0.63
-2018,Utah,republican,0.63
-2008,Iowa,democrat,0.63
-2008,Michigan,democrat,0.63
-1990,Delaware,democrat,0.63
-1992,Kansas,republican,0.63
-2002,Montana,democrat,0.63
-1984,Alabama,democrat,0.63
-1982,North Dakota,democrat,0.63
-1992,Kentucky,democrat,0.63
-1986,Oregon,republican,0.63
-1986,New Hampshire,republican,0.63
-1976,Florida,democrat,0.63
-1976,Nevada,democrat,0.63
-1986,South Carolina,democrat,0.63
-2002,West Virginia,democrat,0.63
-1998,North Dakota,democrat,0.63
-1986,Vermont,democrat,0.63
-2000,Maryland,democrat,0.63
-2000,Connecticut,democrat,0.63
-1998,Alabama,republican,0.63
-1988,New Mexico,democrat,0.63
-1996,Rhode Island,democrat,0.63
-2008,Alabama,republican,0.63
-2004,Oregon,democrat,0.63
-1982,Maryland,democrat,0.63
-2008,Massachusetts,democrat,0.64
-2006,Mississippi,republican,0.64
-1982,Wisconsin,democrat,0.64
-1998,Indiana,democrat,0.64
-2008,West Virginia,democrat,0.64
-1980,Kansas,republican,0.64
-2004,Ohio,republican,0.64
-2006,Nebraska,democrat,0.64
-1990,Wyoming,republican,0.64
-2016,Alabama,republican,0.64
-2010,New York,democrat,0.64
-1998,Utah,republican,0.64
-1998,Louisiana,democrat,0.64
-1976,Montana,democrat,0.64
-1984,New Jersey,democrat,0.64
-1982,Mississippi,democrat,0.64
-1990,South Carolina,republican,0.64
-1984,Colorado,republican,0.64
-2010,Vermont,democrat,0.64
-2014,Nebraska,republican,0.64
-2010,Iowa,republican,0.64
-1994,Rhode Island,republican,0.65
-2002,Kentucky,republican,0.65
-1988,New York,democrat,0.65
-2008,Delaware,democrat,0.65
-1996,New Mexico,republican,0.65
-1986,Connecticut,democrat,0.65
-1988,West Virginia,democrat,0.65
-2004,Maryland,democrat,0.65
-2012,Rhode Island,democrat,0.65
-1992,Alabama,democrat,0.65
-2018,Maryland,democrat,0.65
-2012,Tennessee,republican,0.65
-1992,South Dakota,democrat,0.65
-1988,Massachusetts,democrat,0.65
-2008,Virginia,democrat,0.65
-2002,New Mexico,republican,0.65
-1990,Illinois,democrat,0.65
-2000,Texas,republican,0.65
-1988,Tennessee,democrat,0.65
-2000,Tennessee,republican,0.65
-1986,Illinois,democrat,0.65
-1980,Kentucky,democrat,0.65
-1990,New Hampshire,republican,0.65
-2008,Tennessee,republican,0.65
-1998,Connecticut,democrat,0.65
-2002,Idaho,republican,0.65
-2010,Alabama,republican,0.65
-2012,Minnesota,democrat,0.65
-1998,Kansas,republican,0.65
-2012,Utah,republican,0.65
-2014,Idaho,republican,0.65
-1992,Florida,democrat,0.65
-2006,Vermont,independent,0.65
-1978,Oklahoma,democrat,0.65
-2000,Vermont,republican,0.66
-2000,Utah,republican,0.66
-2000,Mississippi,republican,0.66
-1986,Iowa,republican,0.66
-2016,Idaho,republican,0.66
-1980,Maryland,republican,0.66
-2004,New Hampshire,republican,0.66
-1990,Alaska,republican,0.66
-2004,Connecticut,democrat,0.66
-1998,Oklahoma,republican,0.66
-2012,Delaware,democrat,0.66
-1988,Pennsylvania,republican,0.66
-1984,Oregon,republican,0.67
-2000,Indiana,republican,0.67
-1982,Nebraska,democrat,0.67
-2014,Hawaii,democrat,0.67
-1984,South Carolina,republican,0.67
-1978,South Dakota,republican,0.67
-2006,Massachusetts,democrat,0.67
-2018,Wyoming,republican,0.67
-2014,Maine,republican,0.67
-1988,Utah,republican,0.67
-2006,Wisconsin,democrat,0.67
-2018,Vermont,independent,0.67
-1994,Indiana,republican,0.67
-1976,Minnesota,democrat,0.68
-2004,Alabama,republican,0.68
-1978,Nebraska,democrat,0.68
-1988,Missouri,republican,0.68
-1990,Tennessee,democrat,0.68
-2016,Oklahoma,republican,0.68
-1998,New Hampshire,republican,0.68
-2008,Illinois,democrat,0.68
-2014,Oklahoma,republican,0.68
-1988,Vermont,republican,0.68
-2014,Oklahoma,republican,0.68
-1990,Montana,democrat,0.68
-1988,Indiana,republican,0.68
-2016,Utah,republican,0.68
-2004,North Dakota,democrat,0.68
-1990,West Virginia,democrat,0.68
-1998,Iowa,republican,0.68
-1978,Idaho,republican,0.68
-1982,West Virginia,democrat,0.68
-2004,Utah,republican,0.69
-1998,Arizona,republican,0.69
-1994,Mississippi,republican,0.69
-1980,Ohio,democrat,0.69
-1994,Utah,republican,0.69
-2006,North Dakota,democrat,0.69
-2006,Wyoming,republican,0.69
-2000,Maine,republican,0.69
-1982,Washington,democrat,0.69
-1994,West Virginia,democrat,0.69
-2000,Massachusetts,democrat,0.69
-2004,Kansas,republican,0.69
-1976,Massachusetts,democrat,0.69
-1998,Idaho,republican,0.70
-1992,Iowa,republican,0.70
-2004,Illinois,democrat,0.70
-1984,Virginia,republican,0.70
-1986,Kansas,republican,0.70
-2016,Hawaii,democrat,0.70
-2010,Kansas,republican,0.70
-2004,Iowa,republican,0.70
-2006,Delaware,democrat,0.70
-1980,South Carolina,democrat,0.70
-1994,Florida,republican,0.70
-1998,Maryland,democrat,0.71
-2014,Rhode Island,democrat,0.71
-2006,New Mexico,democrat,0.71
-2004,Vermont,democrat,0.71
-2010,Oklahoma,republican,0.71
-2012,Vermont,independent,0.71
-1992,Maryland,democrat,0.71
-2014,Wyoming,republican,0.71
-1996,Mississippi,republican,0.71
-2018,Hawaii,democrat,0.71
-1984,Alaska,republican,0.71
-2010,Idaho,republican,0.71
-1988,Virginia,democrat,0.71
-1994,Hawaii,democrat,0.72
-2016,South Dakota,republican,0.72
-1976,Washington,democrat,0.72
-1984,New Mexico,republican,0.72
-1984,Idaho,republican,0.72
-1976,Wisconsin,democrat,0.72
-1998,Vermont,democrat,0.72
-1986,Utah,republican,0.72
-2002,Massachusetts,democrat,0.72
-1984,Rhode Island,democrat,0.73
-2000,Hawaii,democrat,0.73
-1990,New Mexico,republican,0.73
-2008,Montana,democrat,0.73
-2002,Wyoming,republican,0.73
-2008,Rhode Island,democrat,0.73
-2008,Wyoming,republican,0.73
-1984,Maine,republican,0.73
-1986,Hawaii,democrat,0.74
-1990,Kansas,republican,0.74
-1980,Utah,republican,0.74
-2000,Wyoming,republican,0.74
-2012,Wyoming,republican,0.74
-1986,Kentucky,democrat,0.74
-2006,Maine,republican,0.74
-1984,South Dakota,republican,0.74
-1998,Alaska,republican,0.74
-2010,Hawaii,democrat,0.75
-1978,Rhode Island,democrat,0.75
-2004,Hawaii,democrat,0.76
-1978,Alaska,republican,0.76
-2008,Wyoming,republican,0.76
-1984,Oklahoma,democrat,0.76
-1984,Kansas,republican,0.76
-2010,North Dakota,republican,0.76
-1978,Arkansas,democrat,0.76
-1988,Hawaii,democrat,0.77
-1996,West Virginia,democrat,0.77
-1996,Alaska,republican,0.77
-2004,Arizona,republican,0.77
-2006,West Virginia,democrat,0.77
-2000,West Virginia,democrat,0.78
-1980,Hawaii,democrat,0.78
-2002,Alaska,republican,0.78
-1984,Wyoming,republican,0.78
-2002,Rhode Island,democrat,0.78
-2016,North Dakota,republican,0.78
-1998,Hawaii,democrat,0.79
-2000,Arizona,republican,0.79
-2008,Arkansas,democrat,0.80
-1984,Georgia,democrat,0.80
-1982,Hawaii,democrat,0.80
-1990,Virginia,republican,0.81
-1988,Maine,democrat,0.81
-2002,Kansas,republican,0.83
-2002,Virginia,republican,0.83
-2002,Nebraska,republican,0.83
-1978,Georgia,democrat,0.83
-1990,Oklahoma,democrat,0.83
-2002,Mississippi,republican,0.85
-2006,Indiana,republican,0.87
-1978,Alabama,democrat,0.94
-2014,Alabama,republican,0.97
-2004,Idaho,republican,0.99
-1990,Arkansas,democrat,1.00
-1976,Mississippi,democrat,1.00
-1976,West Virginia,democrat,1.00
-1978,Louisiana,democrat,1.00
-1984,Louisiana,democrat,1.00
-1990,Georgia,democrat,1.00
-1990,Louisiana,democrat,1.00
-1990,Mississippi,republican,1.00
-1992,Louisiana,democrat,1.00
-2010,South Dakota,republican,1.00
+Year,State,Party,Votes
+1978,Alabama,democrat,401852
+1978,Alabama,democrat,547054
+1978,Alabama,republican,316170
+1980,Alabama,democrat,610175
+1980,Alabama,republican,650362
+1984,Alabama,democrat,860535
+1984,Alabama,republican,498508
+1986,Alabama,democrat,609360
+1986,Alabama,republican,602537
+1990,Alabama,democrat,717814
+1990,Alabama,republican,467190
+1992,Alabama,democrat,1022698
+1992,Alabama,republican,522015
+1996,Alabama,democrat,681651
+1996,Alabama,republican,786436
+1998,Alabama,democrat,474568
+1998,Alabama,republican,817973
+2002,Alabama,democrat,538878
+2002,Alabama,republican,792561
+2004,Alabama,democrat,595018
+2004,Alabama,republican,1242200
+2008,Alabama,democrat,752391
+2008,Alabama,republican,1305383
+2010,Alabama,democrat,515619
+2010,Alabama,republican,968181
+2014,Alabama,republican,795606
+2016,Alabama,democrat,748709
+2016,Alabama,republican,1335104
+1978,Alaska,democrat,29574
+1978,Alaska,republican,92783
+1980,Alaska,democrat,72007
+1980,Alaska,republican,84159
+1984,Alaska,democrat,58804
+1984,Alaska,republican,146919
+1986,Alaska,democrat,79727
+1986,Alaska,republican,97674
+1990,Alaska,democrat,61152
+1990,Alaska,republican,125806
+1992,Alaska,democrat,92065
+1992,Alaska,republican,127163
+1996,Alaska,democrat,23977
+1996,Alaska,republican,177893
+1998,Alaska,democrat,43743
+1998,Alaska,republican,165227
+2002,Alaska,democrat,24133
+2002,Alaska,republican,179438
+2004,Alaska,democrat,140424
+2004,Alaska,republican,149773
+2008,Alaska,democrat,151767
+2008,Alaska,republican,147814
+2010,Alaska,democrat,60045
+2010,Alaska,republican,90839
+2014,Alaska,democrat,129431
+2014,Alaska,republican,135445
+2016,Alaska,democrat,36200
+2016,Alaska,republican,138149
+1976,Arizona,democrat,400334
+1976,Arizona,republican,321236
+1980,Arizona,democrat,422972
+1980,Arizona,republican,432371
+1982,Arizona,democrat,411970
+1982,Arizona,republican,291749
+1986,Arizona,democrat,340965
+1986,Arizona,republican,521850
+1988,Arizona,democrat,660403
+1988,Arizona,republican,478060
+1992,Arizona,democrat,436321
+1992,Arizona,republican,771395
+1994,Arizona,democrat,442510
+1994,Arizona,republican,600999
+1998,Arizona,democrat,275224
+1998,Arizona,republican,696577
+2000,Arizona,republican,1108196
+2004,Arizona,democrat,404507
+2004,Arizona,republican,1505372
+2006,Arizona,democrat,664141
+2006,Arizona,republican,814398
+2010,Arizona,democrat,592011
+2010,Arizona,republican,1005615
+2012,Arizona,democrat,1036542
+2012,Arizona,republican,1104457
+2016,Arizona,democrat,1031245
+2016,Arizona,republican,494
+2016,Arizona,republican,1359267
+2018,Arizona,democrat,1191100
+2018,Arizona,republican,1135200
+1978,Arkansas,democrat,395506
+1978,Arkansas,republican,84308
+1980,Arkansas,democrat,477905
+1980,Arkansas,republican,330576
+1984,Arkansas,democrat,502341
+1984,Arkansas,republican,373615
+1986,Arkansas,democrat,433122
+1986,Arkansas,republican,262313
+1990,Arkansas,democrat,493910
+1992,Arkansas,democrat,553635
+1992,Arkansas,republican,366373
+1996,Arkansas,democrat,400241
+1996,Arkansas,republican,445942
+1998,Arkansas,democrat,385878
+1998,Arkansas,republican,295870
+2002,Arkansas,democrat,433386
+2002,Arkansas,republican,370735
+2004,Arkansas,democrat,580973
+2004,Arkansas,republican,458036
+2008,Arkansas,democrat,804678
+2010,Arkansas,democrat,288156
+2010,Arkansas,republican,451618
+2014,Arkansas,democrat,334174
+2014,Arkansas,republican,478819
+2016,Arkansas,democrat,400602
+2016,Arkansas,republican,661984
+1976,California,democrat,3502862
+1976,California,republican,3748973
+1980,California,democrat,4704098
+1980,California,republican,3091671
+1982,California,democrat,3494968
+1982,California,republican,4022565
+1986,California,democrat,3646672
+1986,California,republican,3541804
+1988,California,democrat,4287253
+1988,California,republican,5143409
+1992,California,democrat,5173467
+1992,California,democrat,5853651
+1992,California,republican,4093501
+1992,California,republican,4644182
+1994,California,democrat,3979152
+1994,California,republican,3817025
+1998,California,democrat,4410056
+1998,California,republican,3575078
+2000,California,democrat,5932522
+2000,California,republican,3886853
+2004,California,democrat,6955728
+2004,California,republican,4555922
+2006,California,democrat,5076289
+2006,California,republican,2990822
+2010,California,democrat,5218441
+2010,California,republican,4217366
+2012,California,democrat,7864624
+2012,California,republican,4713887
+2016,California,democrat,4701417
+2016,California,democrat,7542753
+2018,California,democrat,5093942
+2018,California,democrat,6019422
+1978,Colorado,democrat,330148
+1978,Colorado,republican,480801
+1980,Colorado,democrat,590501
+1980,Colorado,republican,571295
+1984,Colorado,democrat,449327
+1984,Colorado,republican,833821
+1986,Colorado,democrat,529449
+1986,Colorado,republican,512994
+1990,Colorado,democrat,425746
+1990,Colorado,republican,569048
+1992,Colorado,democrat,803725
+1992,Colorado,republican,662893
+1996,Colorado,democrat,667600
+1996,Colorado,republican,750315
+1998,Colorado,democrat,464754
+1998,Colorado,republican,829370
+2002,Colorado,democrat,648130
+2002,Colorado,republican,717893
+2004,Colorado,democrat,1081188
+2004,Colorado,republican,980668
+2008,Colorado,democrat,1230994
+2008,Colorado,republican,990755
+2010,Colorado,democrat,851590
+2010,Colorado,republican,822731
+2014,Colorado,democrat,944203
+2014,Colorado,republican,983891
+2016,Colorado,democrat,1370710
+2016,Colorado,republican,1215318
+1976,Connecticut,democrat,561018
+1976,Connecticut,republican,785683
+1980,Connecticut,democrat,763969
+1980,Connecticut,republican,581884
+1982,Connecticut,democrat,499146
+1982,Connecticut,republican,545987
+1986,Connecticut,democrat,632695
+1986,Connecticut,republican,340438
+1988,Connecticut,democrat,688499
+1988,Connecticut,republican,678454
+1992,Connecticut,democrat,577662
+1992,Connecticut,republican,572036
+1994,Connecticut,democrat,443793
+1994,Connecticut,republican,334833
+1998,Connecticut,democrat,628306
+1998,Connecticut,republican,312177
+2000,Connecticut,democrat,828902
+2000,Connecticut,republican,448077
+2004,Connecticut,democrat,945347
+2004,Connecticut,republican,457749
+2006,Connecticut,democrat,450844
+2006,Connecticut,republican,109198
+2010,Connecticut,democrat,605204
+2010,Connecticut,republican,498341
+2012,Connecticut,democrat,792983
+2012,Connecticut,republican,604569
+2016,Connecticut,democrat,920766
+2016,Connecticut,republican,552621
+2018,Connecticut,democrat,787685
+2018,Connecticut,republican,545717
+1976,Delaware,democrat,98042
+1976,Delaware,republican,125454
+1978,Delaware,democrat,93930
+1978,Delaware,republican,66479
+1982,Delaware,democrat,84413
+1982,Delaware,republican,105357
+1984,Delaware,democrat,147831
+1984,Delaware,republican,98101
+1988,Delaware,democrat,92378
+1988,Delaware,republican,151115
+1990,Delaware,democrat,112918
+1990,Delaware,republican,64554
+1994,Delaware,democrat,84540
+1994,Delaware,republican,111074
+1996,Delaware,democrat,165465
+1996,Delaware,republican,105088
+2000,Delaware,democrat,181566
+2000,Delaware,republican,142891
+2002,Delaware,democrat,135253
+2002,Delaware,republican,94793
+2006,Delaware,democrat,170567
+2006,Delaware,republican,69734
+2008,Delaware,democrat,257539
+2008,Delaware,republican,140595
+2010,Delaware,democrat,174012
+2010,Delaware,republican,123053
+2012,Delaware,democrat,265415
+2012,Delaware,republican,115700
+2014,Delaware,democrat,130655
+2014,Delaware,republican,98823
+2018,Delaware,democrat,217385
+2018,Delaware,republican,137127
+1976,Florida,democrat,1799518
+1976,Florida,republican,1057886
+1980,Florida,democrat,1705409
+1980,Florida,republican,1822460
+1982,Florida,democrat,1637667
+1982,Florida,republican,1015330
+1986,Florida,democrat,1877543
+1986,Florida,republican,1552376
+1988,Florida,democrat,2016553
+1988,Florida,republican,2051071
+1992,Florida,democrat,3245565
+1992,Florida,republican,1716505
+1994,Florida,democrat,1210577
+1994,Florida,republican,2895200
+1998,Florida,democrat,2436407
+1998,Florida,republican,1463755
+2000,Florida,democrat,2989487
+2000,Florida,republican,2705348
+2004,Florida,democrat,3590201
+2004,Florida,republican,3672864
+2006,Florida,democrat,2890548
+2006,Florida,republican,1826127
+2010,Florida,democrat,1092936
+2010,Florida,republican,2645743
+2012,Florida,democrat,4523451
+2012,Florida,republican,3458267
+2016,Florida,democrat,4122088
+2016,Florida,republican,4835191
+2018,Florida,democrat,4089472
+2018,Florida,republican,4099505
+1978,Georgia,democrat,536320
+1978,Georgia,republican,108808
+1980,Georgia,democrat,776143
+1980,Georgia,republican,803686
+1984,Georgia,democrat,1344104
+1984,Georgia,republican,337196
+1986,Georgia,democrat,623707
+1986,Georgia,republican,601241
+1990,Georgia,democrat,1033439
+1992,Georgia,democrat,1108416
+1992,Georgia,republican,1073282
+1996,Georgia,democrat,1103993
+1996,Georgia,republican,1073969
+1998,Georgia,democrat,791904
+1998,Georgia,republican,918540
+2002,Georgia,democrat,932422
+2002,Georgia,republican,1071352
+2004,Georgia,democrat,1287690
+2004,Georgia,republican,1864202
+2008,Georgia,democrat,909923
+2008,Georgia,republican,1228033
+2010,Georgia,democrat,996516
+2010,Georgia,republican,1489904
+2014,Georgia,democrat,1160811
+2014,Georgia,republican,1358088
+2016,Georgia,democrat,1599726
+2016,Georgia,republican,2135806
+1976,Hawaii,democrat,162305
+1976,Hawaii,republican,122724
+1980,Hawaii,democrat,224485
+1980,Hawaii,republican,53068
+1982,Hawaii,democrat,245386
+1982,Hawaii,republican,52071
+1986,Hawaii,democrat,241887
+1986,Hawaii,republican,86910
+1988,Hawaii,democrat,247941
+1988,Hawaii,republican,66987
+1990,Hawaii,democrat,188901
+1990,Hawaii,republican,155978
+1992,Hawaii,democrat,208266
+1992,Hawaii,republican,97928
+1994,Hawaii,democrat,256189
+1994,Hawaii,republican,86320
+1998,Hawaii,democrat,315252
+1998,Hawaii,republican,70964
+2000,Hawaii,democrat,251215
+2000,Hawaii,republican,84701
+2004,Hawaii,democrat,313629
+2004,Hawaii,republican,87172
+2006,Hawaii,democrat,210330
+2006,Hawaii,republican,126097
+2010,Hawaii,democrat,277228
+2010,Hawaii,republican,79939
+2012,Hawaii,democrat,269489
+2012,Hawaii,republican,160994
+2014,Hawaii,democrat,246827
+2014,Hawaii,republican,98006
+2016,Hawaii,democrat,306604
+2016,Hawaii,republican,92653
+2018,Hawaii,democrat,276316
+2018,Hawaii,republican,112035
+1978,Idaho,democrat,89635
+1978,Idaho,republican,194412
+1980,Idaho,democrat,214439
+1980,Idaho,republican,218701
+1984,Idaho,democrat,105591
+1984,Idaho,republican,293193
+1986,Idaho,democrat,185066
+1986,Idaho,republican,196958
+1990,Idaho,democrat,122295
+1990,Idaho,republican,193641
+1992,Idaho,democrat,208036
+1992,Idaho,republican,270468
+1996,Idaho,democrat,198422
+1996,Idaho,republican,283532
+1998,Idaho,democrat,107375
+1998,Idaho,republican,262966
+2002,Idaho,democrat,132975
+2002,Idaho,republican,266215
+2004,Idaho,republican,499796
+2008,Idaho,democrat,219903
+2008,Idaho,republican,371744
+2010,Idaho,democrat,112057
+2010,Idaho,republican,319953
+2014,Idaho,democrat,151574
+2014,Idaho,republican,285596
+2016,Idaho,democrat,188249
+2016,Idaho,republican,449017
+1978,Illinois,democrat,1448187
+1978,Illinois,republican,1698711
+1980,Illinois,democrat,2565302
+1980,Illinois,republican,1946296
+1984,Illinois,democrat,2397165
+1984,Illinois,republican,2308039
+1986,Illinois,democrat,2033783
+1986,Illinois,republican,1053734
+1990,Illinois,democrat,2115377
+1990,Illinois,republican,1135628
+1992,Illinois,democrat,2631229
+1992,Illinois,republican,2126833
+1996,Illinois,democrat,2384028
+1996,Illinois,republican,1728824
+1998,Illinois,democrat,1610496
+1998,Illinois,republican,1709041
+2002,Illinois,democrat,2103766
+2002,Illinois,republican,1325703
+2004,Illinois,democrat,3597456
+2004,Illinois,republican,1390690
+2008,Illinois,democrat,3615844
+2008,Illinois,republican,1520621
+2010,Illinois,democrat,1719478
+2010,Illinois,republican,1778698
+2014,Illinois,democrat,1929637
+2014,Illinois,republican,1538522
+2016,Illinois,democrat,3012940
+2016,Illinois,republican,2184692
+1976,Indiana,democrat,868522
+1976,Indiana,republican,1275833
+1980,Indiana,democrat,1015962
+1980,Indiana,republican,1182414
+1982,Indiana,democrat,828400
+1982,Indiana,republican,978301
+1986,Indiana,democrat,595192
+1986,Indiana,republican,936143
+1988,Indiana,democrat,668778
+1988,Indiana,republican,1430525
+1990,Indiana,democrat,696639
+1990,Indiana,republican,806048
+1992,Indiana,democrat,900148
+1992,Indiana,republican,1267972
+1994,Indiana,democrat,470799
+1994,Indiana,republican,1039625
+1998,Indiana,democrat,1012244
+1998,Indiana,republican,552732
+2000,Indiana,democrat,683273
+2000,Indiana,republican,1427944
+2004,Indiana,democrat,1496976
+2004,Indiana,republican,903913
+2006,Indiana,republican,1171553
+2010,Indiana,democrat,697775
+2010,Indiana,republican,952116
+2012,Indiana,democrat,1281181
+2012,Indiana,republican,1133621
+2016,Indiana,democrat,1158947
+2016,Indiana,republican,1423991
+2018,Indiana,democrat,1023553
+2018,Indiana,republican,1158000
+1978,Iowa,democrat,395066
+1978,Iowa,republican,421598
+1980,Iowa,democrat,581545
+1980,Iowa,republican,683014
+1984,Iowa,democrat,716883
+1984,Iowa,republican,564381
+1986,Iowa,democrat,299406
+1986,Iowa,republican,588880
+1990,Iowa,democrat,535975
+1990,Iowa,republican,446869
+1992,Iowa,democrat,351561
+1992,Iowa,republican,899761
+1996,Iowa,democrat,634166
+1996,Iowa,republican,571807
+1998,Iowa,democrat,289049
+1998,Iowa,republican,648480
+2002,Iowa,democrat,554278
+2002,Iowa,republican,447892
+2004,Iowa,democrat,412365
+2004,Iowa,republican,1038175
+2008,Iowa,democrat,941665
+2008,Iowa,republican,560006
+2010,Iowa,democrat,371686
+2010,Iowa,republican,718215
+2014,Iowa,democrat,494370
+2014,Iowa,republican,588575
+2016,Iowa,democrat,549460
+2016,Iowa,republican,926007
+1978,Kansas,democrat,317602
+1978,Kansas,republican,403354
+1980,Kansas,democrat,340271
+1980,Kansas,republican,598686
+1984,Kansas,democrat,211664
+1984,Kansas,republican,757402
+1986,Kansas,democrat,246664
+1986,Kansas,republican,576902
+1990,Kansas,democrat,207491
+1990,Kansas,republican,578605
+1992,Kansas,democrat,349525
+1992,Kansas,republican,706246
+1996,Kansas,democrat,362380
+1996,Kansas,democrat,461344
+1996,Kansas,republican,574021
+1996,Kansas,republican,652677
+1998,Kansas,democrat,229718
+1998,Kansas,republican,474639
+2002,Kansas,republican,641075
+2004,Kansas,democrat,310337
+2004,Kansas,republican,780863
+2008,Kansas,democrat,441399
+2008,Kansas,republican,727121
+2010,Kansas,democrat,220971
+2010,Kansas,republican,587175
+2014,Kansas,republican,460350
+2016,Kansas,democrat,379740
+2016,Kansas,republican,732376
+1978,Kentucky,democrat,290730
+1978,Kentucky,republican,175766
+1980,Kentucky,democrat,720891
+1980,Kentucky,republican,386029
+1984,Kentucky,democrat,639721
+1984,Kentucky,democrat,644990
+1986,Kentucky,democrat,503775
+1986,Kentucky,republican,173330
+1990,Kentucky,democrat,437976
+1990,Kentucky,republican,478034
+1992,Kentucky,democrat,836888
+1992,Kentucky,republican,476604
+1996,Kentucky,democrat,560012
+1996,Kentucky,republican,724794
+1998,Kentucky,democrat,563051
+1998,Kentucky,republican,569817
+2002,Kentucky,democrat,399634
+2002,Kentucky,republican,731679
+2004,Kentucky,democrat,850855
+2004,Kentucky,republican,873507
+2008,Kentucky,democrat,847005
+2008,Kentucky,republican,953816
+2010,Kentucky,democrat,600052
+2010,Kentucky,republican,755706
+2014,Kentucky,democrat,584698
+2014,Kentucky,republican,806787
+2016,Kentucky,democrat,813246
+2016,Kentucky,republican,1090177
+1980,Louisiana,democrat,325922
+1980,Louisiana,democrat,484770
+1980,Louisiana,republican,10208
+1980,Louisiana,republican,13739
+1984,Louisiana,democrat,1
+1986,Louisiana,democrat,723586
+1986,Louisiana,republican,646311
+1990,Louisiana,democrat,1
+1992,Louisiana,democrat,1
+1996,Louisiana,democrat,852945
+1996,Louisiana,republican,847157
+1998,Louisiana,democrat,9893
+1998,Louisiana,democrat,620502
+1998,Louisiana,republican,7964
+1998,Louisiana,republican,306616
+2002,Louisiana,democrat,23553
+2002,Louisiana,democrat,573347
+2002,Louisiana,republican,1668
+2002,Louisiana,republican,119776
+2002,Louisiana,republican,171752
+2002,Louisiana,republican,339506
+2004,Louisiana,democrat,12289
+2004,Louisiana,democrat,47222
+2004,Louisiana,democrat,275821
+2004,Louisiana,democrat,542150
+2004,Louisiana,republican,943014
+2008,Louisiana,democrat,988298
+2008,Louisiana,republican,867177
+2010,Louisiana,democrat,476572
+2010,Louisiana,republican,715415
+2014,Louisiana,democrat,3835
+2014,Louisiana,democrat,4673
+2014,Louisiana,democrat,11323
+2014,Louisiana,democrat,1561210
+2014,Louisiana,republican,14173
+2014,Louisiana,republican,202556
+2014,Louisiana,republican,1712379
+2016,Louisiana,democrat,4927
+2016,Louisiana,democrat,6855
+2016,Louisiana,democrat,7395
+2016,Louisiana,democrat,45587
+2016,Louisiana,democrat,51774
+2016,Louisiana,democrat,240917
+2016,Louisiana,democrat,347816
+2016,Louisiana,republican,1576
+2016,Louisiana,republican,3684
+2016,Louisiana,republican,21019
+2016,Louisiana,republican,25523
+2016,Louisiana,republican,58606
+2016,Louisiana,republican,90856
+2016,Louisiana,republican,204026
+2016,Louisiana,republican,298008
+2016,Louisiana,republican,536191
+1976,Maine,democrat,292704
+1976,Maine,republican,193489
+1978,Maine,democrat,127327
+1978,Maine,republican,212294
+1982,Maine,democrat,279819
+1982,Maine,republican,179882
+1984,Maine,democrat,142626
+1984,Maine,republican,404414
+1988,Maine,democrat,452581
+1988,Maine,republican,104164
+1990,Maine,democrat,201053
+1990,Maine,republican,319167
+1994,Maine,democrat,186042
+1994,Maine,republican,308244
+1996,Maine,democrat,266226
+1996,Maine,republican,298422
+2000,Maine,democrat,197183
+2000,Maine,republican,437689
+2002,Maine,democrat,209858
+2002,Maine,republican,295041
+2006,Maine,democrat,113131
+2006,Maine,republican,405596
+2008,Maine,democrat,279510
+2008,Maine,republican,444300
+2012,Maine,democrat,92900
+2012,Maine,republican,215399
+2014,Maine,democrat,190254
+2014,Maine,republican,413505
+2018,Maine,democrat,66268
+2018,Maine,republican,223502
+1976,Maryland,democrat,772101
+1976,Maryland,republican,530439
+1980,Maryland,democrat,435118
+1980,Maryland,republican,850970
+1982,Maryland,democrat,707356
+1982,Maryland,republican,407334
+1986,Maryland,democrat,675225
+1986,Maryland,republican,437411
+1988,Maryland,democrat,999166
+1988,Maryland,republican,617537
+1992,Maryland,democrat,1307610
+1992,Maryland,republican,533688
+1994,Maryland,democrat,809125
+1994,Maryland,republican,559908
+1998,Maryland,democrat,1062810
+1998,Maryland,republican,444637
+2000,Maryland,democrat,1230013
+2000,Maryland,republican,715178
+2004,Maryland,democrat,1504691
+2004,Maryland,republican,783055
+2006,Maryland,democrat,965477
+2006,Maryland,republican,787182
+2010,Maryland,democrat,84
+2010,Maryland,democrat,1140531
+2010,Maryland,republican,655666
+2012,Maryland,democrat,1474028
+2012,Maryland,republican,693291
+2016,Maryland,democrat,1659907
+2016,Maryland,republican,972557
+2018,Maryland,democrat,1491614
+2018,Maryland,republican,697017
+1976,Massachusetts,democrat,1726657
+1976,Massachusetts,republican,722641
+1978,Massachusetts,democrat,1093283
+1978,Massachusetts,republican,890584
+1982,Massachusetts,democrat,1247084
+1982,Massachusetts,republican,784602
+1984,Massachusetts,democrat,1393150
+1984,Massachusetts,republican,1136913
+1988,Massachusetts,democrat,1693344
+1988,Massachusetts,republican,884267
+1990,Massachusetts,democrat,1321712
+1990,Massachusetts,republican,992917
+1994,Massachusetts,democrat,1265997
+1994,Massachusetts,republican,894000
+1996,Massachusetts,democrat,1334135
+1996,Massachusetts,republican,1143120
+2000,Massachusetts,democrat,1889494
+2000,Massachusetts,republican,334341
+2002,Massachusetts,democrat,1605976
+2006,Massachusetts,democrat,1500738
+2006,Massachusetts,republican,661532
+2008,Massachusetts,democrat,1971974
+2008,Massachusetts,republican,926044
+2012,Massachusetts,democrat,1696346
+2012,Massachusetts,republican,1458048
+2014,Massachusetts,democrat,1289944
+2014,Massachusetts,republican,791950
+2018,Massachusetts,democrat,1633371
+2018,Massachusetts,republican,979210
+1976,Michigan,democrat,1831031
+1976,Michigan,republican,1635087
+1978,Michigan,democrat,1484193
+1978,Michigan,republican,1362165
+1982,Michigan,democrat,1728793
+1982,Michigan,republican,1223288
+1984,Michigan,democrat,1915831
+1984,Michigan,republican,1745302
+1988,Michigan,democrat,2116865
+1988,Michigan,republican,1348219
+1990,Michigan,democrat,1471753
+1990,Michigan,republican,1055695
+1994,Michigan,democrat,1300960
+1994,Michigan,republican,1578770
+1996,Michigan,democrat,2195738
+1996,Michigan,republican,1500106
+2000,Michigan,democrat,2061952
+2000,Michigan,republican,1994693
+2002,Michigan,democrat,1896614
+2002,Michigan,republican,1185545
+2006,Michigan,democrat,2151278
+2006,Michigan,republican,1559597
+2008,Michigan,democrat,3038386
+2008,Michigan,republican,1641070
+2012,Michigan,democrat,2735826
+2012,Michigan,republican,1767386
+2014,Michigan,democrat,1704936
+2014,Michigan,republican,1290199
+2018,Michigan,democrat,2214478
+2018,Michigan,republican,1938818
+1976,Minnesota,democrat,1290736
+1976,Minnesota,republican,478602
+1978,Minnesota,democrat,538675
+1978,Minnesota,democrat,638375
+1978,Minnesota,republican,894092
+1978,Minnesota,republican,957908
+1982,Minnesota,democrat,840401
+1982,Minnesota,republican,949207
+1984,Minnesota,democrat,852844
+1984,Minnesota,republican,1199926
+1988,Minnesota,republican,1176210
+1990,Minnesota,democrat,911999
+1990,Minnesota,republican,864375
+1994,Minnesota,republican,869653
+1996,Minnesota,republican,901194
+2000,Minnesota,republican,1047474
+2002,Minnesota,democrat,1067246
+2002,Minnesota,republican,1116697
+2006,Minnesota,republican,835653
+2008,Minnesota,democrat,1212629
+2008,Minnesota,republican,1212317
+2012,Minnesota,democrat,1854595
+2012,Minnesota,republican,867974
+2014,Minnesota,democrat,1053205
+2014,Minnesota,republican,850227
+2018,Minnesota,republican,940437
+2018,Minnesota,republican,1095777
+1976,Mississippi,democrat,554433
+1978,Mississippi,democrat,187541
+1978,Mississippi,republican,267302
+1982,Mississippi,democrat,414099
+1982,Mississippi,republican,230927
+1984,Mississippi,democrat,371926
+1984,Mississippi,republican,580314
+1988,Mississippi,democrat,436339
+1988,Mississippi,republican,510380
+1990,Mississippi,republican,274244
+1994,Mississippi,democrat,189752
+1994,Mississippi,republican,418333
+1996,Mississippi,democrat,240647
+1996,Mississippi,republican,624154
+2000,Mississippi,democrat,314090
+2000,Mississippi,republican,654941
+2002,Mississippi,republican,533269
+2006,Mississippi,democrat,213000
+2006,Mississippi,republican,388399
+2008,Mississippi,democrat,480915
+2008,Mississippi,republican,683409
+2008,Mississippi,republican,766111
+2012,Mississippi,democrat,503467
+2012,Mississippi,republican,709626
+2014,Mississippi,democrat,239439
+2014,Mississippi,republican,378481
+2018,Mississippi,democrat,369567
+2018,Mississippi,democrat,420819
+2018,Mississippi,republican,486769
+2018,Mississippi,republican,547619
+1976,Missouri,democrat,813571
+1976,Missouri,republican,1090067
+1980,Missouri,democrat,1074859
+1980,Missouri,republican,985399
+1982,Missouri,democrat,758629
+1982,Missouri,republican,784876
+1986,Missouri,democrat,699624
+1986,Missouri,republican,777612
+1988,Missouri,democrat,660045
+1988,Missouri,republican,1407416
+1992,Missouri,democrat,1057967
+1992,Missouri,republican,1221901
+1994,Missouri,democrat,633697
+1994,Missouri,republican,1060149
+1998,Missouri,democrat,690208
+1998,Missouri,republican,830625
+2000,Missouri,democrat,1191812
+2000,Missouri,republican,1142852
+2002,Missouri,democrat,913778
+2002,Missouri,republican,935032
+2004,Missouri,democrat,1158261
+2004,Missouri,republican,1518089
+2006,Missouri,democrat,1055255
+2006,Missouri,republican,1006941
+2010,Missouri,democrat,789736
+2010,Missouri,republican,1054160
+2012,Missouri,democrat,1494125
+2012,Missouri,republican,1066159
+2016,Missouri,democrat,1300200
+2016,Missouri,republican,1378458
+2018,Missouri,democrat,1112935
+2018,Missouri,republican,1254927
+1976,Montana,democrat,206232
+1976,Montana,republican,115213
+1978,Montana,democrat,160353
+1978,Montana,republican,127589
+1982,Montana,democrat,174861
+1982,Montana,republican,133789
+1984,Montana,democrat,215704
+1984,Montana,republican,154308
+1988,Montana,democrat,175809
+1988,Montana,republican,189445
+1990,Montana,democrat,217563
+1990,Montana,republican,93836
+1994,Montana,democrat,131845
+1994,Montana,republican,218542
+1996,Montana,democrat,201935
+1996,Montana,republican,182111
+2000,Montana,democrat,194430
+2000,Montana,republican,208082
+2002,Montana,democrat,204853
+2002,Montana,republican,103611
+2006,Montana,democrat,199845
+2006,Montana,republican,196283
+2008,Montana,democrat,348289
+2008,Montana,republican,129369
+2012,Montana,democrat,236123
+2012,Montana,republican,218051
+2014,Montana,democrat,148184
+2014,Montana,republican,213709
+2018,Montana,democrat,253876
+2018,Montana,republican,235963
+1976,Nebraska,democrat,313805
+1976,Nebraska,republican,279284
+1978,Nebraska,democrat,334096
+1978,Nebraska,republican,159706
+1982,Nebraska,democrat,363350
+1982,Nebraska,republican,155760
+1984,Nebraska,democrat,332217
+1984,Nebraska,republican,307147
+1988,Nebraska,democrat,378717
+1988,Nebraska,republican,278250
+1990,Nebraska,democrat,349779
+1990,Nebraska,republican,243013
+1994,Nebraska,democrat,317297
+1994,Nebraska,republican,260668
+1996,Nebraska,democrat,281904
+1996,Nebraska,republican,379933
+2000,Nebraska,democrat,353093
+2000,Nebraska,republican,337977
+2002,Nebraska,democrat,70290
+2002,Nebraska,republican,397438
+2006,Nebraska,democrat,378388
+2006,Nebraska,republican,213928
+2008,Nebraska,democrat,317456
+2008,Nebraska,republican,455854
+2012,Nebraska,democrat,332979
+2012,Nebraska,republican,455593
+2014,Nebraska,democrat,170127
+2014,Nebraska,republican,347636
+2018,Nebraska,democrat,269917
+2018,Nebraska,republican,403151
+1976,Nevada,democrat,127214
+1976,Nevada,republican,63471
+1980,Nevada,democrat,92129
+1980,Nevada,republican,144224
+1982,Nevada,democrat,114720
+1982,Nevada,republican,120377
+1986,Nevada,democrat,130955
+1986,Nevada,republican,116606
+1988,Nevada,democrat,175548
+1988,Nevada,republican,161336
+1992,Nevada,democrat,253150
+1992,Nevada,republican,199413
+1994,Nevada,democrat,193804
+1994,Nevada,republican,156020
+1998,Nevada,democrat,208621
+1998,Nevada,republican,208220
+2000,Nevada,democrat,238260
+2000,Nevada,republican,330687
+2004,Nevada,democrat,494805
+2004,Nevada,republican,284640
+2006,Nevada,democrat,238796
+2006,Nevada,republican,322501
+2010,Nevada,democrat,362785
+2010,Nevada,republican,321361
+2012,Nevada,democrat,446080
+2012,Nevada,republican,457656
+2016,Nevada,democrat,521994
+2016,Nevada,republican,495079
+2018,Nevada,democrat,490071
+2018,Nevada,republican,441202
+1978,New Hampshire,democrat,127945
+1978,New Hampshire,republican,133745
+1980,New Hampshire,democrat,179455
+1980,New Hampshire,republican,195559
+1984,New Hampshire,democrat,157447
+1984,New Hampshire,republican,225828
+1986,New Hampshire,democrat,79222
+1986,New Hampshire,republican,154090
+1990,New Hampshire,democrat,91299
+1990,New Hampshire,republican,189792
+1992,New Hampshire,democrat,234982
+1992,New Hampshire,republican,249591
+1996,New Hampshire,democrat,227355
+1996,New Hampshire,republican,242257
+1998,New Hampshire,democrat,88883
+1998,New Hampshire,republican,213477
+2002,New Hampshire,democrat,207478
+2002,New Hampshire,republican,227229
+2004,New Hampshire,democrat,221549
+2004,New Hampshire,republican,434847
+2008,New Hampshire,democrat,358438
+2008,New Hampshire,republican,314403
+2010,New Hampshire,democrat,167545
+2010,New Hampshire,republican,273218
+2014,New Hampshire,democrat,251184
+2014,New Hampshire,republican,235347
+2016,New Hampshire,democrat,354649
+2016,New Hampshire,republican,353632
+1976,New Jersey,democrat,1681140
+1976,New Jersey,republican,1054508
+1978,New Jersey,democrat,1082960
+1978,New Jersey,republican,844200
+1982,New Jersey,democrat,1117549
+1982,New Jersey,republican,1047626
+1984,New Jersey,democrat,1986644
+1984,New Jersey,republican,1080100
+1988,New Jersey,democrat,1599905
+1988,New Jersey,republican,1349937
+1990,New Jersey,democrat,977810
+1990,New Jersey,republican,918874
+1994,New Jersey,democrat,1033487
+1994,New Jersey,republican,966244
+1996,New Jersey,democrat,1519154
+1996,New Jersey,republican,1227351
+2000,New Jersey,democrat,1511237
+2000,New Jersey,republican,1420267
+2002,New Jersey,democrat,1138193
+2002,New Jersey,republican,928439
+2006,New Jersey,democrat,58333
+2006,New Jersey,republican,41998
+2008,New Jersey,democrat,1951218
+2008,New Jersey,republican,1461025
+2012,New Jersey,democrat,1987680
+2012,New Jersey,republican,1329534
+2014,New Jersey,democrat,1043866
+2014,New Jersey,republican,791297
+2018,New Jersey,democrat,1711654
+2018,New Jersey,republican,1357355
+1976,New Mexico,democrat,176382
+1976,New Mexico,republican,234681
+1978,New Mexico,democrat,160045
+1978,New Mexico,republican,183442
+1982,New Mexico,democrat,217682
+1982,New Mexico,republican,187128
+1984,New Mexico,democrat,141253
+1984,New Mexico,republican,361371
+1988,New Mexico,democrat,321983
+1988,New Mexico,republican,186579
+1990,New Mexico,democrat,110033
+1990,New Mexico,republican,296712
+1994,New Mexico,democrat,249989
+1994,New Mexico,republican,213025
+1996,New Mexico,democrat,164356
+1996,New Mexico,republican,357171
+2000,New Mexico,democrat,363744
+2000,New Mexico,republican,225517
+2002,New Mexico,democrat,168863
+2002,New Mexico,republican,314193
+2006,New Mexico,democrat,394365
+2006,New Mexico,republican,163826
+2008,New Mexico,democrat,505128
+2008,New Mexico,republican,318522
+2012,New Mexico,democrat,395717
+2012,New Mexico,republican,351260
+2014,New Mexico,democrat,286409
+2014,New Mexico,republican,229097
+2018,New Mexico,democrat,376998
+2018,New Mexico,republican,212813
+1976,New York,democrat,3238511
+1976,New York,republican,2525139
+1980,New York,democrat,2618661
+1980,New York,republican,2272082
+1982,New York,democrat,3089871
+1982,New York,republican,1415749
+1986,New York,democrat,1723216
+1986,New York,republican,2030260
+1988,New York,democrat,3907178
+1988,New York,republican,1686558
+1992,New York,democrat,2943001
+1992,New York,republican,2652822
+1994,New York,democrat,2528387
+1994,New York,republican,1711760
+1998,New York,democrat,2386314
+1998,New York,republican,1680203
+2000,New York,democrat,3562415
+2000,New York,republican,2724589
+2004,New York,democrat,4384907
+2004,New York,republican,1625069
+2006,New York,democrat,2698931
+2006,New York,republican,1212902
+2010,New York,democrat,2837684
+2010,New York,democrat,3047880
+2010,New York,republican,1239605
+2010,New York,republican,1338308
+2012,New York,democrat,4420043
+2012,New York,republican,1514647
+2016,New York,democrat,4784220
+2016,New York,republican,1723927
+2018,New York,democrat,3755489
+2018,New York,republican,1730439
+1978,North Carolina,democrat,516663
+1978,North Carolina,republican,619151
+1980,North Carolina,democrat,887653
+1980,North Carolina,republican,898064
+1984,North Carolina,democrat,1070488
+1984,North Carolina,republican,1156768
+1986,North Carolina,democrat,780967
+1986,North Carolina,republican,753881
+1990,North Carolina,democrat,981573
+1990,North Carolina,republican,1087331
+1992,North Carolina,democrat,1194015
+1992,North Carolina,republican,1297892
+1996,North Carolina,democrat,1173875
+1996,North Carolina,republican,1345833
+1998,North Carolina,democrat,1029237
+1998,North Carolina,republican,945943
+2002,North Carolina,democrat,1047983
+2002,North Carolina,republican,1248664
+2004,North Carolina,democrat,1632527
+2004,North Carolina,republican,1791450
+2008,North Carolina,democrat,2249311
+2008,North Carolina,republican,1887510
+2010,North Carolina,democrat,1145074
+2010,North Carolina,republican,1458046
+2014,North Carolina,democrat,1377651
+2014,North Carolina,republican,1423259
+2016,North Carolina,democrat,2128165
+2016,North Carolina,republican,2395376
+1976,North Dakota,democrat,175772
+1976,North Dakota,republican,103466
+1982,North Dakota,democrat,164873
+1982,North Dakota,republican,89304
+1986,North Dakota,democrat,143932
+1986,North Dakota,republican,141812
+1988,North Dakota,democrat,171899
+1988,North Dakota,republican,112937
+1992,North Dakota,democrat,179347
+1992,North Dakota,republican,118162
+1994,North Dakota,democrat,137157
+1994,North Dakota,republican,99390
+1998,North Dakota,democrat,134747
+1998,North Dakota,republican,75013
+2000,North Dakota,republican,111069
+2004,North Dakota,democrat,212143
+2004,North Dakota,republican,98553
+2006,North Dakota,democrat,150146
+2006,North Dakota,republican,64417
+2010,North Dakota,republican,181689
+2012,North Dakota,democrat,161337
+2012,North Dakota,republican,158401
+2016,North Dakota,democrat,58116
+2016,North Dakota,republican,268788
+2018,North Dakota,republican,179720
+1976,Ohio,democrat,1941113
+1976,Ohio,republican,1823774
+1980,Ohio,democrat,2770786
+1980,Ohio,republican,1137695
+1982,Ohio,democrat,1923767
+1982,Ohio,republican,1396790
+1986,Ohio,democrat,1949208
+1986,Ohio,republican,1171893
+1988,Ohio,democrat,2480038
+1988,Ohio,republican,1872716
+1992,Ohio,democrat,2444419
+1992,Ohio,republican,2028300
+1994,Ohio,democrat,1348213
+1994,Ohio,republican,1836556
+1998,Ohio,democrat,1482054
+1998,Ohio,republican,1922087
+2000,Ohio,democrat,1595066
+2000,Ohio,republican,2665512
+2004,Ohio,democrat,1961171
+2004,Ohio,republican,3464356
+2006,Ohio,democrat,2257369
+2006,Ohio,republican,1761037
+2010,Ohio,democrat,1503297
+2010,Ohio,republican,2168742
+2012,Ohio,democrat,2762690
+2012,Ohio,republican,2435712
+2016,Ohio,democrat,1996908
+2016,Ohio,republican,3118567
+2018,Ohio,democrat,2355923
+2018,Ohio,republican,2053963
+1978,Oklahoma,democrat,493953
+1978,Oklahoma,republican,247857
+1980,Oklahoma,democrat,478283
+1980,Oklahoma,republican,587252
+1984,Oklahoma,democrat,906131
+1984,Oklahoma,republican,280638
+1986,Oklahoma,democrat,400230
+1986,Oklahoma,republican,493436
+1990,Oklahoma,democrat,735684
+1990,Oklahoma,republican,148814
+1992,Oklahoma,democrat,494350
+1992,Oklahoma,republican,757876
+1994,Oklahoma,democrat,392488
+1994,Oklahoma,republican,542390
+1996,Oklahoma,democrat,474162
+1996,Oklahoma,republican,670610
+1998,Oklahoma,democrat,268898
+1998,Oklahoma,republican,570682
+2002,Oklahoma,democrat,369789
+2002,Oklahoma,republican,583579
+2004,Oklahoma,democrat,596750
+2004,Oklahoma,republican,763433
+2008,Oklahoma,democrat,527736
+2008,Oklahoma,republican,763375
+2010,Oklahoma,democrat,265814
+2010,Oklahoma,republican,718482
+2014,Oklahoma,democrat,234307
+2014,Oklahoma,democrat,237923
+2014,Oklahoma,republican,557002
+2014,Oklahoma,republican,558166
+2016,Oklahoma,democrat,355911
+2016,Oklahoma,republican,980892
+1978,Oregon,democrat,341616
+1978,Oregon,republican,550165
+1980,Oregon,democrat,501963
+1980,Oregon,republican,594290
+1984,Oregon,democrat,406122
+1984,Oregon,republican,808152
+1986,Oregon,democrat,375735
+1986,Oregon,republican,656317
+1990,Oregon,democrat,507743
+1990,Oregon,republican,590095
+1992,Oregon,democrat,639851
+1992,Oregon,republican,717455
+1996,Oregon,democrat,624370
+1996,Oregon,republican,677336
+1998,Oregon,democrat,682425
+1998,Oregon,republican,377739
+2002,Oregon,democrat,501898
+2002,Oregon,republican,712287
+2004,Oregon,democrat,1128728
+2004,Oregon,republican,565254
+2008,Oregon,democrat,864392
+2008,Oregon,republican,805159
+2010,Oregon,democrat,825507
+2010,Oregon,republican,566199
+2014,Oregon,democrat,814537
+2014,Oregon,republican,538847
+2016,Oregon,democrat,1105119
+2016,Oregon,republican,651106
+1976,Pennsylvania,democrat,2126977
+1976,Pennsylvania,republican,2381891
+1980,Pennsylvania,democrat,2122391
+1980,Pennsylvania,republican,2230404
+1982,Pennsylvania,democrat,1412965
+1982,Pennsylvania,republican,2136418
+1986,Pennsylvania,democrat,1448219
+1986,Pennsylvania,republican,1906537
+1988,Pennsylvania,democrat,1416764
+1988,Pennsylvania,republican,2901715
+1992,Pennsylvania,democrat,2224966
+1992,Pennsylvania,republican,2358125
+1994,Pennsylvania,democrat,1648481
+1994,Pennsylvania,republican,1735691
+1998,Pennsylvania,democrat,1028839
+1998,Pennsylvania,republican,1814180
+2000,Pennsylvania,democrat,2154908
+2000,Pennsylvania,republican,2481962
+2004,Pennsylvania,democrat,2334126
+2004,Pennsylvania,republican,2925080
+2006,Pennsylvania,democrat,2392984
+2006,Pennsylvania,republican,1684778
+2010,Pennsylvania,democrat,1948716
+2010,Pennsylvania,republican,2028945
+2012,Pennsylvania,democrat,3021364
+2012,Pennsylvania,republican,2509132
+2016,Pennsylvania,democrat,2865012
+2016,Pennsylvania,republican,2951702
+2018,Pennsylvania,democrat,2777680
+2018,Pennsylvania,republican,2134848
+1976,Rhode Island,democrat,167665
+1976,Rhode Island,republican,230329
+1978,Rhode Island,democrat,229557
+1978,Rhode Island,republican,76061
+1982,Rhode Island,democrat,167283
+1982,Rhode Island,republican,175495
+1984,Rhode Island,democrat,285811
+1984,Rhode Island,republican,107545
+1988,Rhode Island,democrat,180717
+1988,Rhode Island,republican,217273
+1990,Rhode Island,democrat,225105
+1990,Rhode Island,republican,138947
+1994,Rhode Island,democrat,122532
+1994,Rhode Island,republican,222856
+1996,Rhode Island,democrat,230676
+1996,Rhode Island,republican,127368
+2000,Rhode Island,democrat,161023
+2000,Rhode Island,republican,222588
+2002,Rhode Island,democrat,253774
+2002,Rhode Island,republican,69808
+2006,Rhode Island,democrat,206043
+2006,Rhode Island,republican,178950
+2008,Rhode Island,democrat,320644
+2008,Rhode Island,republican,116174
+2012,Rhode Island,democrat,271034
+2012,Rhode Island,republican,146222
+2014,Rhode Island,democrat,223675
+2014,Rhode Island,republican,92684
+2018,Rhode Island,democrat,231477
+2018,Rhode Island,republican,144421
+1978,South Carolina,democrat,280146
+1978,South Carolina,republican,351917
+1980,South Carolina,democrat,612554
+1980,South Carolina,republican,257946
+1984,South Carolina,democrat,306982
+1984,South Carolina,republican,644815
+1986,South Carolina,democrat,465500
+1986,South Carolina,republican,262886
+1990,South Carolina,democrat,244112
+1990,South Carolina,republican,482032
+1992,South Carolina,democrat,591030
+1992,South Carolina,republican,554175
+1996,South Carolina,democrat,510951
+1996,South Carolina,republican,619859
+1998,South Carolina,democrat,563377
+1998,South Carolina,republican,488238
+2002,South Carolina,democrat,487359
+2002,South Carolina,republican,600010
+2004,South Carolina,democrat,704384
+2004,South Carolina,republican,857167
+2008,South Carolina,democrat,790621
+2008,South Carolina,republican,1076534
+2010,South Carolina,democrat,364598
+2010,South Carolina,republican,810771
+2014,South Carolina,democrat,456726
+2014,South Carolina,democrat,459583
+2014,South Carolina,republican,672941
+2014,South Carolina,republican,757215
+2016,South Carolina,democrat,704540
+2016,South Carolina,republican,1241609
+1978,South Dakota,democrat,84767
+1978,South Dakota,republican,170832
+1980,South Dakota,democrat,129018
+1980,South Dakota,republican,190594
+1984,South Dakota,democrat,80537
+1984,South Dakota,republican,235176
+1986,South Dakota,democrat,152657
+1986,South Dakota,republican,143173
+1990,South Dakota,democrat,116727
+1990,South Dakota,republican,135682
+1992,South Dakota,democrat,217095
+1992,South Dakota,republican,108733
+1996,South Dakota,democrat,166533
+1996,South Dakota,republican,157954
+1998,South Dakota,democrat,162884
+1998,South Dakota,republican,95431
+2002,South Dakota,democrat,167481
+2002,South Dakota,republican,166949
+2004,South Dakota,democrat,193340
+2004,South Dakota,republican,197848
+2008,South Dakota,democrat,237889
+2008,South Dakota,republican,142784
+2010,South Dakota,republican,227947
+2014,South Dakota,democrat,82456
+2014,South Dakota,republican,140741
+2016,South Dakota,democrat,104140
+2016,South Dakota,republican,265516
+1976,Tennessee,democrat,751180
+1976,Tennessee,republican,673231
+1978,Tennessee,democrat,466228
+1978,Tennessee,republican,642644
+1982,Tennessee,democrat,780113
+1982,Tennessee,republican,479642
+1984,Tennessee,democrat,1000607
+1984,Tennessee,republican,557016
+1988,Tennessee,democrat,1020061
+1988,Tennessee,republican,541033
+1990,Tennessee,democrat,530898
+1990,Tennessee,republican,233703
+1994,Tennessee,democrat,565930
+1994,Tennessee,democrat,623164
+1994,Tennessee,republican,834226
+1994,Tennessee,republican,885998
+1996,Tennessee,democrat,654937
+1996,Tennessee,republican,1091554
+2000,Tennessee,democrat,621152
+2000,Tennessee,republican,1255444
+2002,Tennessee,democrat,728232
+2002,Tennessee,republican,891498
+2006,Tennessee,democrat,879976
+2006,Tennessee,republican,929911
+2008,Tennessee,democrat,767236
+2008,Tennessee,republican,1579477
+2012,Tennessee,democrat,705882
+2012,Tennessee,republican,1506443
+2014,Tennessee,democrat,437848
+2014,Tennessee,republican,850087
+2018,Tennessee,democrat,985450
+2018,Tennessee,republican,1227483
+1976,Texas,democrat,2199956
+1976,Texas,republican,1636370
+1978,Texas,democrat,1139149
+1978,Texas,republican,1151376
+1982,Texas,democrat,1818223
+1982,Texas,republican,1256759
+1984,Texas,democrat,2202557
+1984,Texas,republican,3111348
+1988,Texas,democrat,3149806
+1988,Texas,republican,2129228
+1990,Texas,democrat,1429986
+1990,Texas,republican,2302357
+1994,Texas,democrat,1639615
+1994,Texas,republican,2604218
+1996,Texas,democrat,2428776
+1996,Texas,republican,3027680
+2000,Texas,democrat,2025024
+2000,Texas,republican,4078954
+2002,Texas,democrat,1955758
+2002,Texas,republican,2496243
+2006,Texas,democrat,1555202
+2006,Texas,republican,2661789
+2008,Texas,democrat,3389365
+2008,Texas,republican,4337469
+2012,Texas,democrat,3194927
+2012,Texas,republican,4440137
+2014,Texas,democrat,1597387
+2014,Texas,republican,2861531
+2018,Texas,democrat,4045632
+2018,Texas,republican,4260553
+1976,Utah,democrat,223948
+1976,Utah,republican,290221
+1980,Utah,democrat,151454
+1980,Utah,republican,437675
+1982,Utah,democrat,219482
+1982,Utah,republican,309332
+1986,Utah,democrat,115523
+1986,Utah,republican,314608
+1988,Utah,democrat,203364
+1988,Utah,republican,430089
+1992,Utah,democrat,301228
+1992,Utah,republican,420069
+1994,Utah,democrat,146938
+1994,Utah,republican,357297
+1998,Utah,democrat,163172
+1998,Utah,republican,316652
+2000,Utah,democrat,242569
+2000,Utah,republican,504803
+2004,Utah,democrat,258955
+2004,Utah,republican,626640
+2006,Utah,democrat,177459
+2006,Utah,republican,356238
+2010,Utah,democrat,191732
+2010,Utah,republican,360403
+2012,Utah,democrat,301873
+2012,Utah,republican,657608
+2016,Utah,democrat,301858
+2016,Utah,republican,760220
+2018,Utah,democrat,328541
+2018,Utah,republican,665215
+1976,Vermont,democrat,85682
+1976,Vermont,republican,94481
+1980,Vermont,democrat,104176
+1980,Vermont,republican,101421
+1982,Vermont,democrat,79340
+1982,Vermont,republican,84449
+1986,Vermont,democrat,124123
+1986,Vermont,republican,67798
+1988,Vermont,democrat,71460
+1988,Vermont,republican,163183
+1992,Vermont,democrat,154762
+1992,Vermont,republican,123854
+1994,Vermont,democrat,85868
+1994,Vermont,republican,106505
+1998,Vermont,democrat,154567
+1998,Vermont,republican,48051
+2000,Vermont,democrat,73352
+2000,Vermont,republican,189133
+2004,Vermont,democrat,216972
+2004,Vermont,republican,75398
+2006,Vermont,republican,84924
+2010,Vermont,democrat,151281
+2010,Vermont,republican,72699
+2012,Vermont,republican,72898
+2016,Vermont,democrat,192243
+2016,Vermont,republican,103637
+2018,Vermont,republican,74663
+1976,Virginia,democrat,596009
+1978,Virginia,democrat,608511
+1978,Virginia,republican,613232
+1982,Virginia,democrat,690839
+1982,Virginia,republican,724571
+1984,Virginia,democrat,601142
+1984,Virginia,republican,1406194
+1988,Virginia,democrat,1474086
+1988,Virginia,republican,593652
+1990,Virginia,republican,876782
+1994,Virginia,democrat,938376
+1994,Virginia,republican,882213
+1996,Virginia,democrat,1115982
+1996,Virginia,republican,1235744
+2000,Virginia,democrat,1296093
+2000,Virginia,republican,1420460
+2002,Virginia,republican,1229894
+2006,Virginia,democrat,1175606
+2006,Virginia,republican,1166277
+2008,Virginia,democrat,2369327
+2008,Virginia,republican,1228830
+2012,Virginia,democrat,2010067
+2012,Virginia,republican,1785542
+2014,Virginia,democrat,1073667
+2014,Virginia,republican,1055940
+2018,Virginia,democrat,1910370
+2018,Virginia,republican,1374313
+1976,Washington,democrat,1071219
+1976,Washington,republican,361546
+1980,Washington,democrat,792052
+1980,Washington,republican,936317
+1982,Washington,democrat,943655
+1982,Washington,republican,332273
+1986,Washington,democrat,677471
+1986,Washington,republican,650931
+1988,Washington,democrat,904183
+1988,Washington,republican,944359
+1992,Washington,democrat,1197973
+1992,Washington,republican,1020829
+1994,Washington,democrat,752352
+1994,Washington,republican,947821
+1998,Washington,democrat,1103184
+1998,Washington,republican,785377
+2000,Washington,democrat,1199437
+2000,Washington,republican,1197208
+2004,Washington,democrat,1549708
+2004,Washington,republican,1204584
+2006,Washington,democrat,1184659
+2006,Washington,republican,832106
+2010,Washington,democrat,1314930
+2010,Washington,republican,1196164
+2012,Washington,democrat,1855493
+2012,Washington,republican,1213924
+2016,Washington,democrat,1913979
+2016,Washington,republican,1329338
+2018,Washington,democrat,1803364
+2018,Washington,republican,1282804
+1976,West Virginia,democrat,566359
+1978,West Virginia,democrat,249034
+1978,West Virginia,republican,244317
+1982,West Virginia,democrat,387170
+1982,West Virginia,republican,173910
+1984,West Virginia,democrat,374233
+1984,West Virginia,republican,344680
+1988,West Virginia,democrat,410983
+1988,West Virginia,republican,223564
+1990,West Virginia,democrat,276234
+1990,West Virginia,republican,128071
+1994,West Virginia,democrat,290495
+1994,West Virginia,republican,130441
+1996,West Virginia,democrat,456526
+1996,West Virginia,republican,139088
+2000,West Virginia,democrat,469215
+2000,West Virginia,republican,121635
+2002,West Virginia,democrat,275281
+2002,West Virginia,republican,160902
+2006,West Virginia,democrat,159154
+2006,West Virginia,republican,47408
+2008,West Virginia,democrat,447560
+2008,West Virginia,republican,254629
+2010,West Virginia,democrat,283358
+2010,West Virginia,republican,230013
+2012,West Virginia,democrat,399898
+2012,West Virginia,republican,240787
+2014,West Virginia,democrat,156360
+2014,West Virginia,republican,281820
+2018,West Virginia,democrat,288808
+2018,West Virginia,republican,269872
+1976,Wisconsin,democrat,1396970
+1976,Wisconsin,republican,521902
+1980,Wisconsin,democrat,1065487
+1980,Wisconsin,republican,1106311
+1982,Wisconsin,democrat,983311
+1982,Wisconsin,republican,527355
+1986,Wisconsin,democrat,702963
+1986,Wisconsin,republican,754573
+1988,Wisconsin,democrat,1128625
+1988,Wisconsin,republican,1030440
+1992,Wisconsin,democrat,1290662
+1992,Wisconsin,republican,1129599
+1994,Wisconsin,democrat,912662
+1994,Wisconsin,republican,636989
+1998,Wisconsin,democrat,890059
+1998,Wisconsin,republican,852272
+2000,Wisconsin,democrat,1563238
+2000,Wisconsin,republican,940744
+2004,Wisconsin,democrat,1632697
+2004,Wisconsin,republican,1301183
+2006,Wisconsin,democrat,1439214
+2006,Wisconsin,republican,630299
+2010,Wisconsin,democrat,1020958
+2010,Wisconsin,republican,134
+2010,Wisconsin,republican,1125999
+2012,Wisconsin,democrat,1547104
+2012,Wisconsin,republican,1380126
+2016,Wisconsin,democrat,1380335
+2016,Wisconsin,republican,1479471
+2018,Wisconsin,democrat,1472914
+2018,Wisconsin,republican,1184885
+1976,Wyoming,democrat,70558
+1976,Wyoming,republican,84810
+1978,Wyoming,democrat,82908
+1978,Wyoming,republican,50456
+1982,Wyoming,democrat,72466
+1982,Wyoming,republican,94725
+1984,Wyoming,democrat,40525
+1984,Wyoming,republican,146373
+1988,Wyoming,democrat,89821
+1988,Wyoming,republican,91143
+1990,Wyoming,democrat,56848
+1990,Wyoming,republican,100784
+1994,Wyoming,democrat,79287
+1994,Wyoming,republican,118754
+1996,Wyoming,democrat,89103
+1996,Wyoming,republican,114116
+2000,Wyoming,democrat,47087
+2000,Wyoming,republican,157622
+2002,Wyoming,democrat,49570
+2002,Wyoming,republican,133710
+2006,Wyoming,democrat,57671
+2006,Wyoming,republican,135174
+2008,Wyoming,democrat,60631
+2008,Wyoming,democrat,66202
+2008,Wyoming,republican,183063
+2008,Wyoming,republican,189046
+2012,Wyoming,democrat,53019
+2012,Wyoming,republican,185250
+2014,Wyoming,democrat,29377
+2014,Wyoming,republican,121554
+2018,Wyoming,democrat,61227
+2018,Wyoming,republican,136210
