@@ -35,7 +35,7 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 - [Inflation Calculator](https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/)
 
 -------------------------------------------------------------------------------
-#### Data Sets
+### Data Sets
 [iNaturalist](https://www.inaturalist.org)
 
 [iNaturalist Export](https://www.inaturalist.org/observations/export)
@@ -49,7 +49,7 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 [IPBES](https://www.ipbes.net/)
 
 -------------------------------------------------------------------------------
-#### Links
+### Links
 [Twitch Article](https://www.chronicle.com/article/Streaming-Live-on-Twitch-Your/246537?utm_source=at&utm_medium=en&cid=at)
 
 [CBS Ranbaxy](https://www.cbsnews.com/news/ranbaxy-whistleblower-reveals-how-he-exposed-massive-pharmaceutical-fraud/)
@@ -57,7 +57,7 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 [Tyler Richards](https://docs.google.com/presentation/d/1mXqSwBn69yEjBMiG89uITt7rZh__ZKwdXOlEyyUpARA/present?slide=id.gcb9a0b074_1_0#slide=id.gcb9a0b074_1_0)
 
 -----------------------------------------------------------------------------
-#### Folium Python Map Library
+### Folium Python Map Library
 [Documentation](https://python-visualization.github.io/folium/)
 
 [QuickStart](https://python-visualization.github.io/folium/quickstart.html)
