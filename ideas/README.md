@@ -33,3 +33,32 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 - [Minneapolis FedReserve](https://www.minneapolisfed.org/community/financial-and-economic-education/cpi-calculator-information/consumer-price-index-and-inflation-rates-1913)
 - [Bureau of Labor Statistics](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm)
 - [Inflation Calculator](https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/)
+
+-------------------------------------------------------------------------------
+#### Data Sets
+[iNaturalist](https://www.inaturalist.org)
+
+[iNaturalist Export](https://www.inaturalist.org/observations/export)
+
+[iNaturalist Projects](https://www.inaturalist.org/projects)
+
+[GBIF Database](https://www.gbif.org)
+
+[Neon](https://www.neonscience.org/)
+
+[IPBES](https://www.ipbes.net/)
+
+-------------------------------------------------------------------------------
+#### Links
+[Twitch Article](https://www.chronicle.com/article/Streaming-Live-on-Twitch-Your/246537?utm_source=at&utm_medium=en&cid=at)
+
+[CBS Ranbaxy](https://www.cbsnews.com/news/ranbaxy-whistleblower-reveals-how-he-exposed-massive-pharmaceutical-fraud/)
+
+[Tyler Richards](https://docs.google.com/presentation/d/1mXqSwBn69yEjBMiG89uITt7rZh__ZKwdXOlEyyUpARA/present?slide=id.gcb9a0b074_1_0#slide=id.gcb9a0b074_1_0)
+
+-----------------------------------------------------------------------------
+#### Folium Python Map Library
+[Documentation](https://python-visualization.github.io/folium/)
+
+[QuickStart](https://python-visualization.github.io/folium/quickstart.html)
+
