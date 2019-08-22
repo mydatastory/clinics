@@ -1,4 +1,11 @@
 -----------------------------------------------------------------------------
+### Biodiversity and Public Health
+
+[Connecting Global Priorities](https://www.who.int/globalchange/publications/biodiversity-human-health/en/)
+
+[Oxford Textbook of Nature and Public Health](https://www.amazon.com/Oxford-Textbook-Nature-Public-Health-ebook/dp/B078NRG8N6/ref=sr_1_1?keywords=oxford+textbook+of+nature+and+public+health&qid=1566500420&s=gateway&sr=8-1)
+
+-----------------------------------------------------------------------------
 ### Honey Bee Story
 [USDA Honey Bee Data](https://usda.library.cornell.edu/concern/publications/hd76s004z?locale=en)
 
