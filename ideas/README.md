@@ -17,10 +17,6 @@
 ### Aswan Dam & Schistosomiasis Story
 [Aswan Dam](https://blogs.biomedcentral.com/bugbitten/2017/07/28/increases-in-schistosomiasis-linked-with-ecological-impacts-of-dams/)
 
------------------------------------------------------------------------------
-### Citrus Greening Story
-Graciela Lorca (UF Microbiologist)
-
 ------------------------------------------------------------------------------------------
 ### Flint Michigan Water Story
 - [Flint Paper](https://ajph.aphapublications.org/doi/10.2105/AJPH.2015.303003)
@@ -44,7 +40,7 @@ See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies
 - [Inflation Calculator](https://www.usinflationcalculator.com/inflation/consumer-price-index-and-annual-percent-changes-from-1913-to-2008/)
 
 -------------------------------------------------------------------------------
-### Data Sets
+### Biodiversity Data Sets
 [iNaturalist](https://www.inaturalist.org)
 
 [iNaturalist Export](https://www.inaturalist.org/observations/export)
