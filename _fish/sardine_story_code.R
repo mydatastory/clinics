@@ -5,6 +5,23 @@
 # between the two.  Smoothed data is preferable in this case because the raw data is noisy.
 # -------------------------------------------------------------------------------------------
 
+# -------------------------------------------------------------------------------------------
+# Statistical questions of interest:
+# 1. What is the relationship between the sardine catch and ocean temperature during peak spawning
+# season?
+# 2. How would use regression techniques to inform future predictions of sardine landings (total sardine catch)
+# using ocean temperature data?
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
+# Learning outcomes for this story:
+# 1. Students will be able to create line graphs of the sardine catch and ocean temperature data. 
+# 2. Students will be able to interpret the relationship between the two variables on the line
+# graph. 
+# 3. Students will be able to identify when to use smoothing techniques for interpretation and
+# prediction of data modeling. 
+# -------------------------------------------------------------------------------------------
+
 library(dplyr)
 
 # -------------------------------------------------------------------------------------------
