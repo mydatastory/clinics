@@ -114,19 +114,33 @@ plot(landings_df$year, landings_df$monterey_tons,
 # compare these two graphs. 
 # -------------------------------------------------------------------------------------------
 
-
-
+# -------------------------------------------------------------------------------------------
+# Is there a technique that could be used to better see the trend in each of these variables?
+# Let's try a smoothing technique called the loess line
+# To do this we need to create a temperature model (loess), generate predicted 
+# values using that model, and then lay down a smoothing line on top of the plot.
+# -------------------------------------------------------------------------------------------
 
 temp_model <- loess(avg_temp ~ year, data = avg_temps_df, span = .50)
 temp_line  <- predict(temp_model)
 
 lines(temp_line, x = avg_temps_df$year, col = 'red')
 
+# -------------------------------------------------------------------------------------------
+# Try the same method for the sardine landings data
+# -------------------------------------------------------------------------------------------
 
 landing_model <- loess(monterey_tons ~ year, data = landings_df, span = .50)
 landing_line  <- predict(landing_model)
 
 lines(landing_line, x = landings_df$year, col = 'red')
+
+# -------------------------------------------------------------------------------------------
+# What do you observe from each of these line graphs with the loess curve? Are you able to identify a better overall
+# trend using the loess lines for the temperature and sardine landings variables? 
+# Can you describe the relationship between the two variables better now with the loess lines?
+# What do you notice between the two line graphs? How do they compare? How are they different?
+# -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
 # RAW TEMPERATURE AND LANDING REGRESSION & CORRELATION
