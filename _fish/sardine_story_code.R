@@ -53,9 +53,27 @@ avg_temps_df <- temps_df %>%
 
 colnames(avg_temps_df)[2] <- "avg_temp"
 
+# Overview of this section of the learning experience (not to show students)
 # -------------------------------------------------------------------------------------------
 # Plot the raw temperature data and then create a temperature model (loess), generate predicted 
 # values using that model, and then lay down a smoothing line on top of the plot.
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
+# Plot the raw landings data and then create a landings model (loess), generate predicted 
+# values using that model, and then lay down a smoothing line on top of the plot.
+# -------------------------------------------------------------------------------------------
+
+# I would break up this part of the experience and allow the students to first look at and interpret
+# the line graphs from the raw data. Then, I would introduce the smoothing line technique as a way
+# to see an overall trend in the temperature and sardine landing data. 
+# I would also have the students both look at the line graphs of the raw temperature and sardine 
+# landings data first to have them start thinking about the potential relationship between the 
+# two variables.
+
+# After data cleaning is complete, start the students here.
+# -------------------------------------------------------------------------------------------
+# Plot the raw temperature data
 # -------------------------------------------------------------------------------------------
 
 plot(avg_temps_df$year, avg_temps_df$avg_temp,                  
@@ -66,14 +84,14 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
      xlab = "Year",
      ylab = 'Temperature (Celsius)')
 
-temp_model <- loess(avg_temp ~ year, data = avg_temps_df, span = .50)
-temp_line  <- predict(temp_model)
-
-lines(temp_line, x = avg_temps_df$year, col = 'red')
+# -------------------------------------------------------------------------------------------
+# What do you observe from this line graph? Does the temperature of the ocean change over the
+# years? If so, how? 
+# Are you able to identify an overall trend from this line graph?
+# -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
-# Plot the raw landings data and then create a landings model (loess), generate predicted 
-# values using that model, and then lay down a smoothing line on top of the plot.
+# Plot the raw sardine landings data
 # -------------------------------------------------------------------------------------------
 
 plot(landings_df$year, landings_df$monterey_tons,                  
@@ -83,6 +101,27 @@ plot(landings_df$year, landings_df$monterey_tons,
      xlim = c(1915, 1970),
      xlab = 'Year',
      ylab = 'Landings (Tons)')
+
+# -------------------------------------------------------------------------------------------
+# What do you observe from this line graph? Does the amount of sardine landings change over the
+# years? If so, how? 
+# Are you able to identify an overall trend from this line graph?
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
+# Looking at both line graphs of the raw temperature and sardine landings data, do you notice
+# any relationship between the two variables? Take note of the x-axis which allows us to 
+# compare these two graphs. 
+# -------------------------------------------------------------------------------------------
+
+
+
+
+temp_model <- loess(avg_temp ~ year, data = avg_temps_df, span = .50)
+temp_line  <- predict(temp_model)
+
+lines(temp_line, x = avg_temps_df$year, col = 'red')
+
 
 landing_model <- loess(monterey_tons ~ year, data = landings_df, span = .50)
 landing_line  <- predict(landing_model)
