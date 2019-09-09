@@ -174,11 +174,11 @@ lines(landing_line, x = landings_df$year, col = 'red')
 # then plot the data.
 # -------------------------------------------------------------------------------------------
 
-analysis_df <- merge(avg_temps_df, landings_df, by = 'year')
-analysis_df <- subset(analysis_df, monterey_tons > 500)
-analysis_df <- subset(analysis_df, year < 1954)
+analysis_df_raw <- merge(avg_temps_df, landings_df, by = 'year')
+analysis_df_raw <- subset(analysis_df_raw, monterey_tons > 500)
+analysis_df_raw <- subset(analysis_df_raw, year < 1954)
 
-plot(x = analysis_df$avg_temp, y = analysis_df$monterey_tons,
+plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons,
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -194,11 +194,11 @@ plot(x = analysis_df$avg_temp, y = analysis_df$monterey_tons,
 # calculate Pearson's r between the raw temperatures and the raw landings.
 # -------------------------------------------------------------------------------------------
 
-fit <- lm(analysis_df$monterey_tons ~ analysis_df$avg_temp)
+fit_raw <- lm(analysis_df_raw$monterey_tons ~ analysis_df_raw$avg_temp)
 
-abline(fit, col = 'red')
+abline(fit_raw, col = 'red')
 
-raw_cor <- cor(analysis_df$monterey_tons, analysis_df$avg_temp)
+raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp)
 
 # -------------------------------------------------------------------------------------------
 # QUESTIONS:
@@ -228,22 +228,29 @@ temp_df    <- data.frame("temps" = temp_line)
 landing_df$year <- 1917:1967
 temp_df$year    <- 1917:1967
 
-analysis_df <- merge(temp_df, landing_df, by = 'year')
-analysis_df <- subset(analysis_df, landings > 500)
-analysis_df <- subset(analysis_df, year < 1954)
+analysis_df_smooth <- merge(temp_df, landing_df, by = 'year')
+analysis_df_smooth <- subset(analysis_df_smooth, landings > 500)
+analysis_df_smooth <- subset(analysis_df_smooth, year < 1954)
 
-plot(x = analysis_df$temps, y = analysis_df$landings,
+plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
+
+# -------------------------------------------------------------------------------------------
+# QUESTIONS:
+# What can you say visually about the relationship between the smooth surface temperatures data and 
+# the smooth catch data? Is the relationship positive or negative? Strong or weak?
+# Think about where you would place the linear regression line on the plot.
+# -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
 # Generate a simple linear regression model, add the regression line to the plot and then
 # calculate Pearson's r between the smoothed temperatures and the smoothed landings.
 # -------------------------------------------------------------------------------------------
 
-fit <- lm(analysis_df$landings ~ analysis_df$temps)
+fit_smooth <- lm(analysis_df_smooth$landings ~ analysis_df_smooth$temps)
 
-abline(fit, col = 'red')
+abline(fit_smooth, col = 'red')
 
 smooth_cor <- cor(analysis_df$landings, analysis_df$temps)
 
@@ -253,6 +260,17 @@ smooth_cor <- cor(analysis_df$landings, analysis_df$temps)
 
 raw_cor
 smooth_cor
+
+# -------------------------------------------------------------------------------------------
+# QUESTIONS:
+# Does the correlation value for the smoothed data align with your visual interpretation of the 
+# relationship between the smoothed surface temperature data and the smoothed sardine catch data? 
+# How does the linear regression line of the smoothed data compare to estimated regression line?
+
+# Overall, how does the linear regression line and the correlations compare between the smoothed
+# and raw data? What does this tell us?
+# -------------------------------------------------------------------------------------------
+
 
 
 
