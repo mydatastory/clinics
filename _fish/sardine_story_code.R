@@ -9,7 +9,7 @@
 # Statistical questions of interest:
 # 1. What is the relationship between the sardine catch and ocean temperature during peak spawning
 # season?
-# 2. How would use regression techniques to inform future predictions of sardine landings (total sardine catch)
+# 2. How does different regression technqiues influence the prediction of sardine landings (total sardine catch)
 # using ocean temperature data?
 # -------------------------------------------------------------------------------------------
 
@@ -53,7 +53,7 @@ avg_temps_df <- temps_df %>%
 
 colnames(avg_temps_df)[2] <- "avg_temp"
 
-# Overview of this section of the learning experience (not to show students)
+# Overview of this section of the learning experience (not to show students, may be too leading)
 # -------------------------------------------------------------------------------------------
 # Plot the raw temperature data and then create a temperature model (loess), generate predicted 
 # values using that model, and then lay down a smoothing line on top of the plot.
@@ -85,6 +85,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
      ylab = 'Temperature (Celsius)')
 
 # -------------------------------------------------------------------------------------------
+# QUESTIONS:
 # What do you observe from this line graph? Does the temperature of the ocean change over the
 # years? If so, how? 
 # Are you able to identify an overall trend from this line graph?
@@ -103,20 +104,23 @@ plot(landings_df$year, landings_df$monterey_tons,
      ylab = 'Landings (Tons)')
 
 # -------------------------------------------------------------------------------------------
+# QUESTIONS:
 # What do you observe from this line graph? Does the amount of sardine landings change over the
 # years? If so, how? 
 # Are you able to identify an overall trend from this line graph?
 # -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
+# QUESTIONS:
 # Looking at both line graphs of the raw temperature and sardine landings data, do you notice
 # any relationship between the two variables? Take note of the x-axis which allows us to 
 # compare these two graphs. 
 # -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
-# Is there a technique that could be used to better see the trend in each of these variables?
-# Let's try a smoothing technique called the loess line
+# Is there a statistical technique that could be used to better see the trend in each of these variables?
+
+# Let's try a smoothing technique called the loess line.
 # To do this we need to create a temperature model (loess), generate predicted 
 # values using that model, and then lay down a smoothing line on top of the plot.
 # -------------------------------------------------------------------------------------------
@@ -136,10 +140,23 @@ landing_line  <- predict(landing_model)
 lines(landing_line, x = landings_df$year, col = 'red')
 
 # -------------------------------------------------------------------------------------------
+# QUESTIONS:
 # What do you observe from each of these line graphs with the loess curve? Are you able to identify a better overall
 # trend using the loess lines for the temperature and sardine landings variables? 
 # Can you describe the relationship between the two variables better now with the loess lines?
 # What do you notice between the two line graphs? How do they compare? How are they different?
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
+# Now that we can better identify the trend of the temperature and sardine landings over the years,
+# let's take a closer look at the relationship between these two variables. We know that sardines 
+# need an ideal temperature in order to catch and grow their population. In order to better understand
+# the change in sardine landings over the years, we will use the temperature data to predict the 
+# amount of sardine landings. This type of technique is called linear regression. 
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
+# Video explain linear regression
 # -------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------
@@ -166,6 +183,13 @@ plot(x = analysis_df$avg_temp, y = analysis_df$monterey_tons,
      ylab = 'Tons')
 
 # -------------------------------------------------------------------------------------------
+# QUESTIONS:
+# What can you say visually about the relationship between the average surface temperatures and 
+# the catch in tons? Is the relationship positive or negative? Strong or weak?
+# Think about where you would place the linear regression line on the plot. 
+# -------------------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------------------
 # Generate a simple linear regression model, add the regression line to the plot and then
 # calculate Pearson's r between the raw temperatures and the raw landings.
 # -------------------------------------------------------------------------------------------
@@ -175,6 +199,16 @@ fit <- lm(analysis_df$monterey_tons ~ analysis_df$avg_temp)
 abline(fit, col = 'red')
 
 raw_cor <- cor(analysis_df$monterey_tons, analysis_df$avg_temp)
+
+# -------------------------------------------------------------------------------------------
+# QUESTIONS:
+# Does the correlation value align with your visual interpretation of the relationship between
+# the surface temperature and the sardine catch? 
+# How does the linear regression line compare to your regression line?
+# Overall, what does Pearson's r and the simple linear regression model tells us about surface
+# temperature as a predictor for the sardine catch?
+# -------------------------------------------------------------------------------------------
+
 
 # -------------------------------------------------------------------------------------------
 # SMOOTHED TEMPERATURE AND LANDING REGRESSION & CORRELATION
