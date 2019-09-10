@@ -1,4 +1,4 @@
-This repository contains sub-directories of data story clinics. 
+This repository contains folders for data story projects under development: 
 
 #### Links
 
