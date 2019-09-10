@@ -1,4 +1,4 @@
-This repository contains folders for data story projects under development: 
+This repository contains documents for data stories currently being worked on by the myDataStory team.
 
 #### Links
 
