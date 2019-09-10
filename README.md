@@ -1,3 +1,6 @@
 This repository contains sub-directories of data story clinics. 
 
-The style guide for all stories can be found [here](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx).
+#### Links
+
+- [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
+- Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
