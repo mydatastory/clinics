@@ -12,3 +12,4 @@ This repository contains documents for data stories currently being worked on by
 - Ohio State Health Sciences Library provides no informatics support
 - University of Michigan - Solid informatics program (great collaborative potential)
   - Marisa Cont is head of the informatics unit. Her email is: meese@umich.edu
+  - [Taubman Library](https://www.lib.umich.edu/taubman-health-sciences-library)
