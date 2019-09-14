@@ -8,4 +8,7 @@ This repository contains documents for data stories currently being worked on by
 ----------------------------------------------------------------------------------------
 #### Partners
 
-- Oregon Health Sciences University has no informatics program
+- Oregon Health Sciences University provides no informatics program
+- Ohio State Health Sciences Library provides no informatics support
+- University of Michigan - Solid informatics program (great collaborative potential)
+  - Marisa Cont is head of the informatics unit. Her email is: meese@umich.edu
