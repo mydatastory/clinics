@@ -9,7 +9,7 @@ This repository contains documents for data stories currently being worked on by
 #### Partners
 
 - Johns Hopkins University - Top-ranked medical university (collaborative potential ****)
-  - Rob Wright is our primary contact
+  - Rob Wright is our primary contact.  His email is: rwrigh32@jhmi.edu
 - University of Michigan - Solid informatics program (collaborative potential ****)
   - Marisa Cont is head of the informatics unit. Her email is: meese@umich.edu
   - [Taubman Library](https://www.lib.umich.edu/taubman-health-sciences-library)
