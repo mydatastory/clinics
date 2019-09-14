@@ -20,6 +20,8 @@ This repository contains documents for data stories currently being worked on by
   - Emily Patridge heads the translational science collaboration.  Her email is: ep001@uw.edu
   - [Health Science Library](https://hsl.uw.edu/topics/about-the-health-sciences-library/)
 
-- Oregon Health Sciences University has no informatics program
-- Ohio State Health Sciences Library has no informatics support
+
+Oregon Health Sciences University has no informatics program
+
+Ohio State Health Sciences Library has no informatics support
 
