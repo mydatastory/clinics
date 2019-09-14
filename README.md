@@ -22,6 +22,5 @@ This repository contains documents for data stories currently being worked on by
 
 
 Oregon Health Sciences University has no informatics program
-
 Ohio State Health Sciences Library has no informatics support
 
