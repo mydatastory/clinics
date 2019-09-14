@@ -17,4 +17,8 @@ This repository contains documents for data stories currently being worked on by
 - University of Pittsburgh - Solid informatics program (collaborative potential ***)
   - Renae Barger is head of data services unit. Her email is: rbarger@pitt.edu 
   - [Faulk Library](https://www.hsls.pitt.edu/)
+- University of Washington - Translational science collaboration (collaborative potential ***)
+  - Emily Patridge heads the translational science collaboration.  Her email is: ep001@uw.edu
+  - [Health Science Library](https://hsl.uw.edu/topics/about-the-health-sciences-library/)
+
 
