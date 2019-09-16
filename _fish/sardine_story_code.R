@@ -252,7 +252,7 @@ fit_smooth <- lm(analysis_df_smooth$landings ~ analysis_df_smooth$temps)
 
 abline(fit_smooth, col = 'red')
 
-smooth_cor <- cor(analysis_df$landings, analysis_df$temps)
+smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
 
 # -------------------------------------------------------------------------------------------
 # And finally, let's compare the correlation between the raw and smoothed data.
