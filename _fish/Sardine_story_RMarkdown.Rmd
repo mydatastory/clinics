@@ -218,6 +218,10 @@ Generate a simple linear regression model and add the regression line to the plo
 
 fit_raw <- lm(analysis_df_raw$monterey_tons ~ analysis_df_raw$avg_temp)
 
+plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons,
+     xlab = 'Surface Temp (Celsius)',
+     ylab = 'Tons')
+
 abline(fit_raw, col = 'red')
 
 ```
@@ -285,6 +289,10 @@ Generate a simple linear regression model and add the regression line to the plo
 ```{r slr smooth}
 
 fit_smooth <- lm(analysis_df_smooth$landings ~ analysis_df_smooth$temps)
+
+plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
+     xlab = 'Surface Temp (Celsius)',
+     ylab = 'Tons')
 
 abline(fit_smooth, col = 'red')
 
