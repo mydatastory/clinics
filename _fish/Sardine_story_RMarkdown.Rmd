@@ -21,13 +21,16 @@ between the two.  Smoothed data is preferable in this case because the raw data 
 ### Statistical questions of interest:
 1. What is the relationship between the sardine catch and ocean temperature during peak spawning
  season?
+ 
 2. How does different regression technqiues influence the prediction of sardine landings (total sardine catch)
 using ocean temperature data?
 
 ### Learning outcomes for this story:
-1. Students will be able to create line graphs of the sardine catch and ocean temperature data. 
+1. Students will be able to create line graphs of the sardine catch and ocean temperature data.
+
 2. Students will be able to interpret the relationship between the two variables on the line
 graph. 
+
 3. Students will be able to identify when to use smoothing techniques for interpretation and
 prediction of data modeling. 
 
@@ -81,7 +84,8 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
 
 ### QUESTIONS:
 1. What do you observe from this line graph? 
-  i)Does the temperature of the ocean change over the years? If so, how? 
+    i. Does the temperature of the ocean change over the years? If so, how? 
+    
 2. Are you able to identify an overall trend from this line graph?
 
 Plot the raw sardine landings data
@@ -100,7 +104,8 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ### QUESTIONS:
 1. What do you observe from this line graph? 
-  i) Does the amount of sardine landings change over the years? If so, how? 
+    i. Does the amount of sardine landings change over the years? If so, how? 
+    
 2. Are you able to identify an overall trend from this line graph?
 
 ### QUESTIONS:
@@ -155,8 +160,10 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ### QUESTIONS:
 1. What do you observe from each of these line graphs with the loess curve? 
-  i) Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables? 
+    i. Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables?
+    
 2. Can you describe the relationship between the two variables better now with the loess lines?
+
 3. What do you notice between the two line graphs? How do they compare? How are they different?
 
 ## Story check-in here?
@@ -192,7 +199,8 @@ plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons,
 
 ### QUESTIONS:
 1. What can you say visually about the relationship between the average surface temperatures and the catch in tons? 
-  i) Is the relationship positive or negative? Strong or weak?
+    i. Is the relationship positive or negative? Strong or weak?
+    
 2. Think about where you would place the linear regression line on the plot. 
 
 ## Story check-in here?
@@ -207,7 +215,7 @@ raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp)
 
 ```
 
-### QUESTIONS:
+### QUESTION:
 1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch? 
 
 Generate a simple linear regression model and add the regression line to the plot. 
@@ -264,7 +272,8 @@ plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
 
 ### QUESTIONS: 
 1. What can you say visually about the relationship between the smooth surface temperatures data and the smooth catch data? 
-  i) Is the relationship positive or negative? Strong or weak?
+    i. Is the relationship positive or negative? Strong or weak?
+    
 2. Think about where you would place the linear regression line on the plot.
 
 ## Story check-in here?
@@ -279,12 +288,12 @@ smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
 
 ```
 
-### QUESTIONS:
+### QUESTION:
 1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch? 
 
-Generate a simple linear regression model and add the regression line to the plot for the smooth data. 
-
 ## Simple linear regression with smooth data
+
+Generate a simple linear regression model and add the regression line to the plot for the smooth data. 
 
 ```{r slr smooth}
 
@@ -301,9 +310,36 @@ abline(fit_smooth, col = 'red')
 ### QUESTIONS: 
 1. Does the correlation value for the smoothed data align with your visual interpretation of the 
 relationship between the smoothed surface temperature data and the smoothed sardine catch data? 
+
 2. How does the linear regression line of the smoothed data compare to your estimated regression line?
 
-### Overall Question
+### Overall Questions
 1. Overall, how does the linear regression line and the correlations compare between the smoothed
 and raw data? 
+
 2. What does this tell us about using temperature data to predict sardine landings?
+
+# Exercise 
+
+## Looking at data from 1970 to 2018
+Now that we have looked at the sardine catch and ocean temperature data before 1968, let's investigate any possible trends in the data after 1968. 
+
+#### What question do you want this exercise to be based on? 
+
+### Steps:
+1. Subset the sardine catch and temperature data to have year >= 196 and month only Feburary to April.
+
+2. Create separate plots from the raw data for temperature and sardine landings. 
+
+3. QUESTIONS: 
+    i. What do you see from the plots? What comparisons can you make between the data from before 1968 and the data after 1968? 
+    ii. What data should be used to move forward in this investigation? 
+    
+4. Use the temperature data to predict sardine landings after 1968. Make an appropriate plot with a linear regression line using the data selected and interpret the correlation value. 
+
+5. QUESTION: 
+    i. What do you see from the plot with data after 1968? 
+    
+
+
+
