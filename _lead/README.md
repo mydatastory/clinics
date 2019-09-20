@@ -8,7 +8,7 @@
 - [Kaggle Data](https://www.kaggle.com/c/mdst-flint/data)
 
 *Key Dates*
-April 25, 2014   : Switch to Flint water from Detroit
-October 15, 2015 : Switch back to Detroit water
+- April 25, 2014   : Switch to Flint water from Detroit
+- October 15, 2015 : Switch back to Detroit water
 
 [Wikipedia Timeline](https://en.wikipedia.org/wiki/Flint_water_crisis#Return_to_Detroit_water)
