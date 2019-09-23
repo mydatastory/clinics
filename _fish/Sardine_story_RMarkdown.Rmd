@@ -38,21 +38,8 @@ Shot of Janet with word blurb for the following questions.
 
 2. How can I predict the sardine landings (total sardine catch) using ocean temperature data?
 
-## Background
-
-Sometimes the 'noise' in our raw data prevents us from seeing the relationship between
-two variables.  In this learning experience, we will graph raw sardine catch and ocean temperature
-data and then create smoothing lines for both, before calculating a Pearson's r correlation
-between the two.  Smoothed data is preferable in this case because the raw data is noisy.
-
-### Learning outcomes for this story:
-1. Students will be able to create line graphs of the sardine catch and ocean temperature data.
-
-2. Students will be able to interpret the relationship between the two variables on the line
-graph. 
-
-3. Students will be able to identify when to use smoothing techniques for interpretation and
-prediction of data modeling. 
+# Data Setup and Cleaning
+## With DataDog
 
 ## Environment setup and load the two datasets.  
 The first is ocean temperature readings from La Jolla, CA, the second is sardine landings (total catch) in tons.
