@@ -11,19 +11,39 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction to story here with motivation for the analysis
 
+### Protagonist name- Janet
+
+Pl. 1 
+Shot of Janet at the computer in your bedroom getting ready to start the analysis of the sardine data. 
+Janet: I'm really looking forward to diving into this data to see what I can figure out what happened to the sardine industry! 
+
+Pl. 2
+Zoom in on Janet's computer which has a sample of the sardine dataset. 
+Janet: Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. 
+
+Pl. 3
+Zoom in on Janet's face that looks overwhelmed
+Janet: Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis. 
+
+Pl. 4
+Split shot of Janet on the phone talking to DataDog
+Janet: Hi DataDog! I'm in need of some consulting help figure out how to process this dataset of daily ocean temperatures. Can you help me?
+DataDog: Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection. 
+Janet: Great! Let me tell you what my research questions are and show you the datasets that I have...
+
+Pl. 5
+Shot of Janet with word blurb for the following questions.
+
+1. What is the relationship between the sardine catch and ocean temperature during peak spawning season?
+
+2. How can I predict the sardine landings (total sardine catch) using ocean temperature data?
+
 ## Background
 
 Sometimes the 'noise' in our raw data prevents us from seeing the relationship between
 two variables.  In this learning experience, we will graph raw sardine catch and ocean temperature
 data and then create smoothing lines for both, before calculating a Pearson's r correlation
 between the two.  Smoothed data is preferable in this case because the raw data is noisy.
-
-### Statistical questions of interest:
-1. What is the relationship between the sardine catch and ocean temperature during peak spawning
- season?
- 
-2. How does different regression technqiues influence the prediction of sardine landings (total sardine catch)
-using ocean temperature data?
 
 ### Learning outcomes for this story:
 1. Students will be able to create line graphs of the sardine catch and ocean temperature data.
