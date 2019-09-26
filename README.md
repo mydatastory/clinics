@@ -4,7 +4,7 @@ This repository contains documents for data stories currently being worked on by
 
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
 - [Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
-- [DataStory Presentation](https://github.com/mydatastory/shared_projects/blob/master/doc/data_story_presentation.pptx)
+- [DataStory Presentation](https://github.com/danielsmaxwell/presentations/blob/master/_datastory/data_story_presentation.pptx)
 
 ----------------------------------------------------------------------------------------
 #### Partners
