@@ -14,35 +14,36 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Protagonist name- Janet
 
 Pl. 1 
-Shot of Janet at the computer in your bedroom getting ready to start the analysis of the sardine data. 
-Janet: I'm really looking forward to diving into this data to see what I can figure out what happened to the sardine industry! 
+Shot of Wendy at the computer in your bedroom getting ready to start the analysis of the sardine data. 
+Wendy: I'm really looking forward to diving into this data to see what I can figure out what happened to the sardine industry! 
 
 Pl. 2
-Zoom in on Janet's computer which has a sample of the sardine dataset. 
+Zoom in on Wendy's computer which has a sample of the sardine dataset. 
 Janet: Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. 
 
 Pl. 3
-Zoom in on Janet's face that looks overwhelmed
+Zoom in on Wendy's face that looks overwhelmed.
 Janet: Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis. 
 
 Pl. 4
-Split shot of Janet on the phone talking to DataDog
-Janet: Hi DataDog! I'm in need of some consulting help figure out how to process this dataset of daily ocean temperatures. Can you help me?
+Split shot of Wendy on the phone talking to DataDog.
+Wendy: Hi DataDog! I'm in need of some consulting help figure out how to process this dataset of daily ocean temperatures. Can you help me?
 DataDog: Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection. 
-Janet: Great! Let me tell you what my research questions are and show you the datasets that I have...
+Wendy: Great! Let me tell you what my research questions are and show you the datasets that I have...
 
 Pl. 5
-Shot of Janet with word blurb for the following questions.
+Shot of Wendy with word blurb for the following questions.
 
 1. What is the relationship between the sardine catch and ocean temperature during peak spawning season?
 
 2. How can I predict the sardine landings (total sardine catch) using ocean temperature data?
 
 # Data Setup and Cleaning
-## With DataDog
+## With DataDog as narrator
 
 ## Environment setup and load the two datasets.  
-The first is ocean temperature readings from La Jolla, CA, the second is sardine landings (total catch) in tons.
+Pl. 6
+DataDog: The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
 ```{r data setup}
 library(dplyr)
@@ -53,11 +54,12 @@ landings_df <- read.csv("~/UF/Fall 2019/stories/data/sardine_landings_ueber.csv"
 ```
 
 ## Data cleaning
-Because the onset of sardine spawning begins in February, create a subset of the temperature 
-data from February to April.  This is the peak spawning season.  Then create a new data set 
-of average temperatures for each year of the dataset. 
- 
+Pl. 7
+DataDog: Now that we have the data imported into R, we can start the first part of of every good code program, the data cleaning process. Wendy explained to me based on her conversation with her grandfather that the onset of sardine spawning begins in February. This means that we need to create a subset of the temperature data from February to April. This dataset will be the peak spawning season. Then we will create a new dataset that contains the average temperatures for each year of the peak spawning season. 
+
 ## Technical video about data manipulation HERE
+Pl. 8
+DataDog: Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning! Click here for a video about how to perform data cleaning using the subset and summarize commands. 
  
 ```{r data cleaning}
 temps_df <- temps_df[,-5]
