@@ -15,24 +15,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Pl. 1 
 Shot of Wendy at the computer in your bedroom getting ready to start the analysis of the sardine data. 
-Wendy: I'm really looking forward to diving into this data to see what I can figure out what happened to the sardine industry! 
+**Wendy:** I'm really looking forward to diving into this data to see what I can figure out what happened to the sardine industry! 
 
 Pl. 2
 Zoom in on Wendy's computer which has a sample of the sardine dataset. 
-Janet: Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. 
+**Wendy:** Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. 
 
 Pl. 3
 Zoom in on Wendy's face that looks overwhelmed.
-Janet: Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis. 
+**Wendy:** Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis. 
 
 Pl. 4
 Split shot of Wendy on the phone talking to DataDog.
-Wendy: Hi DataDog! I'm in need of some consulting help figure out how to process this dataset of daily ocean temperatures. Can you help me?
-DataDog: Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection. 
-Wendy: Great! Let me tell you what my research questions are and show you the datasets that I have...
+**Wendy:** Hi DataDog! I'm in need of some consulting help figure out how to process this dataset of daily ocean temperatures. Can you help me?
+**DataDog:** Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection. 
+**Wendy:** Great! Let me tell you what my research questions are and show you the datasets that I have...
 
 Pl. 5
-Shot of Wendy with word blurb for the following questions.
+Shot of Wendy with word blurb asking the following questions to the audience.
 
 1. What is the relationship between the sardine catch and ocean temperature during peak spawning season?
 
@@ -43,7 +43,7 @@ Shot of Wendy with word blurb for the following questions.
 
 ## Environment setup and load the two datasets.  
 Pl. 6
-DataDog: The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
+**DataDog:** The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
 ```{r data setup}
 library(dplyr)
@@ -55,11 +55,11 @@ landings_df <- read.csv("~/UF/Fall 2019/stories/data/sardine_landings_ueber.csv"
 
 ## Data cleaning
 Pl. 7
-DataDog: Now that we have the data imported into R, we can start the first part of of every good code program, the data cleaning process. Wendy explained to me based on her conversation with her grandfather that the onset of sardine spawning begins in February. This means that we need to create a subset of the temperature data from February to April. This dataset will be the peak spawning season. Then we will create a new dataset that contains the average temperatures for each year of the peak spawning season. 
+**DataDog:** Now that we have the data imported into R, we can start the first part of of every good code program, the data cleaning process. Wendy explained to me based on her conversation with her grandfather that the onset of sardine spawning begins in February. This means that we need to create a subset of the temperature data from February to April. This dataset will be the peak spawning season. Then we will create a new dataset that contains the average temperatures for each year of the peak spawning season. 
 
 ## Technical video about data manipulation HERE
 Pl. 8
-DataDog: Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning! Click here for a video about how to perform data cleaning using the subset and summarize commands. 
+**DataDog:** Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning! Click here for a video about how to perform data cleaning using the subset and summarize commands. 
  
 ```{r data cleaning}
 temps_df <- temps_df[,-5]
@@ -77,7 +77,7 @@ colnames(avg_temps_df)[2] <- "avg_temp"
 
 ## Graphing the data
 Pl. 9
-DataDog: Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
+**DataDog:** Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
 
 ```{r graph temp}
 
@@ -92,20 +92,20 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
 ```
 
 Pl. 10
-DataDog: Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
+**DataDog:** Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
 Wendy: Hold on, DataDog! Not so fast, let's take a closer look at this graph. 
 
 ### QUESTIONS:
 Pl. 11
 Shot of Wendy asking the following questions to the audience. 
-Wendy: 
+**Wendy:** 
 1. What do you observe from this line graph? 
     i. Does the temperature of the ocean change over the years? If so, how?
 
 2. Are you able to identify an overall trend from this line graph?
 
 Pl. 12
-DataDog: I guess Wendy is right...we should take time to look at the graphs we make to see what is going on with the data. Let's make another graph with the sardine landings data. For this graph, the year variable will be on the x-axis and the variable "monterey_tons" will be on the y-axis. 
+**DataDog:** I guess Wendy is right...we should take time to look at the graphs we make to see what is going on with the data. Let's make another graph with the sardine landings data. For this graph, the year variable will be on the x-axis and the variable "monterey_tons" will be on the y-axis. 
 
 ```{r graph landings}
 
@@ -122,7 +122,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 ### QUESTIONS:
 Pl. 13
 Shot of Wendy asking the following questions to the audience. 
-Wendy:
+**Wendy:**
 1. What do you observe from this line graph? 
     i. Does the amount of sardine landings change over the years? If so, how? 
     
@@ -130,23 +130,24 @@ Wendy:
 
 3. Looking at both line graphs of the raw temperature and sardine landings data, do you notice any relationship between the two variables? Take note of the x-axis which allows us to compare these two graphs. 
 
-Wendy: Thanks, DataDog! I'm going to go talk to be grandfather and see what he thinks about the graphs. 
+**Wendy:** Thanks, DataDog! I'm going to go talk to be grandfather and see what he thinks about the graphs. 
 
 Pl. 14
 Shot of Wendy bringing her computer to visit her grandfather.
-Wendy: Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1970 for the peak spawning months. Do you see any trend or pattern from the graphs?
-Grandfather: I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years. 
-Wendy: That's true. I think I need to call on StatCat for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
+**Wendy:** Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1970 for the peak spawning months. Do you see any trend or pattern from the graphs?
+**Grandfather:** I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years. 
+**Wendy:** That's true. I think I need to call on StatCat for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
 
 Pl. 15
 Shot of Wendy and StatCat talking and looking at Wendy's computer. 
-Wendy: StatCat, are there any statistical techniques that I could use to smooth out the curves in these graphs to figure out if there is a real trend in the data?
-StatCat: Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets. 
+**Wendy:** StatCat, are there any statistical techniques that I could use to smooth out the curves in these graphs to figure out if there is a real trend in the data?
+**StatCat:** Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets. 
 
-## Smoothing Technique: Loess Line
+# Smoothing Technique: Loess Line
+## With StatCat as narrator 
 Pl. 16
 Shot of StatCat showing off this smooth skills
-StatCat: Let's try a smoothing technique called the loess line for the temperature dataset. To do this we need to create a temperature model, called loess. Then we can generate predicted values using that model, and lay down a smoothing line on top of the graph. Click on the link below to learn about the loess line. 
+**StatCat:** Let's try a smoothing technique called the loess line for the temperature dataset. To do this we need to create a temperature model, called loess. Then we can generate predicted values using that model, and lay down a smoothing line on top of the graph. Click on the link below to learn about the loess line. 
 
 ## Technical video about the loess line HERE
 
@@ -168,7 +169,7 @@ lines(temp_line, x = avg_temps_df$year, col = 'red')
 ```
 
 Pl. 17
-StatCat: Let's use our smoothing skills again for the sardine landings dataset. You will be an expert in smoothing curves out like me in no time! 
+**StatCat:** Let's use our smoothing skills again for the sardine landings dataset. You will be an expert in smoothing curves out like me in no time! 
 
 ```{r loess landings}
 
@@ -189,14 +190,14 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 Pl. 18
 Shot of Wendy and StatCat looking at the new plots with the smoothing lines. 
-Wendy: Wow, thanks StatCat! 
-StatCat: Smooth is my middle name. 
-Wendy: Let's take a closer look at these two graphs with the loess lines. 
+**Wendy:** Wow, thanks StatCat! 
+**StatCat:** Smooth is my middle name. 
+**Wendy:** Let's take a closer look at these two graphs with the loess lines. 
 
 ### QUESTIONS:
 Pl 19. 
 Shot of Wendy asking the following questions to the audience. 
-Wendy:
+**Wendy:**
 1. What do you observe from each of these line graphs with the loess lines? 
     i. Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables?
     
