@@ -76,8 +76,8 @@ colnames(avg_temps_df)[2] <- "avg_temp"
 
 
 ## Graphing the data
-
-Graph the raw temperature data
+Pl. 9
+DataDog: Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
 
 ```{r graph temp}
 
@@ -91,14 +91,21 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
 
 ```
 
+Pl. 10
+DataDog: Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
+Wendy: Hold on, DataDog! Not so fast, let's take a closer look at this graph. 
+
 ### QUESTIONS:
+Pl. 11
+Shot of Wendy asking the following questions to the audience. 
+Wendy: 
 1. What do you observe from this line graph? 
     i. Does the temperature of the ocean change over the years? If so, how?
 
 2. Are you able to identify an overall trend from this line graph?
 
-
-Graph the raw sardine landings data
+Pl. 12
+DataDog: I guess Wendy is right...we should take time to look at the graphs we make to see what is going on with the data. Let's make another graph with the sardine landings data. For this graph, the year variable will be on the x-axis and the variable "monterey_tons" will be on the y-axis. 
 
 ```{r graph landings}
 
@@ -113,22 +120,33 @@ plot(landings_df$year, landings_df$monterey_tons,
 ```
 
 ### QUESTIONS:
+Pl. 13
+Shot of Wendy asking the following questions to the audience. 
+Wendy:
 1. What do you observe from this line graph? 
     i. Does the amount of sardine landings change over the years? If so, how? 
-    
     
 2. Are you able to identify an overall trend from this line graph?
 
 3. Looking at both line graphs of the raw temperature and sardine landings data, do you notice any relationship between the two variables? Take note of the x-axis which allows us to compare these two graphs. 
 
-4. Is there a statistical technique that could be used to better see the trend in each of these variables?
+Wendy: Thanks, DataDog! I'm going to go talk to be grandfather and see what he thinks about the graphs. 
 
-## Story check-in here?
+Pl. 14
+Shot of Wendy bringing her computer to visit her grandfather.
+Wendy: Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1970 for the peak spawning months. Do you see any trend or pattern from the graphs?
+Grandfather: I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years. 
+Wendy: That's true. I think I need to call on StatCat for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
+
+Pl. 15
+Shot of Wendy and StatCat talking and looking at Wendy's computer. 
+Wendy: StatCat, are there any statistical techniques that I could use to smooth out the curves in these graphs to figure out if there is a real trend in the data?
+StatCat: Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets. 
 
 ## Smoothing Technique: Loess Line
-
-Let's try a smoothing technique called the loess line.
-To do this we need to create a temperature model (loess), generate predicted values using that model, and then lay down a smoothing line on top of the graph.
+Pl. 16
+Shot of StatCat showing off this smooth skills
+StatCat: Let's try a smoothing technique called the loess line for the temperature dataset. To do this we need to create a temperature model, called loess. Then we can generate predicted values using that model, and lay down a smoothing line on top of the graph. Click on the link below to learn about the loess line. 
 
 ## Technical video about the loess line HERE
 
@@ -149,7 +167,8 @@ lines(temp_line, x = avg_temps_df$year, col = 'red')
 
 ```
 
-Try the same method you used for the temperature data for the sardine landings data. 
+Pl. 17
+StatCat: Let's use our smoothing skills again for the sardine landings dataset. You will be an expert in smoothing curves out like me in no time! 
 
 ```{r loess landings}
 
@@ -168,8 +187,17 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ```
 
+Pl. 18
+Shot of Wendy and StatCat looking at the new plots with the smoothing lines. 
+Wendy: Wow, thanks StatCat! 
+StatCat: Smooth is my middle name. 
+Wendy: Let's take a closer look at these two graphs with the loess lines. 
+
 ### QUESTIONS:
-1. What do you observe from each of these line graphs with the loess curve? 
+Pl 19. 
+Shot of Wendy asking the following questions to the audience. 
+Wendy:
+1. What do you observe from each of these line graphs with the loess lines? 
     i. Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables?
     
 2. Can you describe the relationship between the two variables better now with the loess lines?
