@@ -8,6 +8,16 @@ This repository contains documents for data stories currently being worked on by
 - [Character Renderings](https://github.com/mydatastory/stories/blob/master/fig/characters.jpg)
 
 ----------------------------------------------------------------------------------------
+#### Linking to Sections in the Core Explanatory Learning Experiences
+
+Anchor tags are embedded in the RMarkdown or Jupyter Notebook documents.  These should match the section name.
+
+<a id="getting_help_on_packages"></a>
+
+From within the document, you can then call the anchor like this:
+
+
+----------------------------------------------------------------------------------------
 #### Partners
 
 - Johns Hopkins University - Top-ranked medical university (collaborative potential ****)
@@ -25,7 +35,6 @@ This repository contains documents for data stories currently being worked on by
   - Alisa Surkis is the assistant director for research data metrics.  Her email is: alisa.surkis@nyulangone.org
   - [NYU Health Sciences Library](https://hsl.med.nyu.edu/)
 
-------------------------------------------------------------------------------------------
 Oregon Health Sciences University has no informatics support
 
 Ohio State Health Sciences Library has no informatics support
