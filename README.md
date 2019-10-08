@@ -14,7 +14,7 @@ Anchor tags are embedded in the RMarkdown or Jupyter Notebook documents.  These 
 
 This anchor can then be called by specifying the section name after the # character, as follows:  
 
-\https://rawcdn.githack.com/mydatastory/r_intro_class/9eb06a608223e7a34721bab4ae627612a496cb28/_episodes_html/seeking_help_toc.html#getting_help_on_packages
+https://rawcdn.githack.com/mydatastory/r_intro_class/9eb06a608223e7a34721bab4ae627612a496cb28/_episodes_html/seeking_help_toc.html#getting_help_on_packages
 
 Because we use githack to render GitHub .html pages, you must go to their site to obtain a unique url for the resource with a specific section name appended to the url.
 
