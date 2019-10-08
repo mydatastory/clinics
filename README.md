@@ -10,9 +10,7 @@ This repository contains documents for data stories currently being worked on by
 ----------------------------------------------------------------------------------------
 #### Linking to Sections in the Core Explanatory Learning Experiences
 
-Anchor tags are embedded in the RMarkdown or Jupyter Notebook documents.  These should match the section name.
-
-"<a id="getting_help_on_packages"></a>"
+Anchor tags are embedded in the RMarkdown or Jupyter Notebook documents.  These should match the section name and are formatted as follows: \<a id="getting_help_on_packages"></a>
 
 You can then call the anchor like this, specifying the section name after the # character.  Because we use githack to render GitHub .html pages, you must go to their site to obtain a unique url to the resource.
 
