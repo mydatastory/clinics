@@ -1,0 +1,3 @@
+Just wanted to acknowledge receipt of your email. I am so sorry to hear (but sadly not surprised) of how you are being treated. It is the oddest thing that library – good work is not rewarded there – it is like you are punished if you excel (and don’t drag dead weight along with you to give them a CV line too). Ironically…you are the second person from the UF Libraries to reach out to me this week about poor treatment and feeling hopeless and frustrated by it all.  And also – about the trust thing. Yeah – I honestly didn’t trust anyone by my last year there – because of the culture, everyone will do whatever it takes to gain favor with the few in power (who shouldn’t have power to begin with!)
+
+ 
