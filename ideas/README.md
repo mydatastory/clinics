@@ -17,14 +17,6 @@
 ### Aswan Dam & Schistosomiasis Story
 [Aswan Dam](https://blogs.biomedcentral.com/bugbitten/2017/07/28/increases-in-schistosomiasis-linked-with-ecological-impacts-of-dams/)
 
-------------------------------------------------------------------------------------------
-### Flint Michigan Water Story
-- [Flint Paper](https://ajph.aphapublications.org/doi/10.2105/AJPH.2015.303003)
-- [Michigan Lead Data](https://www.michigan.gov/lead/0,5417,7-310-84214---,00.html)
-- [Michigan Data](https://mitracking.state.mi.us/?bookmark=11)
-- [Flint Water Study](http://flintwaterstudy.org/2016/04/results-of-flint-resident-water-lead-sampling-march-2016/)
-- [Radium Girls](https://en.wikipedia.org/wiki/Radium_Girls)
-
 -----------------------------------------------------------------------------------------
 ### Money and Education Story
 See chapter 3 of *How Science Takes Stock* for a historical look at meta-studies which have examined the relationship between spending and educational outcomes.
