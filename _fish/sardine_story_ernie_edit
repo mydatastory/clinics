@@ -269,7 +269,9 @@ Shot of Wendy asking the following questions to the audience.
 
 3. What do you notice between the two line graphs? How do they compare? How are they different?
 
-### Story check-in here with grandfather and Wendy? *Nah, I don't think you have to*
+### Story check-in here with grandfather and Wendy?
+*Grandfather tells an anecdote about the weather and the biggest haul they had in 1920's-30's.
+*Wendy has an idea to look into the correlation between temperature and sardine landings*
 
 Pl. 20
 **Wendy:** (setup for next section about correlation and linear regression)
@@ -348,6 +350,7 @@ Shot of Wendy asking the following questions to the audience.
 2. Overall, what does Pearson's r and the simple linear regression model tells us about surface temperature as a predictor for the sardine catch?
 
 ## Story Check-in here? Need a transition to the smoothed data
+*something about StatCat wanting to look at the smoothed data*
 
 ## Smoothed Temperature and Landing Regression & Correlation
 ### Scaffolding of coding to prepare students for final exercise. Code chunks provided but minimal text.
