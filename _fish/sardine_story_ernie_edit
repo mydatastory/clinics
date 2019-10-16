@@ -16,8 +16,14 @@ Shot of Wendy talking to her grandfather, Ed Ricketts Jr., in the hospital.
 **Wendy:** What was it like working in Monterey at great grandfather's Western Biological Station?
 **Grandfather:** It was an extremely busy time to be working in the sardine industry. It was tricky to locate the sardines in the waves of the Pacific ocean so the latest technology was used with the assistance of US Navy pilots.
 
+*P1. Intro1
+Shot of Wendy talking to her grandfather, Ed Ricketts Jr. on the deck of an old fishing boat that's seen better days: the SS Teinbeck.
+Wendy: What was it like working in Monterey at great grandfather's Western Biological Station, grandpa?
+Grandfather: It was an extremely busy time to be working in the sardine industry. It was tricky to locate the sardines in the waves of the Pacific ocean, so the latest technology was used with the assistance of US Navy pilots. */
+**
 ### How to integrate John Steinbeck into the grandfather's story?
 
+*still on the boat, as grandpa is doing too much heavy lifting on deck*
 Pl. Intro2
 Shot of Wendy and Grandfather looking at a map (Fig 3.1 from sardine_rise_fall article, page 32). Maybe highlight the Central California Fisheries?
 **Grandfather:** By the time I started leading my own crew in 1945, the total sardine catch per year for the central California fishery was 148,000 tons.
@@ -28,19 +34,27 @@ Pl. Intro3
 Shot of Grandfather looking perplexed and confused.
 **Grandfather:** By 1953, the sardine industry had disappeared. And just like that all the jobs involving the sardine industry were gone.
 **Wendy:** What happened?
-**Grandfather:** That is something that I have never been able to figure out. Did we overfish? Was there something else that impacted the sardine population which left our world forever altered?
+**Grandfather:** That is something that I have never been able to figure out. Did we overfish? Was there something else that impacted the sardine population which left our world forever altered? *I only wish there was something we could do to save the family business...*
+
+*grandfather topples over and the next shot moves the scene into the hospital*
 
 Pl. Intro4
 Shot of Grandfather handing a USB drive (?) to Wendy
-**Grandfather:** I don't have much time left Wendy if my chemo treatments cannot cure the cancer.  Before I got sick, I had gathered all the information I could about the Sardine industry from 1917 to 1967.
+**Grandfather:** I don't have much time left Wendy if my chemo treatments cannot cure the cancer. /*maybe something less specific/dismal*/ Before I got sick, I had gathered all the information I could about the Sardine industry from 1917 to 1967.
 **Wendy:** Grandfather, I am going to dig deep into these data to find out what may have caused the sardine industry to collapse. I promise to find a solution as fast as I can.
 
+*P1. Intro4
+Shot of Wendy looking at her grandfather in his condition, hospital monitors as a nurse enters the room to check on Ed Ricketts Jr.
+Nurse: Wendy, I'm afraid your grandfather is in critical condition and we're going to have to monitor him overnight. It's a good thing you were on the boat with him, or else he might not have made it here to us today.
+Wendy holding her grandfather's hand at his bedside.
+Wendy: (internal) Grandfather, I am going to find out what may have caused the sardine industry to collapse. I promise to find a solution as fast as I can.
+**
 ## End of Introduction
 
 ## Start of Datastory
 
 Pl. 1
-Shot of Wendy at the computer in her bedroom getting ready to start the analysis of the sardine data.
+Shot of Wendy at the computer in her bedroom getting ready to start the analysis of the sardine data. *Several older logs and books are strewn about, suggesting she compiled the data digitally herself*
 **Wendy:** I'm really looking forward to diving into this data to see what I can figure out about what happened to the sardine industry!
 
 Pl. 2
@@ -50,13 +64,25 @@ Zoom in on Wendy's computer which has a sample of the sardine dataset.
 Pl. 3
 Zoom in on Wendy's face that looks overwhelmed.
 **Wendy:** Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis.
-
+*Wendy Oh wow! That is a lot of data! I think I'm going to need some help...but I don't know who to ask...
+Wendy's unexpectedly rings on the table*
 
 Pl. 4
 Split shot of Wendy on the phone talking to DataDog.
 **Wendy:** Hi DataDog! I'm in need of some consulting help to figure out how to process this dataset of daily ocean temperatures. Can you help me?
 **DataDog:** Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection.
 **Wendy:** Great! Let me tell you what my research questions are and show you the datasets that I have...
+
+*Pl. 4
+Split shot of Wendy on the phone with Andy.
+Wendy: (Confused) H-hello?
+Andy: Acme Data Consulting.
+Wendy: (surprised) H-hi. I'm in need of some consulting help to figure out how to process this dataset of daily ocean temperatures, but how did you--
+DataDog pushes Andy off the phone, snatching it away.
+DataDog: Did you say DATA? I LOVE DATA! All about the data and the coding. We at Acme Data Consulting are all about programming perfection!
+Wendy: Well, great! Let me tell you what my research questions are and show you the datasets that I have...
+*/
+**
 
 Pl. 5
 Shot of Wendy with word blurb asking the following questions to the audience.
@@ -68,7 +94,7 @@ Shot of Wendy with word blurb asking the following questions to the audience.
 # Data Setup and Cleaning
 ## With DataDog as narrator
 
-## Environment setup and load the two datasets.  
+## Environment setup and load the two datasets.
 Pl. 6
 **DataDog:** The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
@@ -104,11 +130,11 @@ colnames(avg_temps_df)[2] <- "avg_temp"
 
 ## Graphing the data
 Pl. 9
-**DataDog:** Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
+**DataDog:** Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.
 
 ```{r sardine_2}
 
-plot(avg_temps_df$year, avg_temps_df$avg_temp,                  
+plot(avg_temps_df$year, avg_temps_df$avg_temp,
      type = "l",
      col  = "blue",
      main = "",
@@ -119,7 +145,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
 ```
 
 Pl. 10
-**DataDog:** Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
+**DataDog:** Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.
 **Wendy:** Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ### QUESTIONS:
@@ -136,7 +162,7 @@ Pl. 12
 
 ```{r sardine_3}
 
-plot(landings_df$year, landings_df$monterey_tons,                  
+plot(landings_df$year, landings_df$monterey_tons,
      type = "l",
      col  = "blue",
      main = "",
@@ -163,7 +189,18 @@ Pl. 14
 Shot of Wendy bringing her computer to visit her grandfather.
 **Wendy:** Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
 **Grandfather:** I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years.
-**Wendy:** That's true. I think I need to call on StatCat for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
+**Wendy:** That's true. I think I need to call on StatCat *Acme Data Consulting* for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
+
+*Pl. 14
+Shot of Wendy bringing her computer to visit her grandfather.
+Wendy: Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
+Grandfather: I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years.
+Wendy: That's true. I think I need to call Acme Data Consulting to see if there is a real trend in the data by smoothing out the curve.
+
+Pl.15
+Wendy's phone rings and she picks up.
+StatCat: Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
+**
 
 Pl. 15
 Shot of Wendy and StatCat talking and looking at Wendy's computer.
@@ -183,7 +220,7 @@ Shot of StatCat showing off this smooth skills
 temp_model <- loess(avg_temp ~ year, data = avg_temps_df, span = .50)
 temp_line  <- predict(temp_model)
 
-plot(avg_temps_df$year, avg_temps_df$avg_temp,                  
+plot(avg_temps_df$year, avg_temps_df$avg_temp,
      type = "l",
      col  = "blue",
      main = "",
@@ -203,7 +240,7 @@ Pl. 17
 landing_model <- loess(monterey_tons ~ year, data = landings_df, span = .50)
 landing_line  <- predict(landing_model)
 
-plot(landings_df$year, landings_df$monterey_tons,                  
+plot(landings_df$year, landings_df$monterey_tons,
      type = "l",
      col  = "blue",
      main = "",
@@ -217,7 +254,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 Pl. 18
 Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
-**Wendy:** Wow, thanks StatCat!
+**Wendy:** Wow, thanks StatCat! *So Smooth!*
 **StatCat:** Smooth is my middle name.
 **Wendy:** Let's take a closer look at these two graphs with the loess lines.
 
@@ -232,7 +269,7 @@ Shot of Wendy asking the following questions to the audience.
 
 3. What do you notice between the two line graphs? How do they compare? How are they different?
 
-### Story check-in here with grandfather and Wendy?
+### Story check-in here with grandfather and Wendy? *Nah, I don't think you have to*
 
 Pl. 20
 **Wendy:** (setup for next section about correlation and linear regression)
@@ -242,7 +279,7 @@ Now that we can better identify the trend of the temperature and sardine landing
 
 ## Raw Temperature and Landing Correlation and Regression
 Pl. 21
-**DataDog:** We need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.  
+**DataDog:** We need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.
 
 ## Merge and graph the raw data
 
@@ -269,8 +306,9 @@ Shot of Wendy asking the following questions to the audience.
 
 ## Correlation for the raw data
 Pl. 23
-**StatCat:** We need to now calculate a Pearson's correlation coefficient to help us understand the relationship between ocean temperatures and landings. The way that I know how to calculate this value is using paper and pencil, but this dataset is really big....
+**StatCat:** We need to now calculate a Pearson's correlation coefficient to help us understand the relationship between ocean temperatures and landings. The way that I know how to calculate this value is using paper and pencil, but this dataset is really big.... *...using paper and pencil. This dataset is really BIG so we'll need a REALLY BIG PENCIL! (StatCat would never doubt his techniques on his own)*
 **DataDog:** I can help! I know this great function in R called "cor" which can caluclate the correlation value between two variables.
+*StatCat looks sad*
 
 ```{r sardine_7}
 
@@ -286,8 +324,8 @@ Shot of Wendy asking the following questions to the audience.
 
 ## Simple linear regression with raw data
 Pl. 25
-**StatCat:** Now we need to use our statistics expertise to generate a simple linear regression model and add the regression line to the graph. I know that calculating the difference between our observed and predicted values to minimize the variance is not something that you want to do by hand, so...
-**DataDog:** I have code that will do that in no time!
+**StatCat:** Now we need to use our statistics expertise to generate a simple linear regression model and add the regression line to the graph. I know that calculating the difference between our observed and predicted values to minimize the variance is not something that you want to do by hand, *but* so...*StatCat looks eager*
+**DataDog:** I have code that will do that in no time! *StatCat is sad again*
 
 ```{r sardine_8}
 
@@ -315,7 +353,7 @@ Shot of Wendy asking the following questions to the audience.
 ### Scaffolding of coding to prepare students for final exercise. Code chunks provided but minimal text.
 Pl. 27
 **Wendy:** (setup for next section)
-Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset.  
+Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset.
 
 Data Note:  landing_df and temp_df contain smoothed data.
 
@@ -399,8 +437,10 @@ and raw data?
 Pl. 31
 Shot of Wendy bringing her results back to her grandfather to share what she found
 **Wendy:** Grandfather, I think I found a reason for why the sardine landings decreased before 1968!
-**Grandfather:** Glad to hear, what did you find?
-**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. **Anything more here?** 
+**Grandfather:** *Great, Wendy! What did you find?* Glad to hear, what did you find?
+**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. **Anything more here?** *In order to gather more data, I think we would need to get out on the boat and capture it ourselves...*
+**Grandfather:** *That's a great idea Wendy, but I'm afraid I can't sail in my condition anymore without a crew.*
+*Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored SS Teinbeck, manning it out into the ocean, loaded with scientific equipment. Grandfather is in a wheelchair with a captain's hat on, smiling*
 
 Pl. 32
 **StatCat**: Now it is your turn to try your statistical skills and smoothing techniques!
