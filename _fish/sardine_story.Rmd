@@ -169,11 +169,10 @@ Pl. 14
 Shot of Wendy bringing her computer to visit her grandfather.
 **Wendy:** Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
 **Grandfather:** I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years.
-**Wendy:** That's true. I think I need to call on StatCat for some help in smoothing out the curve. He will know what to do given his smooth skills in statistics!
+**Wendy:** That's true. I think I need to call Acme Data Consulting to see if there is a real trend in the data by smoothing out the curve.
 
 Pl. 15
-Shot of Wendy and StatCat talking and looking at Wendy's computer.
-**Wendy:** StatCat, are there any statistical techniques that I could use to smooth out the curves in these graphs to figure out if there is a real trend in the data?
+Wendy's phone rings and she picks up.
 **StatCat:** Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
 
 # Smoothing Technique: Loess Line
@@ -315,11 +314,12 @@ Shot of Wendy asking the following questions to the audience.
 
 2. Overall, what does Pearson's r and the simple linear regression model tells us about surface temperature as a predictor for the sardine catch?
 
-## Story Check-in here? Need a transition to the smoothed data
+Pl. 27
+**StatCat:** That correlation value is low for the raw data. Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings 
 
 ## Smoothed Temperature and Landing Regression & Correlation
 ### Scaffolding of coding to prepare students for final exercise. Code chunks provided but minimal text.
-Pl. 27
+Pl. 28
 **Wendy:** (setup for next section)
 Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset.  
 
@@ -346,7 +346,7 @@ plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
 ```
 
 ### QUESTIONS:
-Pl. 28
+Pl. 29
 Shot of Wendy asking the following questions to the audience.
 **Wendy:**
 1. What can you say visually about the relationship between the smooth surface temperatures data and the smooth catch data?
@@ -365,7 +365,7 @@ smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
 ```
 
 ### QUESTION:
-Pl. 29
+Pl. 30
 Shot of Wendy asking the following question to the audience.
 **Wendy:**
 1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
@@ -387,7 +387,7 @@ abline(fit_smooth, col = 'red')
 ```
 
 ### QUESTIONS:
-Pl. 30
+Pl. 31
 Shot of Wendy asking the following questions to the audience.
 **Wendy:**
 1. Does the correlation value for the smoothed data align with your visual interpretation of the
@@ -402,13 +402,16 @@ and raw data?
 2. What does this tell us about using temperature data to predict sardine landings?
 
 ## Story check-in
-Pl. 31
+Pl. 32
 Shot of Wendy bringing her results back to her grandfather to share what she found
 **Wendy:** Grandfather, I think I found a reason for why the sardine landings decreased before 1968!
-**Grandfather:** Glad to hear, what did you find?
-**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. **Anything more here?** 
+**Grandfather:** Great, Wendy! What did you find?
+**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. In order to gather more data, I think we would need to get out on the boat and capture it ourselves...
+**Grandfather:** That's a great idea Wendy, but I'm afraid I can't sail in my condition anymore without a crew.
 
-Pl. 32
+Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored SS Teinbeck, manning it out into the ocean, loaded with scientific equipment. Grandfather is in a wheelchair with a captain's hat on, smiling.
+
+Pl. 33
 **StatCat**: Now it is your turn to try your statistical skills and smoothing techniques!
 
 # Exercise
