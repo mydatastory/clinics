@@ -43,7 +43,7 @@ Wendy holding her grandfather's hand at his bedside.
 ## Start of Datastory
 
 Pl. 1
-Shot of Wendy at the computer in her bedroom getting ready to start the analysis of the sardine data.
+Shot of Wendy at the computer in her bedroom getting ready to start the analysis of the sardine data. Several older logs and books are strewn about, suggesting she compiled the data digitally herself
 **Wendy:** I'm really looking forward to diving into this data to see what I can figure out about what happened to the sardine industry!
 
 Pl. 2
@@ -52,14 +52,17 @@ Zoom in on Wendy's computer which has a sample of the sardine dataset.
 
 Pl. 3
 Zoom in on Wendy's face that looks overwhelmed.
-**Wendy:** Oh wow! That is a lot of data! I think I'm going to need to call on some help from Acme Data Consulting to figure out how to clean this data before I can start the analysis.
-
+**Wendy:** Oh wow! That is a lot of data! I think I'm going to need some help...but I don't know who to ask...
+Wendy's phone unexpectedly rings on the table
 
 Pl. 4
-Split shot of Wendy on the phone talking to DataDog.
-**Wendy:** Hi DataDog! I'm in need of some consulting help to figure out how to process this dataset of daily ocean temperatures. Can you help me?
-**DataDog:** Did you say data? I love data! All about the data and the coding. We at Acme Data Consulting are all about programming perfection.
-**Wendy:** Great! Let me tell you what my research questions are and show you the datasets that I have...
+Split shot of Wendy on the phone with Andy.
+**Wendy:** (Confused) H-hello?
+**Andy:** Acme Data Consulting.
+**Wendy:** (surprised) H-hi. I'm in need of some consulting help to figure out how to process this dataset of daily ocean temperatures, but how did you--
+DataDog pushes Andy off the phone, snatching it away.
+**DataDog:** Did you say DATA? I LOVE DATA! All about the data and the coding. We at Acme Data Consulting are all about programming perfection!
+**Wendy:** Well, great! Let me tell you what my research questions are and show you the datasets that I have...
 
 Pl. 5
 Shot of Wendy with word blurb asking the following questions to the audience.
