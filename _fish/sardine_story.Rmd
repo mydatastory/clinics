@@ -1,7 +1,7 @@
 ---
 title: "Sardine Story"
 author: "Charlotte Bolch"
-date: "9/16/2019"
+date: "10/21/2019"
 output: html_document
 ---
 
@@ -11,29 +11,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-Pl. Intro1
-Shot of Wendy talking to her grandfather, Ed Ricketts Jr., in the hospital.
-**Wendy:** What was it like working in Monterey at great grandfather's Western Biological Station?
-**Grandfather:** It was an extremely busy time to be working in the sardine industry. It was tricky to locate the sardines in the waves of the Pacific ocean so the latest technology was used with the assistance of US Navy pilots.
-
-### How to integrate John Steinbeck into the grandfather's story?
+P1. Intro1
+Shot of Wendy talking to her grandfather, Ed Ricketts Jr. on the deck of an old fishing boat that's seen better days: the SS Teinbeck.
+**Wendy:** What was it like working in Monterey at great grandfather's Western Biological Station, grandpa?
+**Grandfather:** It was an extremely busy time to be working in the sardine industry. It was tricky to locate the sardines in the waves of the Pacific ocean, so the latest technology was used with the assistance of US Navy pilots. */
 
 Pl. Intro2
-Shot of Wendy and Grandfather looking at a map (Fig 3.1 from sardine_rise_fall article, page 32). Maybe highlight the Central California Fisheries?
+Still on the boat, as grandpa is doing too much heavy lifting on deck
+Shot of Wendy and Grandfather looking at a map (Fig 3.1 from sardine_rise_fall article, page 32). Highlight the Central California Fisheries of Monterey.
 **Grandfather:** By the time I started leading my own crew in 1945, the total sardine catch per year for the central California fishery was 148,000 tons.
-**Wendy:** Wow! That is a lot of cans of sardines. Weren't people sick of eating it?
+**Wendy:** Wow! That's a lot of sardine cans. Weren't people sick of eating them?
 **Grandfather:** Not if the canned sardines have the flavor and quality of French brands, but were at a lower price!
 
 Pl. Intro3
 Shot of Grandfather looking perplexed and confused.
 **Grandfather:** By 1953, the sardine industry had disappeared. And just like that all the jobs involving the sardine industry were gone.
 **Wendy:** What happened?
-**Grandfather:** That is something that I have never been able to figure out. Did we overfish? Was there something else that impacted the sardine population which left our world forever altered?
+**Grandfather:** That is something that I have never been able to figure out. Did we overfish? Was there something else that impacted the sardine population which left our world forever altered? I only wish there was something we could do to save the family business...
 
-Pl. Intro4
-Shot of Grandfather handing a USB drive (?) to Wendy
-**Grandfather:** I don't have much time left Wendy if my chemo treatments cannot cure the cancer.  Before I got sick, I had gathered all the information I could about the Sardine industry from 1917 to 1967.
-**Wendy:** Grandfather, I am going to dig deep into these data to find out what may have caused the sardine industry to collapse. I promise to find a solution as fast as I can.
+Grandfather topples over and the next shot moves the scene into the hospital
+
+P1. Intro4
+Shot of Wendy looking at her grandfather in his condition, hospital monitors as a nurse enters the room to check on Ed Ricketts Jr.
+**Nurse:** Wendy, I'm afraid your grandfather is in critical condition and we're going to have to monitor him overnight. It's a good thing you were on the boat with him, or else he might not have made it here to us today.
+
+Wendy holding her grandfather's hand at his bedside.
+**Wendy:** (internal) Grandfather, I am going to find out what may have caused the sardine industry to collapse. I promise to find a solution as fast as I can.
 
 ## End of Introduction
 
