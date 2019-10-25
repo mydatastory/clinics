@@ -48,7 +48,7 @@ Shot of Wendy at the computer in her bedroom getting ready to start the analysis
 
 Pl. 2
 Zoom in on Wendy's computer which has a sample of the sardine dataset.
-**Wendy:** Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day.
+**Wendy:** Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. [sardine_landings_ueber.cse]
 
 Pl. 3
 Zoom in on Wendy's face that looks overwhelmed.
@@ -125,7 +125,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp,
 ```
 
 Pl. 10
-**DataDog:** Viola, you are a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
+**DataDog:** Voila, you're a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
 **Wendy:** Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ### QUESTIONS:
@@ -237,17 +237,19 @@ Shot of Wendy asking the following questions to the audience.
 
 3. What do you notice between the two line graphs? How do they compare? How are they different?
 
-### Story check-in here with grandfather and Wendy?
+**Wendy:** I think we're ready to show grandpa the curve.
+**StatCat:** Oh, no, Wendy. We're just getting started. I've only shown you my first move...Are you ready for this?
+StatCat on the disco floor, bass pumping.
 
 Pl. 20
-**Wendy:** (setup for next section about correlation and linear regression)
+**StatCat:** (setup for next section about correlation and linear regression)
 Now that we can better identify the trend of the temperature and sardine landings over the years, let's take a closer look at the relationship between these two variables. We know that sardines need an ideal temperature in order to catch and grow their population. In order to better understand the change in sardine landings over the years, we will use the temperature data to predict the amount of sardine landings. This type of technique is called linear regression. Click here to watch a video about simple linear regression and correlation.
 
 ## Technical video about simple linear regression and correlation HERE
 
 ## Raw Temperature and Landing Correlation and Regression
 Pl. 21
-**DataDog:** We need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.  
+**DataDog:** Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.  
 
 ## Merge and graph the raw data
 
@@ -274,8 +276,9 @@ Shot of Wendy asking the following questions to the audience.
 
 ## Correlation for the raw data
 Pl. 23
-**StatCat:** We need to now calculate a Pearson's correlation coefficient to help us understand the relationship between ocean temperatures and landings. The way that I know how to calculate this value is using paper and pencil, but this dataset is really big....
+**StatCat:** We need to now calculate a Pearson's correlation coefficient to help us understand the relationship between ocean temperatures and landings. The way that I know how to calculate this value is using paper and pencil, but this dataset is really BIG so we'll need a REALLY BIG PENCIL!
 **DataDog:** I can help! I know this great function in R called "cor" which can caluclate the correlation value between two variables.
+*StatCat is sad*
 
 ```{r sardine_7}
 
@@ -291,8 +294,9 @@ Shot of Wendy asking the following questions to the audience.
 
 ## Simple linear regression with raw data
 Pl. 25
-**StatCat:** Now we need to use our statistics expertise to generate a simple linear regression model and add the regression line to the graph. I know that calculating the difference between our observed and predicted values to minimize the variance is not something that you want to do by hand, so...
+**StatCat:** Now we need to use our statistics expertise to generate a simple linear regression model and add the regression line to the graph. I know that calculating the difference between our observed and predicted values to minimize the variance is not something that you want to do by hand, but... (StatCat looks eager)
 **DataDog:** I have code that will do that in no time!
+*StatCat is sad again*
 
 ```{r sardine_8}
 
@@ -315,7 +319,7 @@ Shot of Wendy asking the following questions to the audience.
 2. Overall, what does Pearson's r and the simple linear regression model tells us about surface temperature as a predictor for the sardine catch?
 
 Pl. 27
-**StatCat:** That correlation value is low for the raw data. Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings 
+**StatCat:** That raw data correlation is pathetic! Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings
 
 ## Smoothed Temperature and Landing Regression & Correlation
 ### Scaffolding of coding to prepare students for final exercise. Code chunks provided but minimal text.
