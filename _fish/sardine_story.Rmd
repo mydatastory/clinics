@@ -1,13 +1,15 @@
 ---
 title: "Sardine Story"
 author: "Charlotte Bolch"
-date: "10/21/2019"
-output: html_document
+date: "10/29/2019"
+output: slidy_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
+
 
 ## Introduction
 
