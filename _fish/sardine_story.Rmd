@@ -175,7 +175,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, #x-axis, y-axis
      main = "", #overall title for the plot
      xlim = c(1915, 1970), #range of values for the x-axis
      xlab = "Year", #label for the x-axis
-     ylab = 'Temperature (Celsius)') #label for the yaxis
+     ylab = 'Temperature (Celsius)') #label for the y-axis
 
 ```
 
@@ -183,6 +183,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, #x-axis, y-axis
 
 ## Pl. 10
 **DataDog:** Voila, you're a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings.  
+
 **Wendy:** Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ---
@@ -190,11 +191,12 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, #x-axis, y-axis
 ## QUESTIONS:
 ### Pl. 11
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
-1. What do you observe from this line graph?
-    i. Does the temperature of the ocean change over the years? If so, how?
 
-2. Are you able to identify an overall trend from this line graph?
+1. What do you observe from this line graph?
+
+2. Does the temperature of the ocean change over the years? If so, how?
+
+3. Are you able to identify an overall trend from this line graph?
 
 ---
 
@@ -218,13 +220,14 @@ plot(landings_df$year, landings_df$monterey_tons,
 ## QUESTIONS:
 ### Pl. 13
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
+
 1. What do you observe from this line graph?
-    i. Does the amount of sardine landings change over the years? If so, how?
 
-2. Are you able to identify an overall trend from this line graph?
+2. Does the amount of sardine landings change over the years? If so, how?
 
-3. Looking at both line graphs of the raw temperature and sardine landings data, do you notice any relationship between the two variables? Take note of the x-axis which allows us to compare these two graphs.
+3. Are you able to identify an overall trend from this line graph?
+
+4. Looking at both line graphs of the raw temperature and sardine landings data, do you notice any relationship between the two variables? Take note of the x-axis which allows us to compare these two graphs.
 
 ---
 
@@ -319,13 +322,14 @@ Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
 ## QUESTIONS:
 ### Pl. 19
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
+
 1. What do you observe from each of these line graphs with the loess lines?
-    i. Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables?
 
-2. Can you describe the relationship between the two variables better now with the loess lines?
+2. Are you able to identify a better overall trend using the loess lines for the temperature and sardine landings variables?
 
-3. What do you notice between the two line graphs? How do they compare? How are they different?
+3. Can you describe the relationship between the two variables better now with the loess lines?
+
+4. What do you notice between the two line graphs? How do they compare? How are they different?
 
 ---
 
@@ -380,11 +384,11 @@ plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, #graph the
 ### Pl. 23
 Shot of Wendy asking the following questions to the audience.
 
-**Wendy:**
 1. What can you say visually about the relationship between the average surface temperatures and the catch in tons?
-    i. Is the relationship positive or negative? Strong or weak?
 
-2. Think about where you would place the linear regression line on the graph.
+2. Is the relationship positive or negative? Strong or weak?
+
+3. Think about where you would place the linear regression line on the graph.
 
 ---
 
@@ -407,7 +411,8 @@ raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp)
 
 ## QUESTION:
 ### Pl. 25
-**Wendy:**
+Wendy asks the following question
+
 1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
 
 ---
@@ -436,9 +441,9 @@ abline(fit_raw, col = 'red') #add the linear regression line to the plot
 ---
 
 ## QUESTIONS:
-Pl. 27
+### Pl. 27
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
+
 1. How does the linear regression line compare to your estimated regression line?
 
 2. Overall, what does Pearson's r and the simple linear regression model tells us about surface temperature as a predictor for the sardine catch?
@@ -452,8 +457,7 @@ Shot of Wendy asking the following questions to the audience.
 
 ## Smoothed Temperature and Landing Regression & Correlation
 ### Pl. 29
-**Wendy:** 
-Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset. 
+**Wendy:** Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset. 
 
 ---
 
@@ -486,11 +490,12 @@ plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,#plot the dat
 ## QUESTIONS:
 ### Pl. 30
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
-1. What can you say visually about the relationship between the smooth surface temperatures data and the smooth catch data?
-    i. Is the relationship positive or negative? Strong or weak?
 
-2. Think about where you would place the linear regression line on the graph.
+1. What can you say visually about the relationship between the smooth surface temperatures data and the smooth catch data?
+
+2. Is the relationship positive or negative? Strong or weak?
+
+3. Think about where you would place the linear regression line on the graph.
 
 ---
 
@@ -507,9 +512,10 @@ smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
 ---
 
 ## QUESTION:
-Pl. 31
+### Pl. 31
+
 Shot of Wendy asking the following question to the audience.
-**Wendy:**
+
 1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
 
 ---
@@ -535,7 +541,7 @@ abline(fit_smooth, col = 'red')
 ## QUESTIONS:
 ### Pl. 32
 Shot of Wendy asking the following questions to the audience.
-**Wendy:**
+
 1. Does the correlation value for the smoothed data align with your visual interpretation of the
 relationship between the smoothed surface temperature data and the smoothed sardine catch data?
 
@@ -581,10 +587,10 @@ Now that we have looked at the sardine catch and ocean temperature data before 1
 2. Create separate graphs from the raw data for temperature and sardine landings.
 
 3. **QUESTIONS:**
-    i. What do you see from the graphs? What comparisons can you make between the data from before 1968 and the data after 1968?
-    ii. What data should be used to move forward in this investigation?
+    1. What do you see from the graphs? What comparisons can you make between the data from before 1968 and the data after 1968?
+    2. What data should be used to move forward in this investigation?
 
 4. Use the temperature data to predict sardine landings after 1968. Make an appropriate graph with a linear regression line using the data selected and interpret the correlation value.
 
 5. **QUESTION:**
-    i. What do you see from the graph using the subset of data after 1968?
+    1. What do you see from the graph using the subset of data after 1968?
