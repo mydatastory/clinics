@@ -48,7 +48,7 @@ Shot of Wendy at the computer in her bedroom getting ready to start the analysis
 
 Pl. 2
 Zoom in on Wendy's computer which has a sample of the sardine dataset.
-**Wendy:** Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. [sardine_landings_ueber.cse]
+**Wendy:** Well, I see in this dataset of ocean temperatures a lot of rows that have the same year. So this must mean that each row in this dataset has a recording of the ocean temperature for that day. [scripps_ocean_temps.csv]
 
 Pl. 3
 Zoom in on Wendy's face that looks overwhelmed.
