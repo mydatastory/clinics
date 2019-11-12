@@ -1,0 +1,442 @@
+---
+title: "Fountain of Youth"
+output: html_document
+---
+
+# ------------------------------------------------------------------
+# MyDataStory - Fountain of Youth?
+# By Scott Cohen
+# ------------------------------------------------------------------
+
+Learning Objectives:
+1. Importing and Understanding Dataframes in R
+2. Developing an Analysis Plan
+3. Subsetting Dataframes in R
+4. Joining/Merging Dataframes in R
+5. Descriptive Statistics/Summarizing Data in R
+6. Visualize Distributions and Relationships in R
+7. Hypothesis Testing - Correlation in R
+8. Foundational Module Exercise
+8. Ethics in Hypothesis Testing - P-Hacking
+
+# ------------------------------------------------------------------
+# Introduction
+# ------------------------------------------------------------------
+
+Pl. 1
+*SFX: Clunky computer sounds* 
+StatCat pulls a big printout out of his antiquated UNIVAC 1 computer.
+
+Pl. 2
+StatCat takes out a big pair of scissors and begins to cut the printout into pieces to subset his dataset
+**DataDog:** What are you doing?
+
+Pl. 3
+*StatCat focused on the dataset, mumbles to himself quietly*
+**StatCat:** It has to be a real...The Fountain of Youth just has to be real...
+
+Pl. 4
+*Shot of DataDog's looking at StatCat in confusion, StatCats eyes remain focused on the printout*
+**DataDog:** Fountain of Youth?
+
+Pl. 5
+*Shot of StatCat turning to face DataDog*
+**StatCat:** My plan is simple yet beautiful. I just read about the Fountain of Youth in Florida and I am going to prove its truths! Illudium Phosdex! Its there!
+         
+Pl. 6
+**DataDog:** Illudi...what? Oh forget it, good luck with all that.
+*Shot of DataDog walking away in disinterest, StatCat continues to mumble to himself
+**StatCat:** Step one is to subset all this data by County...just need to cut up this printout and tape them back together.
+
+Pl. 7
+DataDog stops in his tracks, eyes open up wide, turns towards StatCat
+**DataDog:** You live in the stone age!  I can write code that will do that in milliseconds...
+**StatCat:** Oh really, my little furry friend.  I triple dog dare ya to do it...
+
+Pl. 8
+*DataDog stares at the viewer wide-eyed...*
+**DataDog (thought):** There are times in a dog's life when she must stand for truth, justice, and the canine way...
+
+Pl. 9
+*DataDog with super cape and paws holding a light saber in preparation for battle with the evil rubber chicken empire.*
+
+Pl. 10
+*DataDog reading books in her giant programming library.*
+*SFX: Trumpet sound*
+**DataDog (thought):** Eureka, I got it!  I know how to do this multiple ways!  
+
+
+Pl. 11
+*Text on frame: "1 hour later"*
+
+Pl. 11
+**DataDog:** Here kitty, kitty...  I've got something to show you.
+**StatCat:** Hey - who you calling kitty?
+
+# ------------------------------------------------------------------
+# Goal: Use base R functions to import and summarize the contents of the Florida Census 2010 dataframe 
+# Learning Objective: Importing and Understanding Dataframes in R
+# ------------------------------------------------------------------
+
+Pl. 12
+*Text on frame: "1 hour earlier..."*
+*Showing DataDog busy, hacking into UNIVAC, loading tape to the csv file, clunking sounds* 
+**DataDog:** Why do we even bother keeping this junk laying around? It's not even secured! Look! I already found the tape of what StatCat was working with!
+
+Pl. 13
+*Close up shot of DataDog working*
+**DataDog (Thought):** Looks like he's using two separate files, data from the US Census and environmental measurements of Illudium Phosdex. Interesting. Lets just import the Census data tape first and see what this ol' cat is working with
+
+Pl. 14
+*Showing Datadog's computer screen, open to a new R document*
+**DataDog:** First, I'll just need to set my working directory with the setwd() function and import this file with the read.csv() functions...
+
+
+```{r}
+setwd("/Users/ScottCohen/OneDrive - University of Florida/MyDataStory") #set working directory, this 'tells' R where the file path of where the data is located.
+FLCensus2010_df<-read.csv("data/FLCensus2010.csv",stringsAsFactors = F) #import data, naming the dataframe as FLCensus2010_df
+```
+
+Pl. 15
+*DataDog discussing with herself*
+**DataDog:** I wonder how big this dataset is...How many rows and columns? and names of variables? How am I suppose to know the types of variables?!? The dim(), names(), and str() functions should do the trick.
+
+```{r}
+dim(FLCensus2010_df) #Dimensions of dataset, 4182 rows (observations) and 20 columns (variables)
+names(FLCensus2010_df) #Names of the variables (columns)
+str(FLCensus2010_df) #Summary of the number of observations, variables types, and first 5 values
+```
+
+Pl. 16
+*StatCat bugging DataDog, asking for updates, Datadog slighlty annoyed*
+**StatCat** What's going on over there?? Hurry up will ya? This cat is aging by the second!
+
+Pl. 17
+*DataDog shooing away StatCat*
+**StatCat** Look! This data has over 4000 observations! This would have taken you hours to complete! Go find somewhere to chill...
+
+Pl. 16
+*StatCat walking away; DataDog slightly frustrated, shaking her head*
+**DataDog:** That cat has no idea how much time I am saving him...
+
+Pl. 16
+*StatCat walks away, Datadog turns back towards computer*
+**DataDog:** Alright back to it. So what does the data actully look like? I know! I just need to print the data! I can enter the dataframe name by itself in order to print the entire dataset.
+
+```{r}
+FLCensus2010_df
+```
+
+Pl. 17
+**DataDog:** Woah! Too much! Let me just see first few observations? I can use the head() function to find the first 6 observations!
+
+Pl. 18
+*DataDog turns her shoulder, sees StatCat chasing his tail around*
+**DataDog:** ...and the tail() function for the last 6 observvations.
+
+```{r}
+head(FLCensus2010_df) #Default at 6 rows
+head(FLCensus2010_df, n=4) #Use the "n" to change to only 4 rows
+tail(FLCensus2010_df) # See the last 6 rows
+```
+
+Pl. 18
+*DataDog discussing with herself*
+**DataDog:** I think I am going to request a "spreadsheet" view with the View() function. The console view makes everything hard to see...
+
+```{r}
+View(FLCensus2010_df)
+```
+
+**EXERCISE - Import and Summarize the Illudium Phosdex environmental file**
+
+Pl. 22
+**DataDog:** Now where was the Illudium Phosdex data that StatCat was working with...Ah! Here it is! It looks like its environmental sampling data from 2018. It says here in the file description that the IlludiumPhosdex2019.csv file contains the Illudium Phosdex concentration among each census tract in Florida. Lets import and summarize this data!
+
+#Exercise
+(1) Set working directory using setwd()
+(2) Import data using read.csv() and name the dataframe as phosdex2018_df
+(3) Summarize the structure of data using str() 
+(4) Visualize the data using View()
+
+```{r}
+setwd("/Users/ScottCohen/OneDrive - University of Florida/MyDataStory/") #set working directory
+phosdex2018_df<-read.csv("data/IlludiumPhosdex2018.csv",stringsAsFactors = F) # use read.csv function
+str(phosdex2018_df)
+View(phosdex2018_df)
+```
+
+
+# ------------------------------------------------------------------
+# Goal: Develop an analysis plan to assess the relationship between Median Age, Illudium Phosdex measurements, and distance from the the Fountain of Youth
+# Learning Objective: Developing an Analysis Plan
+# ------------------------------------------------------------------
+
+Pl. 19
+**DataDog:** Got it! All coming to plan...Wow...theres really is over 4,000 census tracts in the Census dataset and 442 measurements in the other. I think we need develop a plan of attack! Let's develop an analysis plan!
+
+Pl. 20
+*DataDog steping over to a chalk/white board*
+**DataDog:** There are 5 general steps in any analysis plan. 
+1. Define your research questions
+2. Identify the datasets to be used
+3. Define inclusion/exclusion criteria 
+4. Select appropriate statistical tests
+5. Interpret results
+
+# ------------------------------------------------------------------
+# Learning Objective: Subsetting Dataframes in R
+# Goal: Apply the inclusion, exclusion criteria to the Census dataset
+# ------------------------------------------------------------------
+
+Pl.
+*DataDog talking to herself*
+**DataDog:** To apply our inclusion/exclusion criteria, we need to find separate out unecessary data. This is called 'subsetting'. Since we only want those census tracts that are within 200 miles of the Fountain and Youth, we will subset those census tracts that meet this criteria and create a new dataset! But... there is so many ways to do this! I know, I'll reference my Opus Magnum!
+
+Pl. 21
+*DataDog pulling out an extensive, textbook, proud of her previous work, previous work of other dogs work on the book*
+**DataDog:** We can use the base R subset() function to create the subset dataframe of all census tracts within 200 miles from the Fountain of Youth. With this function, we can also select only the variables we need! We want the subset to contain our unique identifier (GEOID), County Name, The census tract distance from the Fountain of Youth, and the age of the census tract.
+
+```{r}
+# subset(x,...) = subset(data source, criteria, variables selected)
+FlCensus200_df <- subset(FLCensus2010_df, distance < 200, 
+               select = c(geoid, county, distance, actual_age)) #New subset dataframe will be FLCensus200_df
+head(FlCensus200_df) #print the first six observations
+```
+
+# ------------------------------------------------------------------
+# Learning Objective: Joining/Merging Datasets in R
+# Goal: Combine the new subset Florida Census and Illudium Phosdex dataframes into one
+# ------------------------------------------------------------------
+
+Pl. 24
+*DataDog talking to herself*
+**DataDog:** Now that I have my new census data, I am ready to merge the Illudium Phosdex.. This will create one complete dataset! Hmm.. but again, so many ways to do this! I'll have to reference the Opus Magnum again. 
+
+Pl. 25
+**DataDog:** Since the Illudium Phosdex file contains a random sample of 250 census tracts, but we only want those that are less than 200 miles from the Fountain of Youth, we will use a natural join the Illudium Phosdex data frame and the FLcensus subset datframe using the merge() function. GEOID is going to be the variable we basing the matching on, this is because it is the unique identifier in both datasets.
+
+Main Types of Joins
+Inner/Natural = Keep only rows that match from the data frames
+Full Join = Keep all rows from both data frames, regardless of matching
+Left Join = Include all the rows in data frame A and only those that match in data frame B
+Right join = Include all the rows in data frame B and only those that match in data frame A
+
+FLCensus200_df contains all Census Tracts in Florida (Data Frame A)
+IlludiumPhosdex2018_df contains environmental sampling data for 2018 by Census Tract in FLorida (Data Frame B)
+
+```{r}
+#merge(x, y, by = ) = merge(Data Frame A, Data Frame B, Variable to base join)
+PhosdexCensusTract2018_df <- merge(FlCensus200_df, phosdex2018_df[ , c("geoid","date_sampled","illudium_phosdex")], 
+                   by = "geoid")
+head(PhosdexCensusTract2018_df)
+```
+
+## ------------------------------------------------------------------
+## Learning Objective: Descriptive Statistics/Summarizing Data in R
+## Goal: Assess the descriptive statistics of the Illudium Phosdex, Age, and Distance
+## ------------------------------------------------------------------
+
+Pl 26.
+*DataDog discussing with herself*
+**DataDog:** Now that I have everything in one dataset, I can use a whole set of functions to calculate descriptive statistics among our three variables of interest. This is important because these numbers will help us decide the appropriate inferential statistical methods based on these distinctions, and interpret the results.
+
+```{r}
+mean(PhosdexCensusTract2018_df$actual_age)    # Mean
+sd(PhosdexCensusTract2018_df$actual_age)      # Standard Deviation
+var(PhosdexCensusTract2018_df$actual_age)     # Variance
+min(PhosdexCensusTract2018_df$actual_age)     # Minimum value
+max(PhosdexCensusTract2018_df$actual_age)     # Maximum value
+median(PhosdexCensusTract2018_df$actual_age)  # Median
+range(PhosdexCensusTract2018_df$actual_age)   # Range
+quantile(PhosdexCensusTract2018_df$actual_age)# Quantiles
+IQR(PhosdexCensusTract2018_df$actual_age)     #Interquartile Range
+
+#NOTE: These functions require no missing values. You can use the na.rm = TRUE option to remove missing values prior to calculation
+```
+
+Pl 26.
+*DataDog discussing with herself*
+**DataDog:** Great! Now let's repeat this for the age and Illudium Phosdex variables.
+
+**Exercise - Descriptive Summary of Median Age and Illudium Phosdex**
+1. Calculate the mean, standard deviation, median, and interquartile range for Age
+1. Calculate the mean, standard deviation, median, and interquartile range for Illudium Phosdex concentraiton
+
+Pl 27.
+*DataDog discussing with herself*
+**DataDog:** I know my dear colleague StatCat gets a little lazy sometimes, I'll just povide him with the summary() function so he can get descriptive statistics of every variables in the dataframe.
+
+```{r}
+summary(PhosdexCensusTract2018_df) #Overall summary of every variable within the data frame
+```
+
+# ------------------------------------------------------------------
+# Learning Objective: Visualize Distributions and Relationships in R
+# Goal: Illustrate the distribution and relationships using histrograms and scatterplots
+# ------------------------------------------------------------------
+
+Pl 27.
+**DataDog:** StatCat always loves to visualization the data. I'll show him some quick histograms and scatterplots using the hist() and plot() functions. Histograms are perfect for showing the distribution of a continious variable. Scatterplots are also great at illustrating the relationships between two continous variables.
+
+
+```{r}
+hist(PhosdexCensusTract2018_df$illudium_phosdex, 
+     xlab="Illudium Phosdex Concentration Distribution"
+     )
+
+hist(PhosdexCensusTract2018_df$actual_age, 
+     xlab="Median Age Distribution"
+     )
+
+hist(PhosdexCensusTract2018_df$distance, 
+     xlab="Distance from Fountain of Youth Distribution"
+     )
+```
+
+Scatterplot - Visualize 2 continious variables
+```{r}
+plot(PhosdexCensusTract2018_df$distance, PhosdexCensusTract2018_df$illudium_phosdex, 
+     main="Illudium Phosdex Concentration vs. Distance From Fountain of Youth for Each Florida Census Tract", 
+     xlab="Distance", 
+     ylab="Phosdex Concentration"
+     )
+plot(PhosdexCensusTract2018_df$distance, PhosdexCensusTract2018_df$actual_age, 
+     main="Median Age vs. Distance From Fountain of Youth for Each Florida Census Tract", 
+     xlab="Distance", 
+     ylab="Phosdex Concentration"
+     )
+plot(PhosdexCensusTract2018_df$actual_age, PhosdexCensusTract2018_df$illudium_phosdex, 
+     main="Median Age vs. Illudium Phosdex Concentration for Each Florida Census Tract", 
+     xlab="Median Age", 
+     ylab="Phosdex Concentration"
+     )
+```
+
+**EXERCISE**
+(1) Create a historgram to illustrate the distribution of median age (actual_age)
+(2) Create a scatterplot to illustrate the relationship between distance of census tract from Foutain of Youth (distance) and median age (actual_age)
+
+# ------------------------------------------------------------------
+# Learning Objective: Hypothesis testing using Pearson's correlation
+# Goal: Assess if there is a statistical association between age, illudium phosdex, and distance
+# ------------------------------------------------------------------
+
+Pl. 11
+*DataDog pulls up the scatterplots on the screen*
+**DataDog:** Here kitty, kitty...  I've got something to show you.
+**StatCat:** Hey - who you calling kitty?
+
+Pl. 
+*DataDog explaining results to StatCat, StatCat has his bags packed to go travel to Fountain of Youth*
+**DataDog:** Look! There looks like the is some pattern with your Illudium Phosdex measurements and distance from the Fountain of Youth! But it does not appear to be the case with your age measuresments using the Census data.
+
+Pl.
+*StatCat shocked, drops his bags*
+**StatCat:** No, no, no...there must be something there. I know! Let's statistically test to see if there is an association between Illudium Phosdex vs. Distance and Age vs. Distance. These are all continious viarables, so let's see if there correlation between them.
+**DataDog:** Hmm.. we can do that with cor.test() function.
+
+```{r}
+# cor.test(x, y, ...) = tests for association between paired samples, using Pearson's correlation or Spearmans's correlation coeffecients
+cor.test(PhosdexCensusTract2018_df$distance, PhosdexCensusTract2018_df$illudium_phosdex)
+cor.test(PhosdexCensusTract2018_df$distance, PhosdexCensusTract2018_df$actual_age)
+cor.test(PhosdexCensusTract2018_df$actual_age, PhosdexCensusTract2018_df$illudium_phosdex)
+```
+
+##EXERCISE
+(1) Assess the correlation between distance and age
+(2) Assess the correlation between Illudium Phosdex and age
+
+Pl.
+*StatCat waiting on DataDog to obtain the results*
+**StatCat:** Well...?? There is an association right? Oh wow... I cannot wait to live forever!
+
+Pl.
+*DataDog turns towards StatCat*
+**DataDog:** Hold on there, I know you are the expert with statistics...but there doesn't appear to be any correlation in the data with age and the Fountain of Youth
+
+Pl.
+*StatCat in denial*
+**StatCat:** That's impossible! There has to be a mistake with your code! This Fountain of Youth story has been passed down from generation to generation in my family. 
+
+Pl.
+*DataDog insulted by StatCat*
+**DataDog:** My code works perfectly!
+
+Pl.
+*StatCat disgruntled, storms off in the distance*
+**StatCat:** Well I am telling you this story is true! There must be the wrong data. There has to be another dataset somewhere with the right age measurements...
+
+# ------------------------------------------------------------------
+# Learning Objevtice: Foundational Module Final Exercise 
+# Goal: Use the skills and functions learned in this module
+# ------------------------------------------------------------------
+
+Pl.
+*StatCat in a dark basement, digging through dusty, old UNIVAC systems*
+**StatCat:** I must defend my family's honor, I know there is an old reference down here somewhere.
+
+Pl.
+*StatCat continues to running UNIVAC systems in search for code, eyes widen when he finds what he is looking*
+
+Pl.
+*StatCat excitedly approaches DataDog*
+**StatCat:** Here! Found the right data file with the age measurements! DataDog, can you run your code using this?
+
+Pl.
+**DataDog:** What is it?
+**StatCat:** Oh...it's just an older reference
+
+**Exercise**
+1. Import the new dataset called StatCat_Age.csv
+2. Merge the distances from the FLCensus2010 to the new dataset
+3. Subset the census tracts within 200 miles from the Fountain of Youth
+4. Merge the Illudium Phosdex data to the subsetted dataset
+5. Obtain a descriptive summary of the data
+6. Test for association between age, distance, and illudium phosdex concentrations
+
+```{r}
+setwd("/Users/ScottCohen/OneDrive - University of Florida/MyDataStory")
+CensusAge_df<-read.csv("data/StatCat_Age.csv",stringsAsFactors = F)
+str(CensusAge_df) 
+
+CensusTract1990_df <-   merge(CensusAge_df, FLCensus2010_df[ , c("geoid","distance")], 
+                        by = "geoid")
+
+CensusTract1990_df <-   subset(CensusTract1990_df, distance < 200, 
+                        select = c(geoid, county, distance, age_statcat))
+
+PhosdexCensusTract1990_df <-    merge(CensusTract1990_df, phosdex2018_df[ , c("geoid","date_sampled","illudium_phosdex")], 
+                                by = "geoid")
+
+summary(PhosdexCensusTract1990_df)
+str(PhosdexCensusTract1990_df)
+
+hist(PhosdexCensusTract1990_df$age_statcat, 
+     xlab="Median Age Distribution"
+     )
+
+cor.test(PhosdexCensusTract1990_df$age_statcat, PhosdexCensusTract1990_df$illudium_phosdex)
+cor.test(PhosdexCensusTract1990_df$age_statcat, PhosdexCensusTract1990_df$distance)
+```
+
+
+# ------------------------------------------------------------------
+# Learning Objevtice: Ethics in Hypothesis Testing - P-Hacking 
+# Goal: Discuss how the concept of p-hacking applies to this module
+#
+# Adapted from: Head ML, Holman L, Lanfear R, Kahn AT, Jennions MD. The extent and consequences of p-hacking in science. PLoS biology. 2015 Mar 13;13(3):e1002106.
+#
+# ------------------------------------------------------------------
+
+The hypothesis testing approach uses an arbitrary cutoff value (usually p < 0.05 or p <0.01). Findings with smaller p-values are described as “statistically significant”, and the remainder as “nonsignificant”. These are often to referred to as 'positive' or 'negative' results. This arbitrary p-value cutoff has led to the scientifically dubious practice of regarding “significant” findings as more valuable, reliable, and reproducible, thereby incentivizing various kinds of research bias.
+
+**Exercise**
+
+
+```{r}
+
+
+
+
+```
