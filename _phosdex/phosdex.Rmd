@@ -17,7 +17,7 @@ Learning Objectives:
 6. Visualize Distributions and Relationships in R
 7. Hypothesis Testing - Correlation in R
 8. Foundational Module Exercise
-8. Ethics in Hypothesis Testing - P-Hacking
+9. Ethics in Hypothesis Testing - P-Hacking
 
 # ------------------------------------------------------------------
 # Introduction
@@ -42,6 +42,10 @@ Pl. 4
 Pl. 5
 *Shot of StatCat turning to face DataDog*
 **StatCat:** My plan is simple yet beautiful. I just read about the Fountain of Youth in Florida and I am going to prove its truths! Illudium Phosdex! Its there!
+
+Pl. 
+#Introduce illudium phosdex, talk about how it has been found in FOY, defends family honor
+
          
 Pl. 6
 **DataDog:** Illudi...what? Oh forget it, good luck with all that.
@@ -93,7 +97,10 @@ Pl. 14
 
 
 ```{r}
-setwd("/Users/ScottCohen/OneDrive - University of Florida/MyDataStory") #set working directory, this 'tells' R where the file path of where the data is located.
+setwd("/Users/danielmaxwell/Downloads/OneDrive_1_11-12-2019")
+
+
+ #set working directory, this 'tells' R where the file path of where the data is located.
 FLCensus2010_df<-read.csv("data/FLCensus2010.csv",stringsAsFactors = F) #import data, naming the dataframe as FLCensus2010_df
 ```
 
@@ -173,10 +180,10 @@ View(phosdex2018_df)
 # ------------------------------------------------------------------
 
 Pl. 19
-**DataDog:** Got it! All coming to plan...Wow...theres really is over 4,000 census tracts in the Census dataset and 442 measurements in the other. I think we need develop a plan of attack! Let's develop an analysis plan!
+**DataDog:** Got it! All coming to plan...Wow...theres really is over 4,000 census tracts in the Census dataset and 442 measurements in the Illudium Phosdex data. I think we need develop a plan of attack! Let's create an analysis plan!
 
 Pl. 20
-*DataDog steping over to a chalk/white board*
+*DataDog steping over to a chalk/white board* #Connect this to the beginning of the story, StatCat is insistent on the phosdex - age relationship, sees the power of DataDog programming, StatCat driving the analysis
 **DataDog:** There are 5 general steps in any analysis plan. 
 1. Define your research questions
 2. Identify the datasets to be used
@@ -191,7 +198,7 @@ Pl. 20
 
 Pl.
 *DataDog talking to herself*
-**DataDog:** To apply our inclusion/exclusion criteria, we need to find separate out unecessary data. This is called 'subsetting'. Since we only want those census tracts that are within 200 miles of the Fountain and Youth, we will subset those census tracts that meet this criteria and create a new dataset! But... there is so many ways to do this! I know, I'll reference my Opus Magnum!
+**DataDog:** To apply our inclusion/exclusion criteria, we need to separate out unecessary data. This is called 'subsetting'. Since we only want those census tracts that are within 200 miles of the Fountain and Youth, we will subset those census tracts that meet this criteria and create a new dataset! But... there are so many ways to do this! I know, I'll reference my Opus Magnum!
 
 Pl. 21
 *DataDog pulling out an extensive, textbook, proud of her previous work, previous work of other dogs work on the book*
@@ -214,7 +221,7 @@ Pl. 24
 **DataDog:** Now that I have my new census data, I am ready to merge the Illudium Phosdex.. This will create one complete dataset! Hmm.. but again, so many ways to do this! I'll have to reference the Opus Magnum again. 
 
 Pl. 25
-**DataDog:** Since the Illudium Phosdex file contains a random sample of 250 census tracts, but we only want those that are less than 200 miles from the Fountain of Youth, we will use a natural join the Illudium Phosdex data frame and the FLcensus subset datframe using the merge() function. GEOID is going to be the variable we basing the matching on, this is because it is the unique identifier in both datasets.
+**DataDog:** Since the Illudium Phosdex file contains a random sample of 250 census tracts, but we only want those that are less than 200 miles from the Fountain of Youth, we will use a natural join to link the Illudium Phosdex data frame and the census subset dataframe using the merge() function. GEOID is going to be the variable we basing the matching on, this is because it is the unique identifier in both datasets.
 
 Main Types of Joins
 Inner/Natural = Keep only rows that match from the data frames
@@ -239,7 +246,7 @@ head(PhosdexCensusTract2018_df)
 
 Pl 26.
 *DataDog discussing with herself*
-**DataDog:** Now that I have everything in one dataset, I can use a whole set of functions to calculate descriptive statistics among our three variables of interest. This is important because these numbers will help us decide the appropriate inferential statistical methods based on these distinctions, and interpret the results.
+**DataDog:** Now that I have everything in one dataset, I can use a whole set of functions to calculate descriptive statistics among our three variables of interest. This is important because these numbers will help us decide the appropriate inferential statistical methods to use.
 
 ```{r}
 mean(PhosdexCensusTract2018_df$actual_age)    # Mean
@@ -316,20 +323,24 @@ plot(PhosdexCensusTract2018_df$actual_age, PhosdexCensusTract2018_df$illudium_ph
 **EXERCISE**
 (1) Create a historgram to illustrate the distribution of median age (actual_age)
 (2) Create a scatterplot to illustrate the relationship between distance of census tract from Foutain of Youth (distance) and median age (actual_age)
-
+(3) Thoughts on pattern
 # ------------------------------------------------------------------
 # Learning Objective: Hypothesis testing using Pearson's correlation
 # Goal: Assess if there is a statistical association between age, illudium phosdex, and distance
 # ------------------------------------------------------------------
 
 Pl. 11
-*DataDog pulls up the scatterplots on the screen*
+*DataDog pulls up the first scatterplot on the screen*
 **DataDog:** Here kitty, kitty...  I've got something to show you.
 **StatCat:** Hey - who you calling kitty?
 
 Pl. 
 *DataDog explaining results to StatCat, StatCat has his bags packed to go travel to Fountain of Youth*
-**DataDog:** Look! There looks like the is some pattern with your Illudium Phosdex measurements and distance from the Fountain of Youth! But it does not appear to be the case with your age measuresments using the Census data.
+**DataDog:** Look! There looks like the is some pattern with your Illudium Phosdex measurements and distance from the Fountain of Youth! 
+
+Pl.
+*DataDog pulls up the second, third scatterplot*
+
 
 Pl.
 *StatCat shocked, drops his bags*
@@ -365,7 +376,7 @@ Pl.
 
 Pl.
 *StatCat disgruntled, storms off in the distance*
-**StatCat:** Well I am telling you this story is true! There must be the wrong data. There has to be another dataset somewhere with the right age measurements...
+**StatCat:** Well I am telling you this story is true! This must be the wrong data. There has to be another dataset somewhere with the right age measurements...
 
 # ------------------------------------------------------------------
 # Learning Objevtice: Foundational Module Final Exercise 
@@ -373,11 +384,11 @@ Pl.
 # ------------------------------------------------------------------
 
 Pl.
-*StatCat in a dark basement, digging through dusty, old UNIVAC systems*
+*StatCat in a dark basement, digging through dusty tape racks, *
 **StatCat:** I must defend my family's honor, I know there is an old reference down here somewhere.
 
 Pl.
-*StatCat continues to running UNIVAC systems in search for code, eyes widen when he finds what he is looking*
+*StatCat continues to running UNIVAC systems in search for code, eyes widen when he finds what he is looking, finds the tape with the "age" data*
 
 Pl.
 *StatCat excitedly approaches DataDog*
@@ -394,7 +405,7 @@ Pl.
 4. Merge the Illudium Phosdex data to the subsetted dataset
 5. Obtain a descriptive summary of the data
 6. Test for association between age, distance, and illudium phosdex concentrations
-
+7. Behavior of StatCat, deviation from analysis plan
 ```{r}
 setwd("/Users/ScottCohen/OneDrive - University of Florida/MyDataStory")
 CensusAge_df<-read.csv("data/StatCat_Age.csv",stringsAsFactors = F)
