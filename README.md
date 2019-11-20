@@ -5,7 +5,6 @@ This repository contains documents for data stories currently being worked on by
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
 - [Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
 - [DataStory Presentation](https://github.com/danielsmaxwell/presentations/blob/master/_datastory/data_story_presentation.pptx)
-- [Character Renderings](https://github.com/mydatastory/stories/blob/master/fig/characters.jpg)
 - [Data Story Rubric](https://github.com/danielsmaxwell/mcb4934/blob/master/doc/mini_project_rubric.docx)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 
