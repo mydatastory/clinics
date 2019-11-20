@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Shot of Wendy talking to her grandfather, Ed Ricketts Jr. on the deck of an old fishing boat that's seen better days: the SS Teinbeck.
 
-**Wendy:** What was it like working in Monterey at great grandfather's Western Biological Station, grandpa?
+**Wendy:** What was it like working in Monterey at great grandpa's Western Biological Station, grandpa?
 
 **Grandfather:** It was an extremely busy time to be working in the sardine industry. It was tricky to locate the sardines in the waves of the Pacific ocean, so the latest technology was used with the assistance of US Navy pilots.
 
@@ -54,7 +54,7 @@ Shot of Wendy looking at her grandfather in his condition, hospital monitors as 
 
 Wendy holding her grandfather's hand at his bedside.
 
-**Wendy:** (internal) Grandfather, I am going to find out what may have caused the sardine industry to collapse. I promise to find a solution as fast as I can.
+**Wendy:** (internal) Grandpa, I am going to find out what caused the sardine industry to collapse. I promise to find a solution as fast as I can.
 
 ---
 
@@ -103,7 +103,7 @@ DataDog pushes Andy off the phone, snatching it away.
 
 ## Pl. 5
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What is the relationship between the sardine catch and ocean temperature during peak spawning season?
 
@@ -115,21 +115,21 @@ DataDog pushes Andy off the phone, snatching it away.
 
 ## Pl. 6
 
-![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg)
+![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
-**DataDog:** 
 The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
 ```{r data setup, warning=FALSE, message=FALSE}
-library(dplyr) #load dplyr package (make sure it is installed first)
+# Load dplyr package (make sure it is installed first).
+library(dplyr) 
 
 setwd("C:/Users/cbolc/Desktop/stories/data")
 
+# Read in ocean temperature dataset.
 temps_df <- read.csv('scripps_ocean_temps.csv') 
-#read in ocean temperature dataset
 
+# Read in sardine landings dataset.
 landings_df <- read.csv('sardine_landings_ueber.csv') 
-#read in sardine landings dataset
 
 ```
 
@@ -137,16 +137,16 @@ landings_df <- read.csv('sardine_landings_ueber.csv')
 
 # Data cleaning
 ## Pl. 7
-![](../assets/web_lesson_graphics/datadog/body_pointing.svg)
+![](../assets/web_lesson_graphics/datadog/body_pointing.svg){width=100px; height=100px}
 
-**DataDog:** Now that we have the data imported into R, we can start the first part of every good code program, the data cleaning process. Wendy explained to me based on her conversation with her grandfather that the onset of sardine spawning begins in February. This means that we need to create a subset of the temperature data from February to April. This dataset will be the peak spawning season. Then we will create a new dataset that contains the average temperatures for each year of the peak spawning season.
+Now that we have the data imported into R, we can start the first part of every good code program, the data cleaning process. Wendy explained to me based on her conversation with her grandfather that the onset of sardine spawning begins in February. This means that we need to create a subset of the temperature data from February to April. This dataset will be the peak spawning season. Then we will create a new dataset that contains the average temperatures for each year of the peak spawning season.
 
 ---
 
 ## Pl. 8
-![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg)
+![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
-**DataDog:** Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning!
+Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning!
 
 ---
 
@@ -156,56 +156,58 @@ landings_df <- read.csv('sardine_landings_ueber.csv')
 
 ## Code for data cleaning
 ```{r sardine_1}
-temps_df <- temps_df[,-5] #remove 5th column b/c all missing data 
-temps_df <- na.omit(temps_df) #remove any other missing data observations
+temps_df <- temps_df[,-5]         # Remove 5th column b/c all missing data 
+temps_df <- na.omit(temps_df)     # Remove any other missing data observations
+
+# Create a subset using the month variable for Feb, March, and April.
 temps_df <- subset(temps_df, month == 2 | month == 3 | month == 4) 
-#create a subset using the month variable for Feb, March, and April
 
-temps_df <- subset(temps_df, year < 1968) #create another subset for years less than 1968
+# Create another subset for years less than 1968.
+temps_df <- subset(temps_df, year < 1968) 
 
-avg_temps_df <- temps_df %>% #call the dataset
-                  group_by(year) %>% #group the observations by year
-                  summarize(mean(surf_temp_c)) #calculate the mean ocean temperature by year
+avg_temps_df <- temps_df %>%                   # Call the dataset.
+                  group_by(year) %>%           # Group the observations by year.
+                  summarize(mean(surf_temp_c)) # Calculate the mean ocean temperature by year.
 
-colnames(avg_temps_df)[2] <- "avg_temp" #name the column avg_temp
+colnames(avg_temps_df)[2] <- "avg_temp"        # Name the column avg_temp.
 ```
 
 ---
 
 # Graphing the data
 ## Pl. 9
-![](../assets/web_lesson_graphics/datadog/body_whiteboard.svg)
+![](../assets/web_lesson_graphics/datadog/body_whiteboard.svg){width=100px; height=100px}
 
-**DataDog:** Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
+Now that our code is perfect and we have a dataset that contains average ocean temperatures by year, we need to create a graph to see what is going on in the data. Let's create a graph with the year on the x-axis and the average ocean temperature on the y-axis.  
 
 ```{r sardine_2}
 
-plot(avg_temps_df$year, avg_temps_df$avg_temp, #x-axis, y-axis                  
-     type = "l", #type of graph is a line graph ("l" for lines)
-     col  = "blue", #color of the lines
-     main = "", #overall title for the plot
-     xlim = c(1915, 1970), #range of values for the x-axis
-     xlab = "Year", #label for the x-axis
-     ylab = 'Temperature (Celsius)') #label for the y-axis
+plot(avg_temps_df$year, avg_temps_df$avg_temp, # x-axis, y-axis.                  
+     type = "l",                               # Type of graph is a line graph ("l" for lines).
+     col  = "blue",                            # Color of the lines.
+     main = "",                                # Overall title for the plot.
+     xlim = c(1915, 1970),                     # Range of values for the x-axis.
+     xlab = "Year",                            # Label for the x-axis.
+     ylab = 'Temperature (Celsius)')           # Label for the y-axis.
 
 ```
 
 ---
 
 ## Pl. 10
-![](../assets/web_lesson_graphics/datadog/body_triumph.svg)
+![](../assets/web_lesson_graphics/datadog/body_triumph.svg){width=100px; height=100px}
 
-**DataDog:** Voila, you're a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings. 
+Voila, you're a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings. 
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
-**Wendy:** Hold on, DataDog! Not so fast, let's take a closer look at this graph.
+Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ---
 
 ## QUESTIONS:
 ### Pl. 11
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What do you observe from this line graph?
 
@@ -217,9 +219,9 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, #x-axis, y-axis
 
 ## Pl. 12
 
-![](../assets/web_lesson_graphics/datadog/body_snarky.svg)
+![](../assets/web_lesson_graphics/datadog/body_snarky.svg){width=100px; height=100px}
 
-**DataDog:** I guess Wendy is right...we should take time to look at the graphs we make to see what is going on with the data. Let's make another graph with the sardine landings data. For this graph, the year variable will be on the x-axis and the variable "monterey_tons" will be on the y-axis.
+I guess Wendy is right...we should take time to look at the graphs we make to see what is going on with the data. Let's make another graph with the sardine landings data. For this graph, the year variable will be on the x-axis and the variable "monterey_tons" will be on the y-axis.
 
 ```{r sardine_3}
 
@@ -238,7 +240,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 ## QUESTIONS:
 ### Pl. 13
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What do you observe from this line graph?
 
@@ -252,13 +254,13 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ## Pl. 14
 
-![](../assets/web_lesson_graphics/wendy/head_happy.svg)
+![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
 
-**Wendy:** Thanks, DataDog! I'm going to go talk to my grandfather and see what he thinks about the graphs.
+Thanks, DataDog! I'm going to go talk to my grandpa and see what he thinks about the graphs.
 
 Shot of Wendy bringing her computer to visit her grandfather.
 
-**Wendy:** Grandfather, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
+**Wendy:** Grandpa, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
 
 **Grandfather:** I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years.
 
@@ -269,18 +271,18 @@ Shot of Wendy bringing her computer to visit her grandfather.
 ## Pl. 15
 Wendy's phone rings and she picks up.
 
-![](../assets/web_lesson_graphics/statcat/head_considering.svg)
+![](../assets/web_lesson_graphics/statcat/head_considering.svg){width=100px; height=100px}
 
-**StatCat:** Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
+Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
 
 ---
 
 # Smoothing Technique: Loess Line
 ## Pl. 16
 
-![](../assets/web_lesson_graphics/statcat/head_static.svg)
+![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
-**StatCat:** Let's try a smoothing technique called the loess line for the temperature dataset. To do this we need to create a temperature model, called loess. Then we can generate predicted values using that model, and lay down a smoothing line on top of the graph. 
+Let's try a smoothing technique called the loess line for the temperature dataset. To do this we need to create a temperature model, called loess. Then we can generate predicted values using that model, and lay down a smoothing line on top of the graph. 
 
 ---
 
@@ -291,13 +293,14 @@ Wendy's phone rings and she picks up.
 ## Code for Loess Line
 ```{r sardine_4}
 
+# Model that fits mutliple regressions locally with 50% smoothing span.
 temp_model <- loess(avg_temp ~ year, data = avg_temps_df, span = .50) 
-#model that fits mutliple regressions locally with 50% smoothing span
 
+# Predicted values from the loess model.
 temp_line  <- predict(temp_model)
-#predicted values from the loess model
 
-plot(avg_temps_df$year, avg_temps_df$avg_temp, #same plot as above with raw data                  
+# Same plot as above with raw data.
+plot(avg_temps_df$year, avg_temps_df$avg_temp,                   
      type = "l",
      col  = "blue",
      main = "",
@@ -305,7 +308,8 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, #same plot as above with raw data
      xlab = "Year",
      ylab = 'Temperature (Celsius)')
 
-lines(temp_line, x = avg_temps_df$year, col = 'red') #adds a line in red with the predicted values 
+# Adds a line in red with predicted values.
+lines(temp_line, x = avg_temps_df$year, col = 'red')  
 
 ```
 
@@ -313,9 +317,9 @@ lines(temp_line, x = avg_temps_df$year, col = 'red') #adds a line in red with th
 
 ## Pl. 17
 
-![](../assets/web_lesson_graphics/statcat/head_considering.svg)
+![](../assets/web_lesson_graphics/statcat/head_considering.svg){width=100px; height=100px}
 
-**StatCat:** Let's use our smoothing skills again for the sardine landings dataset. You will be an expert in smoothing curves out like me in no time!
+Let's use our smoothing skills again for the sardine landings dataset. You will be an expert in smoothing curves out like me in no time!
 
 ```{r sardine_5}
 
@@ -350,7 +354,7 @@ Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
 ## QUESTIONS:
 ### Pl. 19
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What do you observe from each of these line graphs with the loess lines?
 
@@ -374,9 +378,8 @@ StatCat on the disco floor, bass pumping.
 ## Simple Linear Regression and Correlation
 ### Pl. 21
 
-![](../assets/web_lesson_graphics/statcat/head_static.svg)
+![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
-**StatCat:**
 Now that we can better identify the trend of the temperature and sardine landings over the years, let's take a closer look at the relationship between these two variables. We know that sardines need an ideal temperature in order to catch and grow their population. In order to better understand the change in sardine landings over the years, we will use the temperature data to predict the amount of sardine landings. This type of technique is called linear regression.
 
 ---
@@ -388,9 +391,9 @@ Now that we can better identify the trend of the temperature and sardine landing
 ## Raw Temperature and Landing Correlation and Regression
 ### Pl. 22
 
-![](../assets/web_lesson_graphics/datadog/body_snarky.svg)
+![](../assets/web_lesson_graphics/datadog/body_snarky.svg){width=100px; height=100px}
 
-**DataDog:** Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.
+Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.
 
 ---
 
@@ -398,16 +401,17 @@ Now that we can better identify the trend of the temperature and sardine landing
 
 ```{r sardine_6}
 
+# Combines the avg temp and landings data into one dataset by year.
 analysis_df_raw <- merge(avg_temps_df, landings_df, by = 'year') 
-#combines the avg temp and landings data into one dataset by year
 
+# Subset the dataset so that only landings of more than 500 tons are included.
 analysis_df_raw <- subset(analysis_df_raw, monterey_tons > 500)
-#subset the dataset so that only landings of more than 500 tons are included
 
+# Subset the dataset so that only years before 1954 are included.
 analysis_df_raw <- subset(analysis_df_raw, year < 1954)
-#subset the dataset so that only years before 1954 are included
 
-plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, #graph the dataset
+# Graph the dataset.
+plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, 
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -418,7 +422,7 @@ plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, #graph the
 ## QUESTIONS:
 ### Pl. 23
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What can you say visually about the relationship between the average surface temperatures and the catch in tons?
 
@@ -438,8 +442,8 @@ plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, #graph the
 
 ```{r sardine_7}
 
+# Correlation between the two variables of interest.
 raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp) 
-#correlation between the two variables of interest
 
 ```
 
@@ -448,9 +452,9 @@ raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp)
 ## QUESTION:
 ### Pl. 25
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
-1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
+Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
 
 ---
 
@@ -464,14 +468,16 @@ raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp)
 
 ```{r sardine_8}
 
+# Simple linear regression model with y ~ x.
 fit_raw <- lm(analysis_df_raw$monterey_tons ~ analysis_df_raw$avg_temp)
-#simple linear regression model with y ~ x
 
-plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, #plot of the dataset
+# Plot of the dataset.
+plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, 
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
-abline(fit_raw, col = 'red') #add the linear regression line to the plot
+# Add the linear regression line to the plot.
+abline(fit_raw, col = 'red') 
 
 ```
 
@@ -480,7 +486,7 @@ abline(fit_raw, col = 'red') #add the linear regression line to the plot
 ## QUESTIONS:
 ### Pl. 27
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. How does the linear regression line compare to your estimated regression line?
 
@@ -490,18 +496,18 @@ abline(fit_raw, col = 'red') #add the linear regression line to the plot
 
 ## Pl. 28
 
-![](../assets/web_lesson_graphics/statcat/head_static.svg)
+![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
-**StatCat:** That raw data correlation is pathetic! Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings
+That raw data correlation is pathetic! Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings
 
 ---
 
 ## Smoothed Temperature and Landing Regression & Correlation
 ### Pl. 29
 
-![](../assets/web_lesson_graphics/wendy/head_happy.svg)
+![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
 
-**Wendy:** Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset. 
+Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset. 
 
 ---
 
@@ -510,20 +516,27 @@ Data Note:  landing_df and temp_df contain smoothed data.
 
 ```{r sardine_9}
 
+# Create a dataframe with the smoothed data for the landings.
 landing_df <- data.frame("landings" = landing_line) 
-#create a dataframe with the smoothed data for the landings
 
+# Create a dataframe with the smoothed data for ocean temperature.
 temp_df    <- data.frame("temps" = temp_line)
-#create a dataframe with the smoothed data for ocean temperature
 
-landing_df$year <- 1917:1967 #add a column in each dataset with the year
+# Add a column in each dataset with the year.
+landing_df$year <- 1917:1967 
 temp_df$year    <- 1917:1967
 
-analysis_df_smooth <- merge(temp_df, landing_df, by = 'year') #merge datasets by year
-analysis_df_smooth <- subset(analysis_df_smooth, landings > 500) #subset landings greater than 500 tons
-analysis_df_smooth <- subset(analysis_df_smooth, year < 1954) #subset year less than 1954
+# Merge datasets by year.
+analysis_df_smooth <- merge(temp_df, landing_df, by = 'year') 
 
-plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,#plot the dataset
+# Subset landings greater than 500 tons.
+analysis_df_smooth <- subset(analysis_df_smooth, landings > 500) 
+
+# Subset year less than 1954.
+analysis_df_smooth <- subset(analysis_df_smooth, year < 1954) 
+
+# Plot the dataset.
+plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -534,7 +547,7 @@ plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,#plot the dat
 ## QUESTIONS:
 ### Pl. 30
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
 1. What can you say visually about the relationship between the smooth surface temperatures data and the smooth catch data?
 
@@ -559,9 +572,9 @@ smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
 ## QUESTION:
 ### Pl. 31
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
-1. Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
+Does the correlation value align with your visual interpretation of the relationship between the surface temperature and the sardine catch?
 
 ---
 
@@ -586,18 +599,16 @@ abline(fit_smooth, col = 'red')
 ## QUESTIONS:
 ### Pl. 32
 
-![](../assets/web_lesson_graphics/wendy/head_thinking.svg)
+![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
-1. Does the correlation value for the smoothed data align with your visual interpretation of the
-relationship between the smoothed surface temperature data and the smoothed sardine catch data?
+1. Does the correlation value for the smoothed data align with your visual interpretation of the relationship between the smoothed surface temperature data and the smoothed sardine catch data?
 
 2. How does the linear regression line of the smoothed data compare to your estimated regression line?
 
 ---
 
 ## Overall Questions
-1. Overall, how does the linear regression line and the correlations compare between the smoothed
-and raw data?
+1. Overall, how does the linear regression line and the correlations compare between the smoothed and raw data?
 
 2. What does this tell us about using temperature data to predict sardine landings?
 
@@ -606,7 +617,7 @@ and raw data?
 ## Pl. 33
 Shot of Wendy bringing her results back to her grandfather to share what she found
 
-**Wendy:** Grandfather, I think I found a reason for why the sardine landings decreased before 1968!
+**Wendy:** Grandpa, I think I found a reason for why the sardine landings decreased before 1968!
 
 **Grandfather:** Great, Wendy! What did you find?
 
@@ -623,9 +634,9 @@ Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored 
 
 ## Pl. 35
 
-![](../assets/web_lesson_graphics/statcat/head_static.svg)
+![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
-**StatCat**: Now it is your turn to try your statistical skills and smoothing techniques!
+Now it is your turn to try your statistical skills and smoothing techniques!
 
 # Exercise
 Now that we have looked at the sardine catch and ocean temperature data before 1968, let's investigate any possible trends in the data after 1968.
