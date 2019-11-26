@@ -1,0 +1,107 @@
+﻿Year,Party,Cantidate,Votes
+1788,F,George Washington [F],69
+1788,F,John Adams [F],34
+1792,F,George Washington [F],132
+1792,F,John Adams [F],77
+1796,F,John Adams [F],71
+1796,DR,Thomas Jefferson [D-R],68
+1800,DR,Thomas Jefferson [D-R],73
+1800,DR,Aaron Burr [D-R],73
+1804,DR,Thomas Jefferson [D-R],162
+1804,F,Charles C. Pinckney [F],14
+1808,DR,James Madison [D-R],122
+1808,F,Charles C. Pinckney [F],47
+1812,DR,James Madison [D-R],128
+1812,F,De Witt Clinton [F],89
+1816,DR,James Monroe [D-R],183
+1816,F,Rufus King [F],34
+1820,DR,James Monroe [D-R],231
+1820,NR,John Quincy Adams [N-R],1
+1824,C,John Quincy Adams [Coalition],84
+1824,DR,Andrew Jackson [D-R],99
+1828,D,Andrew Jackson [D],178
+1828,NR,John Quincy Adams [N-R],83
+1832,D,Andrew Jackson [D],219
+1832,NR,Henry Clay [N-R],49
+1836,D,Martin Van Buren [D],170
+1836,W,William Henry Harrison [W],73
+1840,W,William Henry Harrison [W],234
+1840,D,Martin Van Buren [D],60
+1844,D,James K. Polk [D],170
+1844,W,Henry Clay [W],105
+1848,W,Zachary Taylor [W],163
+1848,D,Lewis Cass [D],127
+1852,D,Franklin Pierce [D],254
+1852,W,Winfield Scott [W],42
+1856,D,James Buchanan [D],174
+1856,R,John C. Frémont [R],114
+1860,R,Abraham Lincoln [R],180
+1860,D,John C. Breckinridge [D],72
+1864,R,Abraham Lincoln [R],212
+1864,D,George B. McClellan [D],21
+1868,R,Ulysses S. Grant [R],214
+1868,D,Horatio Seymour [D],80
+1872,R,Ulysses S. Grant [R],286
+1872,D,Horace Greeley [D-LR],0
+1876,R,Rutherford B. Hayes [R],185
+1876,D,Samuel J. Tilden [D],184
+1880,R,James Garfield [R],214
+1880,D,Winfield S. Hancock [D],155
+1884,D,Grover Cleveland [D],219
+1884,R,James G. Blaine [R],182
+1888,R,Benjamin Harrison [R],233
+1888,D,Grover Cleveland [D],168
+1892,D,Grover Cleveland [D],277
+1892,R,Benjamin Harrison [R],145
+1896,R,William McKinley [R],271
+1896,D,William J. Bryan [D-P],176
+1900,R,William McKinley [R],292
+1900,D,William J. Bryan [D-P],155
+1904,R,Theodore Roosevelt [R],336
+1904,D,Alton B. Parker [D],140
+1908,R,William H. Taft [R],321
+1908,D,William J. Bryan [D],162
+1912,D,Woodrow Wilson [D],435
+1912,P,Theodore Roosevelt [P],88
+1916,D,Woodrow Wilson [D],277
+1916,R,Charles E. Hughes [R],254
+1920,R,Warren G. Harding [R],404
+1920,D,James M. Cox [D],127
+1924,D,John W. Davis [D],136
+1924,R,Calvin Coolidge [R],382
+1928,R,Herbert C. Hoover [R],444
+1928,D,Alfred E. Smith [D],87
+1932,D,Franklin D. Roosevelt [D],472
+1932,R,Herbert C. Hoover [R],59
+1936,D,Franklin D. Roosevelt [D],523
+1936,R,Alfred M. Landon [R],8
+1940,D,Franklin D. Roosevelt [D],449
+1940,R,Wendell L. Wilkie [R],82
+1944,D,Franklin D. Roosevelt [D],432
+1944,R,Thomas E. Dewey [R],99
+1948,D,Harry S. Truman [D],303
+1948,R,Thomas E. Dewey [R],189
+1952,R,Dwight D. Eisenhower [R],442
+1952,D,Adlai Stevenson [D],89
+1956,R,Dwight D. Eisenhower [R],457
+1956,D,Adlai Stevenson [D],73
+1960,D,John F. Kennedy [D],303
+1960,R,Richard M. Nixon [R],219
+1964,D,Lyndon B. Johnson [D],486
+1964,R,Barry M. Goldwater [R],52
+1968,R,Richard M. Nixon [R],301
+1968,D,Hubert H. Humphrey [D],191
+1972,R,Richard M. Nixon [R],520
+1972,D,George S. McGovern [D],17
+1976,D,Jimmy Carter [D],297
+1976,R,Gerald R. Ford [R],240
+1980,R,Ronald Reagan [R],489
+1980,D,Jimmy Carter [D],49
+1984,R,Ronald Reagan [R],525
+1984,D,Walter F. Mondale [D],13
+1988,R,George Bush [R],426
+1988,D,Michael S. Dukakis [D],111
+1992,D,William J. Clinton [D],370
+1992,R,George Bush [R],168
+1996,D,William J. Clinton [D],379
+1996,R,Bob Dole [R],159
