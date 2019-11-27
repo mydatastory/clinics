@@ -117,7 +117,7 @@ DataDog pushes Andy off the phone, snatching it away.
 
 ![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
-The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each day. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
+The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each year. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
 ```{r data setup, warning=FALSE, message=FALSE}
 # Load dplyr package (make sure it is installed first).
