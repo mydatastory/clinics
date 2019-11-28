@@ -1,0 +1,32 @@
+---
+title: "A Sardine Tale"
+author: "The DataStory Company"
+date: "11.27.19"
+output: 
+  slidy_presentation:
+    font_adjustment: 0
+    footer: "Copyright 2019 University of Florida Research Foundation, Inc. All Rights Reserved."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) 
+```
+
+<p style="text-align: center;">A Sardine Tale</p>
+
+<p align="center"><img src="../fig/sardines_curved.png"></p>
+
+---
+
+<p style="text-align: center;">Contents</p>
+
+<p style="text-align: center;">
+<a href="sardine_story_chp_2.html#(2)" target="_blank">What happened to the Sardines</a></p>
+
+<p style="text-align: center;">
+<a href="sardine_story_chp_2.html#(3)" target="_blank">Wendy dives into the Data</a></p>
+
+
+
+
+
