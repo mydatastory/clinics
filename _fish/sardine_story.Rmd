@@ -30,7 +30,7 @@ Shot of Wendy and Grandfather looking at a map (Fig 3.1 from sardine_rise_fall a
 
 **Wendy:** Wow! That's a lot of sardine cans. Weren't people sick of eating them?
 
-**Grandfather:** Not if the canned sardines have the flavor and quality of French brands, but were at a lower price!
+**Grandfather:** Not if the canned sardines have the flavor and quality of French brand but at a lower price!
 
 ---
 
@@ -120,16 +120,17 @@ DataDog pushes Andy off the phone, snatching it away.
 The first dataset that Wendy has from her grandfather is ocean temperature readings from La Jolla, CA. The other dataset contains sardine landings in tons. Sardine landings are the total number of sardines that were caught each year. Now, let's get started with my favorite part, programming! As Dr. DataDog, I'm here to help you write code that is perfectly flawless!
 
 ```{r data setup, warning=FALSE, message=FALSE}
+
 # Load dplyr package (make sure it is installed first).
 library(dplyr) 
 
-setwd("C:/Users/cbolc/Desktop/stories/data")
+setwd("C:/stories/_fish")
 
 # Read in ocean temperature dataset.
-temps_df <- read.csv('scripps_ocean_temps.csv') 
+temps_df <- read.csv('../data/scripps_ocean_temps.csv') 
 
 # Read in sardine landings dataset.
-landings_df <- read.csv('sardine_landings_ueber.csv') 
+landings_df <- read.csv('../data/sardine_landings_ueber.csv') 
 
 ```
 
@@ -156,6 +157,7 @@ Using the subset command and then grouping the data to calculate the mean for ea
 
 ## Code for data cleaning
 ```{r sardine_1}
+
 temps_df <- temps_df[,-5]         # Remove 5th column b/c all missing data 
 temps_df <- na.omit(temps_df)     # Remove any other missing data observations
 
@@ -402,16 +404,16 @@ Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to
 ```{r sardine_6}
 
 # Combines the avg temp and landings data into one dataset by year.
-analysis_df_raw <- merge(avg_temps_df, landings_df, by = 'year') 
+analysis_raw_df <- merge(avg_temps_df, landings_df, by = 'year') 
 
 # Subset the dataset so that only landings of more than 500 tons are included.
-analysis_df_raw <- subset(analysis_df_raw, monterey_tons > 500)
+analysis_raw_df <- subset(analysis_raw_df, monterey_tons > 500)
 
 # Subset the dataset so that only years before 1954 are included.
-analysis_df_raw <- subset(analysis_df_raw, year < 1954)
+analysis_raw_df <- subset(analysis_raw_df, year < 1954)
 
 # Graph the dataset.
-plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, 
+plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons, 
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -443,7 +445,7 @@ plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons,
 ```{r sardine_7}
 
 # Correlation between the two variables of interest.
-raw_cor <- cor(analysis_df_raw$monterey_tons, analysis_df_raw$avg_temp) 
+raw_cor <- cor(analysis_raw_df$monterey_tons, analysis_raw_df$avg_temp) 
 
 ```
 
@@ -469,10 +471,10 @@ Does the correlation value align with your visual interpretation of the relation
 ```{r sardine_8}
 
 # Simple linear regression model with y ~ x.
-fit_raw <- lm(analysis_df_raw$monterey_tons ~ analysis_df_raw$avg_temp)
+fit_raw <- lm(analysis_raw_df$monterey_tons ~ analysis_raw_df$avg_temp)
 
 # Plot of the dataset.
-plot(x = analysis_df_raw$avg_temp, y = analysis_df_raw$monterey_tons, 
+plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons, 
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -527,16 +529,16 @@ landing_df$year <- 1917:1967
 temp_df$year    <- 1917:1967
 
 # Merge datasets by year.
-analysis_df_smooth <- merge(temp_df, landing_df, by = 'year') 
+analysis_smooth_df <- merge(temp_df, landing_df, by = 'year') 
 
 # Subset landings greater than 500 tons.
-analysis_df_smooth <- subset(analysis_df_smooth, landings > 500) 
+analysis_smooth_df <- subset(analysis_smooth_df, landings > 500) 
 
 # Subset year less than 1954.
-analysis_df_smooth <- subset(analysis_df_smooth, year < 1954) 
+analysis_smooth_df <- subset(analysis_smooth_df, year < 1954) 
 
 # Plot the dataset.
-plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
+plot(x = analysis_smooth_df$temps, y = analysis_smooth_df$landings,
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
@@ -563,7 +565,7 @@ Calculate Pearson's r between the smooth temperature and landings data.
 
 ```{r sardine_10}
 
-smooth_cor <- cor(analysis_df_smooth$landings, analysis_df_smooth$temps)
+smooth_cor <- cor(analysis_smooth_df$landings, analysis_smooth_df$temps)
 
 ```
 
@@ -584,9 +586,9 @@ Generate a simple linear regression model and add the regression line to the gra
 
 ```{r sardine_11}
 
-fit_smooth <- lm(analysis_df_smooth$landings ~ analysis_df_smooth$temps)
+fit_smooth <- lm(analysis_smooth_df$landings ~ analysis_smooth_df$temps)
 
-plot(x = analysis_df_smooth$temps, y = analysis_df_smooth$landings,
+plot(x = analysis_smooth_df$temps, y = analysis_smooth_df$landings,
      xlab = 'Surface Temp (Celsius)',
      ylab = 'Tons')
 
