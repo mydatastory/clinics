@@ -1,0 +1,27 @@
+---
+title: "A Sardine Tale (Analysis)"
+author: "The DataStory Company"
+date: "11.27.19"
+output: 
+  slidy_presentation:
+    font_adjustment: 0
+    footer: "Copyright 2019 University of Florida Research Foundation, Inc. All Rights Reserved."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) 
+```
+
+# Introduction
+
+<div style="float:left">
+
+![](../fig/body_snarky.svg){width=100px; height=100px}
+
+</div>
+
+Using the subset command and then grouping the data to calculate the mean for each year is the way that I write my code to be accurate and clean. I never want to loose important data points when data cleaning!
+
+
+
+
