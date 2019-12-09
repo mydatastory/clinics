@@ -131,6 +131,8 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, # x-axis, y-axis.
 
 Voila, you're a coding genuis just like me! Let's keep coding and move onto predicting the sardine landings. 
 
+
+
 <div style="float:left">
 
 ![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
@@ -183,11 +185,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 # QUESTIONS:
 
-<div style="float:left">
-
 ![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
-
-</div>
 
 1. What do you observe from this line graph?
 
@@ -314,11 +312,7 @@ Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
 
 # QUESTIONS:
 
-<div style="float:left">
-
 ![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
-
-</div>
 
 1. What do you observe from each of these line graphs with the loess lines?
 
@@ -364,7 +358,7 @@ Now that we can better identify the trend of the temperature and sardine landing
 
 </div>
 
-Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable year. Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.
+Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to first join the two datasets of the raw average ocean temperatures and raw landings using the variable "year". Then, we need to retain only those years where the catch was greater than 500 tons. When the catch was less than 500 tons, the fishery was effectively shutdown so we don't want to have those years in our joined dataset. Finally, let's write some exceptional code to graph the data! Let's get started on subsetting that data with your exceptional coding skills.
 
 ---
 
@@ -419,7 +413,9 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 ```{r sardine_7}
 
 # Correlation between the two variables of interest.
-raw_cor <- cor(analysis_raw_df$monterey_tons, analysis_raw_df$avg_temp) 
+raw_cor <- cor(analysis_raw_df$monterey_tons, analysis_raw_df$avg_temp)
+
+raw_cor
 
 ```
 
@@ -484,7 +480,7 @@ abline(fit_raw, col = 'red')
 
 </div>
 
-That raw data correlation is pathetic! Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature in predictor for the sardine landings
+That raw data correlation is pathetic! Let's try the same statistical techniques using the smoothed data. This will allow us to look at the overall trend of ocean temperature as a predictor for the sardine landings. 
 
 ---
 
@@ -496,7 +492,7 @@ That raw data correlation is pathetic! Let's try the same statistical techniques
 
 </div>
 
-Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a year variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from analysis_df for years when the fishery was shut down. Graph the new dataset. 
+Now that we've conducted a simple linear regression and correlation value with the raw data, let's do the same with the smoothed data from our loess model. Let's see if you can apply what you learned in the previous section with the raw data to the smoothed data. With the smoothing line vectors, create two new dataframes. Add a "year" variable, populate it with values from 1917 to 1967, and then join both into an analysis dataframe. Remove rows from "analysis_df" for years when the fishery was shut down. Graph the new dataset. 
 
 ---
 
@@ -557,6 +553,8 @@ Calculate Pearson's r between the smooth temperature and landings data.
 ```{r sardine_10}
 
 smooth_cor <- cor(analysis_smooth_df$landings, analysis_smooth_df$temps)
+
+smooth_cor
 
 ```
 
@@ -630,5 +628,3 @@ Shot of Wendy bringing her results back to her grandfather to share what she fou
 
 ## Pl. 34
 Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored SS Teinbeck, manning it out into the ocean, loaded with scientific equipment. Grandfather is in a wheelchair with a captain's hat on, smiling.
-
----
