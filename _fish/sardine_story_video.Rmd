@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ---
 
 <video width="320" height="240" controls>
-  <source src="../fig/sardine_story_video.mp4" type="video/mp4"></source>
+  <source src="../assets/videos/sardine_test.mp4" type="video/mp4"></source>
 </video>
 
 
