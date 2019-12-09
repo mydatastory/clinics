@@ -1,7 +1,7 @@
 ---
 title: "A Sardine Tale (Exercises)"
 author: "Charlotte Bolch"
-date: "12/9/2019"
+date: "12.9.2019"
 output: 
   slidy_presentation:
     font_adjustment: -1
@@ -12,13 +12,17 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
+<div style="float:left">
 
 ![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
+</div>
+
 Now it is your turn to try your statistical skills and smoothing techniques!
 
-# Exercise
+---
+
+# Exercises
 Now that we have looked at the sardine catch and ocean temperature data before 1968, let's investigate any possible trends in the data after 1968.
 
 ## Steps:
