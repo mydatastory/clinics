@@ -1,0 +1,41 @@
+---
+title: "A Sardine Tale (Exercises)"
+author: "Charlotte Bolch"
+date: "12.9.2019"
+output: 
+  slidy_presentation:
+    font_adjustment: -1
+    footer: "Copyright 2019 University of Florida Research Foundation, Inc. All Rights Reserved."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<div style="float:left">
+
+![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
+
+</div>
+
+Now it is your turn to try your statistical skills and smoothing techniques!
+
+---
+
+# Exercises
+Now that we have looked at the sardine catch and ocean temperature data before 1968, let's investigate any possible trends in the data after 1968.
+
+## Steps:
+1. Subset the sardine catch and temperature data to have year >= 1968 and month only Feburary to April.
+
+2. Create separate graphs from the raw data for temperature and sardine landings.
+
+3. **QUESTIONS:**
+    1. What do you see from the graphs? What comparisons can you make between the data from before 1968 and the data after 1968?
+    2. What data should be used to move forward in this investigation?
+
+4. Use the temperature data to predict sardine landings after 1968. Make an appropriate graph with a linear regression line using the data selected and interpret the correlation value.
+
+5. **QUESTION:**
+    1. What do you see from the graph using the subset of data after 1968?
+
