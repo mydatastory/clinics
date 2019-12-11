@@ -1,7 +1,5 @@
 ---
 title: "A Sardine Tale"
-author: "The DataStory Company"
-date: "11.27.19"
 output: 
   slidy_presentation:
     font_adjustment: 0
@@ -21,13 +19,13 @@ knitr::opts_chunk$set(echo = TRUE)
 <p style="text-align: center;">Contents</p>
 
 <p style="text-align: center;">
-<a href="sardine_story_video.html#(2)" target="_blank">What happened to the Sardines</a></p>
+<a href="../assets/videos/sardine_story.mp4" target="_blank">A Sardine Mystery</a></p>
 
 <p style="text-align: center;">
 <a href="sardine_story_analysis.html#(2)" target="_blank">Wendy dives into the Data</a></p>
 
 <p style="text-align: center;">
-<a href="sardine_story_exercises.html#(2)" target="_blank">Practice exercises</a></p>
+<a href="sardine_story_exercises.html#(2)" target="_blank">Let's Practice</a></p>
 
 
 
