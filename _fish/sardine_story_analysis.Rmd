@@ -197,27 +197,16 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-## Lesson Panel
+![](../_fish/panels/P14.svg)
+
+
+---
 
 <div style="float:left">
 
 ![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
 
 </div>
-
-Thanks, DataDog! I'm going to go talk to my grandpa and see what he thinks about the graphs.
-
-Shot of Wendy bringing her computer to visit her grandfather.
-
-**Wendy:** Grandpa, I was able to create graphs of the ocean temperatures and sardine landings for the years 1915-1968 for the peak spawning months. Do you see any trend or pattern from the graphs?
-
-**Grandfather:** I'm not seeing anything at all in these two graphs! The data has a lot of noise in both graphs which is making it difficult to see if the ocean temperatures and sardine landings are increasing or decreasing over the years.
-
-**Wendy:** That's true. I think I need to call Acme Data Consulting to see if there is a real trend in the data by smoothing out the curve.
-
----
-
-## Lesson Panel
 
 Wendy's phone rings and she picks up.
 
@@ -298,15 +287,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ---
 
-## Lesson Panel
-
-Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
-
-**Wendy:** Wow, thanks StatCat!
-
-**StatCat:** Smooth is my middle name.
-
-**Wendy:** Let's take a closer look at these two graphs with the loess lines.
+![](../_fish/panels/P18.svg)
 
 ---
 
@@ -324,13 +305,16 @@ Shot of Wendy and StatCat looking at the new plots with the smoothing lines.
 
 ---
 
-## Lesson Panel
+<div style="float:left">
 
-**Wendy:** I think we're ready to show grandpa the curve.
+![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
 
-**StatCat:** Oh, no, Wendy. We're just getting started. I've only shown you my first move...Are you ready for this?
+</div>
 
-StatCat on the disco floor, bass pumping.
+I think we're ready to show grandpa the graph.
+
+![](../_fish/panels/P20.svg)
+
 
 ---
 
@@ -400,15 +384,11 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 
 ---
 
+![](../_fish/panels/P24.svg)
+
+---
+
 # Correlation for the raw data
-
-## Lesson Panel?
-
-**StatCat:** We need to now calculate a Pearson's correlation coefficient to help us understand the relationship between ocean temperatures and landings. The way that I know how to calculate this value is using paper and pencil, but this dataset is really BIG so we'll need a REALLY BIG PENCIL!
-
-**DataDog:** I can help! I know this great function in R called "cor" which can caluclate the correlation value between two variables.
-
-*StatCat is sad*
 
 ```{r sardine_7}
 
@@ -433,15 +413,11 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
+![](../_fish/panels/P26.svg)
+
+---
+
 # Simple linear regression with raw data
-
-## Lesson Panel?
-
-**StatCat:** Now we need to use our statistics expertise to generate a simple linear regression model and add the regression line to the graph. I know that calculating the difference between our observed and predicted values to minimize the variance is not something that you want to do by hand, but... (StatCat looks eager)
-
-**DataDog:** I have code that will do that in no time!
-
-*StatCat is sad again*
 
 ```{r sardine_8}
 
