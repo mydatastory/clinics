@@ -1,7 +1,5 @@
 ---
-title: "A Sardine Tale (Analysis)"
-author: "The DataStory Company"
-date: "11.27.19"
+title: "Wendy Dives into the Data"
 output: 
   slidy_presentation:
     font_adjustment: -1
@@ -197,7 +195,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-![](../_fish/panels/P14.svg)
+![](panels/P14.svg)
 
 
 ---
@@ -287,7 +285,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ---
 
-![](../_fish/panels/P18.svg)
+![](panels/P18.svg)
 
 ---
 
@@ -313,7 +311,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 I think we're ready to show grandpa the graph.
 
-![](../_fish/panels/P20.svg)
+![](panels/P20.svg)
 
 
 ---
@@ -384,7 +382,7 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 
 ---
 
-![](../_fish/panels/P24.svg)
+![](panels/P24.svg)
 
 ---
 
@@ -413,7 +411,7 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
-![](../_fish/panels/P26.svg)
+![](panels/P26.svg)
 
 ---
 
