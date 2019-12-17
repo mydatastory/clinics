@@ -195,7 +195,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-![](panels/P14.svg)
+![](panels/P14.svg){width=1000px; height=1000px}
 
 
 ---
@@ -285,7 +285,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ---
 
-![](panels/P18.svg)
+![](panels/P18.svg){width=600px; height=500px}
 
 ---
 
@@ -311,7 +311,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 I think we're ready to show grandpa the graph.
 
-![](panels/P20.svg)
+![](panels/P20.svg){width=600px; height=500px}
 
 
 ---
@@ -382,7 +382,7 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 
 ---
 
-![](panels/P24.svg)
+![](panels/P24.svg){width=1200px; height=1200px}
 
 ---
 
@@ -411,7 +411,7 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
-![](panels/P26.svg)
+![](panels/P26.svg){width=600px; height=500px}
 
 ---
 
@@ -586,7 +586,11 @@ abline(fit_smooth, col = 'red')
 
 ---
 
-# Ending Lesson Panels
+<video width="320" height="240" controls>
+  <source src="../assets/videos/sardine_story_outro.mp4" type="video/mp4"></source>
+</video>
+
+---
 
 Shot of Wendy bringing her results back to her grandfather to share what she found
 
