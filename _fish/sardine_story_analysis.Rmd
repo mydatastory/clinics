@@ -200,24 +200,6 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-<div style="float:left">
-
-![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
-
-</div>
-
-Wendy's phone rings and she picks up.
-
-<div style="float:left">
-
-![](../assets/web_lesson_graphics/statcat/head_considering.svg){width=100px; height=100px}
-
-</div>
-
-Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
-
----
-
 # Smoothing Technique: Loess Line
 
 <div style="float:left">
@@ -591,18 +573,3 @@ abline(fit_smooth, col = 'red')
 </video>
 
 ---
-
-Shot of Wendy bringing her results back to her grandfather to share what she found
-
-**Wendy:** Grandpa, I think I found a reason for why the sardine landings decreased before 1968!
-
-**Grandfather:** Great, Wendy! What did you find?
-
-**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. In order to gather more data, I think we would need to get out on the boat and capture it ourselves...
-
-**Grandfather:** That's a great idea Wendy, but I'm afraid I can't sail in my condition anymore without a crew.
-
----
-
-## Pl. 34
-Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored SS Teinbeck, manning it out into the ocean, loaded with scientific equipment. Grandfather is in a wheelchair with a captain's hat on, smiling.
