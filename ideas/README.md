@@ -3,8 +3,8 @@
 *G.I. Stat Training Center Adventure (Play Set)*
 
 Data and Batteries not included
-  SD Ray Gun -- Instantly calculate the spread of any dataset
-  Create unique tool names for each R tool
+  - SD Ray Gun -- Instantly calculate the spread of any dataset
+  - Create unique tool names for each R tool
 
 *Easy Stat Oven*
 
