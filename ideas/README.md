@@ -1,20 +1,25 @@
 -----------------------------------------------------------------------------
 
 *G.I. Stat Training Center Adventure (Play Set)*
+
 Data and Batteries not included
   SD Ray Gun -- Instantly calculate the spread of any dataset
   Create unique tool names for each R tool
 
 *Easy Stat Oven*
+
 Comes with pre-mixed data to bake a normal distribution, etc...
 
 *Army Theme*
+
 Data is an army of toy soldiers -- think *Toy Story* soldiers.  Each soldier is called an OBS, short for observation.
 
 *Cowboy Theme*
+
 Data is a herd of unruly cattle, to be wrangled and branded.  Each animal is an observation.  Think *Data Wrangling.*
 
 *Baking Theme*
+
 Data is the raw ingredients in the kitchen used to bake a variety of goodies (models).
 
 Ned - Nick - Nolan - Nedley - Neils - Norton - Newton - Neville - Nathan - Noel - Nabath - Nehemiah - Norris
