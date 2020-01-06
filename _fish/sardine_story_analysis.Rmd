@@ -1,7 +1,5 @@
 ---
-title: "A Sardine Tale (Analysis)"
-author: "The DataStory Company"
-date: "11.27.19"
+title: "Wendy Dives into the Data"
 output: 
   slidy_presentation:
     font_adjustment: -1
@@ -197,26 +195,8 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-![](../_fish/panels/P14.svg)
+![](panels/P14.svg){width=1000px; height=1000px}
 
-
----
-
-<div style="float:left">
-
-![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
-
-</div>
-
-Wendy's phone rings and she picks up.
-
-<div style="float:left">
-
-![](../assets/web_lesson_graphics/statcat/head_considering.svg){width=100px; height=100px}
-
-</div>
-
-Did you say, smooth? That's what I'm all about, using my smooth statistics skills to make sense of the data! It looks like a smoothing technique called the loess line would work for these two datasets.
 
 ---
 
@@ -287,7 +267,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 ---
 
-![](../_fish/panels/P18.svg)
+![](panels/P18.svg){width=600px; height=500px}
 
 ---
 
@@ -313,7 +293,7 @@ lines(landing_line, x = landings_df$year, col = 'red')
 
 I think we're ready to show grandpa the graph.
 
-![](../_fish/panels/P20.svg)
+![](panels/P20.svg){width=600px; height=500px}
 
 
 ---
@@ -384,7 +364,7 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 
 ---
 
-![](../_fish/panels/P24.svg)
+![](panels/P24.svg){width=1200px; height=1200px}
 
 ---
 
@@ -413,7 +393,7 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
-![](../_fish/panels/P26.svg)
+![](panels/P26.svg){width=600px; height=500px}
 
 ---
 
@@ -588,19 +568,8 @@ abline(fit_smooth, col = 'red')
 
 ---
 
-# Ending Lesson Panels
-
-Shot of Wendy bringing her results back to her grandfather to share what she found
-
-**Wendy:** Grandpa, I think I found a reason for why the sardine landings decreased before 1968!
-
-**Grandfather:** Great, Wendy! What did you find?
-
-**Wendy:** The ocean temperatures during that same time increased and then decreased. However, it looks like ocean temperatures are not able to explain all the variation in sardine landings. In order to gather more data, I think we would need to get out on the boat and capture it ourselves...
-
-**Grandfather:** That's a great idea Wendy, but I'm afraid I can't sail in my condition anymore without a crew.
+<video width="320" height="240" controls>
+  <source src="../assets/videos/sardine_story_outro.mp4" type="video/mp4"></source>
+</video>
 
 ---
-
-## Pl. 34
-Cut to StatCat, Andy, DataDog, Wendy, and Ed Ricketts Jr. all aboard a restored SS Teinbeck, manning it out into the ocean, loaded with scientific equipment. Grandfather is in a wheelchair with a captain's hat on, smiling.

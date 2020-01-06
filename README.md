@@ -8,6 +8,7 @@ This repository contains documents for data stories currently being worked on by
 - [Data Story Rubric](https://github.com/danielsmaxwell/mcb4934/blob/master/doc/mini_project_rubric.docx)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/)
+- [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
 
 ----------------------------------------------------------------------------------------
 #### Linking to Sections in the Core Explanatory Learning Experiences
