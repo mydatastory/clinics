@@ -9,6 +9,7 @@ This repository contains documents for data stories currently being worked on by
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/)
 - [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
+- [Artist Contracts & Estimates](https://github.com/danielsmaxwell/research/tree/master/_contracts)
 
 ----------------------------------------------------------------------------------------
 #### Linking to Sections in the Core Explanatory Learning Experiences
