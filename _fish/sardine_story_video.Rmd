@@ -1,7 +1,6 @@
 ---
-title: "A Sardine Tale (Video)"
+title: "A Sardine Mystery"
 author: "The DataStory Company"
-date: "11.27.19"
 output: 
   slidy_presentation:
     font_adjustment: 0
