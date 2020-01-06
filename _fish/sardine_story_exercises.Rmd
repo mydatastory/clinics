@@ -1,5 +1,6 @@
 ---
 title: "Let's Practice"
+author: "The DataStory Company"
 output: 
   slidy_presentation:
     font_adjustment: -1
