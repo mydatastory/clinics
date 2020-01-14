@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <p style="text-align: center;">Contents</p>
 
 <p style="text-align: center;">
-<a href="../assets/videos/sardine_story.mp4" target="_blank">A Sardine Mystery</a></p>
+<a href="../assets/videos/sardine_story_intro.mp4" target="_blank">A Sardine Mystery</a></p>
 
 <p style="text-align: center;">
 <a href="sardine_story_analysis.html#(2)" target="_blank">Wendy dives into the Data</a></p>
