@@ -14,6 +14,6 @@ Immediately, our two heroes book a flight to Peru and we see them departing the 
 
 Big Bird, StatCat, and DataDog develop a data plan and we see them in the forest collecting data.  StatCat has a bit of an edge in this situation as the local community does not have access to much technology.
 
-Note: Big Bird (we can't use this name as its trade-marked by Sesame Street) is patterned after [La Caponata](https://es.wikipedia.org/wiki/La_Gallina_Caponata), the Spanish equivalent of Big Bird in their version of Sesame Street.
+Note: Big Bird (we can't use this name as it's a Sesame Street character) is patterned after [La Caponata](https://es.wikipedia.org/wiki/La_Gallina_Caponata), the Spanish equivalent of Big Bird in their version of Sesame Street.
 
 
