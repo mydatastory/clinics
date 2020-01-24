@@ -1,5 +1,5 @@
 #### Notes
-Sea Lions feed on sardines.
+*Sea Lions feed on sardines.*
 
 #### Links
 [Qualtrics Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
