@@ -1,4 +1,5 @@
-Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
+#### Notes
+Sea Lions feed on sardines.
 
 #### Links
 [Qualtrics Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
@@ -11,6 +12,8 @@ Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
 [Scripps Surface/Bottom Temperatures](https://scripps.ucsd.edu/programs/shorestations/shore-stations-data/data-sio/)
 
 #### Articles
+Atlantic Cod Fishery collapse (Sustaining Life, p. 45 -- ff)
+
 Sardine Bibliography. [Article](https://swfsc.noaa.gov/publications_old/swcpub/Publications.asp?PubYr=1970-2005&Sort=date_d)
 
 Clark, F. N. and Marr, J. C. Population dynamics of the Pacific Sardine [article](https://github.com/mydatastory/stories/blob/master/doc/sardine_pop_dynamics.pdf)
