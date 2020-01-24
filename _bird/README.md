@@ -6,7 +6,7 @@ The civilization was called the [Chachapoyan culture](https://en.wikipedia.org/w
 -----------------------------------------------------
 #### Story Notes (Return to Eden)
 
-Introduce a new bird character (Pikachu?) who finds a Chachapoyan clay pot with birds around it.  This, in turn, leads to a desire to recreate the glories of that ancient civilization where the human and bird kingdoms worked together to create an earthly Eden.  At that time, millions of birds filled the skies and thousands of avian species lived in harmony with their human friends.
+Introduce a new bird character (Pikachu?) who finds a Chachapoyan clay pot with bird drawings featured prominently it.  This, in turn, leads to a desire to recreate the glories of that ancient civilization where the human and bird kingdoms worked together to create an earthly Eden.  At that time, millions of birds filled the skies and thousands of avian species lived in harmony with their human friends.
 
 Pikachu dreams of recreating this ancient Eden, but she needs help figuring out how to create an appropriate environment, one suitable for both birds and humans.  So she picks up her phone and calls ACME consulting.  DataDog or StatCat answers the phone and a conversation ensues.  Naturally, our two super-heroes are enthralled with the prospect of flying to Peru and assisting Big Bird.
 
