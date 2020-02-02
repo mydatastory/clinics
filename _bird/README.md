@@ -16,4 +16,7 @@ MightyBird, StatCat, and DataDog develop a data plan and we see them in the fore
 
 Note: MightyBird is patterned after [La Caponata](https://es.wikipedia.org/wiki/La_Gallina_Caponata), the Spanish equivalent of Big Bird in their version of Sesame Street.
 
+Fat Cats -- Love Birds
+The [Andean Mountain Cat](https://en.wikipedia.org/wiki/Andean_mountain_cat) civilization is threatened with a schemism between the fat cats (those committed to progress and the continual clearing of the forest to support economic activity) and the Love Birds, a growing and powerful political party who worship Mighty Bird and consider all birds sacred.  The Love Birds do not want to see any trees cut down as that's where birds live.  The Love Bird party began when the founder of the group came across a Chachapoyan clay pot with bird drawings featured prominently on it.  From that discovery, the party has grown into a quasi-religous/political force with a drive to return the Andean Cat civilization to an earthly Eden.
+
 
