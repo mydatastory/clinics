@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Wendy needs your help to figure out what may have contributed to the collapse of the California sardine industry in 1953. She has limited time to figure out the answer and share her results with her grandfather so the assistance of Acme Data Consulting and you is important! Let's start off by understanding the research questions that Wendy has for the sardine data. 
 
-# Research Questions
+## Research Questions
 
 ![](../assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}
 
@@ -23,7 +23,7 @@ Wendy needs your help to figure out what may have contributed to the collapse of
 
 ---
 
-# Environment setup and loading datasets  
+## Environment setup and loading datasets  
 
 ![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
@@ -46,7 +46,7 @@ landings_df <- read.csv('../data/sardine_landings_ueber.csv')
 
 ---
 
-# Data cleaning
+## Data cleaning
 
 ![](../assets/web_lesson_graphics/datadog/body_pointing.svg){width=100px; height=100px}
 
@@ -54,7 +54,7 @@ Now that we have the data imported into R, we can start the first part of every 
 
 ---
 
-# Code for Data Cleaning
+## Code for Data Cleaning
 
 ![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
@@ -80,11 +80,11 @@ colnames(avg_temps_df)[2] <- "avg_temp"        # Name the column avg_temp.
 
 ---
 
-## Technical video about data manipulation here
+### Technical video about data manipulation here
 
 ---
 
-# Graphing the data
+## Graphing the data
 
 ![](../assets/web_lesson_graphics/datadog/body_laserpointer.svg){width=100px; height=100px}
 
@@ -114,7 +114,7 @@ Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_2 questions, echo= FALSE}
 
@@ -140,7 +140,7 @@ As a consultant with Acme Data Consulting, what are your thoughts about the grap
 
 ---
 
-# Graphing the data
+## Graphing the data
 
 ![](../assets/web_lesson_graphics/datadog/body_snarky.svg){width=100px; height=100px}
 
@@ -160,7 +160,7 @@ plot(landings_df$year, landings_df$monterey_tons,
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_3 questions, echo= FALSE}
 
@@ -188,11 +188,11 @@ Consultant **add number?**, what are your thoughts about the graph with landings
 
 ---
 
-![](panels/P14.svg){width=1000px; height=1000px}
+![](panels/P14.png){width=1000px; height=1000px}
 
 ---
 
-# Smoothing Technique: Loess Line
+## Smoothing Technique: Loess Line
 
 ![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
@@ -222,11 +222,11 @@ lines(temp_line, x = avg_temps_df$year, col = "red")
 
 ---
 
-## Technical video about the loess line here
+### Technical video about the loess line here
 
 ---
 
-# Smoothing Technique for the Sardine Landings dataset
+## Smoothing Technique for the Sardine Landings dataset
 
 ![](../assets/web_lesson_graphics/statcat/head_considering.svg){width=100px; height=100px}
 
@@ -251,11 +251,11 @@ lines(landing_line, x = landings_df$year, col = "red")
 
 ---
 
-![](panels/P18.svg){width=600px; height=500px}
+![](panels/P18.png){width=600px; height=500px}
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_4 questions, echo= FALSE}
 
@@ -299,12 +299,12 @@ Let's take a closer look at these graphs, Consultant **add number**.
 
 I think we're ready to show grandpa the graph.
 
-![](panels/P20.svg){width=600px; height=500px}
+![](panels/P20.png){width=600px; height=500px}
 
 
 ---
 
-# Simple Linear Regression and Correlation
+## Simple Linear Regression and Correlation
 
 ![](../assets/web_lesson_graphics/statcat/head_static.svg){width=100px; height=100px}
 
@@ -312,11 +312,11 @@ Now that we can better identify the trend of the temperature and sardine landing
 
 ---
 
-## Technical video about simple linear regression and correlation here
+### Technical video about simple linear regression and correlation here
 
 ---
 
-# Raw Temperature and Landing Correlation and Regression
+## Raw Temperature and Landing Correlation and Regression
 
 ![](../assets/web_lesson_graphics/datadog/body_snarky.svg){width=100px; height=100px}
 
@@ -324,7 +324,7 @@ Whoah, hold on kitty. Before you go out and do all that fancy dancing we need to
 
 ---
 
-# Merge and graph the raw data
+## Merge and graph the raw data
 
 ```{r sardine_6}
 
@@ -347,7 +347,7 @@ plot(x = analysis_raw_df$avg_temp, y = analysis_raw_df$monterey_tons,
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_6 questions, echo= FALSE}
 
@@ -370,11 +370,11 @@ What do you think, Consultant *add number**?
 
 ---
 
-![](panels/P24.svg){width=1200px; height=1200px}
+![](panels/P24.png){width=1200px; height=1200px}
 
 ---
 
-# Correlation for the raw data
+## Correlation for the raw data
 
 ```{r sardine_7}
 
@@ -387,7 +387,7 @@ raw_cor
 
 ---
 
-# QUESTION:
+## QUESTION:
 
 ```{r sardine_7 questions, echo= FALSE}
 
@@ -401,11 +401,11 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
-![](panels/P26.svg){width=600px; height=500px}
+![](panels/P26.png){width=600px; height=500px}
 
 ---
 
-# Simple linear regression with raw data
+## Simple linear regression with raw data
 
 ```{r sardine_8}
 
@@ -425,7 +425,7 @@ abline(fit_raw, col = "red")
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_8 questions, echo= FALSE}
 
@@ -454,7 +454,7 @@ That raw data correlation is pathetic! Let's try the same statistical techniques
 
 ---
 
-# Smoothed Temperature and Landing Regression & Correlation
+## Smoothed Temperature and Landing Regression & Correlation
 
 ![](../assets/web_lesson_graphics/wendy/head_happy.svg){width=100px; height=100px}
 
@@ -462,7 +462,7 @@ Now that we've conducted a simple linear regression and correlation value with t
 
 ---
 
-# Merge and graph the smoothed data
+## Merge and graph the smoothed data
 
 Data Note:  landing_df and temp_df contain smoothed data.
 
@@ -497,7 +497,7 @@ plot(x = analysis_smooth_df$temps, y = analysis_smooth_df$landings,
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_9 questions, echo= FALSE}
 
@@ -520,7 +520,7 @@ Consultant **add number**, what are your thoughts on the line graph using the sm
 
 ---
 
-# Correlation for the smoothed data
+## Correlation for the smoothed data
 
 Calculate Pearson's r between the smooth temperature and landings data.
 
@@ -534,7 +534,7 @@ smooth_cor
 
 ---
 
-# QUESTION:
+## QUESTION:
 
 ```{r sardine_10 questions, echo= FALSE}
 
@@ -548,7 +548,7 @@ Does the correlation value align with your visual interpretation of the relation
 
 ---
 
-# Simple linear regression with smoothed data
+## Simple linear regression with smoothed data
 
 Generate a simple linear regression model and add the regression line to the graph for the smooth data.
 
@@ -567,7 +567,7 @@ abline(fit_smooth, col = "red")
 
 ---
 
-# QUESTIONS:
+## QUESTIONS:
 
 ```{r sardine_11 questions, echo= FALSE}
 
@@ -590,7 +590,7 @@ Consultant **add number**, what are your thoughts about the regression line for 
 
 ---
 
-# Overall Questions
+## Overall Questions
 
 ```{r sardine_12 questions, echo= FALSE}
 
@@ -621,6 +621,8 @@ Consultant **add number**, take a look at the graphs for the smoothed and raw da
 
 ---
 
-Insert ending video here
+<video width="640" height="360" controls>
+  <source src="../assets/videos/sardine_story_outro.mp4" type="video/mp4"></source>
+</video>
 
 ---
