@@ -1,0 +1,72 @@
+---
+title: "bird_story_analysis"
+author: "Charlotte Bolch"
+date: "2/13/2020"
+output: 
+  slidy_presentation:
+    font_adjustment: -1
+    footer: "Copyright 2019 University of Florida Research Foundation, Inc. All Rights Reserved."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Research Questions
+
+1. What is the relationship between species richness and elevation for all bird communities?
+2. What is the relationship between species richness and elevation by habitat types (forest, shrubs, trees, etc.)?
+3. How can species richness be predicted by elevation within forest habitat?
+
+## Environment setup and loading datasets  
+
+```{r data setup, warning=FALSE, message=FALSE}
+
+# Load packages (make sure all packages are installed first)
+library(dplyr) #coding structure function
+library(NCStats) #Subset function
+library(vegan) #Ordinations
+library(car) #Scatterplot function
+library(sciplot) #Bargraph.CI function
+
+setwd("C:/stories/_bird")
+
+# Read in bird data enironment
+bird_data <- load(file = '../data/bird_data.RData') 
+
+```
+
+# Richness graphs
+```{r richness graph, warning=FALSE, message=FALSE}
+
+#relabel dataset
+bird_df <- all
+
+#factor levels for habitat variable
+bird_df$habitat <- factor(hab$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
+
+#boxplot
+boxplot(rich ~ habitat, data=bird_df) # ADD title and relabel axes
+bargraph.CI(habitat,rich,data=bird_df) #adjust scale
+
+```
+
+Questions: What is the story that is going on in this boxplot? What is the story that is going on in this bar graph?
+
+# Richness with forest bird communities graph
+```{r richness forest bird, warning=FALSE, message=FALSE}
+
+# Richness decreases with elevation for forest bird communities
+forest <- Subset(all,habitat=="forest")
+scatterplot(rich ~ elevation, data=forest, smooth=F)
+
+```
+
+# Model: Richness and elevation for forest bird communities
+```{r richness and elevation model, warning=FALSE, message=FALSE}
+
+mod.elev <- lm(rich~elevation,data=forest)
+summary(mod.elev)
+
+```
+
