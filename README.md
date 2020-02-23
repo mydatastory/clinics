@@ -11,6 +11,13 @@ This repository contains documents for data stories currently being worked on by
 - [RMarkdown Gallery](https://rmarkdown.rstudio.com/gallery.html)
 
 ----------------------------------------------------------------------------------------
+#### Miscellaneous
+
+StatCat: A stat in time saves nine
+
+DataDog: It ain't over till the code's written
+
+----------------------------------------------------------------------------------------
 #### Linking to Sections in the Core Explanatory Learning Experiences
 
 Anchor tags are embedded in the RMarkdown or Jupyter Notebook documents.  These should match the section name and are formatted as follows: \<a id="getting_help_on_packages"></a>
