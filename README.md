@@ -6,7 +6,6 @@ This repository contains documents for data stories currently being worked on by
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
 - [Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
-- [BBC Sound Effects](http://bbcsfx.acropolis.org.uk/)
 - [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
 - [FlexDashboard](https://rmarkdown.rstudio.com/flexdashboard/index.html)
 - [RMarkdown Gallery](https://rmarkdown.rstudio.com/gallery.html)
