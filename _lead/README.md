@@ -14,6 +14,13 @@
 [Wikipedia Timeline](https://en.wikipedia.org/wiki/Flint_water_crisis#Return_to_Detroit_water)
 
 ------------------------------------------------------------------------------------------
+### Dan Ideas (02.20.20)
+StatCat decides to ramp up production of his Uncle Carbuncle's elexir and installs a still in the basement of his ritzy Townhouse.  Water from the Fountain of Youth is combined with alcohol and cheesemodium, a special additive to enhance *the efficacy* of the resulting brew.  The only problem is that the still is poorly constructed (StatCat is in a rush to cash in), and leaks spring up, leaving a *toxic* puddle of phosdex/cheesemodium water around its base.  Seeing this fresh supply of water, the mice immediately construct a water distribution system to serve Musculus, the fastest growing mouse city in America.  As the mice drink the water, their cheesemodium blood levels dramatically rise, greatly increasing their appetite for the finest cheeses.  They find a ready supply of foreign cheeses in StatCat's chilled wine and cheese pantry.  Being a man of the world, StatCat loves only the finest wines and cheeses, but he soon discovers that his cheese is disappearing at an alarming rate.  This leads to the story's crisis, "Who's eating  the cheese?"  (Not -- who moved the cheese...)
+
+With a variety of close mice friends, DataDog suspects it's them.  StatCat, on the other hand, views mice as unworthy of his time or attention.  He gave up chasing mice long ago and has entered the rarefied world of high society snobbery.  DataDog thinks otherwise and begins to take blood samples, measuring cheesemodium levels.  
+
+Eventually, DataDog brings the results to StatCat.  Either he do something about the toxic puddle at the base of his still or he'll never enjoy the pleasure of eating cheese again.  StatCat must find a new water supply for Musculus.  Confronted with this decision, StatCat finally moves quickly to solve the problem.
+
 ### Justine Ideas (01.30.20)
 Cat is working on stats regards Flint led and water, at the same time, his mice are complaining. He does not see the parallels (lost in his own world of data) until much later when Data Dog points it out. Perhaps he overhears mice complaining while he is helping Cat with Flint data. 
 
