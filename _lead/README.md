@@ -23,5 +23,3 @@ Eventually, DataDog brings the results to StatCat.  Either he do something about
 
 ### Justine Ideas (01.30.20)
 Cat is working on stats regards Flint led and water, at the same time, his mice are complaining. He does not see the parallels (lost in his own world of data) until much later when Data Dog points it out. Perhaps he overhears mice complaining while he is helping Cat with Flint data. 
-
-This is where the exercises come in... perhaps we've explained the basic concepts through the data story with the mice, and now the students have to work out the data in regards to Flint. 
