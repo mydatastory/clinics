@@ -12,11 +12,34 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Learning Objectives
+1. Students will be able to create visualizations to look at the relationship among the variables of species richness, elevation, and habitat types. 
+2. Students will be able to interpret and assess a model predicting species richness.
+
+## Story Beat 1 (intro)
+Cats and Birds have been squabbling over territory for years. Cats are bulldozing forests in the name of progress, but giving trade-offs to the birds (exclusive territories, new atriums, food courts, shopping areas, etc.)
+
+Birds sense that they are losing their lifestyle and livelihood. They call Stat Cat and Data Dog to prove to the cats that they need more land than they are being allowed.
+
+## Story Beat 2
+Birds lay out their case. Stat Cat goes to talk to cats while Data Dog is showed a piece of classical pottery showing an ancient time when birds lived in paradise.
+
+### Lead into Research Questions here, Stat Cat or Data Dog taking the lead?
+
 ## Research Questions
 
 1. What is the relationship between species richness and elevation for all bird communities?
 2. What is the relationship between species richness and elevation by habitat types (forest, shrubs, trees, etc.)?
 3. How can species richness be predicted by elevation within forest habitat?
+
+## Story Beat 3
+
+The cats convince Stat Cat of progress in name of progress, and Stat Cat goes out to collect data to confirm this.
+
+## Addition here about data collection process and data collection form
+
+## Story Beat 4
+Data Dog has been indoctrinated	into the bird religion and has been flown to the treetops and is crunching the numbers the birds feed her into her laptop.
 
 ## Environment setup and loading datasets  
 
@@ -36,6 +59,8 @@ bird_data <- load(file = '../data/bird_data.RData')
 
 ```
 
+## Add something here about Data Dog and Stat Cat exploring the data using visualizations
+
 # Richness graphs
 ```{r richness graph, warning=FALSE, message=FALSE}
 
@@ -53,6 +78,12 @@ bargraph.CI(habitat,rich,data=bird_df) #adjust scale
 
 Questions: What is the story that is going on in this boxplot? What is the story that is going on in this bar graph?
 
+## Story Beat 5
+
+Data Dog falls from the treetops onto Stat Cat, pottery in hand, and shows Stat Cat the pottery. Stat Cat notices something else: ancient cat paw prints. The pots were made by cats. Birds and cats once lived together in harmony.
+
+Data Dog and Stat Cat go back into the data to show how this might work for the birds and cats now.
+
 # Richness with forest bird communities graph
 ```{r richness forest bird, warning=FALSE, message=FALSE}
 
@@ -69,4 +100,9 @@ mod.elev <- lm(rich~elevation,data=forest)
 summary(mod.elev)
 
 ```
+
+## Story Beat 6 (ending)
+Data in hand, they bring their results to the disputing parties but there is too much disruption already. There is no resolution and Data Dog and Stat Cat go home, pledging to work together, but to keep each other's paws off of each other's food dishes.
+
+## Add exercises at the end for students?
 
