@@ -36,7 +36,15 @@ Birds lay out their case. Stat Cat goes to talk to cats while Data Dog is showed
 
 The cats convince Stat Cat of progress in name of progress, and Stat Cat goes out to collect data to confirm this.
 
-## Addition here about data collection process and data collection form
+## Data collection processes
+StatCat and DataDog are on their way to start locating data from random locations using their GPS systems. The setup of the data collection form is important to plan out before StatCat and DataDog start collecting data. This way StatCat and DataDog both collect and record all the information that is needed from each location. The information that needs to be collected from each location is:
+1. Site
+2. Block
+3. Elevation
+4. Richness
+5. Habitat type
+Other variables needed?
+An example of a data collection form is here...
 
 ## Story Beat 4
 Data Dog has been indoctrinated	into the bird religion and has been flown to the treetops and is crunching the numbers the birds feed her into her laptop.
@@ -50,29 +58,48 @@ library(dplyr) #coding structure function
 library(NCStats) #Subset function
 library(vegan) #Ordinations
 library(car) #Scatterplot function
-library(sciplot) #Bargraph.CI function
 
 setwd("C:/stories/_bird")
 
-# Read in bird data enironment
-bird_data <- load(file = '../data/bird_data.RData') 
+# Read in data set collected from DataDog
+datadog_df <- read.csv("../data/datadog_species_rich.csv")
 
 ```
 
 ## Add something here about Data Dog and Stat Cat exploring the data using visualizations
 
 # Richness graphs
+To look at species richness among all the different habitat types, we will create a set of boxplots using the data collected by DataDog. Remember that we need to make sure that the habitat variable is understood in R to be a factor (variable with categories). 
 ```{r richness graph, warning=FALSE, message=FALSE}
 
-#relabel dataset
-bird_df <- all
-
 #factor levels for habitat variable
-bird_df$habitat <- factor(hab$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
+datadog_df$habitat <- factor(hab$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
 
-#boxplot
-boxplot(rich ~ habitat, data=bird_df) # ADD title and relabel axes
-bargraph.CI(habitat,rich,data=bird_df) #adjust scale
+#boxplot of rich by habitat
+boxplot(rich ~ habitat, data=datadog_df,
+        main = "Species Richness by Habitat Type",
+        xlab = "Habitat Type",
+        ylab = "Species Richness")
+
+```
+
+When looking at a boxplot, remember that the solid black line is the the median value, the box indicates the values for the first and third quartiles, and the whiskers with the dotted lines indicate the minimum and maximum values. 
+
+############ Code for bar graph with confidence intervals
+```{r}
+library(sciplot)
+bargraph.CI(habitat,rich,data=hab)
+```
+
+
+**Student exercise: Boxplot with StatCat data**
+(1) Create a boxplot for elevation by habitat.
+```{r boxplot student exercise, warning=FALSE, message=FALSE}
+
+boxplot(elevation ~ habitat, data=datadog_df,
+        main = "Elevation by Habitat Type",
+        xlab = "Habitat Type",
+        ylab = "Elevation")
 
 ```
 
