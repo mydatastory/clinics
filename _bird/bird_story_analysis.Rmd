@@ -49,8 +49,8 @@ Before Statcat goes out into the field to collect the data, he would like to loo
 
 # Load packages (make sure all packages are installed first)
 library(dplyr) #coding structure function
-library(NCStats) #Subset function
-library(vegan) #Ordinations
+# library(NCStats) #Subset function
+# library(vegan) #Ordinations
 library(car) #Scatterplot function
 
 setwd("C:/stories/_bird")
@@ -61,17 +61,20 @@ cat_species_df <- read.csv("../data/cat_species_rich.csv")
 ```
 
 ### Habitat type bar graph
-To look at all of the different habitat types, we will create a bar graph. Remember that we need to make sure that the habitat variable is understood in R to be a factor (variable with categories). 
+To look at all of the different habitat types, we will create a bar graph. We first need to create a table of the different types of habitats and then graph that table using the function barplot(). 
 
 ```{r habitat bar graph, warning=FALSE, message=FALSE}
 
-#factor levels for habitat variable
-cat_species_df$habitat <- factor(cat_species_df$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
+#table of habitat types
+counts_habitat <- table(cat_species_df$habitat)
+counts_habitat
 
-barplot(datadog_df$habitat,
+#bar graph of table
+barplot(counts_habitat,
         main = "Counts of Habitat Types",
         xlab = "Habitat Types",
-        ylab = "Count")
+        ylab = "Count",
+        ylim = c(0,30))
 
 ```
 
@@ -88,7 +91,7 @@ Using the data from the cats, let's look at species richness by habitat type (re
 #variable = rich for species richness
 
 #boxplot of rich by habitat
-boxplot(rich ~ habitat, data=datadog_df,
+boxplot(rich ~ habitat, data=cat_species_df,
         main = "Species Richness by Habitat Type",
         xlab = "Habitat Type",
         ylab = "Species Richness")
@@ -103,8 +106,22 @@ When looking at a boxplot, remember that the solid black line is the the median 
 
 **Student exercise: Boxplot with Statcat data**
 
-(1) Create a bar graph 
+(1) Create a bar graph **another variable?**
 ```{r bar graph student exercise, warning=FALSE, message=FALSE}
+
+# #read in data
+# statcat_df <- read.csv("../data/statcat.csv")
+# 
+# #table of ??
+# counts_var <- table(statcat_df$var)
+# counts_var
+# 
+# #bar graph of table
+# barplot(counts_var,
+#         main = "",
+#         xlab = "",
+#         ylab = "",
+#         ylim = c(0,30))
 
 ```
 
@@ -113,10 +130,10 @@ When looking at a boxplot, remember that the solid black line is the the median 
 (2) Create a boxplot for elevation by habitat.
 ```{r boxplot student exercise, warning=FALSE, message=FALSE}
 
-boxplot(elevation ~ habitat, data=datadog_df,
-        main = "Elevation by Habitat Type",
-        xlab = "Habitat Type",
-        ylab = "Elevation")
+# boxplot(elevation ~ habitat, data=statcat_df,
+#         main = "Elevation by Habitat Type",
+#         xlab = "Habitat Type",
+#         ylab = "Elevation")
 
 ```
 
@@ -133,12 +150,12 @@ They first create a subset of the data from the cats for only habitat types that
 # Richness with forest bird communities graph
 ```{r richness forest scatterplot, warning=FALSE, message=FALSE}
 
-forest <- Subset(all,habitat=="forest") #creating a subset of forest habitat only
+forest_df <- filter(cat_species_df, habitat == "forest") #creating a subset of forest habitat only
 
-scatterplot(rich ~ elevation, data=forest, smooth=F,
-            main = "",
-            xlab = "",
-            ylab = "")
+plot(rich ~ elevation, data=forest_df,
+            main = "Elevation by Species Richness Graph",
+            xlab = "Elevation",
+            ylab = "Species Richness")
 
 ```
 
@@ -149,10 +166,12 @@ Next, StatCat and DataDog construct a simple linear regression model to understa
 # Model: Richness and elevation for forest bird communities
 ```{r richness and elevation model, warning=FALSE, message=FALSE}
 
-mod.elev <- lm(rich~elevation,data=forest)
+mod.elev <- lm(rich~elevation,data=forest_df)
 summary(mod.elev)
 
 ```
+
+**Comment:** Not a great model, another variable that would work better? Should we look at fragments for habitat type instead?
 
 ## **Final student exercise?**
 
