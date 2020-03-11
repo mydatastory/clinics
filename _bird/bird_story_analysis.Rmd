@@ -70,10 +70,18 @@ datadog_df <- read.csv("../data/datadog_species_rich.csv")
 
 # Richness graphs
 To look at species richness among all the different habitat types, we will create a set of boxplots using the data collected by DataDog. Remember that we need to make sure that the habitat variable is understood in R to be a factor (variable with categories). 
-```{r richness graph, warning=FALSE, message=FALSE}
+
+```{r richness barplot, warning=FALSE, message=FALSE}
 
 #factor levels for habitat variable
 datadog_df$habitat <- factor(hab$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
+
+barplot(datadog_df$rich, datadog_df$habitat)
+
+```
+
+
+```{r richness boxplot, warning=FALSE, message=FALSE}
 
 #boxplot of rich by habitat
 boxplot(rich ~ habitat, data=datadog_df,
@@ -103,7 +111,8 @@ boxplot(elevation ~ habitat, data=datadog_df,
 
 ```
 
-Questions: What is the story that is going on in this boxplot? What is the story that is going on in this bar graph?
+**Questions:** What is the story that is going on in this boxplot? 
+What is the story that is going on in this bar graph?
 
 ## Story Beat 5
 
