@@ -1,7 +1,7 @@
 ---
 title: "bird_story_analysis"
 author: "Charlotte Bolch"
-date: "2/13/2020"
+date: "3/11/2020"
 output: 
   slidy_presentation:
     font_adjustment: -1
@@ -16,40 +16,34 @@ knitr::opts_chunk$set(echo = TRUE)
 1. Students will be able to create visualizations to look at the relationship among the variables of species richness, elevation, and habitat types. 
 2. Students will be able to interpret and assess a model predicting species richness.
 
-## Story Beat 1 (intro)
-Cats and Birds have been squabbling over territory for years. Cats are bulldozing forests in the name of progress, but giving trade-offs to the birds (exclusive territories, new atriums, food courts, shopping areas, etc.)
+## Panels 1-11
+### Note that Panel 7 will not be a data learning event, it will be after Panel 11
 
-Birds sense that they are losing their lifestyle and livelihood. They call Stat Cat and Data Dog to prove to the cats that they need more land than they are being allowed.
+## Data Learning Event (After Panel 11)
+After talking with the birds, StatCat and DataDog have learned that the research questions that they birds and cats are interested in are:
 
-## Story Beat 2
-Birds lay out their case. Stat Cat goes to talk to cats while Data Dog is showed a piece of classical pottery showing an ancient time when birds lived in paradise.
+### Research Questions
 
-### Lead into Research Questions here, Stat Cat or Data Dog taking the lead?
-
-## Research Questions
-
-1. What is the relationship between species richness and elevation for all bird communities?
-2. What is the relationship between species richness and elevation by habitat types (forest, shrubs, trees, etc.)?
+1. What is the relationship between species richness and habitat types (forest, shrubs, trees, etc.)?
+2. What is the relationship between species richness and elevation for all bird communities?
 3. How can species richness be predicted by elevation within forest habitat?
 
-## Story Beat 3
-
-The cats convince Stat Cat of progress in name of progress, and Stat Cat goes out to collect data to confirm this.
-
-## Data collection processes
-StatCat and DataDog are on their way to start locating data from random locations using their GPS systems. The setup of the data collection form is important to plan out before StatCat and DataDog start collecting data. This way StatCat and DataDog both collect and record all the information that is needed from each location. The information that needs to be collected from each location is:
+StatCat and DataDog are on their way to start locating data from random locations using their GPS systems in order to answer those questions. The setup of the data collection form is important to plan out before StatCat and DataDog start collecting data. This way StatCat and DataDog both collect and record all the information that is needed from each location. The information that needs to be collected from each location is:
 1. Site
 2. Block
 3. Elevation
 4. Richness
 5. Habitat type
 Other variables needed?
-An example of a data collection form is here...
+**An example of a data collection form is here...**
 
-## Story Beat 4
-Data Dog has been indoctrinated	into the bird religion and has been flown to the treetops and is crunching the numbers the birds feed her into her laptop.
+## Panels 12-17
 
-## Environment setup and loading datasets  
+## Data Learning Event (Panel 18)
+
+Before Statcat goes out into the field to collect the data, he would like to look at the data that has already been collected by the cats. Statcat has the data provided to him and he is interested in looking at the different habitat types. He first needs to load the relevant packages and read the data into R. 
+
+### Environment setup and loading datasets  
 
 ```{r data setup, warning=FALSE, message=FALSE}
 
@@ -62,26 +56,36 @@ library(car) #Scatterplot function
 setwd("C:/stories/_bird")
 
 # Read in data set collected from DataDog
-datadog_df <- read.csv("../data/datadog_species_rich.csv")
+cat_species_df <- read.csv("../data/cat_species_rich.csv")
 
 ```
 
-## Add something here about Data Dog and Stat Cat exploring the data using visualizations
+### Habitat type bar graph
+To look at all of the different habitat types, we will create a bar graph. Remember that we need to make sure that the habitat variable is understood in R to be a factor (variable with categories). 
 
-# Richness graphs
-To look at species richness among all the different habitat types, we will create a set of boxplots using the data collected by DataDog. Remember that we need to make sure that the habitat variable is understood in R to be a factor (variable with categories). 
-
-```{r richness barplot, warning=FALSE, message=FALSE}
+```{r habitat bar graph, warning=FALSE, message=FALSE}
 
 #factor levels for habitat variable
-datadog_df$habitat <- factor(hab$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
+cat_species_df$habitat <- factor(cat_species_df$habitat,levels=c("forest","shrubs","fragment","tree","fence","pasture"))
 
-barplot(datadog_df$rich, datadog_df$habitat)
+barplot(datadog_df$habitat,
+        main = "Counts of Habitat Types",
+        xlab = "Habitat Types",
+        ylab = "Count")
 
 ```
 
+**Questions:** What is the story that is going on in this bar graph?
+
+## Panels 19-24
+
+## Data Learning Event (Panel 25)
+
+Using the data from the cats, let's look at species richness by habitat type (research question 1) to see if what the birds and DataDog are talking about is correct. Does the habitat type of forest have the most species richness based on our data?
 
 ```{r richness boxplot, warning=FALSE, message=FALSE}
+
+#variable = rich for species richness
 
 #boxplot of rich by habitat
 boxplot(rich ~ habitat, data=datadog_df,
@@ -93,15 +97,20 @@ boxplot(rich ~ habitat, data=datadog_df,
 
 When looking at a boxplot, remember that the solid black line is the the median value, the box indicates the values for the first and third quartiles, and the whiskers with the dotted lines indicate the minimum and maximum values. 
 
-############ Code for bar graph with confidence intervals
-```{r}
-library(sciplot)
-bargraph.CI(habitat,rich,data=hab)
+**Question:** What is the story that is going on in this set of boxplots?
+
+**Alert!** Statcat has just uploaded the data that he has collected out in the field to the shared drive. Let's take a look at his data to investigate the relationship between species richness and elevation among all habitat types (research question 2).
+
+**Student exercise: Boxplot with Statcat data**
+
+(1) Create a bar graph 
+```{r bar graph student exercise, warning=FALSE, message=FALSE}
+
 ```
 
+**Question:** What is the story that is going on in this bar graph? 
 
-**Student exercise: Boxplot with StatCat data**
-(1) Create a boxplot for elevation by habitat.
+(2) Create a boxplot for elevation by habitat.
 ```{r boxplot student exercise, warning=FALSE, message=FALSE}
 
 boxplot(elevation ~ habitat, data=datadog_df,
@@ -111,23 +120,31 @@ boxplot(elevation ~ habitat, data=datadog_df,
 
 ```
 
-**Questions:** What is the story that is going on in this boxplot? 
-What is the story that is going on in this bar graph?
+**Question:** What is the story that is going on in this boxplot? 
 
-## Story Beat 5
+## Panels 26-35
 
-Data Dog falls from the treetops onto Stat Cat, pottery in hand, and shows Stat Cat the pottery. Stat Cat notices something else: ancient cat paw prints. The pots were made by cats. Birds and cats once lived together in harmony.
+## Data Learning Event (Panel 36)
 
-Data Dog and Stat Cat go back into the data to show how this might work for the birds and cats now.
+StatCat and DataDog are interested in looking at the relationship between species richness and elevation specifically within the forest habitat community (research question 3). 
+
+They first create a subset of the data from the cats for only habitat types that are "forest". Then, they create a scatterplot of richness by elevation. 
 
 # Richness with forest bird communities graph
-```{r richness forest bird, warning=FALSE, message=FALSE}
+```{r richness forest scatterplot, warning=FALSE, message=FALSE}
 
-# Richness decreases with elevation for forest bird communities
-forest <- Subset(all,habitat=="forest")
-scatterplot(rich ~ elevation, data=forest, smooth=F)
+forest <- Subset(all,habitat=="forest") #creating a subset of forest habitat only
+
+scatterplot(rich ~ elevation, data=forest, smooth=F,
+            main = "",
+            xlab = "",
+            ylab = "")
 
 ```
+
+StatCat and DataDog see that richness decreases with elevation for forest bird communities
+
+Next, StatCat and DataDog construct a simple linear regression model to understand the relationship of elevation in predicting species richness for forest habitats. 
 
 # Model: Richness and elevation for forest bird communities
 ```{r richness and elevation model, warning=FALSE, message=FALSE}
@@ -137,8 +154,9 @@ summary(mod.elev)
 
 ```
 
-## Story Beat 6 (ending)
-Data in hand, they bring their results to the disputing parties but there is too much disruption already. There is no resolution and Data Dog and Stat Cat go home, pledging to work together, but to keep each other's paws off of each other's food dishes.
+## **Final student exercise?**
 
-## Add exercises at the end for students?
+## Panels 37-40
+### story ends
+
 
