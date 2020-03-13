@@ -1,6 +1,8 @@
 
 Ian Ausprey's [PowerPoint Presentation](https://uflorida-my.sharepoint.com/:p:/g/personal/iausprey_ufl_edu/EUJKWOEhYVVAnl_kssA1koIBMHsD4NneiYTV5JXfs8FSow)
 
+Tom Hart's initial [Storyboard](https://docs.google.com/presentation/d/1VGgrEhL0MKiUut8NgOuqlGu-7jaqY_qZBxcrdML1hAw/edit?ts=5e6a8bf2#slide=id.p)
+
 The civilization was called the [Chachapoyan culture](https://en.wikipedia.org/wiki/Chachapoya_culture)
 
 -----------------------------------------------------
