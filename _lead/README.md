@@ -6,6 +6,7 @@
 - [Flint Water Study](http://flintwaterstudy.org/2016/04/results-of-flint-resident-water-lead-sampling-march-2016/)
 - [Flint Water Study- Complete Dataset](http://flintwaterstudy.org/2015/12/complete-dataset-lead-results-in-tap-water-for-271-flint-samples/)
 - [Kaggle Data](https://www.kaggle.com/c/mdst-flint/data)
+- [60 Minutes Flint](https://www.cbsnews.com/news/flint-water-crisis-effect-on-children-60-minutes-2020-03-15/)
 
 *Key Dates*
 - April 25, 2014   : Switch to Flint water
