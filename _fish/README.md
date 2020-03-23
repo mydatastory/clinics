@@ -4,9 +4,9 @@
 #### Links
 [Qualtrics Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
 
-[For Ed Ricketts](https://www.twenty2films.com/for-ed-ricketts)
-
 [Sardine Story (Shiny)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
+
+[For Ed Ricketts](https://www.twenty2films.com/for-ed-ricketts)
 
 #### Data Links
 [NOAA Fisheries](https://foss.nmfs.noaa.gov)
