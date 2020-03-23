@@ -6,6 +6,8 @@
 
 [For Ed Ricketts](https://www.twenty2films.com/for-ed-ricketts)
 
+[Sardine Story (Shiny)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
+
 #### Data Links
 [NOAA Fisheries](https://foss.nmfs.noaa.gov)
 
