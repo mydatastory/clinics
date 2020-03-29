@@ -6,8 +6,12 @@ This repository contains documents for data stories currently being worked on by
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
 - [Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
-- [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
 - [Package learnr](https://rstudio.github.io/learnr/)
+
+#### Cartoon Education
+- [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
+- [The Fall of the Simpsons](https://www.youtube.com/watch?v=KqFNbCcyFkk)
+- [What Ruined Saturday Morning Cartoons](https://www.youtube.com/watch?v=RryI7JJ2GHQ&t=788s)
 
 ----------------------------------------------------------------------------------------
 #### Miscellaneous
