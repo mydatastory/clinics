@@ -1,9 +1,11 @@
+-----------------------------------------------------
+#### Storyboards
+
+[Storyboard v. 1.0](https://docs.google.com/presentation/d/1VGgrEhL0MKiUut8NgOuqlGu-7jaqY_qZBxcrdML1hAw/edit?ts=5e6a8bf2#slide=id.p)
+
+[Storyboard v. 2.0](https://docs.google.com/presentation/d/11TnHk6bfe61XDXbKbevn7KU3gdwBTzNYIX0kAdYv9LY/edit?usp=sharing)
 
 Ian Ausprey's [PowerPoint Presentation](https://uflorida-my.sharepoint.com/:p:/g/personal/iausprey_ufl_edu/EUJKWOEhYVVAnl_kssA1koIBMHsD4NneiYTV5JXfs8FSow)
-
-Link to the [Base Storyboard](https://docs.google.com/presentation/d/1VGgrEhL0MKiUut8NgOuqlGu-7jaqY_qZBxcrdML1hAw/edit?ts=5e6a8bf2#slide=id.p)
-
-Link to the [Storyboard](https://docs.google.com/presentation/d/11TnHk6bfe61XDXbKbevn7KU3gdwBTzNYIX0kAdYv9LY/edit?usp=sharing)
 
 The civilization was called the [Chachapoyan culture](https://en.wikipedia.org/wiki/Chachapoya_culture)
 
