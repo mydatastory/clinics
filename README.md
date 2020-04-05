@@ -4,7 +4,7 @@ This repository contains documents for data stories currently being worked on by
 
 - [Study Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
-- [Coding Standards](https://github.com/mydatastory/shared_projects/blob/master/doc/coding_standards.docx)
+- [Coding Standards](https://github.com/mydatastory/projects/blob/master/doc/coding_standards.md)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [Package learnr](https://rstudio.github.io/learnr/)
 
