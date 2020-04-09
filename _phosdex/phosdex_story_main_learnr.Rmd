@@ -1,0 +1,93 @@
+---
+title: "The Carbuncle Data Debacle"
+output:
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+
+---
+
+```{r, echo=FALSE, message=FALSE}
+library(learnr)
+library(ggplot2)
+library(dplyr)
+library(gradethis)
+library(rmarkdown)
+library(knitr)
+library(digest)
+library(bitops)
+library(yaml)
+library(shiny)
+library(ggpubr)
+knitr::opts_chunk$set(exercise.checker = gradethis::grade_learnr)
+```
+
+```{r setup1, echo=FALSE, message=FALSE}
+phosdex_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/carbuncle_phosdex.csv') 
+```
+
+<style>
+body {background: url("images/gradient.png") repeat-x fixed}
+</style>
+
+## <font style="font-size:0px">Title Page</font>
+
+###
+
+<p align="center"><img src="images/panels/Barefoot Justine - 00TitleCard.JPG"></p>
+
+<div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
+<p><strong>Learning Objectives:</strong></p>
+<ul>
+<li>1 &#8211; Importing and Understanding Dataframes in R</li>
+<li>2 &#8211; Developing an Analysis Plan</li>
+<li>3 &#8211; Joining/Merging Dataframes in R</li>
+<li>4 &#8211; Calculating and Interpreting Pearsons Correlation Coefficient in R</li>
+</ul>
+</div>
+
+<p style="text-align: center; font-size:x-large;"><strong>Click Continue to Begin!</strong></p>
+
+## Chapter 1
+
+![](images/panels/Barefoot Justine - 01.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 02.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 345.gif){width=867px; height=500px}
+![](images/panels/Barefoot Justine - 06.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 07.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 08.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 09.JPG){width=867px; height=500px}
+
+## Chapter 2
+
+![](images/panels/Barefoot Justine - 10.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 11-13.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 12.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - 14.JPG){width=867px; height=500px}
+
+![](images/panels/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
+```{r example1, exercise=TRUE, xercise.lines=4, warning=FALSE, message=FALSE}
+#Download our data and name the dataframe as phosdex_df
+phosdex_df <- read.csv('carbuncle_phosdex.csv') 
+```
+
+![](images/panels/Barefoot Justine - DogSpotSeated.jpg){width=100px; height=100px}
+```{r example2, exercise=TRUE, exercise.setup = "setup1", exercise.lines=10, message=FALSE, warning=FALSE}
+#Dimensions of dataset, 4182 rows (observations) and 20 columns (variables)
+dim(phosdex_df)
+
+#Names of the variables (columns)
+names(phosdex_df) 
+
+#Summary of the number of observations, variables types, and first 5 values
+str(phosdex_df) 
+```
