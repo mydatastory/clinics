@@ -8,6 +8,7 @@
 - [Phosdex Renderings .pdf](https://drive.google.com/file/d/14N8ygl6NpwKS3YH2KxVeZ7ejeOnzonMM/view?ts=5e88ef60)
 
 #### Storyboards
+- [Phosdex Storyboard v. 2.0](https://docs.google.com/presentation/d/1aJwwJIZOLkcblokEdBuZiysj4gKrMW3xDRgWRaYp_kc/edit?usp=sharing)
 - [Phosdex Storyboard v. 1.0](https://docs.google.com/presentation/d/1pF_KQj4Vt7azll40H9KoBDo5J12h191PgfXue1bgUs4/edit?usp=sharing)
 
 
