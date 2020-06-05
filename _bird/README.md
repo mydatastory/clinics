@@ -15,4 +15,6 @@
 
 Ian Ausprey's [PowerPoint Presentation](https://uflorida-my.sharepoint.com/:p:/g/personal/iausprey_ufl_edu/EUJKWOEhYVVAnl_kssA1koIBMHsD4NneiYTV5JXfs8FSow)
 
-The civilization was called the [Chachapoyan culture](https://en.wikipedia.org/wiki/Chachapoya_culture)
+----------------------------------------------------
+#### Links
+[Bird Fragments](https://news.mongabay.com/2020/04/birds-in-amazon-forest-fragments-new-study-summarizes-40-years-of-research/)
