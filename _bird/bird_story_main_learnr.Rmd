@@ -379,49 +379,6 @@ scatterplot(rich ~ ha, data=statcat_datadog_df,
 ```
 
 
-```{r example13, exercise=TRUE, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
-
-#Question 2
-#Edit the following code to create a scatterplot with the transformation you identified in Question #1
-scatterplot(rich ~ ha, data=statcat_datadog_df,
-            smooth=F)
-title("Scatterplot of Species Richness and Habitat Area", adj=.5)
-
-```
-
-```{r example13-solution, exercise.setup="setup4"}
-
-#Scatterplot with rich and log(ha)
-scatterplot(rich ~ ha, data=statcat_datadog_df,
-            smooth=F,
-            log="x",
-            xlab="log(Ha)")
-title("Scatterplot of Species Richness and Log of Habitat Area", adj=.5)
-
-```
-
-
-```{r example14, exercise=TRUE, message=FALSE, warning=FALSE}
-
-#Question 3
-#What type of relationship do we see in the graph between log(Ha) and species richness?
-
-```
-
-```{r example14-hint}
-
-#Is the relationship positive or negative? Is it weak, moderate, or strong?
-#Look at the scatterplot points and the linear regression line. 
-
-```
-
-```{r example14-solution}
-
-#We see a weak to moderate, positive linear relationship between log(Ha) and species richness. 
-#This means that as the log of the habitat area size increases, the species richness also increases. 
-
-```
-
 ###
 
 <strong>Now, let's take a look at a similar visualization by subsetting the data to only look at fragment habitats since that habitat type had the largest IQR.</strong>
