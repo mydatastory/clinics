@@ -1,5 +1,5 @@
 ---
-title: "The Carbuncle Data Debacle"
+title: "The Carbuncle Data Debacle (Test)"
 output:
   learnr::tutorial:
     progressive: true
@@ -53,7 +53,7 @@ body {background: url("images/gradient.png") repeat-x fixed}
 
 ###
 
-<p align="center"><img src="images/panels/Barefoot Justine - 00TitleCard.JPG"></p>
+<p align="center"><img src="images/Barefoot Justine - 00TitleCard.JPG"></p>
 
 <div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
 <p><strong>Learning Objectives:</strong></p>
@@ -69,37 +69,37 @@ body {background: url("images/gradient.png") repeat-x fixed}
 
 ## Chapter 1
 
-![](images/panels/3.PNG){width=867px; height=500px}
+![](images/3.PNG){width=867px; height=500px}
 
-![](images/panels/4.PNG){width=867px; height=500px}
+![](images/4.PNG){width=867px; height=500px}
 
-![](images/panels/Barefoot Justine - 345.gif){width=867px; height=500px}
+![](images/Barefoot Justine - 345.gif){width=867px; height=500px}
 
-![](images/panels/8.PNG){width=867px; height=500px}
+![](images/8.PNG){width=867px; height=500px}
 
-![](images/panels/9.PNG){width=867px; height=500px}
+![](images/9.PNG){width=867px; height=500px}
 
-![](images/panels/10.PNG){width=867px; height=500px}
+![](images/10.PNG){width=867px; height=500px}
 
-![](images/panels/11.PNG){width=867px; height=500px}
+![](images/11.PNG){width=867px; height=500px}
 
 ## Chapter 2
 
-![](images/panels/14.PNG){width=867px; height=500px}
+![](images/14.PNG){width=867px; height=500px}
 
-![](images/panels/15.PNG){width=867px; height=500px}
+![](images/15.PNG){width=867px; height=500px}
 
-![](images/panels/16.PNG){width=867px; height=500px}
+![](images/16.PNG){width=867px; height=500px}
 
-![](images/panels/17.PNG){width=867px; height=500px}
+![](images/17.PNG){width=867px; height=500px}
 
-![](images/panels/18.PNG){width=867px; height=500px}
+![](images/18.PNG){width=867px; height=500px}
 
-![](images/panels/19.PNG){width=867px; height=500px}
+![](images/19.PNG){width=867px; height=500px}
 
 ### 
 
-![](images/panels/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
+![](images/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
 ```{r example1, exercise=TRUE, exercise.lines=4, warning=FALSE, message=FALSE}
 #Download our data and name the dataframe as carbuncle_df
 carbuncle_lives_distance_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/carbuncle_lives_distance.csv') 
@@ -108,7 +108,7 @@ carbuncle_lives_distance_df <- read.csv('https://raw.githubusercontent.com/mydat
 
 ###
 
-![](images/panels/Barefoot Justine - DogSpotSeated.jpg){width=100px; height=100px}
+![](images/Barefoot Justine - DogSpotSeated.jpg){width=100px; height=100px}
 Digging deeper into carbuncle's data... the dim().names(). And strc) funtions will help me figure out what's in these data frames.
 
 ```{r example2, exercise=TRUE, exercise.setup = "setup1", exercise.lines=10, message=FALSE, warning=FALSE}
@@ -125,7 +125,7 @@ str(carbuncle_lives_distance_df)
 
 ###
 
-![](images/panels/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
+![](images/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
 But what does the data actually look like? I'll enter the dataframe name by itself in order to see the entire dataset. Let's start with the carbuncle_lives_distance_df.
 ```{r example3, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
 #Full display
@@ -135,7 +135,7 @@ carbuncle_lives_distance_df
 
 ###
 
-![](images/panels/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
+![](images/Barefoot Justine - DogSpotKilroy.jpg){width=100px; height=100px}
 Holy kitty! Over 4,000 observations! Too much. Let's see the first observations in the carbuncle_lives_distance dataframe. I can use the head() function to look at the first 6 rows. 
 ```{r example4, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
 #Default at 6 rows
@@ -144,7 +144,7 @@ head(carbuncle_lives_distance_df)
 
 ###
 
-![](images/panels/Barefoot Justine - DogSpotSeated.jpg){width=100px; height=100px}
+![](images/Barefoot Justine - DogSpotSeated.jpg){width=100px; height=100px}
 And the tail() function to see the last 6 rows.
 ```{r example5, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
 #Default at 6 rows
@@ -153,7 +153,7 @@ tail(carbuncle_lives_distance_df)
 
 ###
 
-![](images/panels/26.PNG){width=867px; height=500px}
+![](images/26.PNG){width=867px; height=500px}
 
 ###
 
@@ -197,27 +197,27 @@ grade_result(
 
 ## Chapter 3
 
-![](images/panels/27.PNG){width=867px; height=500px}
+![](images/27.PNG){width=867px; height=500px}
 
-![](images/panels/28.PNG){width=867px; height=500px}
+![](images/28.PNG){width=867px; height=500px}
 
-![](images/panels/29.PNG){width=867px; height=500px}
+![](images/29.PNG){width=867px; height=500px}
 
-![](images/panels/30.PNG){width=867px; height=500px}
+![](images/30.PNG){width=867px; height=500px}
 
-![](images/panels/31.PNG){width=867px; height=500px}
+![](images/31.PNG){width=867px; height=500px}
 
-![](images/panels/32.PNG){width=867px; height=500px}
+![](images/32.PNG){width=867px; height=500px}
 
-![](images/panels/33.PNG){width=867px; height=500px}
+![](images/33.PNG){width=867px; height=500px}
 
-![](images/panels/34.PNG){width=867px; height=500px}
+![](images/34.PNG){width=867px; height=500px}
 
-![](images/panels/35.PNG){width=867px; height=500px}
+![](images/35.PNG){width=867px; height=500px}
 
-![](images/panels/36.PNG){width=867px; height=500px}
+![](images/36.PNG){width=867px; height=500px}
 
-![](images/panels/37.PNG){width=867px; height=500px}
+![](images/37.PNG){width=867px; height=500px}
 
 ### 
 
@@ -269,23 +269,23 @@ grade_code("Good job. You are doing great! Please ignore the yellow warning mess
 
 ## Chapter 4
 
-![](images/panels/40.PNG){width=867px; height=500px}
+![](images/40.PNG){width=867px; height=500px}
 
-![](images/panels/41.PNG){width=867px; height=500px}
+![](images/41.PNG){width=867px; height=500px}
 
-![](images/panels/42.PNG){width=867px; height=500px}
+![](images/42.PNG){width=867px; height=500px}
 
-![](images/panels/43.PNG){width=867px; height=500px}
+![](images/43.PNG){width=867px; height=500px}
 
-![](images/panels/44.PNG){width=867px; height=500px}
+![](images/44.PNG){width=867px; height=500px}
 
-![](images/panels/45.PNG){width=867px; height=500px}
+![](images/45.PNG){width=867px; height=500px}
 
-![](images/panels/46.PNG){width=867px; height=500px}
+![](images/46.PNG){width=867px; height=500px}
 
-![](images/panels/47.PNG){width=867px; height=500px}
+![](images/47.PNG){width=867px; height=500px}
 
-![](images/panels/48.PNG){width=867px; height=500px}
+![](images/48.PNG){width=867px; height=500px}
 
 ###
 
@@ -297,21 +297,21 @@ cor(phosdex_lives_df$lives, phosdex_lives_df$phosdex)
 
 ###
 
-![](images/panels/50.PNG){width=867px; height=500px}
+![](images/50.PNG){width=867px; height=500px}
 
-![](images/panels/51.PNG){width=867px; height=500px}
+![](images/51.PNG){width=867px; height=500px}
 
-![](images/panels/52.PNG){width=867px; height=500px}
+![](images/52.PNG){width=867px; height=500px}
 
 ## Chapter 5
 
-![](images/panels/53.PNG){width=867px; height=500px}
+![](images/53.PNG){width=867px; height=500px}
 
-![](images/panels/54.PNG){width=867px; height=500px}
+![](images/54.PNG){width=867px; height=500px}
 
-![](images/panels/55.PNG){width=867px; height=500px}
+![](images/55.PNG){width=867px; height=500px}
 
-![](images/panels/56.PNG){width=867px; height=500px}
+![](images/56.PNG){width=867px; height=500px}
 
 ### 
 
@@ -424,21 +424,21 @@ question("Looking at the graph and correlation coefficient, is there any meaning
 
 ## Chapter 6
 
-![](images/panels/59.PNG){width=867px; height=500px}
+![](images/59.PNG){width=867px; height=500px}
 
-![](images/panels/60.PNG){width=867px; height=500px}
+![](images/60.PNG){width=867px; height=500px}
 
-![](images/panels/61.PNG){width=867px; height=500px}
+![](images/61.PNG){width=867px; height=500px}
 
-![](images/panels/63.PNG){width=867px; height=500px}
+![](images/63.PNG){width=867px; height=500px}
 
-![](images/panels/64.PNG){width=867px; height=500px}
+![](images/64.PNG){width=867px; height=500px}
 
-![](images/panels/65.PNG){width=867px; height=500px}
+![](images/65.PNG){width=867px; height=500px}
 
-![](images/panels/66.PNG){width=867px; height=500px}
+![](images/66.PNG){width=867px; height=500px}
 
-![](images/panels/67.PNG){width=867px; height=500px}
+![](images/67.PNG){width=867px; height=500px}
 
 ## Reference
 
