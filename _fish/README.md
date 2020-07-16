@@ -1,10 +1,13 @@
-#### Notes
-*Sea Lions feed on sardines.*
+#### Shiny App
+- [Fish Story (2.0)](https://mydatastory.shinyapps.io/sardine_story_main_learnr/)
+- [Fish Story (1.0)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
 
 #### Links
 - [Qualtrics Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
-- [Sardine Story (Shiny)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
 - [Focus Group Video (03.24.20)](https://ufl.zoom.us/rec/share/-uMvdIr_71NJRYXv5mrnXJEeBrjIX6a81HNMqfVYmUhMOc8jjbtj1XONMfOEOFwS)
+
+#### Notes
+*Sea Lions feed on sardines.*
 
 #### Data Links
 [NOAA Fisheries](https://foss.nmfs.noaa.gov)
