@@ -1,5 +1,5 @@
 ---
-title: "A Sardine Tale"
+title: "A Sardine Tale (2.0)"
 output:
   learnr::tutorial:
     progressive: true
@@ -393,7 +393,7 @@ plot(avg_temps_df$year, avg_temps_df$avg_temp, # x-axis, y-axis.
 ![](images/assets/web_lesson_graphics/wendy/head_thinking.svg){width=100px; height=100px}Hold on, DataDog! Not so fast, let's take a closer look at this graph.
 
 ```{r example4, echo=FALSE}
-temps_df <- read.csv('../data/scripps_ocean_temps.csv') 
+temps_df <- read.csv('scripps_ocean_temps.csv') 
 
 temps_df <- temps_df[,-5]         # Remove 5th column b/c all missing data 
 temps_df <- na.omit(temps_df)     # Remove any other missing data observations
@@ -1005,9 +1005,9 @@ grade_code("Good job. You are doing great! Please ignore the yellow warning mess
 
 ### <strong>Exercise 5</strong>
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-landings_noaa_df <- read.csv('../data/sardine_landings_noaa_raw.csv')
-landings_df <- read.csv('../data/sardine_landings_ueber.csv')
-temps_df <- read.csv('../data/scripps_ocean_temps.csv')
+landings_noaa_df <- read.csv('sardine_landings_noaa_raw.csv')
+landings_df <- read.csv('sardine_landings_ueber.csv')
+temps_df <- read.csv('scripps_ocean_temps.csv')
 
 temps_df <- temps_df[,-5]
 temps_df <- na.omit(temps_df)
@@ -1124,9 +1124,9 @@ analysis1968_df <- merge(landings1968_df, avg_temps1968_df)
 library(ggplot2)
 library(dplyr)
 
-landings_noaa_df <- read.csv('../data/sardine_landings_noaa_raw.csv')
-landings_df <- read.csv('../data/sardine_landings_ueber.csv')
-temps_df <- read.csv('../data/scripps_ocean_temps.csv')
+landings_noaa_df <- read.csv('sardine_landings_noaa_raw.csv')
+landings_df <- read.csv('sardine_landings_ueber.csv')
+temps_df <- read.csv('scripps_ocean_temps.csv')
 temps_df <- temps_df[,-5]
 temps_df <- na.omit(temps_df)
 
