@@ -1,4 +1,4 @@
-#### Shiny App
+#### Shiny App  
 - [Phosdex v. 2.0](https://mydatastories.shinyapps.io/phosdex_story_main_learnr/phosdex_story_main_learnr.Rmd#section-title-page)
 - [Phosdex v. 1.0](https://mydatastory.shinyapps.io/phosdex_story_main_learnr/)
  
