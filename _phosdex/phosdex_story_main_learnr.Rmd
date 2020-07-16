@@ -1,5 +1,5 @@
 ---
-title: "The Carbuncle Data Debacle (Test)"
+title: "The Carbuncle Data Debacle (2.0)"
 output:
   learnr::tutorial:
     progressive: true
