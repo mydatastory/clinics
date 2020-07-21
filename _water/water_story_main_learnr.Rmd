@@ -1,0 +1,387 @@
+---
+title: "Water"
+output:
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+
+---
+
+```{r, echo=FALSE, message=FALSE}
+library(learnr)
+library(ggplot2)
+library(dplyr)
+library(gradethis)
+library(rmarkdown)
+library(knitr)
+library(digest)
+library(bitops)
+library(yaml)
+library(shiny)
+library(ggpubr)
+knitr::opts_chunk$set(exercise.checker = gradethis::grade_learnr)
+```
+
+```{r setup1, echo=FALSE, message=FALSE}
+statcat_mice<-read.csv("statcat_mice.csv")
+datadog_mice<-read.csv("datadog_mice.csv")
+statcat_datadog_mice<-read.csv("statcat_datadog_mice.csv")
+snow_deaths<-read.csv("snow_deaths_bldng.csv")
+
+cheese_cat_table<-table(statcat_mice$cheese_status)
+cheese_dog_table<-table(datadog_mice$cheese_status)
+```
+
+
+<style>
+body {background: url("images/gradient.png") repeat-x fixed}
+</style>
+
+## <font style="font-size:0px">Title Page</font>
+
+###
+
+<p align="center"><img src="images/water_story_images_1.png"></p>
+
+<div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
+<p><strong>Learning Objectives:</strong></p>
+<ul>
+<li>1 &#8211; Exporting Dataframes in R</li>
+<li>2 &#8211; Calculating Frequencies and Proportions in R</li>
+<li>3 &#8211; Creating Contigency Tables in R</li>
+<li>4 &#8211; Calculating and Interpreting Pearson's Chi-squared Test For Comparing Count Data</li>
+</ul>
+</div>
+
+<p style="text-align: center; font-size:x-large;"><strong>Click Continue to Begin!</strong></p>
+
+## Chapter 1
+
+![](images/water_story_images_2.png){width=867px; height=500px}
+
+![](images/water_story_images_3.png){width=867px; height=500px}
+
+![](images/water_story_images_4.png){width=867px; height=500px}
+
+![](images/water_story_images_5.png){width=867px; height=500px}
+
+![](images/water_story_images_6.png){width=867px; height=500px}
+
+![](images/water_story_images_7.png){width=867px; height=500px}
+
+![](images/water_story_images_8.png){width=867px; height=500px}
+
+![](images/water_story_images_9.png){width=867px; height=500px}
+
+![](images/water_story_images_10.png){width=867px; height=500px}
+
+###  
+
+![](images/water_story_images_11.png){width=867px; height=500px}
+
+Here is the data DataDog needs help downloading...
+
+```{r, echo=FALSE}
+snow_deaths<-read.csv("snow_deaths_bldng.csv")
+snow_deaths
+```
+
+### 
+
+This is a lot of data! We need to download this data from R and give this data to StatCat in a much more portable format. We can use the write.csv() function to export the data into a comma-separated values (CSV) that can them be used in common programs like Microsoft Excel file.
+
+```{r example1, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
+write.csv(snow_deaths, file = "snow_deaths.csv")
+
+```
+
+## Chapter 2
+
+![](images/water_story_images_12.png){width=867px; height=500px}
+
+![](images/water_story_images_13.png){width=867px; height=500px}
+
+![](images/water_story_images_14.png){width=867px; height=500px}
+
+![](images/water_story_images_15.png){width=867px; height=500px}
+
+![](images/water_story_images_16.png){width=867px; height=500px}
+
+![](images/water_story_images_17.png){width=867px; height=500px}
+
+![](images/water_story_images_18.png){width=867px; height=500px}
+
+![](images/water_story_images_19.png){width=867px; height=500px}
+
+![](images/water_story_images_20.png){width=867px; height=500px}
+
+![](images/water_story_images_21.png){width=867px; height=500px}
+
+![](images/water_story_images_22.png){width=867px; height=500px}
+
+![](images/water_story_images_23.png){width=867px; height=500px}
+
+![](images/water_story_images_24.png){width=867px; height=500px}
+
+![](images/water_story_images_25.png){width=867px; height=500px}
+
+![](images/water_story_images_26.png){width=867px; height=500px}
+
+![](images/water_story_images_27.png){width=867px; height=500px}
+
+![](images/water_story_images_28.png){width=867px; height=500px}
+
+## Commercial Break
+
+![](images/water_story_images_29.png){width=867px; height=500px}
+
+## Chapter 3
+
+![](images/water_story_images_30.png){width=867px; height=500px}
+
+![](images/water_story_images_31.png){width=867px; height=500px}
+
+![](images/water_story_images_32.png){width=867px; height=500px}
+
+![](images/water_story_images_33.png){width=867px; height=500px}
+
+![](images/water_story_images_34.png){width=867px; height=500px}
+
+![](images/water_story_images_35.png){width=867px; height=500px}
+
+![](images/water_story_images_36.png){width=867px; height=500px}
+
+![](images/water_story_images_37.png){width=867px; height=500px}
+
+![](images/water_story_images_38.png){width=867px; height=500px}
+
+###
+
+![](images/water_story_images_39.png){width=867px; height=500px}
+
+**EVENT FOR DEFINING RESEARCH QUESTION GOES HERE**
+
+###
+
+![](images/water_story_images_40.png){width=867px; height=500px}
+
+![](images/water_story_images_41.png){width=867px; height=500px}
+
+
+## Chapter 4
+
+
+![](images/water_story_images_42.png){width=867px; height=500px}
+
+###
+
+![](images/water_story_images_43.png){width=867px; height=500px}
+
+Here is the data that the mouse collected!
+```{r example2, echo=FALSE}
+statcat_mice<-read.csv("statcat_mice.csv")
+statcat_mice
+```
+
+
+
+
+Variable Definitions:
+
+hole_id = Unique identifier for mouse hole surveyed
+
+cheese_status = Indicator of whether the cheese in the mouse hole surveyed is good or bad
+
+location = Location of the mouse hole
+
+num_of_mice = Number of mice residing in the mouse hole
+
+###
+
+To quantify the severity of the problem, two important statistical measures need to be calculated: frequency and proportion. Frequency, or absolute frequency, is a count of the number of times an event has occured, such as the number of mouse holes that have bad cheese. Proportion, a type of relative frequency, is the number of times an event has occurred in relation to the total number of times that event was possible. For example, the fraction of mouse holes that have bad cheese among all mouse holes that were surveyed.
+
+We can easily calcuate these values using the table() and prop.table() functions for frequency and proportions, respectively.
+
+```{r example3, exercise=TRUE, exercise.setup = "setup1", exercise.lines=6, message=FALSE, warning=FALSE}
+#Calculate the number of mouse holes that have bad cheese:
+cheese_cat_table<-table(statcat_mice$cheese_status)
+
+#print table
+cheese_cat_table
+ 
+```
+
+###
+
+```{r example4, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
+#Calculate the proportion of mouse holes that had good and bad cheese using the table created above (cheese_cat_table):
+prop.table(cheese_table)
+
+```
+
+###
+
+![](images/water_story_images_44.png){width=867px; height=500px}
+
+![](images/water_story_images_45.png){width=867px; height=500px}
+
+![](images/water_story_images_46.png){width=867px; height=500px}
+
+![](images/water_story_images_47.png){width=867px; height=500px}
+
+###
+
+![](images/water_story_images_48.png){width=867px; height=500px}
+
+Below is the dataset obtained from the Acme Automated Quality Control system at DataDog's house.
+
+```{r example5, exercise=TRUE, exercise.setup = "setup1", exercise.lines=6, message=FALSE, warning=FALSE}
+datadog_mice<-read.csv("datadog_mice.csv")
+datadog_mice
+```
+
+###
+
+We need to see if DataDog is having the same problem at her apartment. Use the dataset obtained from the Acme Automated Quality Control System, `datadog_mice`, to calculate the freuency of mouse holes that have bad cheese and express this value as a proportion of all households.
+
+```{r ex1, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
+#Fill in the variable information for the table() function
+cheese_dog_table<-table()
+cheese_dog_table
+```
+
+```{r ex1-solution}
+cheese_dog_table<-table(datadog_mice$cheese_status)
+cheese_dog_table
+```
+
+###
+
+```{r ex2, exercise=TRUE, exercise.setup = "setup1", exercise.lines=4, message=FALSE, warning=FALSE}
+#Fill in the variable information for the prop.table() function to calculate proportions
+prop.table()
+
+```
+
+```{r ex2-solution}
+prop.table(cheese_dog_table)
+```
+
+
+###
+
+```{r ex3, echo=FALSE}
+question("Comparing the proportion of cheese that had gone bad between StatCat and DataDog's houses, do you believe that there is a difference between the two proportions?",
+  answer("Yes", correct = TRUE),
+  answer("No")
+)
+```
+
+
+###
+
+
+![](images/water_story_images_49.png){width=867px; height=500px}
+
+![](images/water_story_images_50.png){width=867px; height=500px}
+
+
+## Chapter 5
+
+
+![](images/water_story_images_51.png){width=867px; height=500px}
+
+![](images/water_story_images_52.png){width=867px; height=500px}
+
+![](images/water_story_images_53.png){width=867px; height=500px}
+
+![](images/water_story_images_54.png){width=867px; height=500px}
+
+###
+
+![](images/water_story_images_55.png){width=867px; height=500px}
+
+While we observe a difference between the two proportions, we need to test to see if this difference is statistically different. More specifically, we want to compare whether living in StatCat's house vs. DataDog's house is related to whether cheese is more likely to go bad. Therefore, there are two main variables to consider: housing location (DataDog vs. StatCat) and cheese status (Good vs. Bad). We can set this up as a 2x2 table, also known as a contingency table. We can do this simply by using the `table()` function.
+
+```{r example6, exercise=TRUE, exercise.setup = "setup1", exercise.lines=3, message=FALSE, warning=FALSE}
+table(statcat_datadog_mice$cheese_status,statcat_datadog_mice$location)
+ 
+```
+
+###
+
+Now that we have a contigency table. We can performed out statistical test. This is a bivariate analysis using two binary variables. The test we need to perform is a Pearson's Chi-squared test. We can conduct this test using the `chisq.test()` function.
+
+```{r example7, exercise=TRUE, exercise.setup = "setup1", exercise.lines=3, message=FALSE, warning=FALSE}
+chisq.test(statcat_datadog_mice$cheese_status,statcat_datadog_mice$location)
+ 
+```
+
+###
+
+```{r ex4, echo=FALSE}
+question("Is there a statistical difference between the proportion of bad cheese between the two houses?",
+  answer("Yes", correct = TRUE),
+  answer("No")
+)
+```
+
+
+## Chapter 6
+
+
+![](images/water_story_images_56.png){width=867px; height=500px}
+
+![](images/water_story_images_57.png){width=867px; height=500px}
+
+![](images/water_story_images_58.png){width=867px; height=500px}
+
+![](images/water_story_images_59.png){width=867px; height=500px}
+
+![](images/water_story_images_60.png){width=867px; height=500px}
+
+![](images/water_story_images_61.png){width=867px; height=500px}
+
+![](images/water_story_images_62.png){width=867px; height=500px}
+
+![](images/water_story_images_63.png){width=867px; height=500px}
+
+![](images/water_story_images_64.png){width=867px; height=500px}
+
+###
+
+![](images/water_story_images_65.png){width=867px; height=500px}
+
+Using the map provided, briefly explain why StatCat's throne is the likely source of the problem?
+```{r example8, exercise=TRUE, exercise.setup = "setup1", exercise.lines=5, message=FALSE, warning=FALSE}
+
+ 
+```
+
+
+### 
+
+![](images/water_story_images_66.png){width=867px; height=500px}
+
+![](images/water_story_images_67.png){width=867px; height=500px}
+
+![](images/water_story_images_68.png){width=867px; height=500px}
+
+![](images/water_story_images_69.png){width=867px; height=500px}
+
+
+
+
+
+## Reference
+
+<div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
+<p style="text-align: center; font-size:x-large;"><strong>List of R Functions by Chapter</strong></p>
+<p><u>Chapter 1 Review:</u></p>
+<p><u>Chapter 2 Review:</u></p>
+<p><u>Chapter 3 Review:</u></p>
+<p><u>Chapter 4 Review:</u></p>
+<p><u>Chapter 5 Review:</u></p>
+<p><u>Chapter 6 Review:</u></p>
+</div>
