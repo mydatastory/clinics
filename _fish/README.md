@@ -1,5 +1,5 @@
 #### Shiny App
-- [Fish Story (2.0)](https://mydatastory.shinyapps.io/sardine_story_main_learnr/)
+- [Fish Story (2.0)](https://mydatastory.shinyapps.io/sardine_story_main_learnr/sardine_story_main_learnr.Rmd)
 - [Fish Story (1.0)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
 
 #### Links
