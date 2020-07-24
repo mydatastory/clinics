@@ -1,5 +1,5 @@
 ---
-title: "Water"
+title: "Water (2.0)"
 output:
   learnr::tutorial:
     progressive: true
@@ -13,7 +13,7 @@ library(learnr)
 library(ggplot2)
 library(dplyr)
 library(gradethis)
-library(rmarkdown)
+library(rmarkdown) 
 library(knitr)
 library(digest)
 library(bitops)
@@ -24,13 +24,14 @@ knitr::opts_chunk$set(exercise.checker = gradethis::grade_learnr)
 ```
 
 ```{r setup1, echo=FALSE, message=FALSE}
-statcat_mice<-read.csv("statcat_mice.csv")
-datadog_mice<-read.csv("datadog_mice.csv")
-statcat_datadog_mice<-read.csv("statcat_datadog_mice.csv")
-snow_deaths<-read.csv("snow_deaths_bldng.csv")
+statcat_mice<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/statcat_mice.csv")
+datadog_mice<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/datadog_mice.csv")
+statcat_datadog_mice<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/statcat_datadog_mice.csv")
+snow_deaths<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/snow_deaths_bldng.csv")
 
 cheese_cat_table<-table(statcat_mice$cheese_status)
 cheese_dog_table<-table(datadog_mice$cheese_status)
+
 ```
 
 
