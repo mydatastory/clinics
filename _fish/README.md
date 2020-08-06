@@ -1,6 +1,5 @@
 #### Shiny App
-- [Fish Story (2.0)](https://mydatastory.shinyapps.io/sardine_story_main_learnr/sardine_story_main_learnr.Rmd)
-- [Fish Story (1.0)](https://cohesa.shinyapps.io/sardine_story_main_learnr/)
+- [Fish Story](https://mydatastory.shinyapps.io/sardine_story_main/)
 
 #### Links
 - [Qualtrics Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
