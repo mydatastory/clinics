@@ -1,6 +1,5 @@
 #### Shiny App  
-- [Phosdex (2.0)](https://mydatastories.shinyapps.io/phosdex_story_main_learnr/phosdex_story_main_learnr.Rmd#section-title-page)
-- [Phosdex (1.0)](https://mydatastory.shinyapps.io/phosdex_story_main_learnr/)
+- [Phosdex](https://mydatastory.shinyapps.io/phosdex_story_main/)
  
 #### Renderings
 - [Phosdex Inks](https://www.dropbox.com/sh/hgb3x5yjw8uqobs/AADRUaza-jzLRVM07j5a735pa?dl=0)
