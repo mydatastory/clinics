@@ -1,8 +1,6 @@
 #### Shiny App
 
-[Bird Story (2.0)](https://mydatastories.shinyapps.io/bird_story_main_learnr/bird_story_main_learnr.Rmd)
-
-[Bird Story (1.0)](https://mydatastory.shinyapps.io/bird_story_main_learnr/)
+[Bird Story]( https://mydatastory.shinyapps.io/bird_story_main/)
 
 -----------------------------------------------------
 #### Storyboards
