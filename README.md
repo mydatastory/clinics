@@ -8,11 +8,6 @@ This repository contains documents for data stories currently being worked on by
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [Package learnr](https://rstudio.github.io/learnr/)
 
-#### Cartoon Education
-- [Saturday Morning 70's](https://www.youtube.com/watch?v=aiovit5r04g)
-- [The Fall of the Simpsons](https://www.youtube.com/watch?v=KqFNbCcyFkk)
-- [What Ruined Saturday Morning Cartoons](https://www.youtube.com/watch?v=RryI7JJ2GHQ&t=788s)
-
 ----------------------------------------------------------------------------------------
 #### Miscellaneous
 
