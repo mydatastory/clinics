@@ -25,23 +25,23 @@ knitr::opts_chunk$set(exercise.checker = gradethis::grade_learnr)
 ```
 
 ```{r setup1, echo=FALSE, message=FALSE}
-cat_species_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/cat_species.csv')
+cat_species_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/cat_species.csv')
 
 ```
 
 ```{r setup2, echo=FALSE, message=FALSE}
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
-statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/datadog_ha.csv')
+statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
+datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
 
 ```
 
 ```{r setup3, echo=FALSE, message=FALSE}
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
-statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/datadog_ha.csv')
+statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
+datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
 statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block", "elevation", "habitat"))
 
 ```
@@ -49,8 +49,8 @@ statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block"
 ```{r setup4, echo=FALSE, message=FALSE}
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
-statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/datadog_ha.csv')
+statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
+datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
 statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block", "elevation", "habitat"))
 fragment_df <- statcat_datadog_df %>% filter(habitat=="fragment")
 
