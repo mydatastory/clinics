@@ -1,3 +1,6 @@
+#### Notes
+See ../archive for supporting design documents related to the development of this story.
+
 #### Shiny App
 - [Fish Story](https://mydatastory.shinyapps.io/sardine_story_main/)
 
