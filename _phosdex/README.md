@@ -1,3 +1,6 @@
+#### Notes
+See ../archive for supporting design documents related to the development of this story.
+
 #### Shiny App  
 - [Phosdex Color](https://mydatastory.shinyapps.io/phosdex_story_color/)
 - [Phosdex](https://mydatastory.shinyapps.io/phosdex_story_main/)
