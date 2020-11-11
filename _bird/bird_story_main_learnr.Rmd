@@ -1,5 +1,5 @@
 ---
-title: "The Peruvian Bird Story (2.0)"
+title: "The Peruvian Bird Story (3.0)"
 output:
   learnr::tutorial:
     progressive: true
@@ -25,7 +25,17 @@ knitr::opts_chunk$set(exercise.checker = gradethis::grade_learnr)
 ```
 
 ```{r setup1, echo=FALSE, message=FALSE}
+
 cat_species_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/cat_species.csv')
+
+cat_species_df$habitat <- as.factor(cat_species_df$habitat)
+cat_species_df <- cat_species_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
 
 ```
 
@@ -33,7 +43,23 @@ cat_species_df <- read.csv('https://raw.githubusercontent.com/mydatastory/storie
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
 statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
+datadog_area_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_area.csv')
+statcat_rich_df <- statcat_rich_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+
+datadog_area_df <- datadog_area_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+
 
 ```
 
@@ -41,8 +67,23 @@ datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
 statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
-statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block", "elevation", "habitat"))
+datadog_area_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_area.csv')
+statcat_rich_df <- statcat_rich_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+
+datadog_area_df <- datadog_area_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+statcat_datadog_df <- merge(statcat_rich_df, datadog_area_df, by=c("site", "elevation", "habitat"))
 
 ```
 
@@ -50,9 +91,23 @@ statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block"
 
 #setwd("C:/Users/cbolc/Desktop/_bird")
 statcat_rich_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/statcat_rich.csv')
-datadog_ha_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_ha.csv')
-statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, by=c("site", "block", "elevation", "habitat"))
-fragment_df <- statcat_datadog_df %>% filter(habitat=="fragment")
+datadog_area_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/_bird/data/datadog_area.csv')
+statcat_rich_df <- statcat_rich_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+
+datadog_area_df <- datadog_area_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
+statcat_datadog_df <- merge(statcat_rich_df, datadog_area_df, by=c("site", "elevation", "habitat"))
 
 ```
 
@@ -76,19 +131,27 @@ body {background: url("images/gradient.png") repeat-x fixed}
 
 ## Chapter 1
 
-![](images/panel 1.png){width=867px; height=500px}
+![](images/Slide1.png){width=867px; height=500px}
 
-![](images/panel 2.png){width=867px; height=500px}
+![text1](images/Slide2.png){width=867px; height=500px}
 
-![](images/panel 3.png){width=867px; height=500px}
+![text2](images/Slide3.png){width=867px; height=500px}
 
-![](images/panel 4.png){width=867px; height=500px}
+![text1](images/slide4.png){width=867px; height=500px}
 
-![](images/panel 5.png){width=867px; height=500px}
+![text2](images/Slide5.png){width=867px; height=500px}
 
-![](images/panel 6.png){width=867px; height=500px}
+![](images/Slide6.png){width=867px; height=500px}
 
-![](images/panel 7.png){width=867px; height=500px}
+![](images/Slide7.png){width=867px; height=500px}
+
+![](images/Slide8.png){width=867px; height=500px}
+
+![](images/Slide9.png){width=867px; height=500px}
+
+![](images/Slide10.png){width=867px; height=500px}
+
+![](images/Slide11.png){width=867px; height=500px}
 
 <strong>Before StatCat and DataDog go out into the field to collect the data, they would like to look at the data that has already been collected by the cats. Statcat has the data provided to him and he is interested in looking at the different habitat types. He first needs to load the relevant packages and read the data into R.</strong>
 
@@ -96,6 +159,14 @@ body {background: url("images/gradient.png") repeat-x fixed}
 #Download and load in the data as
 cat_species_df <- read.csv('https://raw.githubusercontent.com/mydatastory/stories/master/data/cat_species.csv')
 
+#recode habitat variable
+cat_species_df <- cat_species_df %>% dplyr::mutate(habitat_r = dplyr::recode(habitat, 
+                                             "1" = "grassland", 
+                                             "2" = "savanna",
+                                             "3" = "fragment",
+                                             "4" = "fragment",
+                                             "5" = "forest",
+                                             "6" = "rainforest"))
 #Look at the first 6 rows of data
 head(cat_species_df)
 
@@ -104,7 +175,7 @@ head(cat_species_df)
 ```{r example2, exercise=TRUE, exercise.setup="setup1", exercise.lines=10, message=FALSE, warning=FALSE}
 
 #table of habitat types
-counts_habitat <- table(cat_species_df$habitat)
+counts_habitat <- table(cat_species_df$habitat_r)
 counts_habitat
 
 #bar graph of table
@@ -128,28 +199,29 @@ barplot(counts_habitat,
 
 ```{r example3-solution}
 
-#The largest habitat type is fragments. 
+#The largest habitat type is fragment. 
 
 ```
 
 ```{r example4, exercise=TRUE, exercise.lines=8, message=FALSE, warning=FALSE}
 
 #Question 2
-#What type of habitat do you think fragments are?
-
+#What type of habitat do you think fragment is?
 
 ```
 
 
 ## Chapter 2
 
-![](images/panel 12.png){width=867px; height=500px}
+![](images/Slide13.png){width=867px; height=500px}
 
-![](images/panel 13.png){width=867px; height=500px}
+![](images/Slide14.png){width=867px; height=500px}
 
-![](images/panel 14.png){width=867px; height=500px}
+![](images/Slide15.png){width=867px; height=500px}
 
-![](images/panel 15.png){width=867px; height=500px}
+![](images/Slide16.png){width=867px; height=500px}
+
+![](images/Slide17.png){width=867px; height=500px}
 
 ###
 
@@ -175,11 +247,10 @@ barplot(counts_habitat,
 <p><strong>Data Collection Variables:</strong></p>
 <ul>
 <li>1 &#8211; Site</li>
-<li>2 &#8211; Block</li>
-<li>3 &#8211; Elevation</li>
-<li>4 &#8211; Habtitat Type</li>
-<li>5 &#8211; Ha (size of habitat area)- DataDog is collecting</li>
-<li>6 &#8211; Richness- StatCat is collecting</li>
+<li>2 &#8211; Elevation</li>
+<li>3 &#8211; Habitat Type</li>
+<li>4 &#8211; Area (size of habitat area)- DataDog is collecting</li>
+<li>5 &#8211; Richness- StatCat is collecting for mammals and birds</li>
 </ul>
 </div>
 
@@ -201,57 +272,67 @@ barplot(counts_habitat,
 
 ## Chapter 3
 
-![](images/panel 19.png){width=867px; height=500px}
+![](images/Slide20.png){width=867px; height=500px}
 
-![](images/panel 20.png){width=867px; height=500px}
+![](images/Slide21.png){width=867px; height=500px}
 
-![](images/panel 21.png){width=867px; height=500px}
+![](images/Slide22.png){width=867px; height=500px}
 
-![](images/panel 22.png){width=867px; height=500px}
+![](images/Slide23.png){width=867px; height=500px}
 
-![](images/panel 23.png){width=867px; height=500px}
+![](images/Slide24.png){width=867px; height=500px}
 
-![](images/panel 24.png){width=867px; height=500px}
+![](images/Slide25.png){width=867px; height=500px}
 
-![](images/panel 25.png){width=867px; height=500px}
+![](images/Slide26.png){width=867px; height=500px}
 
-![](images/panel 26.png){width=867px; height=500px}
+![](images/Slide27.png){width=867px; height=500px}
 
+![](images/Slide28.png){width=867px; height=500px}
+![](images/Slide29.png){width=867px; height=500px}
+
+![](images/Slide30.png){width=867px; height=500px}
+
+![](images/Slide31.png){width=867px; height=500px}
 
 ## Chapter 4
 
-![](images/panel 27.png){width=867px; height=500px}
+![](images/Slide32.png){width=867px; height=500px}
 
-![](images/panel 28.png){width=867px; height=500px}
+![](images/Slide33.png){width=867px; height=500px}
 
-![](images/panel 29.png){width=867px; height=500px}
+![](images/Slide34.png){width=867px; height=500px}
 
-![](images/panel 30.png){width=867px; height=500px}
+![](images/Slide34.png){width=867px; height=500px}
 
-![](images/panel 31.png){width=867px; height=500px}
+![](images/Slide35.png){width=867px; height=500px}
+
+![](images/Slide36.png){width=867px; height=500px}
 
 ## Chapter 5
 
-![](images/panel 32.png){width=867px; height=500px}
+![](images/Slide37.png){width=867px; height=500px}
 
-![](images/panel 33.png){width=867px; height=500px}
+![](images/Slide38.png){width=867px; height=500px}
 
-![](images/panel 34.png){width=867px; height=500px}
+![](images/Slide39.png){width=867px; height=500px}
 
-![](images/panel 35.png){width=867px; height=500px}
+![](images/Slide40.png){width=867px; height=500px}
 
-![](images/panel 36.png){width=867px; height=500px}
+![](images/Slide41.png){width=867px; height=500px}
+
+![](images/Slide42.png){width=867px; height=500px}
 
 <strong>StatCat and DataDog merge their datasets together and start exploring the data by looking at a species richness graph.</strong> 
 
 ```{r example6, exercise=TRUE, exercise.setup="setup3", exercise.lines=10, message=FALSE, warning=FALSE}
 #View the first few rows of each dataset
 head(statcat_rich_df)
-head(datadog_ha_df)
+head(datadog_area_df)
 
 #Merge the two datasets together by the variables "site", "block", "elevation", and "habitat"
-statcat_datadog_df <- merge(statcat_rich_df, datadog_ha_df, 
-                            by=c("site", "block", "elevation", "habitat"))
+statcat_datadog_df <- merge(statcat_rich_df, datadog_area_df, 
+                            by=c("site", "elevation", "habitat", "habitat_r"))
 head(statcat_datadog_df)
 
 ```
@@ -263,10 +344,10 @@ head(statcat_datadog_df)
 ```{r example7, exercise=TRUE, exercise.setup="setup3", exercise.lines=10, message=FALSE, warning=FALSE}
 
 #boxplot of species richness by habitat types
-boxplot(rich ~ habitat, data=statcat_datadog_df,
-        main="Species Richness by Habitat Type",
+boxplot(bird_richness ~ habitat_r, data=statcat_datadog_df,
+        main="Bird Richness by Habitat Type",
         xlab="Habitat Type",
-        ylab="Species Richness")
+        ylab="Bird Richness")
 
 ```
 
@@ -281,14 +362,14 @@ boxplot(rich ~ habitat, data=statcat_datadog_df,
 ```{r example8, exercise=TRUE, exercise.setup="setup3", exercise.lines=5, message=FALSE, warning=FALSE}
 
 #Question 1
-#What habitat type has the highest median species richness?
+#What habitat type has the highest median bird richness?
 
 
 ```
 
 ```{r example8-solution}
 
-#The habitat type with the largest median species richness is forest.
+#The habitat type with the largest median bird richness is savanna.
 
 ```
 
@@ -312,10 +393,10 @@ boxplot(rich ~ habitat, data=statcat_datadog_df,
 
 #We need to group by habitat and use IQR() in the summarise() function for calculating the IQR of rich
 statcat_datadog_df %>%
-  group_by(habitat) %>%
-  summarise(IQR=IQR(rich))
+  group_by(habitat_r) %>%
+  summarise(IQR=IQR(bird_richness))
 
-#The IQR for the "fragment" habitats is 19.7
+#The IQR for the "fragment" habitats is 8
 
 ```
 
@@ -331,10 +412,10 @@ statcat_datadog_df %>%
 ```{r example10-solution, exercise=TRUE, exercise.setup="setup3", message=FALSE, warning=FALSE}
 
 #Boxplot with green boxes
-boxplot(rich ~ habitat, data=statcat_datadog_df,
-        main="Species Richness by Habitat Type",
+boxplot(bird_richness ~ habitat_r, data=statcat_datadog_df,
+        main="Bird Richness by Habitat Type",
         xlab="Habitat Type",
-        ylab="Species Richness",
+        ylab="Bird Richness",
         col=(c("green")))
 
 ```
@@ -342,7 +423,7 @@ boxplot(rich ~ habitat, data=statcat_datadog_df,
 
 ## Chapter 6
 
-![](images/panel 41.png){width=867px; height=500px}
+![](images/Slide45.png){width=867px; height=500px}
 
 ###
 
@@ -354,10 +435,10 @@ One way to answer this research question is to create a scatterplot.</strong>
 
 ```{r example11, exercise=TRUE, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
 
-#Create a scatterplot with rich and ha (habitat area)
-scatterplot(rich ~ ha, data=statcat_datadog_df,
+#Create a scatterplot with bird richness and area (habitat area)
+scatterplot(bird_richness ~ area, data=statcat_datadog_df,
             smooth=F,
-            main="Scatterplot of Species Richness and Habitat Area")
+            main="Scatterplot of Bird Richness and Habitat Area")
 
 ```
 
@@ -383,20 +464,20 @@ scatterplot(rich ~ ha, data=statcat_datadog_df,
 
 #Question 2
 #Edit the following code to create a scatterplot with the transformation you identified in Question #1
-scatterplot(rich ~ ha, data=statcat_datadog_df,
+scatterplot(bird_richness ~ area, data=statcat_datadog_df,
             smooth=F)
-title("Scatterplot of Species Richness and Habitat Area", adj=.5)
+title("Scatterplot of Bird Richness and Habitat Area", adj=.5)
 
 ```
 
 ```{r example13-solution, exercise.setup="setup4"}
 
-#Scatterplot with rich and log(ha)
-scatterplot(rich ~ ha, data=statcat_datadog_df,
+#Scatterplot with bird richness and log(ha)
+scatterplot(bird_richness ~ area, data=statcat_datadog_df,
             smooth=F,
             log="x",
-            xlab="log(Ha)")
-title("Scatterplot of Species Richness and Log of Habitat Area", adj=.5)
+            xlab="log(area)")
+title("Scatterplot of Bird Richness and Log of Habitat Area", adj=.5)
 
 ```
 
@@ -404,7 +485,7 @@ title("Scatterplot of Species Richness and Log of Habitat Area", adj=.5)
 ```{r example14, exercise=TRUE, message=FALSE, warning=FALSE}
 
 #Question 3
-#What type of relationship do we see in the graph between log(Ha) and species richness?
+#What type of relationship do we see in the graph between log(area) and bird richness?
 
 ```
 
@@ -417,8 +498,8 @@ title("Scatterplot of Species Richness and Log of Habitat Area", adj=.5)
 
 ```{r example14-solution}
 
-#We see a weak to moderate, positive linear relationship between log(Ha) and species richness. 
-#This means that as the log of the habitat area size increases, the species richness also increases. 
+#We see a moderate, positive linear relationship between log(area) and bird richness. 
+#This means that as the log of the habitat area size increases, the bird richness also increases. 
 
 ```
 
@@ -429,7 +510,7 @@ title("Scatterplot of Species Richness and Log of Habitat Area", adj=.5)
 ```{r example15, exercise=TRUE, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
 
 #First, create a subset of fragment habitat only
-fragment_df <- statcat_datadog_df %>% filter(habitat=="fragment")
+fragment_df <- statcat_datadog_df %>% filter(habitat_r=="fragment")
 head(fragment_df)
 
 ```
@@ -437,7 +518,7 @@ head(fragment_df)
 ```{r example16, exercise=TRUE, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
 
 #Question 4
-#Create a scatterplot using that subset and log(Ha). Then, describe what you see in the graph.
+#Create a scatterplot using that subset and log(area). Then, describe what you see in the graph.
 
 
 ```
@@ -445,13 +526,13 @@ head(fragment_df)
 
 ```{r example16-solution, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
 
-scatterplot(rich~ha, data=fragment_df,
+scatterplot(bird_richness~area, data=fragment_df,
             smooth=F,
             log="x",
-            xlab="log(Ha)")
+            xlab="log(area)")
 title("Scatterplot of Only Fragment Habitats", adj=.5)
 
-#The relationship between species richness and log(Ha) is a strong, positive linear relationship.
+#The relationship between bird richness and log(area) is a moderate, positive linear relationship.
 #The best habitat based on the data is fragments!
 
 ```
@@ -460,20 +541,22 @@ title("Scatterplot of Only Fragment Habitats", adj=.5)
 
 ## Chapter 7
 
-![](images/panel 49.png){width=867px; height=500px}
+![](images/Slide47.png){width=867px; height=500px}
 
-![](images/panel 50.png){width=867px; height=500px}
+![](images/Slide48.png){width=867px; height=500px}
 
-![](images/panel 51.png){width=867px; height=500px}
+![](images/Slide49.png){width=867px; height=500px}
 
-![](images/panel 52.png){width=867px; height=500px}
+![](images/Slide50.png){width=867px; height=500px}
 
-![](images/panel 53.png){width=867px; height=500px}
+![](images/Slide51.png){width=867px; height=500px}
 
-![](images/panel 54.png){width=867px; height=500px}
+![](images/Slide52.png){width=867px; height=500px}
 
-![](images/panel 55.png){width=867px; height=500px}
+![](images/Slide53.png){width=867px; height=500px}
 
-![](images/panel 56.png){width=867px; height=500px}
+![](images/Slide54.png){width=867px; height=500px}
 
-![](images/panel 57.png){width=867px; height=500px}
+![](images/Slide55.png){width=867px; height=500px}
+
+![](images/Slide56.png){width=867px; height=500px}
