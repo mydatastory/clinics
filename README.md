@@ -7,6 +7,7 @@ This repository contains documents for data stories currently being worked on by
 - [Coding Standards](https://github.com/mydatastory/projects/blob/master/doc/coding_standards.md)
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [Package learnr](https://rstudio.github.io/learnr/)
+- [JupyterLab Extensions](https://github.com/mauhai/awesome-jupyterlab)
 
 ----------------------------------------------------------------------------------------
 #### Miscellaneous
