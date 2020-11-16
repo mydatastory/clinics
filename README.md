@@ -8,6 +8,7 @@ This repository contains documents for data stories currently being worked on by
 - [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [Package learnr](https://rstudio.github.io/learnr/)
 - [JupyterLab Extensions](https://github.com/mauhai/awesome-jupyterlab)
+- [Neptune AI JupyterLab](https://neptune.ai/blog/jupyterlab-extensions-for-machine-learning)
 
 ----------------------------------------------------------------------------------------
 #### Miscellaneous
