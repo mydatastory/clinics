@@ -1,6 +1,6 @@
 #### Shiny App
 
-[Water Story Color](https://mydatastory.shinyapps.io/water_story_main_learnr/)
+[Water Story Color](http://mydatastory.shinyapps.io/water_story_main_color)
 
 [Water Story](https://mydatastory.shinyapps.io/water_story_main/)
 
