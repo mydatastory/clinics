@@ -12,8 +12,8 @@ runtime: shiny_prerendered
 library(learnr)
 library(ggplot2)
 library(dplyr)
-library(gradethis)
 library(rmarkdown) 
+library(gradethis)
 library(knitr)
 library(digest)
 library(bitops)
@@ -43,7 +43,7 @@ body {background: url("images/gradient.png") repeat-x fixed}
 
 ###
 
-<p align="center"><img src="images/water_story_images_1.png"></p>
+![](images/water_story_images_1.png){width=867px; height=500px}
 
 <div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
 <p><strong>Learning Objectives:</strong></p>
@@ -78,13 +78,12 @@ body {background: url("images/gradient.png") repeat-x fixed}
 ![](images/water_story_images_10.png){width=867px; height=500px}
 
 ###  
-
-![](images/water_story_images_11.png){width=867px; height=500px}
+![](images/activity_banner.png){width=500px; height=250px}
 
 Here is the data DataDog needs help downloading...
 
 ```{r, echo=FALSE}
-snow_deaths<-read.csv("snow_deaths_bldng.csv")
+snow_deaths<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/snow_deaths_bldng.csv")
 snow_deaths
 ```
 
@@ -159,7 +158,6 @@ write.csv(snow_deaths, file = "snow_deaths.csv")
 
 ###
 
-![](images/water_story_images_39.png){width=867px; height=500px}
 
 **EVENT FOR DEFINING RESEARCH QUESTION GOES HERE**
 
@@ -177,11 +175,10 @@ write.csv(snow_deaths, file = "snow_deaths.csv")
 
 ###
 
-![](images/water_story_images_43.png){width=867px; height=500px}
 
-Here is the data that the mouse collected!
+![](images/activity banner 2.png){width=500px; height=250px}
 ```{r example2, echo=FALSE}
-statcat_mice<-read.csv("statcat_mice.csv")
+statcat_mice<-read.csv("https://github.com/mydatastory/stories/blob/master/_water/data/statcat_mice.csv")
 statcat_mice
 ```
 
@@ -232,8 +229,7 @@ prop.table(cheese_table)
 ![](images/water_story_images_47.png){width=867px; height=500px}
 
 ###
-
-![](images/water_story_images_48.png){width=867px; height=500px}
+![](images/activity_banner.png){width=500px; height=250px}
 
 Below is the dataset obtained from the Acme Automated Quality Control system at DataDog's house.
 
@@ -300,8 +296,7 @@ question("Comparing the proportion of cheese that had gone bad between StatCat a
 ![](images/water_story_images_54.png){width=867px; height=500px}
 
 ###
-
-![](images/water_story_images_55.png){width=867px; height=500px}
+![](images/activity_banner.png){width=500px; height=250px}
 
 While we observe a difference between the two proportions, we need to test to see if this difference is statistically different. More specifically, we want to compare whether living in StatCat's house vs. DataDog's house is related to whether cheese is more likely to go bad. Therefore, there are two main variables to consider: housing location (DataDog vs. StatCat) and cheese status (Good vs. Bad). We can set this up as a 2x2 table, also known as a contingency table. We can do this simply by using the `table()` function.
 
@@ -351,8 +346,7 @@ question("Is there a statistical difference between the proportion of bad cheese
 ![](images/water_story_images_64.png){width=867px; height=500px}
 
 ###
-
-![](images/water_story_images_65.png){width=867px; height=500px}
+![](images/activity_banner.png){width=500px; height=250px}
 
 Using the map provided, briefly explain why StatCat's throne is the likely source of the problem?
 ```{r example8, exercise=TRUE, exercise.setup = "setup1", exercise.lines=5, message=FALSE, warning=FALSE}
