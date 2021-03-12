@@ -36,7 +36,7 @@ cheese_dog_table<-table(datadog_mice$cheese_status)
 
 
 <style>
-body {background: url("images/gradient.png") repeat-x fixed}
+body {background-color: #FFECAD;}
 </style>
 
 ## <font style="font-size:0px">Title Page</font>
