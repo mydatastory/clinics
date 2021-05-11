@@ -1,6 +1,8 @@
 #### Shiny App
 
-[Bird Story]( https://mydatastory.shinyapps.io/bird_story_main/)
+- [Bird Story Color](https://mydatastory.shinyapps.io/bird_story_main_color/)
+
+- [Bird Story]( https://mydatastory.shinyapps.io/bird_story_main/)
 
 -----------------------------------------------------
 #### Storyboards
