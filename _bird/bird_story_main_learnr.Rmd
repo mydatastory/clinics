@@ -1,5 +1,5 @@
 ---
-title: "The Peruvian Bird Story (3.0)"
+title: "Flock and Feline Kerfuffle"
 output:
   learnr::tutorial:
     progressive: true
@@ -111,13 +111,12 @@ statcat_datadog_df <- merge(statcat_rich_df, datadog_area_df, by=c("site", "elev
 
 ```
 
-<style>
-body {background: url("images/gradient.png") repeat-x fixed}
-</style>
+<body style="background-color:#FCF3CF ;"></body>
 
 ## <font style="font-size:0px">Title Page</font>
 
 ###
+![](images/Slide1.png){width=867px; height=500px}
 
 <div style="padding: 10px;padding-bottom: 0;margin-bottom: 20px;border: thin solid #8FBE70;border-left-width: 25px;background-color: #fff">
 <p><strong>Learning Objectives:</strong></p>
@@ -131,15 +130,14 @@ body {background: url("images/gradient.png") repeat-x fixed}
 
 ## Chapter 1
 
-![](images/Slide1.png){width=867px; height=500px}
 
-![text1](images/Slide2.png){width=867px; height=500px}
+![](images/Slide2.png){width=867px; height=500px}
 
-![text2](images/Slide3.png){width=867px; height=500px}
+![](images/Slide3.png){width=867px; height=500px}
 
-![text1](images/slide4.png){width=867px; height=500px}
+![](images/slide4.png){width=867px; height=500px}
 
-![text2](images/Slide5.png){width=867px; height=500px}
+![](images/Slide5.png){width=867px; height=500px}
 
 ![](images/Slide6.png){width=867px; height=500px}
 
@@ -470,7 +468,7 @@ title("Scatterplot of Bird Richness and Habitat Area", adj=.5)
 
 ```
 
-```{r example13-solution, exercise.setup="setup4"}
+```{r example13-solution}
 
 #Scatterplot with bird richness and log(ha)
 scatterplot(bird_richness ~ area, data=statcat_datadog_df,
@@ -524,7 +522,7 @@ head(fragment_df)
 ```
 
 
-```{r example16-solution, exercise.setup="setup4", exercise.lines=10, message=FALSE, warning=FALSE}
+```{r example16-solution}
 
 scatterplot(bird_richness~area, data=fragment_df,
             smooth=F,
