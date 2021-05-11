@@ -15,8 +15,6 @@
 
 [Storyboard v. 1.0](https://docs.google.com/presentation/d/1VGgrEhL0MKiUut8NgOuqlGu-7jaqY_qZBxcrdML1hAw/edit?ts=5e6a8bf2#slide=id.p)
 
-Ian Ausprey's [PowerPoint Presentation](https://uflorida-my.sharepoint.com/:p:/g/personal/iausprey_ufl_edu/EUJKWOEhYVVAnl_kssA1koIBMHsD4NneiYTV5JXfs8FSow)
-
 ----------------------------------------------------
 #### Links
 [Bird Fragments](https://news.mongabay.com/2020/04/birds-in-amazon-forest-fragments-new-study-summarizes-40-years-of-research/)
