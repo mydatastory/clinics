@@ -5,17 +5,9 @@ This repository contains documents for data stories currently being worked on by
 - [Study Survey](https://ufl.qualtrics.com/jfe/form/SV_9BSUYvsQn0nk1hP)
 - [Style Guide](https://github.com/mydatastory/stories/blob/master/doc/style_guide.pptx)
 - [Coding Standards](https://github.com/mydatastory/projects/blob/master/doc/coding_standards.md)
-- [Embedded Videos](https://stackoverflow.com/questions/43840742/how-to-embed-local-video-in-r-markdown)
 - [Package learnr](https://rstudio.github.io/learnr/)
 - [JupyterLab Extensions](https://github.com/mauhai/awesome-jupyterlab)
 - [Neptune AI JupyterLab](https://neptune.ai/blog/jupyterlab-extensions-for-machine-learning)
-
-----------------------------------------------------------------------------------------
-#### Miscellaneous
-
-StatCat: A stat in time saves nine
-
-DataDog: It ain't over till the code's written
 
 ----------------------------------------------------------------------------------------
 #### Linking to Sections in the Core Explanatory Learning Experiences
