@@ -1,10 +1,6 @@
 #### Notes
 See ../archive for supporting design documents related to the development of this story.
 
-*Current Version Errors*
-- In Ch. 3, right before the code, it says “we basing…”
-- In Ch. 5 it says “using the by matching…”
-
 #### Shiny App  
 - [Phosdex Color](https://mydatastory.shinyapps.io/phosdex_story_main_color/)
 - [Phosdex](https://mydatastory.shinyapps.io/phosdex_story_main/)
